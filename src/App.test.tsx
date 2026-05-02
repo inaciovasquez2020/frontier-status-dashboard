@@ -30,8 +30,8 @@ describe("frontier status dashboard helpers", () => {
 it("records the YM-OS LSI-Herbst frontier without closure promotion", () => {
   const ym = repos.find((repo) => repo.name === "ym-os-quantization");
   expect(ym).toBeDefined();
-  expect(ym?.integrity).toBe(98);
-  expect(ym?.theoremClosure).toBe(67);
+  expect(ym?.integrity).toBeGreaterThanOrEqual(98);
+  expect(ym?.theoremClosure).toBeGreaterThanOrEqual(67);
   expect(ym?.boundary).toContain("LSI/gradient/Herbst dependency surface");
   expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
 });
@@ -39,6 +39,23 @@ it("records the YM-OS LSI-Herbst frontier without closure promotion", () => {
 it("keeps YM-OS from claiming Yang-Mills closure", () => {
   const ym = repos.find((repo) => repo.name === "ym-os-quantization");
   expect(ym?.boundary).toContain("no Uniform LSI");
+  expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
+});
+
+it("records the YMOS theorem obligation registry update", () => {
+  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
+  expect(ym).toBeDefined();
+  expect(ym?.integrity).toBe(99);
+  expect(ym?.theoremClosure).toBe(69);
+  expect(ym?.boundary).toContain("PRs #13-#16");
+  expect(ym?.boundary).toContain("YMOS-001 through YMOS-010 theorem-obligation registry");
+});
+
+it("keeps YMOS registry obligations open on the dashboard", () => {
+  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
+  expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
+  expect(ym?.boundary).toContain("no obligation marked PROVED");
+  expect(ym?.boundary).toContain("no obligation marked CONDITIONAL_CLOSED");
   expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
 });
 });
