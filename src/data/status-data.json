@@ -43,10 +43,10 @@
     "name": "poincare-new-derivation",
     "domain": "Topology / Poincare",
     "status": "Proof-Hole Triage",
-    "integrity": 94,
+    "integrity": 96,
     "theoremClosure": 55,
-    "ci": "yellow",
-    "boundary": "Conditional descent and triage surfaces are explicit; unresolved constructive holes block theorem-level closure.",
+    "ci": "green",
+    "boundary": "PR #65 refreshed the deprecated conditional status surface and passed 7/7 CI checks; current formal surface is 31 axioms, 0 admits, and 40 sorry. No Lean theorem hole was closed and theorem-level closure remains blocked by unresolved constructive holes.",
     "url": "https://github.com/inaciovasquez2020/poincare-new-derivation"
   },
   {
