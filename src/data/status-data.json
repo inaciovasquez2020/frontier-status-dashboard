@@ -23,10 +23,10 @@
     "name": "ym-os-quantization",
     "domain": "Mathematical Physics",
     "status": "Certified Frontier",
-    "integrity": 98,
-    "theoremClosure": 67,
+    "integrity": 99,
+    "theoremClosure": 69,
     "ci": "green",
-    "boundary": "PRs #13-#15 lock the terminal subgaussian frontier, finite certificate schema, and LSI/gradient/Herbst dependency surface. FRONTIER_OPEN is preserved: no Uniform LSI proof, no observable-gradient proof, no Herbst formalization proof, no terminal subgaussian theorem proof, no OS-positive measure construction, and no Yang-Mills closure is claimed.",
+    "boundary": "PRs #13-#16 lock the terminal subgaussian frontier, finite certificate schema, LSI/gradient/Herbst dependency surface, and YMOS-001 through YMOS-010 theorem-obligation registry. FRONTIER_OPEN is preserved: no Uniform LSI proof, no observable-gradient proof, no Herbst formalization proof, no terminal subgaussian theorem proof, no OS-positive measure construction, no obligation marked PROVED, no obligation marked CONDITIONAL_CLOSED, and no Yang-Mills closure is claimed.",
     "url": "https://github.com/inaciovasquez2020/ym-os-quantization"
   },
   {
