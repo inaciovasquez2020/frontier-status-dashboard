@@ -26,4 +26,19 @@ describe("frontier status dashboard helpers", () => {
   it("keeps all repository urls on GitHub", () => {
     expect(repos.every((repo) => repo.url.startsWith("https://github.com/"))).toBe(true);
   });
+
+it("records the YM-OS LSI-Herbst frontier without closure promotion", () => {
+  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
+  expect(ym).toBeDefined();
+  expect(ym?.integrity).toBe(98);
+  expect(ym?.theoremClosure).toBe(67);
+  expect(ym?.boundary).toContain("LSI/gradient/Herbst dependency surface");
+  expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
+});
+
+it("keeps YM-OS from claiming Yang-Mills closure", () => {
+  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
+  expect(ym?.boundary).toContain("no Uniform LSI");
+  expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
+});
 });
