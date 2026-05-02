@@ -1,0 +1,30 @@
+{
+  "id": "chronos-cor-triangle-chain-lean-frontier-2026-05-02",
+  "date": "2026-05-02",
+  "repository": "chronos-urf-rr",
+  "pull_request": 96,
+  "commit_status": "merged_to_main",
+  "artifact_type": "lean_theorem_frontier_skeleton",
+  "status": "conditional_frontier",
+  "title": "Chronos COR Triangle-Chain Lean Frontier",
+  "summary": "Lean-visible COR triangle-chain theorem-frontier surface merged to main.",
+  "objects": [
+    "chronos/Frontier/CORTriangleChainFrontier.lean",
+    "triangleChain_COR0_eq_blocks",
+    "triangleChain_COR0_linear_lower_bound",
+    "docs/status/CHRONOS_COR_TRIANGLE_CHAIN_LEAN_FRONTIER_2026_05_02.md"
+  ],
+  "verified": {
+    "github_checks": "13/13 successful",
+    "targeted_pytest": "2 passed",
+    "full_pytest": "443 passed",
+    "lake_build": "passed",
+    "working_tree": "clean on main"
+  },
+  "boundary": [
+    "Does not prove finite-to-general lift.",
+    "Does not prove locality-to-depth bridge.",
+    "Does not prove theorem-level Chronos closure.",
+    "Does not assert a Chronos closure theorem."
+  ]
+}
