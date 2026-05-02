@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#f8fafc"/>
+  <rect x="70" y="60" width="1260" height="190" rx="28" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="110" y="130" font-family="Arial" font-size="52" font-weight="700" fill="#0f172a">Frontier Status Dashboard</text>
+  <text x="110" y="180" font-family="Arial" font-size="24" fill="#475569">Repository integrity, theorem-boundary status, CI health, and external-review readiness.</text>
+  <rect x="70" y="285" width="290" height="110" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="100" y="330" font-family="Arial" font-size="22" fill="#64748b">Tracked repositories</text>
+  <text x="100" y="375" font-family="Arial" font-size="44" font-weight="700" fill="#0f172a">6</text>
+  <rect x="385" y="285" width="290" height="110" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="415" y="330" font-family="Arial" font-size="22" fill="#64748b">Green CI surfaces</text>
+  <text x="415" y="375" font-family="Arial" font-size="44" font-weight="700" fill="#0f172a">5/6</text>
+  <rect x="700" y="285" width="290" height="110" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="730" y="330" font-family="Arial" font-size="22" fill="#64748b">Avg. integrity</text>
+  <text x="730" y="375" font-family="Arial" font-size="44" font-weight="700" fill="#0f172a">97%</text>
+  <rect x="1015" y="285" width="315" height="110" rx="20" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="1045" y="330" font-family="Arial" font-size="22" fill="#64748b">Avg. theorem closure</text>
+  <text x="1045" y="375" font-family="Arial" font-size="44" font-weight="700" fill="#0f172a">65%</text>
+  <rect x="70" y="435" width="610" height="170" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="110" y="500" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">urf-core</text>
+  <text x="110" y="545" font-family="Arial" font-size="20" fill="#475569">Certified Frontier · Foundations</text>
+  <rect x="110" y="565" width="500" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="110" y="565" width="485" height="14" rx="7" fill="#0f172a"/>
+  <rect x="720" y="435" width="610" height="170" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="760" y="500" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">chronos-urf-rr</text>
+  <text x="760" y="545" font-family="Arial" font-size="20" fill="#475569">Status-Locked Frontier · Complexity</text>
+  <rect x="760" y="565" width="500" height="14" rx="7" fill="#e2e8f0"/>
+  <rect x="760" y="565" width="495" height="14" rx="7" fill="#0f172a"/>
+  <rect x="70" y="635" width="1260" height="160" rx="24" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="110" y="705" font-family="Arial" font-size="30" font-weight="700" fill="#0f172a">Deployment boundary</text>
+  <text x="110" y="750" font-family="Arial" font-size="22" fill="#475569">Publishes repository status and claim-boundary discipline. Does not represent unresolved frontiers as solved theorems.</text>
+</svg>

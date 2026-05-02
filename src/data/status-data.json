@@ -1,0 +1,62 @@
+[
+  {
+    "name": "urf-core",
+    "domain": "Foundations",
+    "status": "Certified Frontier",
+    "integrity": 97,
+    "theoremClosure": 72,
+    "ci": "green",
+    "boundary": "Build and verifier success certify repository integrity only; theorem-level closure remains conditional where axioms/admits remain.",
+    "url": "https://github.com/inaciovasquez2020/urf-core"
+  },
+  {
+    "name": "chronos-urf-rr",
+    "domain": "Complexity / Graph Rigidity",
+    "status": "Status-Locked Frontier",
+    "integrity": 99,
+    "theoremClosure": 78,
+    "ci": "green",
+    "boundary": "Finite certificates and survival protocols are locked; open obstructions remain isolated from unconditional claims.",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr"
+  },
+  {
+    "name": "ym-os-quantization",
+    "domain": "Mathematical Physics",
+    "status": "Certified Frontier",
+    "integrity": 96,
+    "theoremClosure": 64,
+    "ci": "green",
+    "boundary": "OS/Yang–Mills survival protocol prevents theorem-grade overclaim beyond certified executable surfaces.",
+    "url": "https://github.com/inaciovasquez2020/ym-os-quantization"
+  },
+  {
+    "name": "clay-problem-lab",
+    "domain": "Clay / RA1n",
+    "status": "Conditional Frontier",
+    "integrity": 98,
+    "theoremClosure": 61,
+    "ci": "green",
+    "boundary": "Projected-packet surfaces are closed; unrestricted RA1n remains conditional on terminal structural exclusions.",
+    "url": "https://github.com/inaciovasquez2020/clay-problem-lab"
+  },
+  {
+    "name": "poincare-new-derivation",
+    "domain": "Topology / Poincare",
+    "status": "Proof-Hole Triage",
+    "integrity": 94,
+    "theoremClosure": 55,
+    "ci": "yellow",
+    "boundary": "Conditional descent and triage surfaces are explicit; unresolved constructive holes block theorem-level closure.",
+    "url": "https://github.com/inaciovasquez2020/poincare-new-derivation"
+  },
+  {
+    "name": "biological-friction-framework",
+    "domain": "Biophysics",
+    "status": "Sorry-Quarantined",
+    "integrity": 95,
+    "theoremClosure": 59,
+    "ci": "green",
+    "boundary": "Seven formal proof holes are isolated; repository surface is closed but theorem-level closure is blocked.",
+    "url": "https://github.com/inaciovasquez2020/biological-friction-framework"
+  }
+]
