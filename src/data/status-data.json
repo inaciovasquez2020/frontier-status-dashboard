@@ -23,10 +23,10 @@
     "name": "ym-os-quantization",
     "domain": "Mathematical Physics",
     "status": "Certified Frontier",
-    "integrity": 96,
-    "theoremClosure": 64,
+    "integrity": 98,
+    "theoremClosure": 67,
     "ci": "green",
-    "boundary": "OS/Yang\u2013Mills survival protocol prevents theorem-grade overclaim beyond certified executable surfaces.",
+    "boundary": "PRs #13-#15 lock the terminal subgaussian frontier, finite certificate schema, and LSI/gradient/Herbst dependency surface. FRONTIER_OPEN is preserved: no Uniform LSI proof, no observable-gradient proof, no Herbst formalization proof, no terminal subgaussian theorem proof, no OS-positive measure construction, and no Yang-Mills closure is claimed.",
     "url": "https://github.com/inaciovasquez2020/ym-os-quantization"
   },
   {
