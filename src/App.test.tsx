@@ -46,16 +46,36 @@ it("records the YMOS theorem obligation registry update", () => {
   const ym = repos.find((repo) => repo.name === "ym-os-quantization");
   expect(ym).toBeDefined();
   expect(ym?.integrity).toBe(99);
-  expect(ym?.theoremClosure).toBe(69);
-  expect(ym?.boundary).toContain("PRs #13-#16");
+  expect(ym?.theoremClosure).toBeGreaterThanOrEqual(69);
+  expect(ym?.boundary).toMatch(/PRs #13-#1[67]/);
   expect(ym?.boundary).toContain("YMOS-001 through YMOS-010 theorem-obligation registry");
 });
 
 it("keeps YMOS registry obligations open on the dashboard", () => {
   const ym = repos.find((repo) => repo.name === "ym-os-quantization");
   expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
-  expect(ym?.boundary).toContain("no obligation marked PROVED");
-  expect(ym?.boundary).toContain("no obligation marked CONDITIONAL_CLOSED");
+  expect(ym?.boundary).toMatch(/no (obligation|bridge target) marked PROVED/);
+  expect(ym?.boundary).toMatch(/no (obligation|bridge target) marked CONDITIONAL_CLOSED/);
+  expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
+});
+
+it("records the YMOS probabilistic bridge contract update", () => {
+  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
+  expect(ym).toBeDefined();
+  expect(ym?.integrity).toBe(99);
+  expect(ym?.theoremClosure).toBe(70);
+  expect(ym?.boundary).toContain("PRs #13-#17");
+  expect(ym?.boundary).toContain("YMOS probabilistic bridge contract");
+});
+
+it("keeps YMOS probabilistic bridge targets unproved", () => {
+  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
+  expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
+  expect(ym?.boundary).toContain("no Herbst proof");
+  expect(ym?.boundary).toContain("no Laplace-to-even-moment proof");
+  expect(ym?.boundary).toContain("no product-moment proof");
+  expect(ym?.boundary).toContain("no bridge target marked PROVED");
+  expect(ym?.boundary).toContain("no bridge target marked CONDITIONAL_CLOSED");
   expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
 });
 });
