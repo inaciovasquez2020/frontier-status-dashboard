@@ -37,7 +37,9 @@
     "theoremClosure": 63,
     "ci": "green",
     "boundary": "RA1n symbolic transfer bridge is merged and verifier-guarded; projected-packet surfaces remain closed, while unrestricted RA1n remains conditional on machine-checkable obstruction-pairing representation.",
-    "url": "https://github.com/inaciovasquez2020/clay-problem-lab"
+    "url": "https://github.com/inaciovasquez2020/clay-problem-lab",
+    "lastUpdated": "2026-05-02",
+    "latestUpdate": "RA1n symbolic transfer bridge merged in clay-problem-lab PR #18; finite Gram-transversality bridge is verifier-guarded, while unrestricted RA1n closure remains conditional."
   },
   {
     "name": "poincare-new-derivation",
