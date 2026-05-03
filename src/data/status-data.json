@@ -65,11 +65,13 @@
   },
   {
     "id": "repository-index-2026-05-03",
-    "title": "Repository Index Snapshot",
-    "repo": "vasquez-index",
+    "name": "Repository Index Snapshot",
+    "domain": "Portfolio Metadata",
     "status": "METADATA_SNAPSHOT_MERGED",
-    "date": "2026-05-03",
+    "updated": "2026-05-03",
     "summary": "Repository metadata snapshot merged in vasquez-index PR #24.",
-    "boundary": "Metadata only; no theorem-level closure, publication acceptance, or mathematical correctness claim."
+    "ci": "green",
+    "boundary": "Metadata only; no theorem-level closure, publication acceptance, or mathematical correctness claim.",
+    "url": "https://github.com/inaciovasquez2020/vasquez-index"
   }
 ]
