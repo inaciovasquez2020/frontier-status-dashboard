@@ -62,5 +62,16 @@
     "ci": "green",
     "boundary": "Seven formal proof holes are isolated; repository surface is closed but theorem-level closure is blocked.",
     "url": "https://github.com/inaciovasquez2020/biological-friction-framework"
+  },
+  {
+    "id": "repository-index-2026-05-03",
+    "name": "Repository Index Snapshot",
+    "domain": "Portfolio Metadata",
+    "status": "METADATA_SNAPSHOT_MERGED",
+    "updated": "2026-05-03",
+    "summary": "Repository metadata snapshot merged in vasquez-index PR #24.",
+    "ci": "green",
+    "boundary": "Metadata only; no theorem-level closure, publication acceptance, or mathematical correctness claim.",
+    "url": "https://github.com/inaciovasquez2020/vasquez-index"
   }
 ]
