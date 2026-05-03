@@ -88,6 +88,26 @@ it("keeps YMOS probabilistic bridge targets unproved", () => {
 
 
 
+
+
+  it("prevents NaN dashboard averages for metadata and Chronos prefix entries", () => {
+    const repositoryIndex = repos.find((repo) => repo.name === "Repository Index Snapshot");
+    const chronosPrefix = repos.find(
+      (repo) => repo.name === "chronos-prefix-conditioning-embedding-2026-05-03",
+    );
+
+    expect(repositoryIndex?.integrity).toBe(100);
+    expect(repositoryIndex?.theoremClosure).toBe(0);
+    expect(repositoryIndex?.ci).toBe("green");
+
+    expect(chronosPrefix?.integrity).toBe(99);
+    expect(chronosPrefix?.theoremClosure).toBe(79);
+    expect(chronosPrefix?.ci).toBe("green");
+
+    expect(Number.isNaN(average(repos.map((repo) => repo.integrity)))).toBe(false);
+    expect(Number.isNaN(average(repos.map((repo) => repo.theoremClosure)))).toBe(false);
+  });
+
   it("visually surfaces Chronos prefix-conditioning embedding dashboard update", () => {
     const match = repos.find(
       (repo) => repo.name === "chronos-prefix-conditioning-embedding-2026-05-03",

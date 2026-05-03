@@ -7,7 +7,9 @@ export type RepoStatus =
   | "Status-Locked Frontier"
   | "Conditional Frontier"
   | "Proof-Hole Triage"
-  | "Sorry-Quarantined";
+  | "Sorry-Quarantined"
+  | "METADATA_SNAPSHOT_MERGED"
+  | "CONDITIONAL_PREFIX_EMBEDDING_REDUCTION";
 
 export type Repo = {
   name: string;
@@ -28,6 +30,8 @@ const statusTone: Record<RepoStatus, string> = {
   "Conditional Frontier": "bg-amber-50 text-amber-700 border-amber-200",
   "Proof-Hole Triage": "bg-orange-50 text-orange-700 border-orange-200",
   "Sorry-Quarantined": "bg-rose-50 text-rose-700 border-rose-200",
+  "METADATA_SNAPSHOT_MERGED": "bg-slate-50 text-slate-700 border-slate-200",
+  "CONDITIONAL_PREFIX_EMBEDDING_REDUCTION": "bg-amber-50 text-amber-700 border-amber-200",
 };
 
 export function cn(...classes: Array<string | false | null | undefined>) {
