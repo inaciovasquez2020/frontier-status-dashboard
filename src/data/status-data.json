@@ -69,6 +69,7 @@
     "domain": "Portfolio Metadata",
     "status": "METADATA_SNAPSHOT_MERGED",
     "updated": "2026-05-03",
+    "pinned": true,
     "summary": "Repository metadata snapshot merged in vasquez-index PR #24.",
     "ci": "green",
     "boundary": "Metadata only; no theorem-level closure, publication acceptance, or mathematical correctness claim.",

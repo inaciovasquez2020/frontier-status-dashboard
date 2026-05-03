@@ -86,6 +86,21 @@ it("keeps YMOS probabilistic bridge targets unproved", () => {
     expect(latestUpdate).toContain("PR #97");
   });
 
+
+
+  it("visually surfaces Chronos prefix-conditioning embedding dashboard update", () => {
+    const match = repos.find(
+      (repo) => repo.name === "chronos-prefix-conditioning-embedding-2026-05-03",
+    );
+
+    expect(match).toBeDefined();
+    expect(match?.domain).toBe("Chronos");
+    expect(match?.status).toBe("CONDITIONAL_PREFIX_EMBEDDING_REDUCTION");
+    expect(match?.boundary).toContain("Conditional prefix-embedding reduction only");
+    expect(match?.boundary).toContain("Does not prove P vs NP");
+    expect(match?.boundary).toContain("Does not prove terminal Chronos lower bound");
+  });
+
   it("keeps Chronos H4.1/FGL theorem-level closure open", () => {
     const chronos = repos.find((repo) => repo.name === "chronos-urf-rr");
     expect(chronos?.boundary).toContain("FRONTIER_OPEN is preserved");
