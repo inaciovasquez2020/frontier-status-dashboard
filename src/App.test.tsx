@@ -34,6 +34,7 @@ it("records the YM-OS LSI-Herbst frontier without closure promotion", () => {
   expect(ym?.theoremClosure).toBeGreaterThanOrEqual(67);
   expect(ym?.boundary).toContain("LSI/gradient/Herbst dependency surface");
   expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
+
 });
 
 it("keeps YM-OS from claiming Yang-Mills closure", () => {
@@ -78,4 +79,18 @@ it("keeps YMOS probabilistic bridge targets unproved", () => {
   expect(ym?.boundary).toContain("no bridge target marked CONDITIONAL_CLOSED");
   expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
 });
+  it("records the Chronos SiMSLV weakest frontier lemma update", () => {
+    const chronos = repos.find((repo) => repo.name === "chronos-urf-rr");
+    const latestUpdate = (chronos as { latestUpdate?: string } | undefined)?.latestUpdate;
+    expect(latestUpdate).toContain("SiMSLV weakest frontier lemma");
+    expect(latestUpdate).toContain("PR #97");
+  });
+
+  it("keeps Chronos H4.1/FGL theorem-level closure open", () => {
+    const chronos = repos.find((repo) => repo.name === "chronos-urf-rr");
+    expect(chronos?.boundary).toContain("FRONTIER_OPEN is preserved");
+    expect(chronos?.boundary).toContain("No theorem-level H4.1/FGL closure");
+    expect(chronos?.theoremClosure).toBeLessThan(100);
+  });
+
 });
