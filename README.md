@@ -50,3 +50,9 @@ npm install -g vercel
 vercel --prod
 Repository
 https://github.com/inaciovasquez2020/frontier-status-dashboard
+
+
+## Recent Status Updates
+
+- Biological Friction Framework: quotient-linear substrate SOLVED/PUSHED in biological-friction-framework commit 3022c38; graph-theoretic quotient-independence remains FRONTIER_OPEN.
+
