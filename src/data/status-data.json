@@ -73,5 +73,14 @@
     "ci": "green",
     "boundary": "Metadata only; no theorem-level closure, publication acceptance, or mathematical correctness claim.",
     "url": "https://github.com/inaciovasquez2020/vasquez-index"
+  },
+  {
+    "name": "chronos-prefix-conditioning-embedding-2026-05-03",
+    "domain": "Chronos",
+    "status": "CONDITIONAL_PREFIX_EMBEDDING_REDUCTION",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
+    "description": "Chronos PR #98 prefix-conditioning embedding reduction: replaces the false leave-one-out coordinate-reveal route with a prefix-conditioning chain-rule embedding surface. Boundary: conditional reduction only; does not prove P vs NP; does not prove terminal Chronos lower bound; remaining object is PrefixEmb_{n#} zeta = mu_n on the exact repository search distribution. Source commit: 7379718.",
+    "updated": "2026-05-03",
+    "boundary": "Conditional prefix-embedding reduction only. Does not assert unconditional theorem-level closure. Does not prove P vs NP. Does not prove terminal Chronos lower bound. Remaining object: PrefixEmb_{n#} zeta = mu_n on the exact repository search distribution."
   }
 ]

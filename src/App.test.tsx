@@ -94,3 +94,12 @@ it("keeps YMOS probabilistic bridge targets unproved", () => {
   });
 
 });
+it("includes Chronos prefix-conditioning embedding dashboard update", () => {
+  const dataText = JSON.stringify(repos);
+  expect(dataText).toContain("chronos-prefix-conditioning-embedding-2026-05-03");
+  expect(dataText).toContain("CONDITIONAL_PREFIX_EMBEDDING_REDUCTION");
+  expect(dataText).toContain("PrefixEmb_{n#} zeta = mu_n");
+  expect(dataText).not.toContain("terminal Chronos lower bound is proved");
+  expect(dataText).not.toContain("P vs NP is proved");
+});
+
