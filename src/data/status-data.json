@@ -2,12 +2,17 @@
   {
     "name": "urf-core",
     "domain": "Foundations",
-    "status": "Certified Frontier",
-    "integrity": 97,
+    "status": "CERTIFICATE_TRANSPORT_ONLY",
+    "integrity": 99,
     "theoremClosure": 72,
     "ci": "green",
-    "boundary": "Build and verifier success certify repository integrity only; theorem-level closure remains conditional where axioms/admits remain.",
-    "url": "https://github.com/inaciovasquez2020/urf-core"
+    "boundary": "Certificate transport only; theorem closure false; status promotion disallowed.",
+    "url": "https://github.com/inaciovasquez2020/urf-core",
+    "repository": "inaciovasquez2020/urf-core",
+    "lastUpdate": "2026-05-04",
+    "summary": "Transfer Operator status lock added as certificate-transport-only infrastructure; status promotion blocked; no theorem-level closure claimed.",
+    "latestArtifact": "TransferOperator status lock",
+    "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/315"
   },
   {
     "name": "chronos-urf-rr",
