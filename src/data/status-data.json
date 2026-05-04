@@ -17,14 +17,15 @@
   {
     "name": "chronos-urf-rr",
     "domain": "Complexity / Graph Rigidity",
-    "status": "Status-Locked Frontier",
+    "status": "CERTIFIED_FRONTIER_ONLY",
     "integrity": 99,
     "theoremClosure": 79,
     "ci": "green",
-    "boundary": "PR #97 merged the SiMSLV weakest frontier lemma as a status-locked finite-patch span-replacement criterion. FRONTIER_OPEN is preserved; No unconditional Chronos closure, No theorem-level H4.1/FGL closure, and No absence of the obstruction pair is claimed.",
+    "boundary": "Merged Chronos next-frontier status lock; CERTIFIED_FRONTIER_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; theorem closure false; explicit IC lower-bound bridge remains missing.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-03",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; all 13 PR checks passed before merge."
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; all 13 PR checks passed before merge.",
+    "lastUpdate": "2026-05-04"
   },
   {
     "name": "ym-os-quantization",
