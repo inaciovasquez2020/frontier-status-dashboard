@@ -136,5 +136,20 @@ it("includes Chronos prefix-conditioning embedding dashboard update", () => {
   expect(dataText).toContain("PrefixEmb_{n#} zeta = mu_n");
   expect(dataText).not.toContain("terminal Chronos lower bound is proved");
   expect(dataText).not.toContain("P vs NP is proved");
+
+
 });
 
+
+it("excludes metadata-only rows from dashboard aggregate metrics", () => {
+  const repositoryIndex = repos.find((repo) => repo.name === "Repository Index Snapshot");
+  const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
+
+  expect(repositoryIndex?.metadataOnly).toBe(true);
+  expect(repositoryIndex?.excludeFromMetrics).toBe(true);
+  expect(metricRepos.some((repo) => repo.name === "Repository Index Snapshot")).toBe(false);
+  expect(metricRepos.length).toBe(7);
+  expect(metricRepos.filter((repo) => repo.ci === "green").length).toBe(7);
+  expect(Number.isNaN(average(metricRepos.map((repo) => repo.integrity)))).toBe(false);
+  expect(Number.isNaN(average(metricRepos.map((repo) => repo.theoremClosure)))).toBe(false);
+});
