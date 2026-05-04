@@ -12,6 +12,8 @@ export type RepoStatus =
   | "CONDITIONAL_PREFIX_EMBEDDING_REDUCTION";
 
 export type Repo = {
+  metadataOnly?: boolean;
+  excludeFromMetrics?: boolean;
   name: string;
   domain: string;
   status: RepoStatus;
@@ -214,9 +216,10 @@ export default function FrontierStatusDashboard() {
   const domains = useMemo(() => uniqueDomains(repos), []);
   const filtered = useMemo(() => filterRepos(repos, query, filter), [query, filter]);
 
-  const avgIntegrity = average(repos.map((repo) => repo.integrity));
-  const avgClosure = average(repos.map((repo) => repo.theoremClosure));
-  const greenCount = repos.filter((repo) => repo.ci === "green").length;
+  const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
+  const avgIntegrity = average(metricRepos.map((repo) => repo.integrity));
+  const avgClosure = average(metricRepos.map((repo) => repo.theoremClosure));
+  const greenCount = metricRepos.filter((repo) => repo.ci === "green").length;
 
   return (
     <main className="min-h-screen bg-slate-50 p-6 text-slate-900">
@@ -243,8 +246,8 @@ export default function FrontierStatusDashboard() {
         </motion.section>
 
         <section className="grid gap-4 md:grid-cols-4">
-          <Metric label="Tracked repositories" value={repos.length} />
-          <Metric label="Green CI surfaces" value={`${greenCount}/${repos.length}`} />
+          <Metric label="Tracked repositories" value={metricRepos.length} />
+          <Metric label="Green CI surfaces" value={`${greenCount}/${metricRepos.length}`} />
           <Metric label="Avg. integrity" value={`${avgIntegrity}%`} />
           <Metric label="Avg. theorem closure" value={`${avgClosure}%`} />
         </section>
