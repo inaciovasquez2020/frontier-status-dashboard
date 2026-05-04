@@ -21,10 +21,10 @@
     "integrity": 99,
     "theoremClosure": 79,
     "ci": "green",
-    "boundary": "Merged explicit IC bridge contract; CERTIFIED_FRONTIER_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; theorem closure false; ChronosCertificateEmbedding remains missing.",
+    "boundary": "Merged Chronos certificate embedding frontier lock; FRONTIER_OPEN is preserved; CERTIFIED_INTERFACE_ONLY and CERTIFIED_FRONTIER_ONLY remain the correct status surfaces; No theorem-level H4.1/FGL closure; theorem closure false; ChronosCertificateEmbedding remains missing; c is not bound to repository certificate constants.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
-    "lastUpdated": "2026-05-03",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; PR #100 merged the explicit IC bridge contract: F_n={0,1}^n, mu_n uniform, Search_F_n identity, toy IC lower bound c=1; certificate-constant binding remains open.",
+    "lastUpdated": "2026-05-04",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; PR #101 introduced the E_n:C_n -> {0,1}^n interface; PR #102 merged the checked ChronosCertificateEmbedding frontier lock. Verified: Chronos certificate embedding frontier, ChronosCertificateEmbedding interface, explicit IC bridge contract, next frontier status lock, 462 pytest tests, and lake build. Boundary: no E_n construction, no pushforward uniformity proof, no admissibility-preservation proof, no repository constant binding, no theorem-level Chronos/H4.1/FGL/P-vs-NP closure.",
     "lastUpdate": "2026-05-04"
   },
   {
