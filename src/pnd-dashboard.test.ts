@@ -17,9 +17,7 @@ function collectRows(value: JsonValue): Record<string, JsonValue>[] {
     );
 
     if (
-      dicts.some((item) =>
-        JSON.stringify(item).includes("poincare-new-derivation"),
-      )
+      dicts.some((item) => JSON.stringify(item).includes("poincare-new-derivation"))
     ) {
       return dicts;
     }
@@ -36,27 +34,30 @@ function collectRows(value: JsonValue): Record<string, JsonValue>[] {
 
 describe("Poincare dashboard status", () => {
   const rows = collectRows(statusData as unknown as JsonValue);
-  const pnd = rows.find((row) =>
-    JSON.stringify(row).includes("poincare-new-derivation"),
-  );
+  const pnd = rows.find((row) => row.name === "poincare-new-derivation");
 
-  it("records the PND-D3EL coupled discharge frontier", () => {
+  it("records the PND-D3EL 10 percent theorem-closure upgrade", () => {
     expect(pnd).toBeTruthy();
-    expect(JSON.stringify(pnd)).toContain("PND-D3EL coupled discharge frontier merged");
-    expect(JSON.stringify(pnd)).toContain("pnd_d3el_coupled_discharge");
+    expect(JSON.stringify(pnd)).toContain("PND_D3EL_excess_10pct");
+    expect(JSON.stringify(pnd)).toContain("VERIFIED_PARTIAL_THEOREM_CLOSURE");
+    expect(JSON.stringify(pnd)).toContain("PLEquivalence gate discharged");
   });
 
-  it("keeps PND-D3EL open and forbids Poincare closure promotion", () => {
-    expect(JSON.stringify(pnd)).toContain("OPEN_FRONTIER");
-    expect(JSON.stringify(pnd)).toContain("Does not prove PND-D3EL");
-    expect(JSON.stringify(pnd)).toContain("does not prove the Poincare conjecture");
-    expect(JSON.stringify(pnd)).not.toContain("Poincare conjecture proved");
-    expect(JSON.stringify(pnd)).not.toContain("PND-D3EL is proved");
+  it("keeps Pachner connectivity external", () => {
+    expect(JSON.stringify(pnd)).toContain("formal_Pachner_connectivity_3D");
+    expect(JSON.stringify(pnd)).toContain("ImportedPachnerTheorem3D remains external");
+    expect(JSON.stringify(pnd)).toContain("formal_Pachner_connectivity_3D is not proved");
   });
 
-  it("records artifact integrity without theorem closure", () => {
+  it("records the dashboard-visible metrics", () => {
     expect(pnd?.integrity).toBe(100);
-    expect(pnd?.theoremClosure).toBe(0);
+    expect(pnd?.theoremClosure).toBe(10);
     expect(pnd?.ci).toBe("green");
+  });
+
+  it("forbids unconditional closure promotion", () => {
+    expect(JSON.stringify(pnd)).not.toContain("theoremClosure=100");
+    expect(JSON.stringify(pnd)).not.toContain("Poincare conjecture proved");
+    expect(JSON.stringify(pnd)).not.toContain("ImportedPachnerTheorem3D is internally proved");
   });
 });
