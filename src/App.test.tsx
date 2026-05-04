@@ -153,3 +153,85 @@ it("excludes metadata-only rows from dashboard aggregate metrics", () => {
   expect(Number.isNaN(average(metricRepos.map((repo) => repo.integrity)))).toBe(false);
   expect(Number.isNaN(average(metricRepos.map((repo) => repo.theoremClosure)))).toBe(false);
 });
+
+it("includes the public repository dashboard expansion rows", () => {
+  const names = repos.map((repo) => repo.name);
+  [
+    "CorrRank",
+    "overlap-rigidity-lean-dev",
+    "urf-textbook",
+    "urf-axioms",
+    "capacity-locality-certification",
+    "cslib-fmt",
+    "pachner-invariant",
+    "rank-dichotomy-cat0",
+    "Operational-Wavefunction-Collapse",
+    "whiplash-stability",
+    "urf-open-review-ledger",
+    "scientific-infrastructure",
+    "urf-verifier",
+    "urf-spine",
+    "final-wall-fo-k-locality",
+    "transcript-capacity-core",
+    "cyclone-terminal-obstruction",
+    "support-drift",
+    "cycle-local-rigidity",
+    "terminal-rigidity-witness-erb",
+    "overlap-rigidity-counterexamples",
+    "overlap-rigidity-lean",
+    "final-wall-conditional-index",
+    "URF-P-0001",
+    "URF-P-0002",
+    "URF-P-0003",
+    "urf-reductions-sat-csp",
+    "flagship-lean",
+    "ncr-new-computational-regime",
+    "aiv-verifier-public",
+  ].forEach((name) => expect(names).toContain(name));
+});
+
+it("keeps added public repository rows claim-boundary safe", () => {
+  const added = repos.filter((repo) =>
+    [
+      "CorrRank",
+      "overlap-rigidity-lean-dev",
+      "urf-textbook",
+      "urf-axioms",
+      "capacity-locality-certification",
+      "cslib-fmt",
+      "pachner-invariant",
+      "rank-dichotomy-cat0",
+      "Operational-Wavefunction-Collapse",
+      "whiplash-stability",
+      "urf-open-review-ledger",
+      "scientific-infrastructure",
+      "urf-verifier",
+      "urf-spine",
+      "final-wall-fo-k-locality",
+      "transcript-capacity-core",
+      "cyclone-terminal-obstruction",
+      "support-drift",
+      "cycle-local-rigidity",
+      "terminal-rigidity-witness-erb",
+      "overlap-rigidity-counterexamples",
+      "overlap-rigidity-lean",
+      "final-wall-conditional-index",
+      "URF-P-0001",
+      "URF-P-0002",
+      "URF-P-0003",
+      "urf-reductions-sat-csp",
+      "flagship-lean",
+      "ncr-new-computational-regime",
+      "aiv-verifier-public",
+    ].includes(repo.name),
+  );
+
+  expect(added).toHaveLength(30);
+  expect(added.every((repo) => repo.url.startsWith("https://github.com/inaciovasquez2020/"))).toBe(true);
+  expect(added.every((repo) => repo.integrity >= 90 && repo.integrity <= 100)).toBe(true);
+  expect(added.every((repo) => repo.theoremClosure >= 0 && repo.theoremClosure < 100)).toBe(true);
+  expect(added.every((repo) => repo.ci === "yellow")).toBe(true);
+  expect(added.every((repo) => repo.excludeFromMetrics === true)).toBe(true);
+  expect(JSON.stringify(added)).not.toMatch(/P vs NP is proved|Yang-Mills closure is claimed|unconditional theorem-level closure is claimed|solved theorem/i);
+});
+
