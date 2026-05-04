@@ -6,7 +6,7 @@
     "integrity": 99,
     "theoremClosure": 72,
     "ci": "green",
-    "boundary": "Certificate transport only; theorem closure false; status promotion disallowed.",
+    "boundary": "Merged urf-core/main certificate transport only; theorem closure false; status promotion disallowed.",
     "url": "https://github.com/inaciovasquez2020/urf-core",
     "repository": "inaciovasquez2020/urf-core",
     "lastUpdate": "2026-05-04",
