@@ -21,10 +21,10 @@
     "integrity": 99,
     "theoremClosure": 79,
     "ci": "green",
-    "boundary": "Merged Chronos next-frontier status lock; CERTIFIED_FRONTIER_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; theorem closure false; explicit IC lower-bound bridge remains missing.",
+    "boundary": "Merged explicit IC bridge contract; CERTIFIED_FRONTIER_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; theorem closure false; ChronosCertificateEmbedding remains missing.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-03",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; all 13 PR checks passed before merge.",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; PR #100 merged the explicit IC bridge contract: F_n={0,1}^n, mu_n uniform, Search_F_n identity, toy IC lower bound c=1; certificate-constant binding remains open.",
     "lastUpdate": "2026-05-04"
   },
   {
