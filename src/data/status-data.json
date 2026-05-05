@@ -52,11 +52,11 @@
   {
     "name": "poincare-new-derivation",
     "domain": "Topology / Poincare",
-    "status": "CONDITIONAL_EXTERNAL_THEOREM_ONLY",
+    "status": "VERIFIED_PARTIAL_THEOREM_CLOSURE / CONDITIONAL_EXTERNAL_THEOREM_ONLY",
     "integrity": 100,
-    "theoremClosure": 0,
+    "theoremClosure": 10,
     "ci": "green",
-    "boundary": "CONDITIONAL_EXTERNAL_THEOREM_ONLY / FRONTIER_PRESERVED; no theorem-level Lean closure; no repository-internal proof of Poincare or Perelman; no strict Pachner descent proof; identity Pachner move semantics remain quarantined.",
+    "boundary": "VERIFIED_PARTIAL_THEOREM_CLOSURE only at the PND_D3EL_excess_10pct surface; CONDITIONAL_EXTERNAL_THEOREM_ONLY / FRONTIER_PRESERVED for Perelman_PL; PLEquivalence gate discharged; formal_Pachner_connectivity_3D remains external; ImportedPachnerTheorem3D remains external; formal_Pachner_connectivity_3D is not proved; no theorem-level Lean closure; no repository-internal proof of Poincare or Perelman; no strict Pachner descent proof; identity Pachner move semantics remain quarantined.",
     "url": "https://github.com/inaciovasquez2020/poincare-new-derivation",
     "repository": "poincare-new-derivation",
     "repo": "poincare-new-derivation",
@@ -65,8 +65,8 @@
     "details": "PR #66 merged into main. The verifier passed, pytest passed, and lake build passed. The dashboard records artifact integrity only: PND-D3EL remains open and no unconditional Poincare claim is asserted.",
     "frontier": "PND-D3EL coupled discharge of PLManifoldLike, ExposedFeatures, LocalDegree, MoveAdmissible, and BarrierHeight.",
     "missingObject": "pnd_d3el_coupled_discharge",
-    "claimBoundary": "Does not prove PND-D3EL; does not define the five missing primitives; does not prove the Poincare conjecture; build success verifies artifact integrity only.",
-    "latestUpdate": "poincare-new-derivation PR #67 merged the Perelman PL conditional closure wrapper, adding a named external theorem axiom, contradiction quarantine for identity Pachner move semantics, status artifact, verifier, and pytest coverage; post-merge verification passed with 3 pytest tests and lake build."
+    "claimBoundary": "Does not prove PND-D3EL; does not prove formal_Pachner_connectivity_3D; ImportedPachnerTheorem3D remains external; does not prove the Poincare conjecture; does not assert theorem-level Lean closure.",
+    "latestUpdate": "poincare-new-derivation PR #67 merged the Perelman PL conditional closure wrapper after PR #66 recorded PND_D3EL_excess_10pct / VERIFIED_PARTIAL_THEOREM_CLOSURE. The dashboard keeps formal_Pachner_connectivity_3D external: ImportedPachnerTheorem3D remains external and formal_Pachner_connectivity_3D is not proved. PR #67 adds a named external theorem axiom, contradiction quarantine for identity Pachner move semantics, status artifact, verifier, and pytest coverage; post-merge verification passed with 3 pytest tests and lake build."
   },
   {
     "name": "biological-friction-framework",
