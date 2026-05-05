@@ -19,12 +19,12 @@
     "domain": "Complexity / Graph Rigidity",
     "status": "CERTIFIED_FRONTIER_ONLY",
     "integrity": 99,
-    "theoremClosure": 79,
+    "theoremClosure": 86,
     "ci": "green",
-    "boundary": "Merged Chronos certificate embedding frontier lock; FRONTIER_OPEN is preserved; CERTIFIED_INTERFACE_ONLY and CERTIFIED_FRONTIER_ONLY remain the correct status surfaces; No theorem-level H4.1/FGL closure; theorem closure false; ChronosCertificateEmbedding remains missing; c is not bound to repository certificate constants.",
+    "boundary": "Merged PR #106 affine finite-type normal-form frontier; STRUCTURAL_LOCALIZATION_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; No theorem-level Chronos closure; No P vs NP closure; remaining theorem-level object is repository-specific verifier instantiation.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
-    "lastUpdated": "2026-05-04",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; PR #101 introduced the E_n:C_n -> {0,1}^n interface; PR #102 merged the checked ChronosCertificateEmbedding frontier lock. Verified: Chronos certificate embedding frontier, ChronosCertificateEmbedding interface, explicit IC bridge contract, next frontier status lock, 462 pytest tests, and lake build. Boundary: no E_n construction, no pushforward uniformity proof, no admissibility-preservation proof, no repository constant binding, no theorem-level Chronos/H4.1/FGL/P-vs-NP closure.",
+    "lastUpdated": "2026-05-05",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma with verifier and test coverage; PR #101 introduced the E_n:C_n -> {0,1}^n interface; PR #102 merged the checked ChronosCertificateEmbedding frontier lock; PR #106 added the checked AffineFiniteTypeNormalForm Lean artifact, status doc, verifier, and tests. Post-merge verification passed: affine normal-form verifier, 3 pytest tests, direct Lean file check, and lake build. Boundary: structural localization only; FRONTIER_OPEN preserved; no theorem-level Chronos/H4.1/FGL/P-vs-NP closure.",
     "lastUpdate": "2026-05-04"
   },
   {
