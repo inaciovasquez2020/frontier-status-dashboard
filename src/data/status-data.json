@@ -21,10 +21,10 @@
     "integrity": 99,
     "theoremClosure": 79,
     "ci": "green",
-    "boundary": "Merged repository native carrier selection object; CONDITIONAL_SELECTION_OBJECT_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; theorem closure false; No actual repository carrier, C_n^Chr, nu_n, entropy bridge, ChronosCertificateEmbedding, or P vs NP closure.",
+    "boundary": "Merged setup-python v6 CI/package/path maintenance; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; theorem closure false; no Lean theorem content changed; no Chronos frontier status change; no P vs NP closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-05",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; PR #111 added the RepositoryNativeCarrierSelection Lean artifact, status doc, JSON artifact, verifier, and pytest coverage; post-merge verification passed 17 pytest tests and lake build.",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; PR #111 added the RepositoryNativeCarrierSelection object; PR #112 updated setup-python from v5 to v6 in five workflow files, preserved canonical lowercase chronos/Frontier/CORTriangleChainFrontier.lean, kept the Python entropy audit package under chronos/, restored chronos/Logic/PSH_k_Delta.tex and chronos/tests/__init__.py, removed stray src/, and passed COR verifier, 4 targeted tests, 488 full pytest tests, and lake build.",
     "lastUpdate": "2026-05-04"
   },
   {
