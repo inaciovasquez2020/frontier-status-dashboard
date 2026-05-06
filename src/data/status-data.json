@@ -18,13 +18,13 @@
     "name": "chronos-urf-rr",
     "domain": "Complexity / Graph Rigidity",
     "status": "CERTIFIED_FRONTIER_ONLY",
-    "integrity": 99,
-    "theoremClosure": 79,
+    "integrity": 100,
+    "theoremClosure": 82,
     "ci": "green",
-    "boundary": "Merged H4.1 certified-family frontier as AXIOMATIC_FRONTIER_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; No Chronos closure; No P vs NP closure.",
+    "boundary": "Merged repository-native certified depth bridge; REPOSITORY_NATIVE_DEPTH_BRIDGE_FORMALIZED; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; no theorem-level Chronos closure; no P vs NP closure; remaining blockers are admissibility discharge for hk/hrn, finite-to-general lift, and locality-to-depth bridge.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-06",
-    "latestUpdate": "chronos-urf-rr PR #114 merged the H4.1 certified-family frontier object after PR #97 SiMSLV weakest frontier lemma; added Fn, mu_n, SearchFn, H41_LocalIndistinguishability, explicit h41_c_den = C(k,Delta,r), artifact/status/verifier/test coverage, 492 pytest passes, and lake build success.",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; PR #115 added the repository-native certified depth bridge; PR #116 removed the unused binder plus fixed Python-only CI by tolerating missing lake. Post-merge verification passed: CI/test, Lean Build, Lean CI, verify, lean-proof-portfolio-classification, external-status-lock, targeted pytest, verifier, and lake build.",
     "lastUpdate": "2026-05-04"
   },
   {
