@@ -21,10 +21,10 @@
     "integrity": 99,
     "theoremClosure": 79,
     "ci": "green",
-    "boundary": "Merged setup-python v6 CI/package/path maintenance; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; theorem closure false; no Lean theorem content changed; no Chronos frontier status change; no P vs NP closure.",
+    "boundary": "Merged H4.1 certified-family frontier as AXIOMATIC_FRONTIER_ONLY; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; No Chronos closure; No P vs NP closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
-    "lastUpdated": "2026-05-05",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; PR #111 added the RepositoryNativeCarrierSelection object; PR #112 updated setup-python from v5 to v6 in five workflow files, preserved canonical lowercase chronos/Frontier/CORTriangleChainFrontier.lean, kept the Python entropy audit package under chronos/, restored chronos/Logic/PSH_k_Delta.tex and chronos/tests/__init__.py, removed stray src/, and passed COR verifier, 4 targeted tests, 488 full pytest tests, and lake build.",
+    "lastUpdated": "2026-05-06",
+    "latestUpdate": "chronos-urf-rr PR #114 merged the H4.1 certified-family frontier object after PR #97 SiMSLV weakest frontier lemma; added Fn, mu_n, SearchFn, H41_LocalIndistinguishability, explicit h41_c_den = C(k,Delta,r), artifact/status/verifier/test coverage, 492 pytest passes, and lake build success.",
     "lastUpdate": "2026-05-04"
   },
   {
