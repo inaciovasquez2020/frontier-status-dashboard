@@ -21,10 +21,10 @@
     "integrity": 100,
     "theoremClosure": 82,
     "ci": "green",
-    "boundary": "Merged repository-native certified depth bridge; REPOSITORY_NATIVE_DEPTH_BRIDGE_FORMALIZED; FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; no theorem-level Chronos closure; no P vs NP closure; remaining blockers are admissibility discharge for hk/hrn, finite-to-general lift, and locality-to-depth bridge.",
+    "boundary": "Repository-native conditional bridge merged on main at eb42c88; CI green; FRONTIER_OPEN is preserved; CONDITIONAL_BRIDGE_CONTRACT preserved; No theorem-level H4.1/FGL closure; no theorem-level Chronos closure; no P vs NP closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
-    "lastUpdated": "2026-05-06",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; PR #115 added the repository-native certified depth bridge; PR #116 removed the unused binder plus fixed Python-only CI by tolerating missing lake. Post-merge verification passed: CI/test, Lean Build, Lean CI, verify, lean-proof-portfolio-classification, external-status-lock, targeted pytest, verifier, and lake build.",
+    "lastUpdated": "2026-05-07",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; commit eb42c88 normalized the RepositoryNativeConditionalBridge Lean path; repository-native conditional bridge remains FRONTIER_OPEN / CONDITIONAL_BRIDGE_CONTRACT; all workflows are green: CI, verify, external-status-lock, lean-proof-portfolio-classification, Lean Build, and Lean CI.",
     "lastUpdate": "2026-05-04"
   },
   {
