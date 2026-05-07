@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it using the metadata below."
+title: "frontier-status-dashboard"
+authors:
+  - family-names: "Vasquez"
+    given-names: "Inácio F."
+    orcid: "https://orcid.org/0009-0008-8459-3400"
+repository-code: "https://github.com/inaciovasquez2020/frontier-status-dashboard"
+url: "https://github.com/inaciovasquez2020/frontier-status-dashboard"
+license: "MIT"
