@@ -18,13 +18,13 @@
     "name": "chronos-urf-rr",
     "domain": "Complexity / Graph Rigidity",
     "status": "CERTIFIED_FRONTIER_ONLY",
-    "integrity": 100,
-    "theoremClosure": 82,
+    "integrity": 99,
+    "theoremClosure": 79,
     "ci": "green",
-    "boundary": "Repository-native conditional bridge merged on main at eb42c88; CI green; FRONTIER_OPEN is preserved; CONDITIONAL_BRIDGE_CONTRACT preserved; No theorem-level H4.1/FGL closure; no theorem-level Chronos closure; no P vs NP closure.",
+    "boundary": "Repository-native conditional bridge merged on main at eb42c88; CI green; FRONTIER_OPEN is preserved; CONDITIONAL_BRIDGE_CONTRACT preserved; Conditional prefix-embedding reduction only; No theorem-level H4.1/FGL closure; Does not prove P vs NP; Does not prove terminal Chronos lower bound; no theorem-level Chronos closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
-    "lastUpdated": "2026-05-07",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; commit eb42c88 normalized the RepositoryNativeConditionalBridge Lean path; repository-native conditional bridge remains FRONTIER_OPEN / CONDITIONAL_BRIDGE_CONTRACT; all workflows are green: CI, verify, external-status-lock, lean-proof-portfolio-classification, Lean Build, and Lean CI.",
+    "lastUpdated": "2026-05-08",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; commit eb42c88 normalized the RepositoryNativeConditionalBridge Lean path; repository-native conditional bridge remains FRONTIER_OPEN / CONDITIONAL_BRIDGE_CONTRACT; public-trust cleanup merged with CITATION.cff and make verify surface.",
     "lastUpdate": "2026-05-04"
   },
   {
@@ -87,12 +87,14 @@
     "pinned": true,
     "summary": "Repository metadata snapshot merged in vasquez-index PR #24.",
     "ci": "green",
-    "boundary": "Metadata only; no theorem-level closure, publication acceptance, or mathematical correctness claim.",
+    "boundary": "Public-surface reduction completed; vasquez-index now exposes only the curated front-door repository set; experimental, Clay-adjacent, and frontier repositories are private or archived pending review, preprint release, or external validation; Build PASS does not imply theorem-level closure.",
     "url": "https://github.com/inaciovasquez2020/vasquez-index",
     "integrity": 100,
     "theoremClosure": 0,
     "metadataOnly": true,
-    "excludeFromMetrics": true
+    "excludeFromMetrics": true,
+    "lastUpdated": "2026-05-08",
+    "latestUpdate": "Public GitHub surface reduced to six repositories: profile README, vasquez-index, urf-core, chronos-urf-rr, urf-textbook, and frontier-status-dashboard. Repository sprawl and Clay-adjacent first-impression risk reduced."
   },
   {
     "name": "chronos-prefix-conditioning-embedding-2026-05-03",
@@ -101,12 +103,12 @@
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "description": "Chronos PR #98 prefix-conditioning embedding reduction: replaces the false leave-one-out coordinate-reveal route with a prefix-conditioning chain-rule embedding surface. Boundary: conditional reduction only; does not prove P vs NP; does not prove terminal Chronos lower bound; remaining object is PrefixEmb_{n#} zeta = mu_n on the exact repository search distribution. Source commit: 7379718.",
     "updated": "2026-05-03",
-    "boundary": "Conditional prefix-embedding reduction only; FRONTIER_OPEN is preserved; Does not prove P vs NP; Does not prove terminal Chronos lower bound; No theorem-level H4.1/FGL closure.",
+    "boundary": "Repository-native conditional bridge merged on main at eb42c88; CI green; FRONTIER_OPEN is preserved; CONDITIONAL_BRIDGE_CONTRACT preserved; Conditional prefix-embedding reduction only; No theorem-level H4.1/FGL closure; Does not prove P vs NP; Does not prove terminal Chronos lower bound; no theorem-level Chronos closure.",
     "integrity": 99,
     "theoremClosure": 79,
     "ci": "green",
-    "lastUpdated": "2026-05-05",
-    "latestUpdate": "chronos-urf-rr PR #111 added the RepositoryNativeCarrierSelection Lean artifact, status doc, JSON artifact, verifier, and pytest coverage; post-merge verification passed repository native carrier selection/iso, native trace carrier instance, native carrier binding, CPDL+CCSL witness/gate, CPOL gate, certificate primitive axiom, certificate embedding frontier/interface, explicit IC bridge contract, next frontier status lock, 17 pytest tests, and lake build."
+    "lastUpdated": "2026-05-08",
+    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; commit eb42c88 normalized the RepositoryNativeConditionalBridge Lean path; repository-native conditional bridge remains FRONTIER_OPEN / CONDITIONAL_BRIDGE_CONTRACT; public-trust cleanup merged with CITATION.cff and make verify surface."
   },
   {
     "name": "CorrRank",
