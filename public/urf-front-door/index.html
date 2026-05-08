@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unified Rigidity Framework (URF) — Front Door</title>
+  <meta
+    name="description"
+    content="Canonical entry point to the Unified Rigidity Framework: repos, status, and reading order."
+  />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0b0c10;
+      --fg: #f5f5f5;
+      --muted: #a1a1aa;
+      --card: #15171d;
+      --border: #2a2d35;
+      --green: #34d399;
+      --amber: #fbbf24;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 72px 24px;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 5vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+    h2 {
+      margin-top: 56px;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+    }
+    p { font-size: 1.05rem; }
+    a { color: inherit; text-underline-offset: 4px; }
+    code {
+      background: rgba(255,255,255,0.08);
+      border-radius: 6px;
+      padding: 2px 6px;
+      font-size: 0.9em;
+    }
+    .eyebrow {
+      margin-bottom: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+    }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .card {
+      display: block;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--card);
+      text-decoration: none;
+    }
+    .card:hover { border-color: #6b7280; }
+    .repo {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-weight: 650;
+    }
+    .role {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin-top: 16px;
+    }
+    th, td {
+      padding: 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+      font-size: 0.92rem;
+    }
+    th {
+      color: var(--muted);
+      font-weight: 600;
+      background: rgba(255,255,255,0.04);
+    }
+    tr:last-child td { border-bottom: 0; }
+    .badge {
+      display: inline-block;
+      white-space: nowrap;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 3px 9px;
+      font-size: 0.78rem;
+      font-weight: 650;
+    }
+    .verified {
+      color: var(--green);
+      border-color: rgba(52,211,153,0.45);
+      background: rgba(52,211,153,0.10);
+    }
+    .conditional {
+      color: var(--amber);
+      border-color: rgba(251,191,36,0.45);
+      background: rgba(251,191,36,0.10);
+    }
+    .open { color: var(--muted); }
+    footer {
+      margin-top: 56px;
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Unified Rigidity Framework</div>
+      <h1>URF — Front Door</h1>
+      <p class="muted">
+        Independent research program ·
+        <a href="https://orcid.org/0009-0008-8459-3400">ORCID 0009-0008-8459-3400</a>
+        ·
+        <a href="https://github.com/inaciovasquez2020">GitHub</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>What URF is</h2>
+      <p>
+        The <strong>Unified Rigidity Framework</strong> is a research program that treats
+        combinatorial / graph rigidity, information-theoretic capacity, and formal verification
+        as one object. Its central claim is narrow: a small family of
+        <em>cycle-overlap rank</em> invariants determines when a structure is locally rigid,
+        and the same invariants govern bounds on capacity and dissipation in systems built on
+        top of it. URF ships as a trusted Lean base
+        (<code>urf-core</code>, <code>CorrRank</code>), a reference implementation
+        (<code>chronos-urf-rr</code>), and a set of conditional applications.
+        It is not, and does not claim to be, a resolution of any Millennium-style problem.
+      </p>
+    </section>
+
+    <section>
+      <h2>Five repos to read first</h2>
+      <div class="grid">
+        <a class="card" href="https://github.com/inaciovasquez2020/vasquez-index">
+          <div class="repo">vasquez-index</div>
+          <div class="role">Index</div>
+          <p class="muted">Canonical map of every URF repo, paper, and Zenodo DOI. Start here.</p>
+        </a>
+        <a class="card" href="https://github.com/inaciovasquez2020/urf-core">
+          <div class="repo">urf-core</div>
+          <div class="role">Trusted base</div>
+          <p class="muted">Definitions, schemas, and verification artifacts the rest of URF depends on.</p>
+        </a>
+        <a class="card" href="https://github.com/inaciovasquez2020/chronos-urf-rr">
+          <div class="repo">chronos-urf-rr</div>
+          <div class="role">Reference impl.</div>
+          <p class="muted">Executable URF/Chronos implementation with verified build and test surface.</p>
+        </a>
+        <a class="card" href="https://github.com/inaciovasquez2020/CorrRank">
+          <div class="repo">CorrRank</div>
+          <div class="role">Lean formalization</div>
+          <p class="muted">Cycle-Overlap Rank rigidity and the COR → FOᵏ → EntropyDepth bridge, in Lean 4.</p>
+        </a>
+        <a class="card" href="https://github.com/inaciovasquez2020/urf-textbook">
+          <div class="repo">urf-textbook</div>
+          <div class="role">Exposition</div>
+          <p class="muted">Long-form, citation-ready exposition of URF for external readers.</p>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Status: Verified Surface / Conditional / Open</h2>
+      <p class="muted">Theorem-level closure is claimed only where explicitly named.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>Result</th>
+            <th>Status</th>
+            <th>Where</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Cycle-Overlap Rank rigidity</td>
+            <td>Core lemmas formalized in Lean 4</td>
+            <td><span class="badge verified">Verified Surface</span></td>
+            <td><code>CorrRank</code></td>
+          </tr>
+          <tr>
+            <td>COR → FOᵏ locality bridge</td>
+            <td>Local cycle-overlap invariants, executable proofs</td>
+            <td><span class="badge verified">Verified Surface</span></td>
+            <td><code>overlap-rigidity-lean-dev</code></td>
+          </tr>
+          <tr>
+            <td>URF schemas & verification artifacts</td>
+            <td>Trusted base, reproducible build</td>
+            <td><span class="badge verified">Verified Surface</span></td>
+            <td><code>urf-core</code></td>
+          </tr>
+          <tr>
+            <td>Chronos reference implementation</td>
+            <td>Executable, test-covered; conformance vs. theory</td>
+            <td><span class="badge conditional">Conditional</span></td>
+            <td><code>chronos-urf-rr</code></td>
+          </tr>
+          <tr>
+            <td>Biological friction bounds</td>
+            <td>Structural limits from capacity & dissipation</td>
+            <td><span class="badge conditional">Conditional</span></td>
+            <td><code>biological-friction-framework</code></td>
+          </tr>
+          <tr>
+            <td>Poincaré combinatorial descent</td>
+            <td>Conditional framework via Pachner moves</td>
+            <td><span class="badge conditional">Conditional</span></td>
+            <td><code>poincare-new-derivation</code></td>
+          </tr>
+          <tr>
+            <td>Yang–Mills / OS quantization</td>
+            <td>Exploratory tools and documentation only</td>
+            <td><span class="badge open">Open</span></td>
+            <td><code>ym-os-quantization</code></td>
+          </tr>
+          <tr>
+            <td>Radiative rigidity</td>
+            <td>Rank-1 constraint hypothesis, consistency tests</td>
+            <td><span class="badge open">Open</span></td>
+            <td><code>radiative-rigidity</code></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        <strong>Verified Surface.</strong> Repository-surface claim verified by Lean, tests,
+        or reproducible artifacts; not theorem-level closure unless explicitly stated.
+      </p>
+    </section>
+
+    <footer>
+      For external reviewers:
+      <a href="https://github.com/inaciovasquez2020/vasquez-index">vasquez-index</a>
+      is the canonical map. This page is a curated subset.
+    </footer>
+  </main>
+</body>
+</html>
