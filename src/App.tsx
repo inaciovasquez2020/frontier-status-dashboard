@@ -223,6 +223,8 @@ export default function FrontierStatusDashboard() {
 
   return (
     <main className="min-h-screen bg-slate-50 p-6 text-slate-900">
+  <a className="text-sm underline underline-offset-4" href="/urf-front-door/">URF Front Door</a>
+
       <div className="mx-auto max-w-7xl space-y-6">
         <motion.section
           initial={{ opacity: 0, y: 12 }}
