@@ -17,15 +17,17 @@
   {
     "name": "chronos-urf-rr",
     "domain": "Complexity / Graph Rigidity",
-    "status": "CERTIFIED_FRONTIER_ONLY",
+    "status": "Status-Locked Frontier",
     "integrity": 99,
     "theoremClosure": 79,
     "ci": "green",
-    "boundary": "Repository-native conditional bridge merged on main at eb42c88; CI green; FRONTIER_OPEN is preserved; CONDITIONAL_BRIDGE_CONTRACT preserved; Conditional prefix-embedding reduction only; No theorem-level H4.1/FGL closure; Does not prove P vs NP; Does not prove terminal Chronos lower bound; no theorem-level Chronos closure.",
+    "boundary": "NormalizedRankDefect is a sufficient frontier only. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No proof of NormalizedRankDefect, RankRateGap, CountingFiberSeparation, FiberMassBalance, UniversalFiberEntropyGap, Depth Bridge, Chronos-RR, H4.1/FGL, or P vs NP is claimed.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-08",
-    "latestUpdate": "chronos-urf-rr PR #97 merged the SiMSLV weakest frontier lemma; commit eb42c88 normalized the RepositoryNativeConditionalBridge Lean path; repository-native conditional bridge remains FRONTIER_OPEN / CONDITIONAL_BRIDGE_CONTRACT; public-trust cleanup merged with CITATION.cff and make verify surface.",
-    "lastUpdate": "2026-05-04"
+    "latestUpdate": "PR #128 merged NormalizedRankDefect as a sufficient frontier for RankRateGap, CountingFiberSeparation, FiberMassBalance, and UniversalFiberEntropyGap; verifier passed, targeted pytest passed, full pytest passed, and lake build passed. Previous retained marker: PR #97 SiMSLV weakest frontier lemma.",
+    "lastUpdate": "2026-05-04",
+    "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/128",
+    "summary": "NormalizedRankDefect frontier merged to main as a status-locked reduction surface; FRONTIER_OPEN preserved."
   },
   {
     "name": "ym-os-quantization",
