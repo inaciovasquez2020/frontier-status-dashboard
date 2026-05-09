@@ -17,6 +17,8 @@ It exposes the public status surface for hard research claims:
 Boundary: dashboard success certifies status visibility and repository-health signals only. It does not convert open frontiers, conditional bridges, or interface objects into theorem-level closure.
 <!-- VERIFIED_FRONTIER_TRACKING_TRANSPARENCY:END -->
 
+- Verified Frontier Tracking public door complete: `docs/status/VERIFIED_FRONTIER_TRACKING_PUBLIC_DOOR_2026_05_09.md`
+
 
 <!-- VERIFIED_FRONTIER_TRACKING_DOOR:BEGIN -->
 ## Verified Frontier Tracking Transparency Proof
