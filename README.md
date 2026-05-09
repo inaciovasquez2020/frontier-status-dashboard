@@ -1,5 +1,22 @@
 # Frontier Status Dashboard
 
+<!-- VERIFIED_FRONTIER_TRACKING_DOOR:BEGIN -->
+## Verified Frontier Tracking Transparency Proof
+
+This dashboard is the first public proof of transparency for **Verified Frontier Tracking**.
+
+It exists to show, in one place:
+
+| Signal | Meaning |
+|---|---|
+| CI health | Whether the public verification surface currently builds or tests |
+| Repository integrity | Whether the repo’s declared status artifacts remain internally consistent |
+| Theorem-boundary status | Whether a result is proved, conditional, interface-only, or still open |
+| External-review readiness | Whether an outside reader can inspect the current claim boundary |
+
+Boundary: dashboard success certifies status visibility and repository-health signals only. It does not convert open frontiers, conditional bridges, or interface objects into theorem-level closure.
+<!-- VERIFIED_FRONTIER_TRACKING_DOOR:END -->
+
 ## Latest verified update
 
 - Date: 2026-05-02
@@ -55,4 +72,3 @@ https://github.com/inaciovasquez2020/frontier-status-dashboard
 ## Recent Status Updates
 
 - Biological Friction Framework: quotient-linear substrate SOLVED/PUSHED in biological-friction-framework commit 3022c38; graph-theoretic quotient-independence remains FRONTIER_OPEN.
-
