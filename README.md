@@ -1,5 +1,23 @@
 # Frontier Status Dashboard
 
+<!-- VERIFIED_FRONTIER_TRACKING_TRANSPARENCY:BEGIN -->
+## Verified Frontier Tracking Transparency Proof
+
+This dashboard is the first public proof of transparency for **Verified Frontier Tracking**.
+
+It exposes the public status surface for hard research claims:
+
+| Signal | Meaning |
+|---|---|
+| CI health | Whether the public verification surface currently builds or tests |
+| Repository integrity | Whether declared status artifacts remain internally consistent |
+| Theorem-boundary status | Whether a result is proved, conditional, interface-only, or still open |
+| External-review readiness | Whether an outside reader can inspect the current claim boundary |
+
+Boundary: dashboard success certifies status visibility and repository-health signals only. It does not convert open frontiers, conditional bridges, or interface objects into theorem-level closure.
+<!-- VERIFIED_FRONTIER_TRACKING_TRANSPARENCY:END -->
+
+
 <!-- VERIFIED_FRONTIER_TRACKING_DOOR:BEGIN -->
 ## Verified Frontier Tracking Transparency Proof
 
