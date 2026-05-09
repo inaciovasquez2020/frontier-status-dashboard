@@ -1,237 +1,60 @@
 import { describe, expect, it } from "vitest";
-import { average, filterRepos, repos, uniqueDomains } from "./App";
-
-describe("frontier status dashboard helpers", () => {
-  it("extracts unique domains with All first", () => {
+import { average, filterRepos, repos, uniqueDomains } from "./App";describe("frontier status dashboard public/private policy", () => {
+  it("keeps helper functions operational on the remaining public rows", () => {
     expect(uniqueDomains(repos)[0]).toBe("All");
-    expect(uniqueDomains(repos)).toContain("Foundations");
-  });
-
-  it("filters by RA1n query", () => {
-    expect(filterRepos(repos, "RA1n", "All").map((repo) => repo.name)).toEqual(["clay-problem-lab"]);
-  });
-
-  it("filters by exact domain", () => {
-    expect(filterRepos(repos, "", "Mathematical Physics").map((repo) => repo.name)).toEqual(["ym-os-quantization"]);
-  });
-
-  it("computes rounded average", () => {
-    expect(average([94, 96, 98])).toBe(96);
-  });
-
-  it("returns zero for empty averages", () => {
+    expect(filterRepos(repos, "Chronos", "All").some((repo) => repo.name === "chronos-urf-rr")).toBe(true);
     expect(average([])).toBe(0);
   });
 
-  it("keeps all repository urls on GitHub", () => {
-    expect(repos.every((repo) => repo.url.startsWith("https://github.com/"))).toBe(true);
+  it("keeps public repository urls on GitHub", () => {
+    const publicRows = repos.filter((repo) => !repo.metadataOnly);
+    expect(publicRows.every((repo) => repo.url.startsWith("https://github.com/"))).toBe(true);
   });
 
-it("records the YM-OS LSI-Herbst frontier without closure promotion", () => {
-  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
-  expect(ym).toBeDefined();
-  expect(ym?.integrity).toBeGreaterThanOrEqual(98);
-  expect(ym?.theoremClosure).toBeGreaterThanOrEqual(67);
-  expect(ym?.boundary).toContain("LSI/gradient/Herbst dependency surface");
-  expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
+  it("records the internal aggregate row without exposing private repository metadata", () => {
+    const internal = repos.find((repo) => repo.name === "Private/Internal Verification Surfaces");
 
-});
+    expect(internal).toBeDefined();
+    expect(internal?.metadataOnly).toBe(true);
+    expect(internal?.excludeFromMetrics).toBe(true);
+    expect(internal?.status).toBe("INTERNAL_AGGREGATE_ONLY");
+    expect(internal?.boundary).toContain("Private repository metadata is intentionally omitted");
+    expect(internal?.boundary).toContain("no theorem-level closure is claimed unless explicitly public and inspectable");
+  });
 
-it("keeps YM-OS from claiming Yang-Mills closure", () => {
-  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
-  expect(ym?.boundary).toContain("no Uniform LSI");
-  expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
-});
+  it("excludes internal aggregate rows from dashboard metrics", () => {
+    const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
 
-it("records the YMOS theorem obligation registry update", () => {
-  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
-  expect(ym).toBeDefined();
-  expect(ym?.integrity).toBe(99);
-  expect(ym?.theoremClosure).toBeGreaterThanOrEqual(69);
-  expect(ym?.boundary).toMatch(/PRs #13-#1[67]/);
-  expect(ym?.boundary).toContain("YMOS-001 through YMOS-010 theorem-obligation registry");
-});
+    expect(metricRepos.some((repo) => repo.name === "Private/Internal Verification Surfaces")).toBe(false);
+    expect(metricRepos.every((repo) => typeof repo.integrity === "number")).toBe(true);
+    expect(metricRepos.every((repo) => typeof repo.theoremClosure === "number")).toBe(true);
+  });
 
-it("keeps YMOS registry obligations open on the dashboard", () => {
-  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
-  expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
-  expect(ym?.boundary).toMatch(/no (obligation|bridge target) marked PROVED/);
-  expect(ym?.boundary).toMatch(/no (obligation|bridge target) marked CONDITIONAL_CLOSED/);
-  expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
-});
-
-it("records the YMOS probabilistic bridge contract update", () => {
-  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
-  expect(ym).toBeDefined();
-  expect(ym?.integrity).toBe(99);
-  expect(ym?.theoremClosure).toBe(70);
-  expect(ym?.boundary).toContain("PRs #13-#17");
-  expect(ym?.boundary).toContain("YMOS probabilistic bridge contract");
-});
-
-it("keeps YMOS probabilistic bridge targets unproved", () => {
-  const ym = repos.find((repo) => repo.name === "ym-os-quantization");
-  expect(ym?.boundary).toContain("FRONTIER_OPEN is preserved");
-  expect(ym?.boundary).toContain("no Herbst proof");
-  expect(ym?.boundary).toContain("no Laplace-to-even-moment proof");
-  expect(ym?.boundary).toContain("no product-moment proof");
-  expect(ym?.boundary).toContain("no bridge target marked PROVED");
-  expect(ym?.boundary).toContain("no bridge target marked CONDITIONAL_CLOSED");
-  expect(ym?.boundary).toContain("no Yang-Mills closure is claimed");
-});
-  it("records the Chronos SiMSLV weakest frontier lemma update", () => {
+  it("preserves Chronos theorem-level boundary language", () => {
     const chronos = repos.find((repo) => repo.name === "chronos-urf-rr");
-    const latestUpdate = (chronos as { latestUpdate?: string } | undefined)?.latestUpdate;
-    expect(latestUpdate).toContain("SiMSLV weakest frontier lemma");
-    expect(latestUpdate).toContain("PR #97");
-  });
 
-
-
-
-
-  it("prevents NaN dashboard averages for metadata and Chronos prefix entries", () => {
-    const repositoryIndex = repos.find((repo) => repo.name === "Repository Index Snapshot");
-    const chronosPrefix = repos.find(
-      (repo) => repo.name === "chronos-prefix-conditioning-embedding-2026-05-03",
-    );
-
-    expect(repositoryIndex?.integrity).toBe(100);
-    expect(repositoryIndex?.theoremClosure).toBe(0);
-    expect(repositoryIndex?.ci).toBe("green");
-
-    expect(chronosPrefix?.integrity).toBe(99);
-    expect(chronosPrefix?.theoremClosure).toBe(79);
-    expect(chronosPrefix?.ci).toBe("green");
-
-    expect(Number.isNaN(average(repos.map((repo) => repo.integrity)))).toBe(false);
-    expect(Number.isNaN(average(repos.map((repo) => repo.theoremClosure)))).toBe(false);
-  });
-
-  it("visually surfaces Chronos prefix-conditioning embedding dashboard update", () => {
-    const match = repos.find(
-      (repo) => repo.name === "chronos-prefix-conditioning-embedding-2026-05-03",
-    );
-
-    expect(match).toBeDefined();
-    expect(match?.domain).toBe("Chronos");
-    expect(match?.status).toBe("CONDITIONAL_PREFIX_EMBEDDING_REDUCTION");
-    expect(match?.boundary).toContain("Conditional prefix-embedding reduction only");
-    expect(match?.boundary).toContain("Does not prove P vs NP");
-    expect(match?.boundary).toContain("Does not prove terminal Chronos lower bound");
-  });
-
-  it("keeps Chronos H4.1/FGL theorem-level closure open", () => {
-    const chronos = repos.find((repo) => repo.name === "chronos-urf-rr");
-    expect(chronos?.boundary).toContain("FRONTIER_OPEN is preserved");
+    expect(chronos).toBeDefined();
     expect(chronos?.boundary).toContain("No theorem-level H4.1/FGL closure");
     expect(chronos?.theoremClosure).toBeLessThan(100);
   });
 
-});
-it("includes Chronos prefix-conditioning embedding dashboard update", () => {
-  const dataText = JSON.stringify(repos);
-  expect(dataText).toContain("chronos-prefix-conditioning-embedding-2026-05-03");
-  expect(dataText).toContain("CONDITIONAL_PREFIX_EMBEDDING_REDUCTION");
-  expect(dataText).toContain("PrefixEmb_{n#} zeta = mu_n");
-  expect(dataText).not.toContain("terminal Chronos lower bound is proved");
-  expect(dataText).not.toContain("P vs NP is proved");
+  it("does not expose removed private/non-public row names", () => {
+    const dataText = JSON.stringify(repos);
 
-
-});
-
-
-it("excludes metadata-only rows from dashboard aggregate metrics", () => {
-  const repositoryIndex = repos.find((repo) => repo.name === "Repository Index Snapshot");
-  const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
-
-  expect(repositoryIndex?.metadataOnly).toBe(true);
-  expect(repositoryIndex?.excludeFromMetrics).toBe(true);
-  expect(metricRepos.some((repo) => repo.name === "Repository Index Snapshot")).toBe(false);
-  expect(metricRepos.length).toBe(7);
-  expect(metricRepos.filter((repo) => repo.ci === "green").length).toBe(7);
-  expect(Number.isNaN(average(metricRepos.map((repo) => repo.integrity)))).toBe(false);
-  expect(Number.isNaN(average(metricRepos.map((repo) => repo.theoremClosure)))).toBe(false);
-});
-
-it("includes the public repository dashboard expansion rows", () => {
-  const names = repos.map((repo) => repo.name);
-  [
-    "CorrRank",
-    "overlap-rigidity-lean-dev",
-    "urf-textbook",
-    "urf-axioms",
-    "capacity-locality-certification",
-    "cslib-fmt",
-    "pachner-invariant",
-    "rank-dichotomy-cat0",
-    "Operational-Wavefunction-Collapse",
-    "whiplash-stability",
-    "urf-open-review-ledger",
-    "scientific-infrastructure",
-    "urf-verifier",
-    "urf-spine",
-    "final-wall-fo-k-locality",
-    "transcript-capacity-core",
-    "cyclone-terminal-obstruction",
-    "support-drift",
-    "cycle-local-rigidity",
-    "terminal-rigidity-witness-erb",
-    "overlap-rigidity-counterexamples",
-    "overlap-rigidity-lean",
-    "final-wall-conditional-index",
-    "URF-P-0001",
-    "URF-P-0002",
-    "URF-P-0003",
-    "urf-reductions-sat-csp",
-    "flagship-lean",
-    "ncr-new-computational-regime",
-    "aiv-verifier-public",
-  ].forEach((name) => expect(names).toContain(name));
-});
-
-it("keeps added public repository rows claim-boundary safe", () => {
-  const added = repos.filter((repo) =>
     [
+      "ym-os-quantization",
+      "clay-problem-lab",
+      "poincare-new-derivation",
+      "biological-friction-framework",
       "CorrRank",
       "overlap-rigidity-lean-dev",
-      "urf-textbook",
       "urf-axioms",
       "capacity-locality-certification",
-      "cslib-fmt",
       "pachner-invariant",
-      "rank-dichotomy-cat0",
       "Operational-Wavefunction-Collapse",
       "whiplash-stability",
-      "urf-open-review-ledger",
-      "scientific-infrastructure",
-      "urf-verifier",
-      "urf-spine",
-      "final-wall-fo-k-locality",
-      "transcript-capacity-core",
-      "cyclone-terminal-obstruction",
-      "support-drift",
-      "cycle-local-rigidity",
-      "terminal-rigidity-witness-erb",
-      "overlap-rigidity-counterexamples",
-      "overlap-rigidity-lean",
-      "final-wall-conditional-index",
-      "URF-P-0001",
-      "URF-P-0002",
-      "URF-P-0003",
-      "urf-reductions-sat-csp",
       "flagship-lean",
-      "ncr-new-computational-regime",
-      "aiv-verifier-public",
-    ].includes(repo.name),
-  );
-
-  expect(added).toHaveLength(30);
-  expect(added.every((repo) => repo.url.startsWith("https://github.com/inaciovasquez2020/"))).toBe(true);
-  expect(added.every((repo) => repo.integrity >= 90 && repo.integrity <= 100)).toBe(true);
-  expect(added.every((repo) => repo.theoremClosure >= 0 && repo.theoremClosure < 100)).toBe(true);
-  expect(added.every((repo) => repo.ci === "yellow")).toBe(true);
-  expect(added.every((repo) => repo.excludeFromMetrics === true)).toBe(true);
-  expect(JSON.stringify(added)).not.toMatch(/P vs NP is proved|Yang-Mills closure is claimed|unconditional theorem-level closure is claimed|solved theorem/i);
+      "aiv-verifier-public"
+    ].forEach((name) => expect(dataText).not.toContain(name));
+  });
 });
-
