@@ -1,1 +1,122 @@
 @import "tailwindcss";
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--border, #d8dee9);
+  border-radius: 999px;
+  padding: 0.15rem 0.55rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 0.42rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  background: currentColor;
+}
+
+.status-verified {
+  color: oklch(0.62 0.17 150);
+}
+
+.status-reviewed {
+  color: oklch(0.62 0.14 230);
+}
+
+.status-argued {
+  color: oklch(0.72 0.16 75);
+}
+
+.status-open {
+  color: oklch(0.58 0.04 260);
+}
+
+.verification-shell {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.verification-shell h1 {
+  margin-top: 1.5rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1;
+}
+
+.verification-shell h2 {
+  margin-top: 2rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.verification-lede {
+  max-width: 680px;
+  opacity: 0.75;
+  line-height: 1.7;
+}
+
+.verification-back,
+.verification-shell a {
+  color: inherit;
+  text-underline-offset: 0.18em;
+}
+
+.verification-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.verification-muted {
+  opacity: 0.65;
+}
+
+.verification-table-wrap {
+  margin-top: 2rem;
+  overflow-x: auto;
+  border: 1px solid var(--border, #d8dee9);
+  border-radius: 0.9rem;
+}
+
+.verification-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.verification-table th,
+.verification-table td {
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--border, #d8dee9);
+  text-align: left;
+  vertical-align: middle;
+}
+
+.verification-table thead th {
+  border-top: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.verification-legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+}
+
+.verification-legend p {
+  margin-top: 0.45rem;
+  opacity: 0.7;
+}
