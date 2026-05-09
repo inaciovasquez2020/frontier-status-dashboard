@@ -1,3 +1,4 @@
+import { VerificationExplorer } from "./components/VerificationExplorer";
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import rawRepos from "./data/status-data.json";
@@ -210,6 +211,7 @@ function Bar({ value }: { value: number }) {
 }
 
 export default function FrontierStatusDashboard() {
+  if (window.location.pathname.startsWith("/verification")) return <VerificationExplorer />;
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("All");
 
