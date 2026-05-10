@@ -98,3 +98,11 @@ https://github.com/inaciovasquez2020/frontier-status-dashboard
 Private repository metadata is intentionally omitted from the public dashboard. Public rows are limited to externally inspectable repositories or intentionally disclosed aggregate status.
 
 Boundary: no theorem-level closure is claimed unless explicitly public and inspectable.
+
+## Chronos PR #217 public status
+
+Chronos PR #217 merged the RankRateGap axiomatic bridge.
+
+Boundary: axiom-dependent bridge only; no theorem-level RankRateGap proof, no unconditional UniversalFiberEntropyGap closure, no DepthBridge beyond selected final carrier domain, no Chronos-RR theorem promotion, no P vs NP closure, and no Clay-problem closure.
+
+Boundary guard: No theorem-level H4.1/FGL closure; FRONTIER_OPEN is preserved; No UniversalFiberEntropyGap from Reg-SNF; Axiom-dependent RankRateGap bridge only; no theorem-level RankRateGap proof; no unconditional UniversalFiberEntropyGap closure; no DepthBridge beyond selected final carrier domain; no Chronos-RR theorem promotion; no P vs NP or Clay-problem closure.
