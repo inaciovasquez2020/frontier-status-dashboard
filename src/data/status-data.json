@@ -21,14 +21,17 @@
     "integrity": 99,
     "theoremClosure": 82,
     "ci": "green",
-    "boundary": "PR #199 records an open frontier status snapshot after the zero-arity, Reg-SNF, selected DepthBridge, and semantic non-promotion sequence. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No UniversalFiberEntropyGap from Reg-SNF, no DepthBridge extension beyond selected final carrier domain, no Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure is claimed.",
+    "boundary": "FRONTIER_OPEN is preserved; No theorem-level H4.1/FGL closure; No UniversalFiberEntropyGap from Reg-SNF; CarrierRegistryExhaustiveness remains open; no unrestricted Reg-SNF closure; no DepthBridge extension beyond selected final carrier domain; no Chronos-RR, P vs NP, or Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-09",
-    "latestUpdate": "PR #199 merged the open frontier status snapshot: zero-arity representation/reduction, unrestricted Reg-SNF over RealChronosAdmissiblePredicate ChronosRegistry ChronosTraceFamily, selected-carrier DepthBridge interface connection, and semantic non-promotion locks are recorded; FRONTIER_OPEN remains active.",
+    "latestUpdate": "CarrierRegistryExhaustiveness frontier added; repository-registered Reg-SNF closure package verified.",
     "lastUpdate": "2026-05-09",
     "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/199",
     "summary": "Open frontier status snapshot merged to main; verified surfaces are recorded while UniversalFiberEntropyGap from Reg-SNF, DepthBridge extension, Chronos-RR, H4.1/FGL, P vs NP, and Clay closure remain open.",
-    "latestArtifact": "Open frontier status snapshot"
+    "latestArtifact": "Open frontier status snapshot",
+    "latestPR": "#200",
+    "frontierStatus": "FRONTIER_OPEN",
+    "theoremStatus": "WEAKENED_THEOREM_PACKAGE"
   },
   {
     "name": "urf-textbook",
