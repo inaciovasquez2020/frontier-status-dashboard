@@ -17,17 +17,18 @@
   {
     "name": "chronos-urf-rr",
     "domain": "Complexity / Graph Rigidity",
-    "status": "Status-Locked Frontier",
+    "status": "FRONTIER_OPEN / Status-Locked Frontier",
     "integrity": 99,
-    "theoremClosure": 79,
+    "theoremClosure": 82,
     "ci": "green",
-    "boundary": "NormalizedRankDefect is a sufficient frontier only. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No proof of NormalizedRankDefect, RankRateGap, CountingFiberSeparation, FiberMassBalance, UniversalFiberEntropyGap, Depth Bridge, Chronos-RR, H4.1/FGL, or P vs NP is claimed.",
+    "boundary": "PR #199 records an open frontier status snapshot after the zero-arity, Reg-SNF, selected DepthBridge, and semantic non-promotion sequence. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No UniversalFiberEntropyGap from Reg-SNF, no DepthBridge extension beyond selected final carrier domain, no Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure is claimed.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
-    "lastUpdated": "2026-05-08",
-    "latestUpdate": "PR #128 merged NormalizedRankDefect as a sufficient frontier for RankRateGap, CountingFiberSeparation, FiberMassBalance, and UniversalFiberEntropyGap; verifier passed, targeted pytest passed, full pytest passed, and lake build passed. Previous retained marker: PR #97 SiMSLV weakest frontier lemma.",
-    "lastUpdate": "2026-05-04",
-    "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/128",
-    "summary": "NormalizedRankDefect frontier merged to main as a status-locked reduction surface; FRONTIER_OPEN preserved."
+    "lastUpdated": "2026-05-09",
+    "latestUpdate": "PR #199 merged the open frontier status snapshot: zero-arity representation/reduction, unrestricted Reg-SNF over RealChronosAdmissiblePredicate ChronosRegistry ChronosTraceFamily, selected-carrier DepthBridge interface connection, and semantic non-promotion locks are recorded; FRONTIER_OPEN remains active.",
+    "lastUpdate": "2026-05-09",
+    "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/199",
+    "summary": "Open frontier status snapshot merged to main; verified surfaces are recorded while UniversalFiberEntropyGap from Reg-SNF, DepthBridge extension, Chronos-RR, H4.1/FGL, P vs NP, and Clay closure remain open.",
+    "latestArtifact": "Open frontier status snapshot"
   },
   {
     "name": "urf-textbook",

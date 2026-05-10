@@ -76,14 +76,14 @@ export const CLAIMS: Claim[] = [
     id: "chronos-selected-carrier-surfaces",
     title: "Chronos selected-carrier verified surfaces",
     statement:
-      "Selected-carrier bridges and repository-native verification surfaces are tracked separately from unrestricted Chronos-RR closure.",
+      "Selected-carrier bridges, unrestricted Reg-SNF over the current real Chronos-admissible predicate, and repository-native verification surfaces are tracked separately from unrestricted Chronos-RR closure.",
     status: "verified-surface",
     artifactUrl: "https://github.com/inaciovasquez2020/chronos-urf-rr",
     artifactLabel: "chronos-urf-rr",
     lastChecked: "2026-05-09",
     dependencies: ["chronos-frontier-open-boundary"],
     scope:
-      "Covers selected-carrier and repository-native verified surfaces only.",
+      "Covers selected-carrier, zero-arity, Reg-SNF, and repository-native verified surfaces only.",
     limitations:
       "Does not prove unrestricted Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure.",
   },
@@ -91,7 +91,7 @@ export const CLAIMS: Claim[] = [
     id: "chronos-frontier-open-boundary",
     title: "Chronos frontier-open boundary",
     statement:
-      "Universal Fiber Entropy Gap, unrestricted admissible-predicate coverage, and full depth-bridge closure remain explicit frontiers.",
+      "Universal Fiber Entropy Gap from Reg-SNF, DepthBridge extension beyond the selected final carrier domain, Chronos-RR, H4.1/FGL, P vs NP, and Clay-problem closure remain explicit frontiers.",
     status: "open",
     artifactUrl: "https://github.com/inaciovasquez2020/chronos-urf-rr",
     artifactLabel: "chronos-urf-rr",
@@ -99,7 +99,7 @@ export const CLAIMS: Claim[] = [
     scope:
       "Records the boundary between verified surfaces and theorem-level closure.",
     limitations:
-      "No frontier theorem is proved by this status entry.",
+      "No frontier theorem is proved by this status entry; PR #199 is a status snapshot, not a theorem-level closure artifact.",
   },
   {
     id: "analytic-entropy-frontier-contract",
