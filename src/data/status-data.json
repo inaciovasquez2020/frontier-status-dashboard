@@ -97,5 +97,18 @@
     "boundary": "No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No P vs NP result. No Clay-problem closure.",
     "domain": "Proof Hygiene",
     "url": "https://github.com/inaciovasquez2020/fo4-constraint-isolation"
+  },
+  {
+    "id": "urf-11-translation-subproblem-registry",
+    "name": "URF-11 Translation Subproblem Registry",
+    "domain": "Registry / Translation",
+    "status": "URF11_REGISTRY_ONLY",
+    "url": "https://github.com/inaciovasquez2020/urf-11-translation-subproblem-registry",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "boundary": "No unrestricted Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No P vs NP. No Clay-problem closure. No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem.",
+    "summary": "Public registry/status reference for URF-11 translation and subproblem tracking.",
+    "initialCommit": "22a8e88",
+    "sourceOfTruthGuardMerge": "ed3e5b9"
   }
 ]
