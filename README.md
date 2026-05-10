@@ -106,3 +106,12 @@ Chronos PR #217 merged the RankRateGap axiomatic bridge.
 Boundary: axiom-dependent bridge only; no theorem-level RankRateGap proof, no unconditional UniversalFiberEntropyGap closure, no DepthBridge beyond selected final carrier domain, no Chronos-RR theorem promotion, no P vs NP closure, and no Clay-problem closure.
 
 Boundary guard: No theorem-level H4.1/FGL closure; FRONTIER_OPEN is preserved; No UniversalFiberEntropyGap from Reg-SNF; Axiom-dependent RankRateGap bridge only; no theorem-level RankRateGap proof; no unconditional UniversalFiberEntropyGap closure; no DepthBridge beyond selected final carrier domain; no Chronos-RR theorem promotion; no P vs NP or Clay-problem closure.
+
+## Chronos Lean library target exposure
+
+- Date: 2026-05-10
+- Repository: `chronos-urf-rr`
+- Commit: `23b0a96`
+- Status: `LEAN_LIBRARY_TARGET_EXPOSED`
+- Update: Chronos Lean library target exposed and `XorLemmas` proof mechanics repaired.
+- Boundary: build/exposure/proof-mechanics repair only; no theorem-level Chronos-RR, UniversalFiberEntropyGap, unrestricted H4.1/FGL, P vs NP, or Clay-problem closure.
