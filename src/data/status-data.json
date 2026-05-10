@@ -21,28 +21,30 @@
     "integrity": 99,
     "theoremClosure": 82,
     "ci": "green",
-    "boundary": "SELECTED_DOMAIN_OBSERVATION_LAYER_CLOSED: Chronos PR #211 closes the H4.1/FGL observation-extraction layer only on H4_1_FGL_SelectedTheoremDomain. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No UniversalFiberEntropyGap from Reg-SNF. Boundary preserved: no arbitrary semantic final-carrier closure; no separating-observable existence for arbitrary semantic final carriers; no unrestricted H4.1/FGL closure; no UniversalFiberEntropyGap; no Chronos-RR; no P vs NP; no Clay-problem closure.",
+    "boundary": "SELECTED_DOMAIN_GAP_SOUNDNESS_CLOSED: Chronos PR #212 closes final selected-carrier gap/soundness only on H4_1_FGL_SelectedTheoremDomain. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No UniversalFiberEntropyGap from Reg-SNF. Boundary preserved: no arbitrary semantic final-carrier closure; no separating-observable existence for arbitrary semantic final carriers; no unrestricted H4.1/FGL closure; no UniversalFiberEntropyGap; no Chronos-RR; no P vs NP; no Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-09",
     "latestUpdate": "CarrierRegistryExhaustiveness frontier added; repository-registered Reg-SNF closure package verified.",
     "lastUpdate": "2026-05-09",
-    "latestPr": "#211",
+    "latestPr": "#212",
     "summary": "Open frontier status snapshot merged to main; verified surfaces are recorded while UniversalFiberEntropyGap from Reg-SNF, DepthBridge extension, Chronos-RR, H4.1/FGL, P vs NP, and Clay closure remain open.",
     "latestArtifact": "Open frontier status snapshot",
-    "latestPR": "#211",
+    "latestPR": "#212",
     "frontierStatus": "FRONTIER_OPEN",
     "theoremStatus": "WEAKENED_THEOREM_PACKAGE",
-    "latestPrTitle": "formalize H4.1 FGL final selected input closure",
+    "latestPrTitle": "formalize H4.1 FGL final selected input gap soundness",
     "latestCommitStatus": "merged",
     "observationLayerStatus": "SELECTED_DOMAIN_OBSERVATION_LAYER_CLOSED",
     "theoremDomain": "H4_1_FGL_SelectedTheoremDomain",
     "closedOnSelectedDomain": [
       "explicit separating observable existence",
       "H4_1_FGL_MissingObservationExtractionWitness",
-      "H4_1_FGL_FinalCarrierObservationExtractionTarget"
+      "H4_1_FGL_FinalCarrierObservationExtractionTarget",
+      "H4_1_FGL_FinalSelectedCarrierGapSoundness"
     ],
     "remainingBoundary": [
       "no arbitrary semantic final-carrier closure",
+      "no separating-observable existence for arbitrary semantic final carriers",
       "no unrestricted H4.1/FGL closure",
       "no UniversalFiberEntropyGap",
       "no Chronos-RR",
@@ -50,9 +52,11 @@
       "no Clay-problem closure"
     ],
     "priorStatusFieldPreservedAs": "FRONTIER_OPEN / Status-Locked Frontier",
-    "chronosStatus": "SELECTED_DOMAIN_OBSERVATION_LAYER_CLOSED",
-    "latestPrUrl": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/211",
-    "referencePrUrl": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/199"
+    "chronosStatus": "SELECTED_DOMAIN_GAP_SOUNDNESS_CLOSED",
+    "latestPrUrl": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/212",
+    "referencePrUrl": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/199",
+    "gapSoundnessStatus": "SELECTED_DOMAIN_GAP_SOUNDNESS_CLOSED",
+    "remainingSelectedDomainFrontier": "none inside selected-domain H4.1/FGL observation-to-gap/soundness bridge"
   },
   {
     "name": "urf-textbook",
