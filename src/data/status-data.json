@@ -83,5 +83,19 @@
     "excludeFromMetrics": true,
     "lastUpdate": "2026-05-09",
     "summary": "Aggregate placeholder replacing private/non-public repository rows on the public dashboard."
+  },
+  {
+    "id": "fo4-constraint-isolation",
+    "name": "FO4 Constraint Isolation",
+    "repository": "inaciovasquez2020/fo4-constraint-isolation",
+    "status": "FO4_CONSTRAINT_ISOLATION_ONLY",
+    "category": "Proof Hygiene",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "detailsUrl": "https://github.com/inaciovasquez2020/fo4-constraint-isolation",
+    "summary": "Canonical public package isolating the FO^4 variable-budget constraint surface.",
+    "boundary": "No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No P vs NP result. No Clay-problem closure.",
+    "domain": "Proof Hygiene",
+    "url": "https://github.com/inaciovasquez2020/fo4-constraint-isolation"
   }
 ]
