@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { average, filterRepos, repos, uniqueDomains } from "./App";describe("frontier status dashboard public/private policy", () => {
+import { average, filterRepos, repos, uniqueDomains, publicRepos } from "./App";describe("frontier status dashboard public/private policy", () => {
   it("keeps helper functions operational on the remaining public rows", () => {
     expect(uniqueDomains(repos)[0]).toBe("All");
     expect(filterRepos(repos, "Chronos", "All").some((repo) => repo.name === "chronos-urf-rr")).toBe(true);
@@ -60,4 +60,11 @@ import { average, filterRepos, repos, uniqueDomains } from "./App";describe("fro
       "aiv-verifier-public"
     ].forEach((name) => expect(dataText).not.toContain(name));
   });
+});
+
+it("public dashboard excludes internal aggregate rows from rendered rows", () => {
+  expect(repos.some((repo) => repo.metadataOnly || repo.excludeFromMetrics)).toBe(true);
+  expect(publicRepos.some((repo) => repo.metadataOnly || repo.excludeFromMetrics)).toBe(false);
+  expect(publicRepos.some((repo) => repo.name === "Internal")).toBe(false);
+  expect(publicRepos.some((repo) => String(repo.status) === "INTERNAL_AGGREGATE_ONLY")).toBe(false);
 });

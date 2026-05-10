@@ -27,6 +27,14 @@ export type Repo = {
 
 export const repos: Repo[] = rawRepos as Repo[];
 
+export const publicRepos: Repo[] = repos.filter(
+  (repo) =>
+    !repo.metadataOnly &&
+    !repo.excludeFromMetrics &&
+    repo.name !== "Internal" &&
+    String(repo.status) !== "INTERNAL_AGGREGATE_ONLY",
+);
+
 const statusTone: Record<RepoStatus, string> = {
   "Certified Frontier": "bg-emerald-50 text-emerald-700 border-emerald-200",
   "Status-Locked Frontier": "bg-blue-50 text-blue-700 border-blue-200",
@@ -215,8 +223,8 @@ export default function FrontierStatusDashboard() {
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("All");
 
-  const domains = useMemo(() => uniqueDomains(repos), []);
-  const filtered = useMemo(() => filterRepos(repos, query, filter), [query, filter]);
+  const domains = useMemo(() => uniqueDomains(publicRepos), []);
+  const filtered = useMemo(() => filterRepos(publicRepos, query, filter), [query, filter]);
 
   const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
   const avgIntegrity = average(metricRepos.map((repo) => repo.integrity));
