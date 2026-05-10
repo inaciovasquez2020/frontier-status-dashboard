@@ -35,6 +35,9 @@ import { average, filterRepos, repos, uniqueDomains } from "./App";describe("fro
 
     expect(chronos).toBeDefined();
     expect(chronos?.boundary).toContain("No theorem-level H4.1/FGL closure");
+    expect(chronos?.boundary).toContain("FRONTIER_OPEN is preserved");
+    expect(chronos?.boundary).toContain("No UniversalFiberEntropyGap from Reg-SNF");
+    expect(JSON.stringify(chronos)).toContain("https://github.com/inaciovasquez2020/chronos-urf-rr/pull/199");
     expect(chronos?.theoremClosure).toBeLessThan(100);
   });
 
