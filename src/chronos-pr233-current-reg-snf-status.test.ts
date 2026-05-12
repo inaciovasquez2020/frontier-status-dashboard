@@ -54,7 +54,9 @@ describe("Chronos PR233 current unrestricted Reg-SNF status", () => {
     }
 
     if ("theoremClosure" in row) {
-      expect(row.theoremClosure).toBe(82);
+      expect(row.theoremClosure).toBeNull();
+      expect(row.theoremMetricApplicable).toBe(false);
+      expect(row.theoremClosureLabel).toContain("frontier/interface surface only");
     }
 
     if ("theorem_closure" in row) {
