@@ -125,5 +125,29 @@
     "sourceOfTruthGuardMerge": "ed3e5b9",
     "theoremClosureLabel": "0% \u2014 registry only",
     "theoremMetricApplicable": false
+  },
+  {
+    "name": "inaciovasquez2020",
+    "domain": "Profile / Start Here",
+    "status": "Status-Locked Frontier",
+    "integrity": 90,
+    "theoremClosure": 0,
+    "theoremClosureLabel": "0% \u2014 profile README / start-here map only",
+    "theoremMetricApplicable": false,
+    "ci": "yellow",
+    "boundary": "Public GitHub profile README and URF start-here map. Navigation/profile surface only; no theorem claim is promoted; no Chronos-RR closure; no H4.1/FGL closure; no UniversalFiberEntropyGap theorem; no P vs NP result; no Clay-problem closure.",
+    "url": "https://github.com/inaciovasquez2020/inaciovasquez2020"
+  },
+  {
+    "name": "vasquez-index",
+    "domain": "Index / Navigation",
+    "status": "Certified Frontier",
+    "integrity": 95,
+    "theoremClosure": 0,
+    "theoremClosureLabel": "0% \u2014 canonical navigation/index only",
+    "theoremMetricApplicable": false,
+    "ci": "green",
+    "boundary": "Canonical index and navigation hub for URF repositories and executable artifacts. Index surface only; no theorem claim is promoted; no Chronos-RR closure; no H4.1/FGL closure; no UniversalFiberEntropyGap theorem; no P vs NP result; no Clay-problem closure.",
+    "url": "https://github.com/inaciovasquez2020/vasquez-index"
   }
 ]
