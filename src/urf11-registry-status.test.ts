@@ -21,7 +21,9 @@ describe("URF-11 registry dashboard status", () => {
     expect(typeof row.domain).toBe("string");
     expect(typeof row.boundary).toBe("string");
     expect(typeof row.integrity).toBe("number");
-    expect(typeof row.theoremClosure).toBe("number");
+    expect(row.theoremClosure).toBeNull();
+    expect(row.theoremMetricApplicable).toBe(false);
+    expect(row.theoremClosureLabel).toContain("registry only");
   });
 
   it("preserves theorem-boundary exclusions", () => {
