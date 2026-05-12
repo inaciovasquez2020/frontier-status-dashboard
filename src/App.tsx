@@ -19,7 +19,7 @@ export type Repo = {
   domain: string;
   status: RepoStatus;
   integrity: number;
-  theoremClosure: number | null; theoremClosureLabel?: string; theoremMetricApplicable?: boolean;
+  theoremClosure: number; theoremClosureLabel?: string; theoremMetricApplicable?: boolean;
   ci: "green" | "yellow" | "red";
   boundary: string;
   url: string;
@@ -228,7 +228,7 @@ export default function FrontierStatusDashboard() {
 
   const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
   const avgIntegrity = average(metricRepos.map((repo) => repo.integrity));
-  const theoremMetricValues = metricRepos.map((repo) => repo.theoremClosure).filter((value): value is number => typeof value === "number"); const avgClosure = average(theoremMetricValues);
+  const theoremMetricValues = metricRepos.filter((repo) => repo.theoremMetricApplicable !== false).map((repo) => repo.theoremClosure); const avgClosure = average(theoremMetricValues);
   const greenCount = metricRepos.filter((repo) => repo.ci === "green").length;
 
   return (
@@ -328,7 +328,7 @@ export default function FrontierStatusDashboard() {
                         <span className="text-slate-500">Theorem closure</span>
                         <span className="font-medium">{repo.theoremClosure}%</span>
                       </div>
-                      {repo.theoremClosure === null ? null : <Bar value={repo.theoremClosure} />}
+                      <Bar value={repo.theoremClosure} />
                     </div>
                   </div>
 
