@@ -228,7 +228,7 @@ export default function FrontierStatusDashboard() {
 
   const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
   const avgIntegrity = average(metricRepos.map((repo) => repo.integrity));
-  const theoremMetricValues = metricRepos.filter((repo) => repo.theoremMetricApplicable !== false).map((repo) => repo.theoremClosure); const avgClosure = average(theoremMetricValues);
+  const avgClosure = average(metricRepos.map((repo) => repo.theoremClosure));
   const greenCount = metricRepos.filter((repo) => repo.ci === "green").length;
 
   return (

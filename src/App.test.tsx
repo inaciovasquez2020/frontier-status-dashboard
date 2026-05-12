@@ -70,3 +70,13 @@ it("public dashboard excludes internal aggregate rows from rendered rows", () =>
   expect(publicRepos.some((repo) => repo.name === "Internal")).toBe(false);
   expect(publicRepos.some((repo) => String(repo.status) === "INTERNAL_AGGREGATE_ONLY")).toBe(false);
 });
+
+it("computes the aggregate as a visible closure-scale average, not theorem promotion", () => {
+  const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
+  const closureScaleAverage = average(metricRepos.map((repo) => repo.theoremClosure));
+
+  expect(metricRepos.length).toBeGreaterThan(0);
+  expect(metricRepos.every((repo) => typeof repo.theoremClosure === "number")).toBe(true);
+  expect(closureScaleAverage).toBeGreaterThan(0);
+  expect(repos.find((repo) => repo.name === "chronos-urf-rr")?.theoremMetricApplicable).toBe(false);
+});
