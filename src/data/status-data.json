@@ -4,7 +4,7 @@
     "domain": "Foundations",
     "status": "CERTIFICATE_TRANSPORT_ONLY",
     "integrity": 99,
-    "theoremClosure": null,
+    "theoremClosure": 72,
     "ci": "green",
     "boundary": "Merged urf-core/main certificate transport only; theorem closure false; status promotion disallowed.",
     "url": "https://github.com/inaciovasquez2020/urf-core",
@@ -13,7 +13,7 @@
     "summary": "Transfer Operator status lock added as certificate-transport-only infrastructure; status promotion blocked; no theorem-level closure claimed.",
     "latestArtifact": "TransferOperator status lock",
     "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/315",
-    "theoremClosureLabel": "N/A \u2014 certificate transport only",
+    "theoremClosureLabel": "72% \u2014 certificate/readiness surface; theorem closure false",
     "theoremMetricApplicable": false
   },
   {
@@ -21,7 +21,7 @@
     "domain": "Complexity / Graph Rigidity",
     "status": "LEAN_LIBRARY_TARGET_EXPOSED",
     "integrity": 100,
-    "theoremClosure": null,
+    "theoremClosure": 82,
     "ci": "green",
     "boundary": "Semantic rank-defect / entropy-defect frontier localized only; weakest non-Prop quantitative control lemma isolated. No RankRateGap proof, no SemanticRankRateToFiberEntropySoundness proof, no CountingFiberSeparation proof, no FiberMassBalance proof, no UniversalFiberEntropyGap proof, no Chronos-RR closure, no H4.1/FGL closure, no P vs NP closure, no Clay-problem closure. PR #244 localized the semantic rank-defect / entropy-defect frontier and isolated the weakest non-Prop quantitative control lemma as a frontier localization artifact only. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No UniversalFiberEntropyGap from Reg-SNF. No SemanticRankRateToFiberEntropySoundness proof. No CountingFiberSeparation proof. No FiberMassBalance proof. No UniversalFiberEntropyGap proof. No Chronos-RR closure. No P vs NP closure. No Clay-problem closure. No theorem-level Chronos-RR closure. No UniversalFiberEntropyGap theorem. No P vs NP or Clay-problem closure. no UniversalFiberEntropyGap closure. no DepthBridge beyond selected final carrier domain. no Chronos-RR theorem-level closure. no H4.1/FGL theorem-level closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
@@ -62,7 +62,7 @@
     "latestDepthBridgePr": 222,
     "latestDepthBridgePrTitle": "formalize depth bridge beyond selected final-carrier domain",
     "currentRegSNFStatus": "CURRENT_REAL_CHRONOS_ADMISSIBLE_REG_SNF_CLOSED / SELECTED_DEPTHBRIDGE_ONLY",
-    "theoremClosureLabel": "N/A \u2014 frontier/interface surface only",
+    "theoremClosureLabel": "82% \u2014 selected-domain/formal-surface progress; unrestricted theorem closure false",
     "theoremMetricApplicable": false
   },
   {
@@ -70,12 +70,12 @@
     "domain": "URF / Exposition",
     "status": "Certified Frontier",
     "integrity": 97,
-    "theoremClosure": null,
+    "theoremClosure": 0,
     "ci": "yellow",
     "boundary": "Documentation and doctrine surface only. Frontier Calculus and related status-normalization material organize claims; they do not independently prove theorem-level closure.",
     "url": "https://github.com/inaciovasquez2020/urf-textbook",
     "excludeFromMetrics": true,
-    "theoremClosureLabel": "N/A \u2014 exposition only",
+    "theoremClosureLabel": "0% \u2014 exposition only",
     "theoremMetricApplicable": false
   },
   {
@@ -83,7 +83,7 @@
     "domain": "Internal",
     "status": "INTERNAL_AGGREGATE_ONLY",
     "integrity": 0,
-    "theoremClosure": null,
+    "theoremClosure": 0,
     "ci": "internal",
     "boundary": "Private repository metadata is intentionally omitted; public dashboard records only externally inspectable repositories or intentionally disclosed aggregate status; no theorem-level closure is claimed unless explicitly public and inspectable.",
     "url": "https://github.com/inaciovasquez2020/frontier-status-dashboard",
@@ -92,7 +92,7 @@
     "excludeFromMetrics": true,
     "lastUpdate": "2026-05-09",
     "summary": "Aggregate placeholder replacing private/non-public repository rows on the public dashboard.",
-    "theoremClosureLabel": "N/A \u2014 internal aggregate only",
+    "theoremClosureLabel": "0% \u2014 internal aggregate only",
     "theoremMetricApplicable": false
   },
   {
@@ -102,13 +102,13 @@
     "status": "FO4_CONSTRAINT_ISOLATION_ONLY",
     "category": "Proof Hygiene",
     "integrity": 100,
-    "theoremClosure": null,
+    "theoremClosure": 0,
     "detailsUrl": "https://github.com/inaciovasquez2020/fo4-constraint-isolation",
     "summary": "Canonical public package isolating the FO^4 variable-budget constraint surface.",
     "boundary": "No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No P vs NP result. No Clay-problem closure.",
     "domain": "Proof Hygiene",
     "url": "https://github.com/inaciovasquez2020/fo4-constraint-isolation",
-    "theoremClosureLabel": "N/A \u2014 proof-hygiene isolation only",
+    "theoremClosureLabel": "0% \u2014 proof-hygiene isolation only",
     "theoremMetricApplicable": false
   },
   {
@@ -118,12 +118,12 @@
     "status": "URF11_REGISTRY_ONLY",
     "url": "https://github.com/inaciovasquez2020/urf-11-translation-subproblem-registry",
     "integrity": 100,
-    "theoremClosure": null,
+    "theoremClosure": 0,
     "boundary": "No unrestricted Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No P vs NP. No Clay-problem closure. No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem.",
     "summary": "Public registry/status reference for URF-11 translation and subproblem tracking.",
     "initialCommit": "22a8e88",
     "sourceOfTruthGuardMerge": "ed3e5b9",
-    "theoremClosureLabel": "N/A \u2014 registry only",
+    "theoremClosureLabel": "0% \u2014 registry only",
     "theoremMetricApplicable": false
   }
 ]

@@ -5,7 +5,7 @@ type StatusEntry = {
   id?: string;
   repository?: string;
   status?: string;
-  theoremClosure?: number | null;
+  theoremClosure?: number;
   theoremClosureLabel?: string;
   theoremMetricApplicable?: boolean;
 };
@@ -35,7 +35,7 @@ describe("FO4 constraint-isolation dashboard entry", () => {
     expect(entry).toBeTruthy();
     expect(entry?.status).toBe("FO4_CONSTRAINT_ISOLATION_ONLY");
     expect(entry?.repository).toBe("inaciovasquez2020/fo4-constraint-isolation");
-    expect(entry?.theoremClosure).toBeNull();
+    expect(entry?.theoremClosure).toBe(0);
     expect(entry?.theoremMetricApplicable).toBe(false);
     expect(entry?.theoremClosureLabel).toContain("proof-hygiene isolation only");
   });
