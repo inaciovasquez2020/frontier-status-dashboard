@@ -115,3 +115,19 @@ Boundary guard: No theorem-level H4.1/FGL closure; FRONTIER_OPEN is preserved; N
 - Status: `LEAN_LIBRARY_TARGET_EXPOSED`
 - Update: Chronos Lean library target exposed and `XorLemmas` proof mechanics repaired.
 - Boundary: build/exposure/proof-mechanics repair only; no theorem-level Chronos-RR, UniversalFiberEntropyGap, unrestricted H4.1/FGL, P vs NP, or Clay-problem closure.
+
+## Chronos PR233 status update — 2026-05-12
+
+Chronos `chronos-urf-rr` now records PR #231, PR #232, and PR #233 as merged surfaces:
+
+- RepositoryNativeZeroArityInterface closure.
+- Zero-arity exhaustiveness to Reg-SNF bridge.
+- Current real Chronos-admissible unrestricted Reg-SNF status lock.
+- Selected DepthBridge reachability only.
+
+Dashboard percentages updated:
+
+- Repository integrity: 100%.
+- Theorem closure: 82%.
+
+Boundary preserved: no UniversalFiberEntropyGap closure, no DepthBridge beyond selected final carrier domain, no Chronos-RR theorem-level closure, no H4.1/FGL theorem-level closure, no P vs NP closure, and no Clay-problem closure.
