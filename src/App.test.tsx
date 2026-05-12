@@ -80,3 +80,14 @@ it("computes the aggregate as a visible closure-scale average, not theorem promo
   expect(closureScaleAverage).toBeGreaterThan(0);
   expect(repos.find((repo) => repo.name === "chronos-urf-rr")?.theoremMetricApplicable).toBe(false);
 });
+
+it("preserves the aggregate closure-scale invariant", () => {
+  const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
+  const closureScaleAverage = average(metricRepos.map((repo) => repo.theoremClosure));
+
+  expect(closureScaleAverage).toBeGreaterThan(0);
+  expect(repos.find((repo) => repo.name === "chronos-urf-rr")?.theoremClosureLabel).toContain(
+    "unrestricted theorem closure false",
+  );
+  expect(repos.find((repo) => repo.name === "chronos-urf-rr")?.theoremMetricApplicable).toBe(false);
+});

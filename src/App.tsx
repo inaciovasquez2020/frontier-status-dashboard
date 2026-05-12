@@ -264,7 +264,7 @@ export default function FrontierStatusDashboard() {
           <Metric label="Tracked repositories" value={metricRepos.length} />
           <Metric label="Green CI surfaces" value={`${greenCount}/${metricRepos.length}`} />
           <Metric label="Avg. integrity" value={`${avgIntegrity}%`} />
-          <Metric label="Avg. theorem closure" value={`${avgClosure}%`} />
+          <Metric label="Avg. closure scale" value={`${avgClosure}%`} />
         </section>
 
         <section className="grid gap-4 lg:grid-cols-[1fr_280px]">
