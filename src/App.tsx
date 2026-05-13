@@ -326,7 +326,7 @@ export default function FrontierStatusDashboard() {
                     <div className="space-y-2 rounded-2xl border bg-slate-50 p-4">
                       <div className="flex items-center justify-between text-sm">
                         <span className="text-slate-500">Theorem closure</span>
-                        <span className="font-medium">{repo.theoremClosure}%</span>
+                        <span className="font-medium">{repo.theoremMetricApplicable === false ? "N/A" : `${repo.theoremClosure}%`}</span>
                       </div>
                       <Bar value={repo.theoremClosure} />
                     </div>
