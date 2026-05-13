@@ -131,3 +131,14 @@ Dashboard percentages updated:
 - Theorem closure: 82%.
 
 Boundary preserved: no UniversalFiberEntropyGap closure, no DepthBridge beyond selected final carrier domain, no Chronos-RR theorem-level closure, no H4.1/FGL theorem-level closure, no P vs NP closure, and no Clay-problem closure.
+
+## Chronos PR254 status update — 2026-05-13
+
+Chronos `chronos-urf-rr` now records PR #254 as a merged repository-native rank/ambient datum surface.
+
+- Repository integrity: 100%.
+- Theorem closure: 82%.
+- Status: `CONDITIONAL_EXTERNAL_DATA_ASSUMPTION_ONLY`.
+- Verified: rank/ambient datum verifier, targeted pytest 3/3, `lake build`, full pytest 646/646.
+
+Boundary preserved: metadata is not theorem-level source validity; importer is not formalized in Lean; no unconditional `SemanticRankRateCertificate`; no unrestricted `UniversalFiberEntropyGap` theorem; no Chronos-RR closure; no H4.1/FGL closure; no P vs NP closure; and no Clay-problem closure.
