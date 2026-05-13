@@ -142,3 +142,9 @@ Chronos `chronos-urf-rr` now records PR #254 as a merged repository-native rank/
 - Verified: rank/ambient datum verifier, targeted pytest 3/3, `lake build`, full pytest 646/646.
 
 Boundary preserved: metadata is not theorem-level source validity; importer is not formalized in Lean; no unconditional `SemanticRankRateCertificate`; no unrestricted `UniversalFiberEntropyGap` theorem; no Chronos-RR closure; no H4.1/FGL closure; no P vs NP closure; and no Clay-problem closure.
+
+## Profile row removal — 2026-05-13
+
+Removed the `inaciovasquez2020` profile/start-here row from the dashboard data because it is navigation/profile-only and does not require theorem closure.
+
+Boundary preserved: no theorem status changed; no Chronos theorem closure changed; no UniversalFiberEntropyGap theorem; no Chronos-RR closure; no H4.1/FGL closure; no P vs NP closure; no Clay closure.
