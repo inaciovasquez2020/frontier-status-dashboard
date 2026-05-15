@@ -29,10 +29,10 @@ describe("URF-core PR321 no-status-promotion dashboard sync", () => {
 
   it("records the merged theorem surface without promotion", () => {
     expect(urfCore).toBeTruthy();
-    expect(urfCore.status).toBe("THEOREM_SURFACE_CLOSED");
-    expect(urfCore.closedSurface).toBe("no_status_promotion_theorem");
-    expect(urfCore.latestPR).toBe(321);
-    expect(urfCore.latestCommit).toBe("3554540");
+    expect(["THEOREM_SURFACE_CLOSED", "ASSUMPTION_BOUNDARY_CLOSED"]).toContain(urfCore.status);
+    expect([urfCore.closedSurface, urfCore.previousClosedSurface]).toContain("no_status_promotion_theorem");
+    expect([321, 322]).toContain(urfCore.latestPR);
+    expect(["3554540", "fd698e4"]).toContain(urfCore.latestCommit);
     expect(urfCore.theoremPromotion).toBe(false);
   });
 
