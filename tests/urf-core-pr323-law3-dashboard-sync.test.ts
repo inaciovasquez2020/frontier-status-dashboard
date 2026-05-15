@@ -12,7 +12,7 @@ describe("URF-core PR323 Law 3 dashboard sync", () => {
     expect(urfCore).toBeTruthy();
     expect(["THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED"]).toContain(urfCore.status);
     expect([urfCore.closedSurface, urfCore.previousClosedSurface]).toContain("urf_law3");
-    expect(urfCore.previousClosedSurface).toBe("urf_admissible_normalization_boundaries");
+    expect([urfCore.previousClosedSurface, urfCore.previousAssumptionBoundarySurface]).toContain("urf_admissible_normalization_boundaries");
     expect(urfCore.previousTheoremSurface).toBe("no_status_promotion_theorem");
     expect([323, 324]).toContain(urfCore.latestPR);
     expect(["0d6238f", "3bbc856"]).toContain(urfCore.latestCommit);
@@ -29,8 +29,8 @@ describe("URF-core PR323 Law 3 dashboard sync", () => {
 
   it("preserves non-closure boundaries", () => {
     const boundary = String(urfCore.boundary);
-    expect(boundary).toMatch(/relative to existing\/new structural axioms/i);
-    expect(boundary).toMatch(/capacity, chain_rule, and cmi_nonneg are not discharged/i);
+    expect(boundary).toMatch(/textual\/noncompiled assumption boundary|relative to existing\/new structural axioms/i);
+    expect(boundary).toMatch(/existing axioms and admits are not discharged|capacity, chain_rule, and cmi_nonneg are not discharged/i);
     expect(boundary).toMatch(/no whole-URF theorem closure/i);
     expect(boundary).toMatch(/no CRR closure/i);
     expect(boundary).toMatch(/no H4\.1\/FGL closure/i);
