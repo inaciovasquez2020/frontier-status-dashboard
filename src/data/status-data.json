@@ -180,5 +180,19 @@
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/288",
     "closureScaleMetricApplicable": false,
     "theoremMetricApplicable": false
+  },
+  {
+    "id": "chronos-pr289-canonical-to-nontrivial-strengthening-for-predicate",
+    "name": "Chronos PR #289 CanonicalToNontrivialStrengtheningForPredicate",
+    "domain": "Chronos / semantic rank-rate frontier",
+    "repo": "chronos-urf-rr",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/289",
+    "status": "PROVED / PREDICATE_SURFACE_STRENGTHENING_CLOSED",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "ci": "green",
+    "closureScaleMetricApplicable": false,
+    "theoremMetricApplicable": false,
+    "boundary": "Predicate-surface theorem only; proves strengthening only for the repository-defined predicate surface. Does not construct a genuinely nontrivial UniversalFiberEntropyGap, prove unrestricted UniversalFiberEntropyGap, unrestricted SemanticRankRateToFiberEntropySoundness, unrestricted Chronos-RR, H4.1/FGL, P vs NP, or any Clay problem."
   }
 ]
