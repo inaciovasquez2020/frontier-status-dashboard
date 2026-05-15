@@ -6,7 +6,7 @@
     "integrity": 100,
     "theoremClosure": 72,
     "ci": "green",
-    "boundary": "PR #321 closes the no-status-promotion theorem surface only; existing axioms and admits are not discharged; no whole-URF theorem closure; no Chronos-RR closure; no H4.1/FGL closure; no P vs NP closure; no Clay-problem closure.",
+    "boundary": "PR #321 closes the no-status-promotion theorem surface only; existing axioms and admits are not discharged; no whole-URF theorem closure; no CRR closure; no H4.1/FGL closure; no P vs NP closure; no Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/urf-core",
     "repository": "urf-core",
     "lastUpdate": "2026-05-04",
