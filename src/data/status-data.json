@@ -294,5 +294,22 @@
     "theoremPromotion": false,
     "theoremMetricKind": "predicate_surface_closure",
     "theoremClaimStatus": "dashboard_metric_only"
+  },
+  {
+    "id": "chronos-pr296-quasi-local-collapse-gate",
+    "name": "Chronos PR #296 Quasi-local collapse gate",
+    "domain": "Chronos / gravity frontier",
+    "repo": "chronos-urf-rr",
+    "repository": "chronos-urf-rr",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/296",
+    "status": "CONDITIONAL_GRAVITY_FRONTIER_SURFACE",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "ci": "green",
+    "closureScaleMetricApplicable": false,
+    "theoremMetricApplicable": false,
+    "theoremPromotion": false,
+    "latestPR": 296,
+    "boundary": "PR #296 quasi-local collapse gate conditional bridge verified; conditional bridge only; does not prove an unconditional quasi-local collapse theorem; does not prove unrestricted nonspherical collapse exclusion; does not prove Cosmic Censorship; does not prove the Hoop Conjecture; does not prove unrestricted Chronos-RR; does not prove H4.1/FGL; does not prove P vs NP; does not prove any Clay problem."
   }
 ]
