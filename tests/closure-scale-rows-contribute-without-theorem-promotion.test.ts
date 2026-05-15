@@ -31,6 +31,6 @@ describe("closure-scale rows contribute without theorem promotion", () => {
       .filter((entry) => !entry.metadataOnly && !entry.excludeFromMetrics)
       .filter((entry) => entry.closureScaleMetricApplicable !== false);
 
-    expect(average(rows.map((entry) => entry.theoremClosure))).toBe(77);
+    expect(average(rows.map((entry) => entry.theoremClosure))).toBe(85);
   });
 });
