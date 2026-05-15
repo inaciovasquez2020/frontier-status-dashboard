@@ -1,0 +1,27 @@
+{
+  "status": "DASHBOARD_SYNCED",
+  "repository": "urf-core",
+  "source_pr": 322,
+  "source_commit": "fd698e4",
+  "closed_surface": "urf_admissible_normalization_boundaries",
+  "removed_admits": 2,
+  "axiom_count": 46,
+  "admit_count": 10,
+  "sorry_count": 0,
+  "post_merge_verification": {
+    "verify_urf_admissible_normalization_boundaries": "passed",
+    "targeted_pytest": "1 passed",
+    "check_core_obligation_status": "PASS",
+    "lake_build": "passed",
+    "full_pytest": "278 passed + 11 subtests passed"
+  },
+  "boundary": {
+    "assumption_boundary_only": true,
+    "not_theorem_closure": true,
+    "no_whole_urf_theorem_closure": true,
+    "no_chronos_rr_closure": true,
+    "no_h4_1_fgl_closure": true,
+    "no_p_vs_np_closure": true,
+    "no_clay_problem_closure": true
+  }
+}
