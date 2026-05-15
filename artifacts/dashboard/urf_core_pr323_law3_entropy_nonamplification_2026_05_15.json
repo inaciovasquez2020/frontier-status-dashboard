@@ -1,0 +1,30 @@
+{
+  "status": "DASHBOARD_SYNCED",
+  "repository": "urf-core",
+  "source_pr": 323,
+  "source_commit": "0d6238f",
+  "closed_surface": "urf_law3",
+  "removed_admits": 1,
+  "axiom_count": 52,
+  "admit_count": 9,
+  "sorry_count": 0,
+  "post_merge_verification": {
+    "verify_urf_law3_entropy_nonamplification": "passed",
+    "targeted_pytest": "1 passed",
+    "check_core_obligation_status": "PASS",
+    "lake_build": "passed",
+    "full_pytest": "279 passed + 11 subtests passed"
+  },
+  "boundary": {
+    "theorem_closed_relative_to_structural_axioms": true,
+    "capacity_not_discharged": true,
+    "chain_rule_not_discharged": true,
+    "cmi_nonneg_not_discharged": true,
+    "adds_six_structural_axioms_for_law3_symbols": true,
+    "no_whole_urf_theorem_closure": true,
+    "no_chronos_rr_closure": true,
+    "no_h4_1_fgl_closure": true,
+    "no_p_vs_np_closure": true,
+    "no_clay_problem_closure": true
+  }
+}
