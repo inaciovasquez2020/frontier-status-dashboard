@@ -2,20 +2,25 @@
   {
     "name": "urf-core",
     "domain": "Foundations",
-    "status": "CERTIFICATE_TRANSPORT_ONLY",
-    "integrity": 99,
+    "status": "THEOREM_SURFACE_CLOSED",
+    "integrity": 100,
     "theoremClosure": 72,
     "ci": "green",
-    "boundary": "Merged urf-core/main certificate transport only; theorem closure false; status promotion disallowed.",
+    "boundary": "PR #321 closes the no-status-promotion theorem surface only; existing axioms and admits are not discharged; no whole-URF theorem closure; no Chronos-RR closure; no H4.1/FGL closure; no P vs NP closure; no Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/urf-core",
-    "repository": "inaciovasquez2020/urf-core",
+    "repository": "urf-core",
     "lastUpdate": "2026-05-04",
     "summary": "Transfer Operator status lock added as certificate-transport-only infrastructure; status promotion blocked; no theorem-level closure claimed.",
     "latestArtifact": "TransferOperator status lock",
     "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/315",
     "theoremClosureLabel": "72% — certificate/readiness surface; theorem closure false",
     "theoremMetricApplicable": false,
-    "closureScaleMetricApplicable": true
+    "closureScaleMetricApplicable": true,
+    "repo": "urf-core",
+    "closedSurface": "no_status_promotion_theorem",
+    "latestPR": 321,
+    "latestCommit": "3554540",
+    "theoremPromotion": false
   },
   {
     "name": "chronos-urf-rr",
@@ -84,11 +89,13 @@
     "remainingSelectedDomainFrontier": "none inside selected-domain H4.1/FGL observation-to-gap/soundness bridge",
     "latestDepthBridgePr": 222,
     "latestDepthBridgePrTitle": "formalize depth bridge beyond selected final-carrier domain",
-    "currentRegSNFStatus": "CURRENT_REAL_CHRONOS_ADMISSIBLE_REG_SNF_CLOSED / SELECTED_DEPTHBRIDGE_ONLY",
-    "theoremClosureLabel": "82% — selected-domain/formal-surface progress; unrestricted theorem closure false",
+    "currentRegSNFStatus": "CURRENT_REAL_CHRONOS_ADMISSIBLE_REG_SNF_CLOSED",
+    "theoremClosureLabel": "82% — unrestricted theorem closure false",
     "theoremMetricApplicable": false,
     "latestDataSurfaceStatus": "CONDITIONAL_EXTERNAL_DATA_ASSUMPTION_ONLY",
-    "closureScaleMetricApplicable": true
+    "closureScaleMetricApplicable": true,
+    "repository": "chronos-urf-rr",
+    "repo": "chronos-urf-rr"
   },
   {
     "name": "urf-textbook",
