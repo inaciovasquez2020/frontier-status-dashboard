@@ -1,0 +1,26 @@
+{
+  "artifact": "chronos_pr308_fpz1_restricted_lambda_dashboard_sync",
+  "date": "2026-05-16",
+  "repo": "chronos-urf-rr",
+  "upstream_pr": 308,
+  "status": "RESTRICTED_LAMBDA_ROUTE_SOLVED_SURFACE_ONLY",
+  "closed_surface": [
+    "restrictedRateSpectrumIsolation",
+    "lowerEnvelope_to_quantitativeLambda",
+    "fpz1_restricted_lambda_route"
+  ],
+  "requires": [
+    "lambda > 0",
+    "EntropyFaithfulLowerEnvelope",
+    "DepthBridgeLambda"
+  ],
+  "boundary": [
+    "no unrestricted RateSpectrumIsolation",
+    "no unrestricted UniformRateGap",
+    "no unrestricted UniversalFiberEntropyGap",
+    "no unrestricted Chronos-RR",
+    "no unrestricted H4.1/FGL",
+    "no P vs NP",
+    "no Clay-problem closure"
+  ]
+}
