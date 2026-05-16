@@ -1,0 +1,27 @@
+{
+  "artifact": "chronos_pr310_fpz1_conditional_unrestricted_route_dashboard_sync",
+  "date": "2026-05-16",
+  "repo": "chronos-urf-rr",
+  "upstream_pr": 310,
+  "status": "CONDITIONAL_UNRESTRICTED_ROUTE_ONLY",
+  "proved": [
+    "rateSpectrumIsolation_and_lowerEnvelope_to_quantitativeUnrestricted",
+    "fpz1_conditional_unrestricted_route"
+  ],
+  "requires": [
+    "RateSpectrumIsolation",
+    "EntropyFaithfulLowerEnvelope",
+    "DepthBridgeUnrestricted"
+  ],
+  "boundary": [
+    "conditional composition only",
+    "does not prove RateSpectrumIsolation",
+    "does not prove EntropyFaithfulLowerEnvelope",
+    "does not prove DepthBridgeUnrestricted",
+    "no unrestricted UniversalFiberEntropyGap",
+    "no unrestricted Chronos-RR",
+    "no unrestricted H4.1/FGL",
+    "no P vs NP",
+    "no Clay-problem closure"
+  ]
+}
