@@ -1,0 +1,22 @@
+{
+  "repo": "chronos-urf-rr",
+  "date": "2026-05-16",
+  "upstream_pr": 306,
+  "status": "VERIFIED_TOY_EXTERNAL_MODEL_ONLY",
+  "surface": "Meaningful external H41FGL toy closure",
+  "verified": [
+    "meaningful external H41FGL toy closure verifier",
+    "targeted pytest",
+    "Lean module build",
+    "full lake build",
+    "full pytest"
+  ],
+  "boundary": [
+    "toy external-model closure only",
+    "no nontrivial external H4.1/FGL theorem",
+    "no unrestricted Chronos-RR",
+    "no unrestricted H4.1/FGL",
+    "no P vs NP",
+    "no Clay-problem closure"
+  ]
+}
