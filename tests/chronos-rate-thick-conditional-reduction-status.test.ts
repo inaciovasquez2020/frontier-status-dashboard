@@ -15,6 +15,14 @@ describe("Chronos rate-thick conditional reduction dashboard sync", () => {
     expect(row?.frontierStatus).toBe("FRONTIER_OPEN");
   });
 
+  it("preserves prior canonical boundary tokens", () => {
+    const text = textOf(row);
+    expect(text).toContain("No theorem-level H4.1/FGL closure");
+    expect(text).toContain("No theorem-level Chronos-RR closure");
+    expect(text).toContain("FRONTIER_OPEN is preserved");
+    expect(text).toContain("No UniversalFiberEntropyGap from Reg-SNF");
+  });
+
   it("records the rate-thick conditional reduction as an appended surface", () => {
     const text = textOf(row);
     expect(text).toContain("RateThickConditionalReductionOnly");
