@@ -142,15 +142,20 @@
   {
     "name": "urf-textbook",
     "domain": "URF / Exposition",
-    "status": "Certified Frontier",
-    "integrity": 97,
+    "status": "ACTIVE_EXPOSITION_TEXTBOOK_SURFACE",
+    "integrity": 98,
     "theoremClosure": 0,
     "ci": "yellow",
-    "boundary": "Documentation and doctrine surface only. Frontier Calculus and related status-normalization material organize claims; they do not independently prove theorem-level closure.",
+    "boundary": "Documentation/textbook/exposition surface only. Current reference authority for theorem-level URF definitions, dependency ledgers, and closure claims remains outside this repository in buildable formal source repositories. Build success, LaTeX success, dashboards, badges, ledgers, axioms, admits, sorry, or placeholder witnesses do not constitute theorem-level proof. No independent theorem-level closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No P vs NP result. No Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/urf-textbook",
     "excludeFromMetrics": true,
-    "theoremClosureLabel": "0% \u2014 exposition only",
-    "theoremMetricApplicable": false
+    "theoremClosureLabel": "0% \u2014 exposition/textbook surface only",
+    "theoremMetricApplicable": false,
+    "repository": "inaciovasquez2020/urf-textbook",
+    "lastUpdate": "2026-05-17",
+    "summary": "URF Textbook is the public exposition and release-facing documentation layer. It explains verified frontier tracking, source-of-truth routing, citation/archive material, and boundary discipline without independently proving theorem-level claims.",
+    "latestArtifact": "External status lock / documentation source-of-truth surface",
+    "latestPr": "dashboard-sync-2026-05-17"
   },
   {
     "name": "Private/Internal Verification Surfaces",
