@@ -1,0 +1,31 @@
+{
+  "artifact": "chronos_pr353_boundary_ledger_dashboard_sync",
+  "date": "2026-05-17",
+  "source_repository": "chronos-urf-rr",
+  "source_pr": 353,
+  "source_commit": "85298a59",
+  "status": "DASHBOARD_SYNC_ONLY",
+  "telemetry_added": [
+    "boundary ledger assumption tracker",
+    "boundaries.toml",
+    "scripts/reconcile_ledger.py",
+    "scripts/check_forbidden_overclaims.py",
+    "artifacts/chronos/frontier-status.json",
+    "tests/test_boundary_ledger.py"
+  ],
+  "verified": [
+    "targeted boundary-ledger pytest passed",
+    "forbidden-overclaim scan passed",
+    "lake build passed",
+    "full pytest passed with 835 tests"
+  ],
+  "boundary": [
+    "dashboard telemetry only",
+    "no theorem promotion",
+    "no unrestricted Chronos-RR",
+    "no unrestricted H4.1/FGL",
+    "no UniversalFiberEntropyGap",
+    "no P vs NP",
+    "no Clay-problem closure"
+  ]
+}
