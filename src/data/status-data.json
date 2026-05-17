@@ -35,11 +35,11 @@
   {
     "name": "chronos-urf-rr",
     "domain": "Complexity / Graph Rigidity",
-    "status": "CONDITIONAL_REDUCTION_ONLY",
+    "status": "LEAN_LIBRARY_TARGET_EXPOSED",
     "integrity": 100,
     "theoremClosure": 82,
     "ci": "green",
-    "boundary": "Rate-thick fiber entropy gap is synchronized to Chronos commit 6d3c3754 as CONDITIONAL_REDUCTION_ONLY; DimensionRegularFiberGrowth, RankRateToLyapunovExpansion, FiberEntropyMassLowerBoundsUnstableEntropy, and a positive entropy lower bound remain missing lemmas; no full-category fiber-entropy gap promotion; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure.",
+    "boundary": "Rate-thick fiber entropy gap is synchronized to Chronos commit 6d3c3754 as CONDITIONAL_REDUCTION_ONLY; DimensionRegularFiberGrowth, RankRateToLyapunovExpansion, FiberEntropyMassLowerBoundsUnstableEntropy, and a positive entropy lower bound remain missing lemmas; no full-category fiber-entropy gap promotion; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure. Chronos direct-main commit 6d3c3754: RateThickConditionalReductionOnly synchronized as CONDITIONAL_REDUCTION_ONLY; DimensionRegularFiberGrowth, RankRateToLyapunovExpansion, FiberEntropyMassLowerBoundsUnstableEntropy, and positive entropy lower bound on the rate-thick domain remain missing; no full-category fiber-entropy gap promotion; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-13",
     "latestUpdate": "Chronos PR #306: meaningful external H41FGL toy closure.",
@@ -100,7 +100,15 @@
       "Repository-native Chronos-RR conditional closure does not promote unrestricted H4.1/FGL status",
       "unrestricted DepthBridge",
       "unrestricted UniversalFiberEntropyGap",
-      "SemanticRankRateToFiberEntropySoundness"
+      "SemanticRankRateToFiberEntropySoundness",
+      "Chronos direct-main commit 6d3c3754",
+      "RateThickConditionalReductionOnly",
+      "CONDITIONAL_REDUCTION_ONLY",
+      "DimensionRegularFiberGrowth",
+      "RankRateToLyapunovExpansion",
+      "FiberEntropyMassLowerBoundsUnstableEntropy",
+      "positive entropy lower bound on the rate-thick domain",
+      "no full-category fiber-entropy gap promotion"
     ],
     "priorStatusFieldPreservedAs": "FRONTIER_OPEN / Status-Locked Frontier",
     "chronosStatus": "SELECTED_DOMAIN_GAP_SOUNDNESS_CLOSED",
@@ -120,7 +128,16 @@
     "latestFpz1ObstructionStatus": "UNRESTRICTED_RATE_SPECTRUM_OBSTRUCTION_ONLY",
     "latestFpz1ObstructionPr": "Chronos PR #309",
     "latestFpz1ConditionalUnrestrictedStatus": "CONDITIONAL_UNRESTRICTED_ROUTE_ONLY",
-    "latestFpz1ConditionalUnrestrictedPr": "Chronos PR #310"
+    "latestFpz1ConditionalUnrestrictedPr": "Chronos PR #310",
+    "latestRateThickConditionalReductionStatus": "CONDITIONAL_REDUCTION_ONLY",
+    "latestRateThickConditionalReductionCommit": "6d3c3754",
+    "latestRateThickConditionalReductionSurface": "RateThickConditionalReductionOnly",
+    "latestRateThickMissingLemmas": [
+      "DimensionRegularFiberGrowth",
+      "RankRateToLyapunovExpansion",
+      "FiberEntropyMassLowerBoundsUnstableEntropy",
+      "positive entropy lower bound on the rate-thick domain"
+    ]
   },
   {
     "name": "urf-textbook",
