@@ -403,5 +403,32 @@
     "evidence": [
       "PR #353 merged at 85298a59; targeted boundary-ledger pytest passed; forbidden-overclaim scan passed; lake build passed; full pytest passed with 835 tests."
     ]
+  },
+  {
+    "id": "chronos-pr354-finite-witness-theorem-cluster",
+    "name": "Chronos PR #354 finite witness theorem cluster",
+    "domain": "Chronos / finite Lean theorem cluster",
+    "repo": "chronos-urf-rr",
+    "repository": "chronos-urf-rr",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/354",
+    "status": "PROVED_FINITE_THEOREM_CLUSTER_ONLY",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "ci": "green",
+    "closureScaleMetricApplicable": false,
+    "theoremMetricApplicable": false,
+    "theoremPromotion": false,
+    "latestPR": 354,
+    "latestCommit": "dbb44992",
+    "boundary": "PR #354 finite witness theorem cluster merged at dbb44992 with 13/13 checks and 839 pytest tests passing. Finite witness certification only; no unrestricted UniversalFiberEntropyGap; no unrestricted Chronos-RR; no H4.1/FGL; no P vs NP; no Clay problem; no physics or cosmology closure.",
+    "evidence": [
+      "Lean module Chronos.Frontier.FiniteWitnessTheoremCluster added.",
+      "Verifier passed: python3 tools/verify_finite_witness_theorem_cluster.py.",
+      "Targeted pytest passed: 4/4.",
+      "lake build Chronos.Frontier.FiniteWitnessTheoremCluster passed.",
+      "Full lake build passed.",
+      "Full pytest passed: 839/839.",
+      "GitHub checks passed: 13/13."
+    ]
   }
 ]
