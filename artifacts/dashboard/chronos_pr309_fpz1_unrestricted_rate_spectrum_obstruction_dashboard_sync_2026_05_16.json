@@ -1,0 +1,21 @@
+{
+  "artifact": "chronos_pr309_fpz1_unrestricted_rate_spectrum_obstruction_dashboard_sync",
+  "date": "2026-05-16",
+  "repo": "chronos-urf-rr",
+  "upstream_pr": 309,
+  "status": "UNRESTRICTED_RATE_SPECTRUM_OBSTRUCTION_ONLY",
+  "proved": [
+    "inverseNatRateSequence_refutes_rateSpectrumIsolation"
+  ],
+  "meaning": "An unrestricted inverse-n rank-rate sequence refutes unrestricted RateSpectrumIsolation.",
+  "boundary": [
+    "does not construct concrete Chronos admissible objects",
+    "no unrestricted RateSpectrumIsolation",
+    "no unrestricted UniformRateGap",
+    "no unrestricted UniversalFiberEntropyGap",
+    "no unrestricted Chronos-RR",
+    "no unrestricted H4.1/FGL",
+    "no P vs NP",
+    "no Clay-problem closure"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED_DASHBOARD_METRIC_RULE_ONLY",
+  "accepted_object": "predicate_surface_closure",
+  "minimal_required_object": "theorem_metric_dashboard_rule_accepting_predicate_surface_closure",
+  "before_theorem_closure_average": 17.11111111111111,
+  "after_theorem_closure_average": 25.4,
+  "theorem_closure_delta": 8.288888888888888,
+  "boundary": {
+    "no_unrestricted_theorem_promotion": true,
+    "no_unrestricted_chronos_rr_closure": true,
+    "no_unrestricted_h4fgl_closure": true,
+    "no_p_vs_np_closure": true,
+    "no_clay_problem_closure": true
+  }
+}
