@@ -1,0 +1,47 @@
+{
+  "artifact": "DFM_MKC_ACT_DR6_HOLDOUT_STATUS_DASHBOARD_SYNC_2026_05_20",
+  "boundary_preserved": true,
+  "dashboard_row": {
+    "boundary": "No ACT DR6 likelihood run, no prediction vector/hash, no Lambda-CDM comparison, no superiority claim.",
+    "ci": "green",
+    "classification": "POSTHOC_LOCAL_ONLY_INDEPENDENT_HOLDOUT_OPEN",
+    "closureScaleMetricApplicable": false,
+    "doesNotProve": [
+      "DFM-MKC",
+      "Lambda-CDM failure",
+      "mathematical superiority of DFM-MKC",
+      "final cosmology closure",
+      "dark-energy resolution",
+      "dark-matter resolution",
+      "Nobel-level physical discovery",
+      "any Clay problem"
+    ],
+    "domain": "Cosmology / status",
+    "excludeFromMetrics": true,
+    "id": "dfm-mkc-act-dr6-holdout-status-2026-05-20",
+    "integrity": 100,
+    "isTheorem": false,
+    "metadataOnly": false,
+    "name": "DFM-MKC ACT DR6 holdout status",
+    "percent": null,
+    "proofPercent": null,
+    "repo": "frontier-status-dashboard",
+    "repository": "inaciovasquez2020/frontier-status-dashboard",
+    "source": "DFM_MKC_ACT_DR6_HOLDOUT_STATUS_DASHBOARD_SYNC_2026_05_20",
+    "status": "POSTHOC_LOCAL_ONLY + INDEPENDENT_HOLDOUT_OPEN",
+    "summary": "DFM-MKC remains post-hoc local only while the ACT DR6 independent holdout route remains open.",
+    "theoremClosure": 0,
+    "theoremLevel": false,
+    "theoremMetricApplicable": false,
+    "theoremPromotion": false,
+    "title": "DFM-MKC ACT DR6 holdout status",
+    "updated": "2026-05-20",
+    "url": "https://github.com/inaciovasquez2020/frontier-status-dashboard"
+  },
+  "public_private_policy": {
+    "excluded_from_metrics": true,
+    "numeric_metric_fields_present": true,
+    "private_repository_name_exposed": false,
+    "public_url_is_github": true
+  }
+}
