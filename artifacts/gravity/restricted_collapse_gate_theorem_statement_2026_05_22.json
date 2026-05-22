@@ -1,0 +1,96 @@
+{
+  "object": "RESTRICTED_COLLAPSE_GATE_THEOREM_STATEMENT",
+  "date": "2026-05-22",
+  "status": "THEOREM_STATEMENT_ONLY_PROOF_NOT_SUPPLIED",
+  "supplies": [
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_STATEMENT"
+  ],
+  "does_not_supply": [
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_PROOF_OBJECT"
+  ],
+  "depends_on": [
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_PROOF_OBJECT_MISSING_CERTIFICATE",
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_ASSEMBLY_TARGET",
+    "RESTRICTED_WELLPOSEDNESS_INTERFACE",
+    "RESTRICTED_ENERGY_CONDITION_INTERFACE",
+    "RESTRICTED_GATE_PREDICATE_SATISFACTION_CERTIFICATE"
+  ],
+  "theorem_statement": {
+    "name": "RESTRICTED_COLLAPSE_GATE_THEOREM",
+    "scope": "restricted_dashboard_source_map_layer",
+    "formal_statement": "For every datum D in the restricted initial-data class, if D satisfies the restricted gate predicates, the restricted energy-condition interface, and the restricted wellposedness/continuation interface, then D admits a restricted collapse-gate trigger inside the declared restricted gate domain, with all no-promotion boundaries preserved.",
+    "premises": [
+      "D is in RESTRICTED_INITIAL_DATA_CLASS",
+      "D satisfies RESTRICTED_GATE_PREDICATE_SATISFACTION_CERTIFICATE",
+      "D satisfies RESTRICTED_ENERGY_CONDITION_INTERFACE",
+      "D satisfies RESTRICTED_WELLPOSEDNESS_INTERFACE",
+      "D remains inside the declared restricted gate domain"
+    ],
+    "conclusion": [
+      "D admits RESTRICTED_COLLAPSE_GATE_TRIGGER"
+    ],
+    "boundary_preservation": [
+      "no_unrestricted_gravity_promotion",
+      "no_empirical_validation_promotion",
+      "no_cosmic_censorship_promotion",
+      "no_dark_matter_resolution_promotion",
+      "no_clay_problem_promotion"
+    ],
+    "status": "STATEMENT_DEFINED_PROOF_NOT_SUPPLIED"
+  },
+  "closed_statement_obligations": [
+    "exact_restricted_collapse_gate_theorem_statement"
+  ],
+  "remaining_open_obligations": [
+    "restricted_initial_data_class",
+    "restricted_energy_condition_preservation",
+    "restricted_wellposedness_continuation",
+    "restricted_collapse_gate_trigger_derivation",
+    "restricted_collapse_gate_theorem_proof_object"
+  ],
+  "weakest_sufficient_next_object": "RESTRICTED_INITIAL_DATA_CLASS",
+  "boundary": [
+    "No gravity closure is claimed.",
+    "No collapse-gate theorem is claimed.",
+    "No restricted collapse-gate theorem is proved.",
+    "No unrestricted collapse-gate theorem is claimed.",
+    "No restricted collapse-gate theorem proof object is supplied.",
+    "No analytic gravity theorem is claimed.",
+    "No wellposedness theorem is claimed.",
+    "No energy condition theorem is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No unrestricted cosmic censorship theorem is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "collapse-gate theorem",
+    "restricted collapse-gate theorem",
+    "unrestricted collapse-gate theorem",
+    "restricted collapse-gate theorem proof object",
+    "analytic gravity theorem",
+    "wellposedness theorem",
+    "energy condition theorem",
+    "four-dimensional collapse theorem",
+    "unrestricted non-symmetric collapse theorem",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "unrestricted primordial black hole formation theorem",
+    "unrestricted primordial black hole evaporation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
