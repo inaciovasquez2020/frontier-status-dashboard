@@ -1,0 +1,73 @@
+{
+  "id": "CRITICAL_COLLAPSE_SPACETIME_CRYSTAL_SOURCE_2026_05_22",
+  "status": "ANALYTIC_GRAVITY_SOURCE_ONLY_NO_THEOREM_PROMOTION",
+  "date": "2026-05-22",
+  "sources": [
+    {
+      "id": "PHYSORG_CRITICAL_COLLAPSE_SPACETIME_CRYSTAL_SOURCE",
+      "url": "https://phys.org/news/2026-05-crystals-space-phenomenon-collapse-tiny.html",
+      "source_type": "science_news_primary_paper_pointer",
+      "claim_status": "analytic_critical_collapse_source_only",
+      "reported_surface": {
+        "public_report_date": "2026-05-21",
+        "provider": "Vienna University of Technology",
+        "institutions": [
+          "TU Wien",
+          "Goethe University Frankfurt"
+        ],
+        "phenomenon": "critical collapse",
+        "informal_descriptor": "spacetime crystal",
+        "reported_transition": "unstable critical state may disperse or collapse into microscopic black hole after added energy",
+        "method": "large_D_analytic_solution",
+        "journal": "Physical Review Letters",
+        "paper_title": "Analytic Discrete Self-Similar Solutions of Einstein-Klein-Gordon at Large D",
+        "doi": "10.1103/qgl5-5l3t"
+      },
+      "next_required_object": "PRIMARY_PRL_CRITICAL_COLLAPSE_PAPER_REVIEW_AND_FORMAL_RELEVANCE_MAP"
+    }
+  ],
+  "admissible_use": [
+    "analytic-gravity literature intake",
+    "critical-collapse source indexing",
+    "black-hole-formation method source",
+    "gravity-stack relevance routing"
+  ],
+  "required_before_promotion": [
+    "PRIMARY_PAPER_REVIEWED",
+    "EINSTEIN_KLEIN_GORDON_ASSUMPTIONS_EXTRACTED",
+    "LARGE_D_LIMIT_ROLE_AUDITED",
+    "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED",
+    "CONNECTION_TO_CHRONOS_GRAVITY_STACK_FORMALIZED",
+    "INDEPENDENT_EXPERT_REVIEW_OR_REPLICATION_SUPPLIED"
+  ],
+  "bundle_next_required_objects": [
+    "PRIMARY_PRL_CRITICAL_COLLAPSE_PAPER_REVIEW_AND_FORMAL_RELEVANCE_MAP",
+    "EINSTEIN_KLEIN_GORDON_ASSUMPTIONS_EXTRACTED",
+    "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED"
+  ],
+  "boundary": [
+    "Analytic gravity source only.",
+    "No gravity solution is claimed.",
+    "No black-hole production claim is made.",
+    "No primordial-black-hole abundance claim is made.",
+    "No dark matter detection is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No dark-energy resolution is claimed.",
+    "No dark-matter resolution is claimed.",
+    "No Euclid Q2 empirical claim is made.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity solution",
+    "black-hole production",
+    "primordial-black-hole abundance",
+    "dark matter detection",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark-energy resolution",
+    "dark-matter resolution",
+    "Euclid Q2 empirical claim",
+    "any Clay problem"
+  ]
+}
