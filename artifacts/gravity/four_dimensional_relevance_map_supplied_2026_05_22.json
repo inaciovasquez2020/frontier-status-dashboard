@@ -1,0 +1,108 @@
+{
+  "id": "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED_2026_05_22",
+  "status": "FOUR_DIMENSIONAL_RELEVANCE_MAP_ONLY_NO_TRANSFER_THEOREM",
+  "date": "2026-05-22",
+  "source": {
+    "title": "Analytic Discrete Self-Similar Solutions of Einstein-Klein-Gordon at Large D",
+    "arxiv": "2601.14358",
+    "doi": "10.1103/qgl5-5l3t",
+    "journal": "Physical Review Letters"
+  },
+  "resolved_from_previous_next_required_object": "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED",
+  "input_surfaces": [
+    "CRITICAL_COLLAPSE_PRIMARY_REVIEW_MAP_2026_05_22",
+    "EINSTEIN_KLEIN_GORDON_ASSUMPTIONS_EXTRACTED_2026_05_22"
+  ],
+  "four_dimensional_relevance_map": {
+    "D4_status": "RELEVANCE_ONLY_NOT_TRANSFERRED",
+    "source_regime": "large_D_Einstein_massless_Klein_Gordon_critical_collapse",
+    "target_regime": "four_dimensional_Einstein_massless_Klein_Gordon_critical_collapse",
+    "admissible_relevance": [
+      "critical-collapse conceptual analogue",
+      "discrete-self-similarity structure pointer",
+      "Einstein-scalar assumption comparator",
+      "black-hole-threshold behavior source",
+      "large-D asymptotic model for comparison only"
+    ],
+    "non_admissible_promotions": [
+      "large_D_to_D4_transfer_theorem",
+      "four_dimensional_physical_collapse_theorem",
+      "unrestricted_non_symmetric_collapse_theorem",
+      "cosmic_censorship_result",
+      "hoop_conjecture_result",
+      "black_hole_production_claim",
+      "primordial_black_hole_abundance_claim",
+      "dark_matter_detection_claim"
+    ]
+  },
+  "transfer_obstructions": [
+    {
+      "name": "large_D_limit_gap",
+      "description": "The source construction is organized by a large-D expansion; this does not by itself give a theorem at D=4.",
+      "required_to_close": "LARGE_D_TO_D4_ERROR_CONTROL_OR_TRANSFER_THEOREM"
+    },
+    {
+      "name": "spherical_symmetry_gap",
+      "description": "The source assumptions are spherical; this does not cover unrestricted non-symmetric collapse.",
+      "required_to_close": "NONSPHERICAL_STABILITY_OR_EXTENSION_THEOREM"
+    },
+    {
+      "name": "massless_scalar_matter_gap",
+      "description": "The source matter model is a massless scalar; this does not cover general matter, massive fields, fluids, or modified couplings.",
+      "required_to_close": "GENERAL_MATTER_TRANSFER_MAP"
+    },
+    {
+      "name": "critical_threshold_gap",
+      "description": "Critical-collapse threshold structure does not by itself imply generic collapse, black-hole production rates, or abundance predictions.",
+      "required_to_close": "PHYSICAL_INITIAL_DATA_AND_ABUNDANCE_MODEL"
+    },
+    {
+      "name": "chronos_stack_binding_gap",
+      "description": "The source has not yet been formally bound to the Chronos gravity stack operators and admissibility surfaces.",
+      "required_to_close": "CHRONOS_GRAVITY_STACK_BINDING_MAP"
+    }
+  ],
+  "closed_object": "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED",
+  "remaining_next_required_objects": [
+    "LARGE_D_TO_D4_ERROR_CONTROL_OR_TRANSFER_THEOREM",
+    "NONSPHERICAL_STABILITY_OR_EXTENSION_THEOREM",
+    "GENERAL_MATTER_TRANSFER_MAP",
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP"
+  ],
+  "boundary": [
+    "Four-dimensional relevance map only.",
+    "No large-D to D=4 transfer theorem is claimed.",
+    "No theorem promotion is claimed.",
+    "No gravity solution is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No cosmic censorship result is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No black-hole production claim is made.",
+    "No primordial-black-hole abundance claim is made.",
+    "No dark matter detection is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No dark-energy resolution is claimed.",
+    "No dark-matter resolution is claimed.",
+    "No Euclid Q2 empirical claim is made.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "large-D to D=4 transfer theorem",
+    "gravity solution",
+    "unrestricted non-symmetric collapse theorem",
+    "four-dimensional collapse theorem",
+    "cosmic censorship",
+    "hoop conjecture",
+    "black-hole production",
+    "primordial-black-hole abundance",
+    "dark matter detection",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark-energy resolution",
+    "dark-matter resolution",
+    "Euclid Q2 empirical claim",
+    "any Clay problem"
+  ]
+}
