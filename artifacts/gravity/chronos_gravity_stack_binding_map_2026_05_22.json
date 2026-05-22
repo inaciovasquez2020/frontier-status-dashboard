@@ -1,0 +1,98 @@
+{
+  "object": "CHRONOS_GRAVITY_STACK_BINDING_MAP",
+  "date": "2026-05-22",
+  "status": "BINDING_MAP_ONLY_NO_GRAVITY_CLOSURE",
+  "supplies": [
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP"
+  ],
+  "input_objects": [
+    "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED",
+    "EINSTEIN_KLEIN_GORDON_ASSUMPTIONS_EXTRACTED",
+    "KERR_DESITTER_WCCC_SOURCE_MAP",
+    "PBH_SLOW_FOPT_SOURCE_MAP",
+    "PBH_THERMAL_EVAPORATION_SOURCE_MAP",
+    "GRAVITY_SOURCE_MAP_INTEGRATION_MATRIX"
+  ],
+  "binding_rows": [
+    {
+      "source_object": "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED",
+      "chronos_stack_slot": "four_dimensional_relevance_filter",
+      "binding_type": "scope_filter_only",
+      "claim": "Supplies the four-dimensional relevance scope used to sort gravity inputs without proving a four-dimensional collapse theorem."
+    },
+    {
+      "source_object": "EINSTEIN_KLEIN_GORDON_ASSUMPTIONS_EXTRACTED",
+      "chronos_stack_slot": "matter_model_assumption_surface",
+      "binding_type": "assumption_inventory_only",
+      "claim": "Supplies extracted Einstein-Klein-Gordon assumptions without proving well-posedness, collapse, or censorship."
+    },
+    {
+      "source_object": "KERR_DESITTER_WCCC_SOURCE_MAP",
+      "chronos_stack_slot": "model_specific_wccc_source",
+      "binding_type": "external_source_binding_only",
+      "claim": "Binds the Kerr-de Sitter WCCC source to the gravity source layer without promoting cosmic censorship."
+    },
+    {
+      "source_object": "PBH_SLOW_FOPT_SOURCE_MAP",
+      "chronos_stack_slot": "model_specific_pbh_formation_source",
+      "binding_type": "external_source_binding_only",
+      "claim": "Binds the slow-FOPT PBH source to the gravity source layer without proving PBH formation or dark matter."
+    },
+    {
+      "source_object": "PBH_THERMAL_EVAPORATION_SOURCE_MAP",
+      "chronos_stack_slot": "model_specific_pbh_evaporation_source",
+      "binding_type": "external_source_binding_only",
+      "claim": "Binds the PBH thermal-evaporation source to the gravity source layer without proving evaporation, detection, or dark matter resolution."
+    },
+    {
+      "source_object": "GRAVITY_SOURCE_MAP_INTEGRATION_MATRIX",
+      "chronos_stack_slot": "integrated_gravity_source_matrix",
+      "binding_type": "matrix_to_stack_binding_only",
+      "claim": "Binds the integrated source-map matrix to the named Chronos gravity stack without proving any gravity closure theorem."
+    }
+  ],
+  "chronos_gravity_stack_slots": [
+    "four_dimensional_relevance_filter",
+    "matter_model_assumption_surface",
+    "model_specific_wccc_source",
+    "model_specific_pbh_formation_source",
+    "model_specific_pbh_evaporation_source",
+    "integrated_gravity_source_matrix",
+    "restricted_collapse_gate_target",
+    "boundary_compactness_target",
+    "empirical_validation_target"
+  ],
+  "next_required_object": "CHRONOS_GRAVITY_STACK_BINDING_SOUNDNESS_LEMMA",
+  "boundary": [
+    "No gravity closure is claimed.",
+    "No soundness theorem for the Chronos gravity stack binding map is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No unrestricted cosmic censorship theorem is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "Chronos gravity stack binding soundness",
+    "four-dimensional collapse theorem",
+    "unrestricted non-symmetric collapse theorem",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "unrestricted primordial black hole formation theorem",
+    "unrestricted primordial black hole evaporation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
