@@ -1,0 +1,32 @@
+{
+  "id": "RESTRICTED_WELLPOSEDNESS_CONTINUATION_PROOF",
+  "date": "2026-05-22",
+  "title": "restricted wellposedness continuation proof",
+  "status": "PROOF_OBJECT_RECORDED_RESTRICTED_ONLY",
+  "object_kind": "restricted_proof_object",
+  "repository": "frontier-status-dashboard",
+  "depends_on": ["RESTRICTED_INITIAL_DATA_CLASS", "RESTRICTED_WELLPOSEDNESS_INTERFACE"],
+  "supplied_object": "RESTRICTED_WELLPOSEDNESS_CONTINUATION_PROOF",
+  "weakest_sufficient_next_object": "RESTRICTED_COLLAPSE_GATE_TRIGGER_DERIVATION",
+  "restricted_chain_position": "RESTRICTED_WELLPOSEDNESS_CONTINUATION_PROOF",
+  "boundary": [
+    "restricted collapse-gate chain only",
+    "does not prove unrestricted gravity closure",
+    "does not prove unrestricted cosmic censorship",
+    "does not prove unrestricted hoop conjecture",
+    "does not prove four-dimensional non-symmetric collapse theorem",
+    "does not prove Chronos gravity stack closure",
+    "does not prove any Clay problem"
+  ],
+  "does_not_prove": [
+    "unrestricted gravity closure",
+    "unrestricted cosmic censorship",
+    "unrestricted hoop conjecture",
+    "four-dimensional non-symmetric collapse theorem",
+    "Chronos gravity stack closure",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "any Clay problem"
+  ]
+}
