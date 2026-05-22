@@ -36,3 +36,12 @@ It does not prove:
 ## Verification status
 
 `SOURCE_ALIGNMENT_ONLY_NO_THEOREM_PROMOTION`
+
+## Added source
+
+- `supercdms_snolab_detector_milestone_phys_org_2026_04_10`
+  - Class: `science_news_report`
+  - Internal object: `empirical_validation`
+  - Status: `detector_milestone_only_no_detection_claim`
+  - Boundary: detector-readiness milestone only; not a dark-matter detection and not DFM-MKC validation.
+- dark matter detection

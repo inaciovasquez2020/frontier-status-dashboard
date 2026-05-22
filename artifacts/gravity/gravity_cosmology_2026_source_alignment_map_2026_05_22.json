@@ -80,6 +80,15 @@
       "internal_object": "gravity_stack",
       "alignment": "Connects dark matter capture, black-hole growth, mergers, and early SMBH formation as a source-map input only.",
       "claim_status": "preprint_alignment_only"
+    },
+    {
+      "key": "supercdms_snolab_detector_milestone_phys_org_2026_04_10",
+      "title": "Search for dark matter intensifies as leading detector reaches milestone",
+      "url": "https://phys.org/news/2026-04-dark-detector-milestone.html",
+      "source_class": "science_news_report",
+      "internal_object": "empirical_validation",
+      "alignment": "SuperCDMS at SNOLAB reached target temperature for cryogenic detector operation; admissible as an empirical-validation infrastructure milestone only, not as a dark-matter detection or model validation.",
+      "claim_status": "detector_milestone_only_no_detection_claim"
     }
   ],
   "does_not_prove": [
@@ -87,7 +96,8 @@
     "modified gravity failure",
     "DFM-MKC validation",
     "gravity closure",
-    "Clay problem"
+    "Clay problem",
+    "dark matter detection"
   ],
   "required_next_object": "GRAVITY_COSMOLOGY_2026_SOURCE_ALIGNMENT_MAP_VERIFIED",
   "verification_target": "SOURCE_ALIGNMENT_ONLY_NO_THEOREM_PROMOTION"

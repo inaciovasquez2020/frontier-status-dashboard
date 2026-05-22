@@ -20,7 +20,7 @@ describe("GRAVITY_COSMOLOGY_2026_SOURCE_ALIGNMENT_MAP", () => {
     expect(artifact.id).toBe("GRAVITY_COSMOLOGY_2026_SOURCE_ALIGNMENT_MAP");
     expect(artifact.status).toBe("SOURCE_ALIGNMENT_ONLY_NO_THEOREM_PROMOTION");
     expect(artifact.verification_target).toBe("SOURCE_ALIGNMENT_ONLY_NO_THEOREM_PROMOTION");
-    expect(artifact.sources).toHaveLength(7);
+    expect(artifact.sources).toHaveLength(8);
 
     const classes = new Set(artifact.sources.map((source: { source_class: string }) => source.source_class));
     expect(classes).toEqual(
@@ -51,6 +51,7 @@ describe("GRAVITY_COSMOLOGY_2026_SOURCE_ALIGNMENT_MAP", () => {
       "DFM-MKC validation",
       "gravity closure",
       "Clay problem",
+      "dark matter detection",
     ];
 
     expect(new Set(artifact.does_not_prove)).toEqual(new Set(requiredBoundaries));

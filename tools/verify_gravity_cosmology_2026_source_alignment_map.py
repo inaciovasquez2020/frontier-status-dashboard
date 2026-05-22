@@ -31,6 +31,7 @@ EXPECTED_DOES_NOT_PROVE = {
     "DFM-MKC validation",
     "gravity closure",
     "Clay problem",
+    "dark matter detection",
 }
 
 EXPECTED_SOURCE_KEYS = {
@@ -41,6 +42,7 @@ EXPECTED_SOURCE_KEYS = {
     "dark_matter_multiple_forms_astronomy_now",
     "minimal_dark_matter_cosmic_intensity_frontier_jhep_2026_177",
     "dark_matter_early_smbh_arxiv_2508_11846v2",
+    "supercdms_snolab_detector_milestone_phys_org_2026_04_10",
 }
 
 
@@ -66,7 +68,7 @@ def main() -> None:
 
     sources = data.get("sources")
     require(isinstance(sources, list), "sources must be a list")
-    require(len(sources) == 7, "Expected exactly seven supplied sources")
+    require(len(sources) == 8, "Expected exactly eight supplied sources")
 
     keys = {source.get("key") for source in sources}
     require(keys == EXPECTED_SOURCE_KEYS, "Source key set mismatch")
