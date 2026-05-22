@@ -1,0 +1,70 @@
+{
+  "id": "PBH_THERMAL_EVAPORATION_SOURCE_MAP_2026_05_22",
+  "status": "MODEL_SPECIFIC_PBH_THERMAL_EVAPORATION_SOURCE_ONLY_NO_GRAVITY_CLOSURE",
+  "date": "2026-05-22",
+  "source": {
+    "title": "Evaporation of primordial black holes in a thermal universe: a thermofield dynamics approach",
+    "arxiv": "2512.07284",
+    "doi": "10.1007/JHEP04(2026)026",
+    "journal": "Journal of High Energy Physics",
+    "published": "2026-04-02",
+    "url": "https://link.springer.com/article/10.1007/JHEP04(2026)026"
+  },
+  "supplies": [
+    "MODEL_SPECIFIC_PBH_THERMAL_EVAPORATION_SOURCE",
+    "THERMOFIELD_DYNAMICS_HAWKING_SPECTRUM_SOURCE",
+    "REHEATING_BATH_EVAPORATION_RATE_SOURCE",
+    "PBH_LIFETIME_SHORTENING_SOURCE"
+  ],
+  "does_not_supply": [
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP",
+    "FOUR_DIMENSIONAL_GRAVITY_CLOSURE_THEOREM",
+    "UNRESTRICTED_PBH_DARK_MATTER_VALIDATION",
+    "EMPIRICAL_PBH_ABUNDANCE_VALIDATION",
+    "SIX_FIELD_ANALYTIC_PACKAGE_HYPOTHESIS"
+  ],
+  "weakest_sufficient_missing_lemma": "MODEL_SPECIFIC_PBH_THERMAL_EVAPORATION_TO_CHRONOS_GRAVITY_STACK_BINDING_MAP",
+  "secondary_missing_lemmas": [
+    "THERMAL_BATH_MODEL_TO_CHRONOS_ADMISSIBLE_DATA_MAP",
+    "PBH_EVAPORATION_RATE_TO_GRAVITY_STACK_OBSERVABLE_MAP",
+    "PBH_LIFETIME_CORRECTION_TO_EMPIRICAL_CONSTRAINT_MAP",
+    "THERMOFIELD_DYNAMICS_TO_BOUNDARY_COMPACTNESS_INTERFACE"
+  ],
+  "source_claims_recorded_as_inputs_only": [
+    "Finite-temperature environment modifies Hawking radiation spectrum.",
+    "Thermofield Dynamics gives modified occupation numbers for Schwarzschild and Kerr geometries.",
+    "Early-universe reheating thermal bath enhances PBH evaporation.",
+    "Thermal corrections shorten PBH lifetime compared to zero-temperature vacuum."
+  ],
+  "boundary": [
+    "Model-specific PBH thermal-evaporation source only.",
+    "No gravity closure is claimed.",
+    "No Chronos gravity stack binding map is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No cosmic censorship result is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No four-dimensional non-symmetric collapse theorem is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "Chronos gravity stack binding map",
+    "unrestricted primordial black hole evaporation theorem",
+    "unrestricted primordial black hole formation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "cosmic censorship",
+    "hoop conjecture",
+    "four-dimensional non-symmetric collapse theorem",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
