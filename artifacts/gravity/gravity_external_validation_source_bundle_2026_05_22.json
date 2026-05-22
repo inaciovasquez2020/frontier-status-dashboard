@@ -1,0 +1,109 @@
+{
+  "id": "GRAVITY_EXTERNAL_VALIDATION_SOURCE_BUNDLE_2026_05_22",
+  "status": "EXTERNAL_SOURCE_BUNDLE_ONLY_NO_THEOREM_OR_EMPIRICAL_PROMOTION",
+  "date": "2026-05-22",
+  "sources": [
+    {
+      "id": "SIMONS_ACT_GRAVITY_COSMIC_SCALE_TEST_SOURCE",
+      "url": "https://www.simonsfoundation.org/2026/04/15/gravity-follows-newtons-and-einsteins-rules-even-at-cosmic-scales/",
+      "source_type": "cosmic_scale_gravity_observational_source",
+      "object": "ACT galaxy-cluster CMB gravity test",
+      "claim_status": "observational_support_source_only_not_gravity_solution",
+      "reported_surface": {
+        "instrument": "Atacama Cosmology Telescope",
+        "reported_scale": "cosmic_scales_galaxy_clusters",
+        "reported_gravity_result": "Newton_Einstein_inverse_square_consistent",
+        "reported_context": "strengthens_dark_matter_interpretation_over_selected_modified_gravity_alternatives",
+        "publication": "Physical Review Letters",
+        "public_report_date": "2026-04-15"
+      },
+      "next_required_object": "PRIMARY_ACT_GRAVITY_TEST_PAPER_AND_DATA_PIPELINE_AUDIT"
+    },
+    {
+      "id": "ICTP_SAIFR_CLASSICAL_GRAVITY_PRIZE_2026_SOURCE",
+      "url": "https://www.ictp-saifr.org/gravityprize/",
+      "source_type": "classical_gravity_recognition_and_expert_community_source",
+      "object": "2026 ICTP-SAIFR PhD Prize in Classical Gravity and Applications",
+      "claim_status": "recognition_venue_source_only_not_validation",
+      "reported_surface": {
+        "scope": "classical_gravity_and_applications",
+        "areas": [
+          "gravitational_wave_physics",
+          "astrophysics",
+          "cosmology"
+        ],
+        "nomination_deadline": "2026-05-31",
+        "region": "Latin America"
+      },
+      "next_required_object": "RELEVANT_CONTACT_OR_SUBMISSION_OPPORTUNITY_RECORD_SUPPLIED"
+    },
+    {
+      "id": "GEOMGRAVX_2026_EXTENDED_GRAVITY_VENUE_SOURCE",
+      "url": "https://indico.global/event/15717/",
+      "source_type": "extended_gravity_expert_conference_source",
+      "object": "GeomGravX: 10 Years of Geometric Foundations of Gravity and eXtensions",
+      "claim_status": "expert_venue_source_only_not_evidence",
+      "reported_surface": {
+        "dates": "2026-06-29_to_2026-07-03",
+        "venue": "Physicum, University of Tartu",
+        "topics": [
+          "extensions_of_general_relativity",
+          "metric_affine_gravity",
+          "teleparallel_gravity",
+          "massive_gravity",
+          "cosmology",
+          "gravitational_waves",
+          "black_holes",
+          "dark_energy",
+          "dark_matter",
+          "AI_in_gravity_research"
+        ]
+      },
+      "next_required_object": "GEOMGRAVX_CONTACT_OR_ABSTRACT_RELEVANCE_RECORD_SUPPLIED"
+    }
+  ],
+  "admissible_use": [
+    "external-source indexing",
+    "gravity evidence-intake routing",
+    "expert-validation target discovery",
+    "future audit and contact routing"
+  ],
+  "bundle_next_required_objects": [
+    "PRIMARY_ACT_GRAVITY_TEST_PAPER_AND_DATA_PIPELINE_AUDIT",
+    "RELEVANT_CONTACT_OR_SUBMISSION_OPPORTUNITY_RECORD_SUPPLIED",
+    "GEOMGRAVX_CONTACT_OR_ABSTRACT_RELEVANCE_RECORD_SUPPLIED"
+  ],
+  "required_before_promotion": [
+    "PRIMARY_PAPER_REVIEWED",
+    "PUBLIC_DATA_PIPELINE_REPRODUCED",
+    "MODEL_COMPARISON_AUDIT_SUPPLIED",
+    "INDEPENDENT_REPLICATION_SUPPLIED",
+    "SYSTEMATICS_AUDIT_SUPPLIED",
+    "COMMUNITY_FEEDBACK_RECORD_SUPPLIED"
+  ],
+  "boundary": [
+    "External source bundle only.",
+    "No gravity solution is claimed.",
+    "No modified-gravity refutation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter particle identification is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No dark-energy resolution is claimed.",
+    "No dark-matter resolution is claimed.",
+    "No Euclid Q2 empirical claim is made.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity solution",
+    "modified-gravity refutation theorem",
+    "dark matter detection",
+    "dark matter particle identification",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark-energy resolution",
+    "dark-matter resolution",
+    "Euclid Q2 empirical claim",
+    "any Clay problem"
+  ]
+}
