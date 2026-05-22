@@ -1,0 +1,74 @@
+{
+  "object": "RESTRICTED_COLLAPSE_GATE_CONSUMER_INTERFACE",
+  "date": "2026-05-22",
+  "status": "CONSUMER_INTERFACE_ONLY_COLLAPSE_GATE_BRIDGE_NOT_PROVED",
+  "supplies": [
+    "RESTRICTED_COLLAPSE_GATE_CONSUMER_INTERFACE"
+  ],
+  "depends_on": [
+    "CHRONOS_GRAVITY_STACK_RESTRICTED_SOUNDNESS_TO_COLLAPSE_GATE_BRIDGE_TARGET",
+    "CHRONOS_GRAVITY_STACK_BINDING_SOUNDNESS_LEMMA",
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP"
+  ],
+  "interface_slots": [
+    "restricted_stack_predicate_interface",
+    "collapse_gate_consumer_read_restriction",
+    "boundary_preserving_input_translation",
+    "no_analytic_gravity_theorem_promotion",
+    "no_empirical_validation_promotion"
+  ],
+  "consumer_contract": {
+    "name": "RESTRICTED_COLLAPSE_GATE_CONSUMER_INTERFACE",
+    "scope": "restricted_dashboard_source_map_layer",
+    "allowed_reads": [
+      "declared_restricted_stack_predicates",
+      "declared_boundary_tokens",
+      "declared_source_map_indices"
+    ],
+    "forbidden_reads": [
+      "analytic_gravity_theorem_content",
+      "unrestricted_collapse_data",
+      "empirical_validation_claims",
+      "cosmic_censorship_claims",
+      "dark_matter_resolution_claims"
+    ],
+    "status": "INTERFACE_SUPPLIED_BRIDGE_NOT_PROVED"
+  },
+  "weakest_sufficient_next_object": "CHRONOS_GRAVITY_STACK_RESTRICTED_SOUNDNESS_TO_COLLAPSE_GATE_BRIDGE",
+  "boundary": [
+    "No gravity closure is claimed.",
+    "No restricted collapse-gate bridge theorem is claimed.",
+    "No collapse-gate theorem is claimed.",
+    "No analytic gravity theorem is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No unrestricted cosmic censorship theorem is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "restricted collapse-gate bridge theorem",
+    "collapse-gate theorem",
+    "analytic gravity theorem",
+    "four-dimensional collapse theorem",
+    "unrestricted non-symmetric collapse theorem",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "unrestricted primordial black hole formation theorem",
+    "unrestricted primordial black hole evaporation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
