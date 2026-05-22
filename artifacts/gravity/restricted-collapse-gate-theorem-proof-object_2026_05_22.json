@@ -1,0 +1,32 @@
+{
+  "id": "RESTRICTED_COLLAPSE_GATE_THEOREM_PROOF_OBJECT",
+  "date": "2026-05-22",
+  "title": "restricted collapse-gate theorem proof object",
+  "status": "RESTRICTED_THEOREM_PROOF_OBJECT_RECORDED_NO_UNRESTRICTED_PROMOTION",
+  "object_kind": "restricted_theorem_proof_object",
+  "repository": "frontier-status-dashboard",
+  "depends_on": ["RESTRICTED_COLLAPSE_GATE_THEOREM_STATEMENT", "RESTRICTED_INITIAL_DATA_CLASS", "RESTRICTED_ENERGY_CONDITION_PRESERVATION_PROOF", "RESTRICTED_WELLPOSEDNESS_CONTINUATION_PROOF", "RESTRICTED_COLLAPSE_GATE_TRIGGER_DERIVATION"],
+  "supplied_object": "RESTRICTED_COLLAPSE_GATE_THEOREM_PROOF_OBJECT",
+  "weakest_sufficient_next_object": "No admissible next step.",
+  "restricted_chain_position": "RESTRICTED_COLLAPSE_GATE_THEOREM_PROOF_OBJECT",
+  "boundary": [
+    "restricted collapse-gate chain only",
+    "does not prove unrestricted gravity closure",
+    "does not prove unrestricted cosmic censorship",
+    "does not prove unrestricted hoop conjecture",
+    "does not prove four-dimensional non-symmetric collapse theorem",
+    "does not prove Chronos gravity stack closure",
+    "does not prove any Clay problem"
+  ],
+  "does_not_prove": [
+    "unrestricted gravity closure",
+    "unrestricted cosmic censorship",
+    "unrestricted hoop conjecture",
+    "four-dimensional non-symmetric collapse theorem",
+    "Chronos gravity stack closure",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "any Clay problem"
+  ]
+}
