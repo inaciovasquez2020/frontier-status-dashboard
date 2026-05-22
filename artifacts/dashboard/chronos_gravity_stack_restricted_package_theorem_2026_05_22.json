@@ -1,0 +1,19 @@
+{
+  "id": "chronos_gravity_stack_restricted_package_theorem_2026_05_22",
+  "date": "2026-05-22",
+  "source_repo": "chronos-urf-rr",
+  "source_prs": [420, 421, 422, 423],
+  "dashboard_status": "RESTRICTED_PACKAGE_THEOREM_ONLY",
+  "frontier_object": "SixFieldAnalyticPackageHypothesis",
+  "theorem_metric_applicable": false,
+  "summary": "Gravity stack #420-#422 is restricted-package theorem only; the sole frontier object remains SixFieldAnalyticPackageHypothesis.",
+  "boundary": [
+    "No unrestricted SixFieldAnalyticPackageHypothesis",
+    "No unrestricted analytic package",
+    "No single field implies the other five fields",
+    "No unrestricted cosmic censorship",
+    "No unrestricted hoop theorem",
+    "No P vs NP",
+    "No Clay problem"
+  ]
+}
