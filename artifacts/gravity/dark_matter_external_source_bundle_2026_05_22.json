@@ -1,0 +1,102 @@
+{
+  "id": "DARK_MATTER_EXTERNAL_SOURCE_BUNDLE_2026_05_22",
+  "status": "EXTERNAL_SOURCE_BUNDLE_ONLY_NO_EMPIRICAL_PROMOTION",
+  "date": "2026-05-22",
+  "sources": [
+    {
+      "id": "MIT_GW190728_SCALAR_FIELD_METHOD_SOURCE",
+      "url": "https://news.mit.edu/2026/new-way-spot-signs-dark-matter-0512",
+      "source_type": "gravitational_wave_dark_matter_method_source",
+      "object": "GW190728",
+      "claim_status": "candidate_only_not_detection",
+      "reported_surface": {
+        "screened_events": 28,
+        "vacuum_consistent_events": 27,
+        "candidate_event": "GW190728",
+        "paper": "Scalar Fields around Black Hole Binaries in LIGO-Virgo-KAGRA",
+        "doi": "10.1103/fv9z-zkxx",
+        "arxiv": "2510.17967"
+      },
+      "next_required_object": "INDEPENDENT_REPRODUCTION_OF_GW190728_SCALAR_ENVIRONMENT_BAYES_FACTOR"
+    },
+    {
+      "id": "NASA_WEBB_COSMOS_DARK_MATTER_MAP_SOURCE",
+      "url": "https://www.nasa.gov/missions/webb/nasa-reveals-new-details-about-dark-matters-influence-on-universe/",
+      "source_type": "webb_dark_matter_lensing_map_observational_source",
+      "object": "COSMOS_dark_matter_map",
+      "claim_status": "observational_map_source_only_not_particle_identification",
+      "reported_surface": {
+        "instrument": "James Webb Space Telescope",
+        "field": "COSMOS",
+        "galaxy_count_reported": "nearly_800000",
+        "publication": "Nature Astronomy",
+        "publication_date": "2026-01-26",
+        "observing_time_reported_hours": "about_255"
+      },
+      "next_required_object": "PRIMARY_WEBB_COSMOS_LENSING_MAP_DATA_AND_METHOD_AUDIT"
+    },
+    {
+      "id": "ICTP_SAIFR_HBSM2026_COMMUNITY_VALIDATION_VENUE_SOURCE",
+      "url": "https://www.ictp-saifr.org/hbsm2026/",
+      "source_type": "expert_community_validation_venue_source",
+      "object": "Horizons Beyond the Standard Model: from Colliders to Dark Matter and Axions",
+      "claim_status": "venue_source_only_not_evidence",
+      "reported_surface": {
+        "dates": "2026-06-01_to_2026-06-12",
+        "venue": "Principia Institute, Sao Paulo, Brazil",
+        "topics": [
+          "Beyond the Standard Model",
+          "collider physics",
+          "dark matter",
+          "dark sectors",
+          "axions",
+          "axion-like particles"
+        ],
+        "application_status": "closed"
+      },
+      "next_required_object": "COMMUNITY_FEEDBACK_OR_CONTACT_RECORD_SUPPLIED"
+    }
+  ],
+  "admissible_use": [
+    "external-source indexing",
+    "gravity and dark-matter evidence-intake routing",
+    "expert-validation target discovery",
+    "future empirical-promotion blocker tracking"
+  ],
+  "required_before_empirical_promotion": [
+    "PRIMARY_PAPER_REVIEWED",
+    "PUBLIC_DATA_PIPELINE_REPRODUCED",
+    "MODEL_OR_LENSING_METHOD_IMPLEMENTATION_SUPPLIED",
+    "INDEPENDENT_REPLICATION_SUPPLIED",
+    "SYSTEMATICS_AUDIT_SUPPLIED",
+    "COMMUNITY_FEEDBACK_RECORD_SUPPLIED"
+  ],
+  "bundle_next_required_objects": [
+    "INDEPENDENT_REPRODUCTION_OF_GW190728_SCALAR_ENVIRONMENT_BAYES_FACTOR",
+    "PRIMARY_WEBB_COSMOS_LENSING_MAP_DATA_AND_METHOD_AUDIT",
+    "COMMUNITY_FEEDBACK_OR_CONTACT_RECORD_SUPPLIED"
+  ],
+  "boundary": [
+    "External source bundle only.",
+    "No dark matter detection is claimed.",
+    "No dark matter particle identification is claimed.",
+    "No gravity solution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No dark-energy resolution is claimed.",
+    "No dark-matter resolution is claimed.",
+    "No Euclid Q2 empirical claim is made.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "dark matter detection",
+    "dark matter particle identification",
+    "gravity solution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark-energy resolution",
+    "dark-matter resolution",
+    "Euclid Q2 empirical claim",
+    "any Clay problem"
+  ]
+}
