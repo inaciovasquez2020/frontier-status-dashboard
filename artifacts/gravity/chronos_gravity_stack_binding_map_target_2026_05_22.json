@@ -1,0 +1,62 @@
+{
+  "object": "CHRONOS_GRAVITY_STACK_BINDING_MAP_TARGET",
+  "date": "2026-05-22",
+  "status": "TARGET_ONLY_BINDING_SOUNDNESS_NOT_PROVED",
+  "supplies": [
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP_TARGET"
+  ],
+  "requires_existing_objects": [
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP",
+    "GRAVITY_SOURCE_MAP_INTEGRATION_MATRIX",
+    "KERR_DESITTER_WCCC_SOURCE_MAP",
+    "PBH_SLOW_FOPT_SOURCE_MAP",
+    "PBH_THERMAL_EVAPORATION_SOURCE_MAP",
+    "FOUR_DIMENSIONAL_RELEVANCE_MAP_SUPPLIED",
+    "EINSTEIN_KLEIN_GORDON_ASSUMPTIONS_EXTRACTED"
+  ],
+  "target_statement": {
+    "name": "CHRONOS_GRAVITY_STACK_BINDING_SOUNDNESS_LEMMA",
+    "form": "If each bound source-map object is admitted only through its declared stack slot and every downstream theorem reads only declared slot predicates, then source-map integration is structurally admissible as a Chronos gravity stack input.",
+    "status": "OPEN_NOT_PROVED"
+  },
+  "binding_soundness_obligations": [
+    "slot_totality",
+    "slot_type_compatibility",
+    "boundary_preservation",
+    "no_theorem_promotion",
+    "downstream_read_restriction"
+  ],
+  "weakest_sufficient_next_object": "CHRONOS_GRAVITY_STACK_BINDING_SOUNDNESS_LEMMA",
+  "boundary": [
+    "No gravity closure is claimed.",
+    "No Chronos gravity stack binding soundness theorem is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No unrestricted cosmic censorship theorem is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "Chronos gravity stack binding soundness",
+    "four-dimensional collapse theorem",
+    "unrestricted non-symmetric collapse theorem",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "unrestricted primordial black hole formation theorem",
+    "unrestricted primordial black hole evaporation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
