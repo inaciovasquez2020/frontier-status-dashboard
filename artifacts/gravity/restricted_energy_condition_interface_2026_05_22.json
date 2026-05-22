@@ -1,0 +1,86 @@
+{
+  "object": "RESTRICTED_ENERGY_CONDITION_INTERFACE",
+  "date": "2026-05-22",
+  "status": "ENERGY_CONDITION_INTERFACE_ONLY_THEOREM_NOT_PROVED",
+  "supplies": [
+    "RESTRICTED_ENERGY_CONDITION_INTERFACE"
+  ],
+  "depends_on": [
+    "RESTRICTED_GATE_PREDICATE_SATISFACTION_CERTIFICATE",
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_ASSUMPTION_SCHEMA",
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_TARGET",
+    "RESTRICTED_COLLAPSE_GATE_SURFACE_TO_GATE"
+  ],
+  "energy_condition_interface": {
+    "name": "RESTRICTED_ENERGY_CONDITION_INTERFACE",
+    "scope": "restricted_dashboard_source_map_layer",
+    "energy_condition_slots": [
+      "restricted_energy_condition_interface",
+      "restricted_energy_condition_domain",
+      "restricted_energy_condition_boundary_preservation",
+      "restricted_energy_condition_no_unrestricted_promotion",
+      "restricted_energy_condition_no_empirical_promotion"
+    ],
+    "allowed_material": [
+      "declared_restricted_gate_predicates",
+      "declared_boundary_tokens",
+      "restricted_gate_predicate_satisfaction_certificate",
+      "restricted_collapse_gate_theorem_assumption_schema"
+    ],
+    "forbidden_material": [
+      "unrestricted_energy_condition_claim",
+      "analytic_gravity_theorem_content",
+      "cosmic_censorship_claims",
+      "empirical_validation_claims",
+      "dark_matter_resolution_claims"
+    ],
+    "status": "INTERFACE_SUPPLIED_THEOREM_NOT_PROVED"
+  },
+  "closed_theorem_obligations": [
+    "restricted_energy_condition_interface"
+  ],
+  "remaining_open_obligations": [
+    "restricted_wellposedness_interface"
+  ],
+  "weakest_sufficient_next_object": "RESTRICTED_WELLPOSEDNESS_INTERFACE",
+  "boundary": [
+    "No gravity closure is claimed.",
+    "No collapse-gate theorem is claimed.",
+    "No restricted collapse-gate theorem is claimed.",
+    "No unrestricted collapse-gate theorem is claimed.",
+    "No analytic gravity theorem is claimed.",
+    "No energy condition theorem is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No unrestricted cosmic censorship theorem is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "collapse-gate theorem",
+    "restricted collapse-gate theorem",
+    "unrestricted collapse-gate theorem",
+    "analytic gravity theorem",
+    "energy condition theorem",
+    "four-dimensional collapse theorem",
+    "unrestricted non-symmetric collapse theorem",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "unrestricted primordial black hole formation theorem",
+    "unrestricted primordial black hole evaporation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
