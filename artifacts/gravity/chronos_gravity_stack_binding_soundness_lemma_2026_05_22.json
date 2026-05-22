@@ -1,0 +1,64 @@
+{
+  "object": "CHRONOS_GRAVITY_STACK_BINDING_SOUNDNESS_LEMMA",
+  "date": "2026-05-22",
+  "status": "RESTRICTED_SOUNDNESS_LEMMA_ONLY_NO_GRAVITY_CLOSURE",
+  "supplies": [
+    "CHRONOS_GRAVITY_STACK_BINDING_SOUNDNESS_LEMMA"
+  ],
+  "depends_on": [
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP",
+    "CHRONOS_GRAVITY_STACK_BINDING_MAP_TARGET",
+    "GRAVITY_SOURCE_MAP_INTEGRATION_MATRIX"
+  ],
+  "lemma_statement": {
+    "name": "CHRONOS_GRAVITY_STACK_BINDING_SOUNDNESS_LEMMA",
+    "scope": "restricted_dashboard_source_map_layer",
+    "statement": "For the declared dashboard source-map layer, if each gravity source object is read only through its declared Chronos stack slot and every downstream consumer preserves the declared no-promotion boundary, then the binding map is structurally admissible as a source-indexing input.",
+    "does_not_extend_to": [
+      "analytic gravity theorem",
+      "physical field equation derivation",
+      "empirical validation",
+      "unrestricted collapse theorem"
+    ]
+  },
+  "closed_obligations": [
+    "slot_totality",
+    "slot_type_compatibility",
+    "boundary_preservation",
+    "no_theorem_promotion",
+    "downstream_read_restriction"
+  ],
+  "remaining_next_object": "CHRONOS_GRAVITY_STACK_RESTRICTED_SOUNDNESS_TO_COLLAPSE_GATE_BRIDGE_TARGET",
+  "boundary": [
+    "No gravity closure is claimed.",
+    "No analytic gravity theorem is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No unrestricted cosmic censorship theorem is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "analytic gravity theorem",
+    "four-dimensional collapse theorem",
+    "unrestricted non-symmetric collapse theorem",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "unrestricted primordial black hole formation theorem",
+    "unrestricted primordial black hole evaporation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
