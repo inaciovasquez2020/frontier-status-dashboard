@@ -1,0 +1,32 @@
+{
+  "id": "RESTRICTED_INITIAL_DATA_CLASS",
+  "date": "2026-05-22",
+  "title": "restricted initial data class",
+  "status": "INITIAL_DATA_CLASS_SUPPLIED_RESTRICTED_ONLY",
+  "object_kind": "restricted_initial_data_class",
+  "repository": "frontier-status-dashboard",
+  "depends_on": ["RESTRICTED_COLLAPSE_GATE_THEOREM_STATEMENT"],
+  "supplied_object": "RESTRICTED_INITIAL_DATA_CLASS",
+  "weakest_sufficient_next_object": "RESTRICTED_ENERGY_CONDITION_PRESERVATION_PROOF",
+  "restricted_chain_position": "RESTRICTED_INITIAL_DATA_CLASS",
+  "boundary": [
+    "restricted collapse-gate chain only",
+    "does not prove unrestricted gravity closure",
+    "does not prove unrestricted cosmic censorship",
+    "does not prove unrestricted hoop conjecture",
+    "does not prove four-dimensional non-symmetric collapse theorem",
+    "does not prove Chronos gravity stack closure",
+    "does not prove any Clay problem"
+  ],
+  "does_not_prove": [
+    "unrestricted gravity closure",
+    "unrestricted cosmic censorship",
+    "unrestricted hoop conjecture",
+    "four-dimensional non-symmetric collapse theorem",
+    "Chronos gravity stack closure",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "any Clay problem"
+  ]
+}
