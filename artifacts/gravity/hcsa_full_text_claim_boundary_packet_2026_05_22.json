@@ -1,0 +1,45 @@
+{
+"id": "HCSA_FULL_TEXT_CLAIM_BOUNDARY_PACKET",
+"date": "2026-05-22",
+"status": "HCSA_FULL_TEXT_CLAIM_BOUNDARY_ONLY_NO_VALIDATION",
+"artifact_type": "full_text_claim_boundary_packet",
+"source_title": "Beyond Matter II: Deterministic Resolution of Dark Energy, Dark Matter, and Cosmic Microwave Background Anomalies via Hendeca-Tier Informational Pressure (10^66)",
+"source_author": "Murat Hüsnü Sazlı",
+"source_class": "ssrn_preprint_full_text",
+"internal_object": "no_overclaim_boundary",
+"claim_classification": "speculative_external_cosmology_claim",
+"baseline_reference": {
+"key": "lambda_cdm_model_wikipedia_reference",
+"title": "Lambda-CDM model",
+"url": "https://en.wikipedia.org/wiki/Lambda-CDM_model",
+"source_class": "encyclopedic_reference",
+"internal_object": "no_overclaim_boundary",
+"claim_status": "baseline_reference_only_no_failure_claim"
+},
+"content_claims_recorded": [
+"deterministic resolution of dark matter",
+"deterministic resolution of dark energy",
+"deterministic resolution of CMB anomalies",
+"informational pressure as replacement explanation for dark matter and dark energy",
+"Hendeca-Tier Cosmic Signal Architecture as deterministic cosmic operating system",
+"10^66 total informational pressure coefficient",
+"10^6 hierarchical scaling coefficient",
+"10^300 source information density",
+"10^120 observable-universe physical capacity",
+"2.725 K CMB temperature derivation claim"
+],
+"does_not_prove": [
+"dark matter resolution",
+"dark energy resolution",
+"CMB anomaly resolution",
+"DFM-MKC validation",
+"QICT validation",
+"Lambda-CDM failure",
+"modified gravity failure",
+"gravity closure",
+"empirical validation",
+"P vs NP",
+"any Clay problem"
+],
+"verification_target": "HCSA_FULL_TEXT_CLAIM_BOUNDARY_ONLY_NO_VALIDATION"
+}
