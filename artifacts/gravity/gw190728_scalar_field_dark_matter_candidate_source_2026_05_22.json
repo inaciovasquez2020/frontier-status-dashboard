@@ -1,0 +1,59 @@
+{
+  "id": "GW190728_SCALAR_FIELD_DARK_MATTER_CANDIDATE_SOURCE_2026_05_22",
+  "status": "CANDIDATE_SOURCE_ONLY_NO_DETECTION_CLAIM",
+  "date": "2026-05-22",
+  "source": {
+    "science_daily_url": "https://www.sciencedaily.com/releases/2026/05/260518041429.htm",
+    "primary_article_title": "Scalar Fields around Black Hole Binaries in LIGO-Virgo-KAGRA",
+    "journal": "Physical Review Letters",
+    "doi": "10.1103/fv9z-zkxx",
+    "arxiv": "2510.17967"
+  },
+  "claim_surface": {
+    "object": "GW190728",
+    "data_source": "LIGO-Virgo-KAGRA first three observing runs",
+    "screened_events": 28,
+    "vacuum_consistent_events": 27,
+    "candidate_event": "GW190728",
+    "candidate_interpretation": "possible scalar-field environment / dark-matter imprint",
+    "reported_status": "tentative evidence only",
+    "reported_bayes_log_value": "ln_B_vac_env_approximately_3p5_under_superradiance_priors",
+    "reported_scalar_mass_scale_ev": "approximately_1e-12"
+  },
+  "admissible_use": [
+    "external literature source for scalar-field environments around black-hole binaries",
+    "candidate gravitational-wave anomaly source",
+    "dark-matter search-method source",
+    "gravity-stack evidence-intake source only"
+  ],
+  "required_before_empirical_promotion": [
+    "PRIMARY_PAPER_REVIEWED",
+    "LVK_PUBLIC_EVENT_DATA_PIPELINE_REPRODUCED",
+    "WAVEFORM_MODEL_IMPLEMENTATION_SUPPLIED",
+    "BAYES_FACTOR_REPRODUCTION_SUPPLIED",
+    "INDEPENDENT_GROUP_REPLICATION_SUPPLIED",
+    "SYSTEMATICS_AND_SELECTION_EFFECTS_AUDIT_SUPPLIED"
+  ],
+  "next_required_object": "INDEPENDENT_REPRODUCTION_OF_GW190728_SCALAR_ENVIRONMENT_BAYES_FACTOR",
+  "boundary": [
+    "Candidate source only.",
+    "No dark matter detection is claimed.",
+    "No gravity solution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No dark-energy resolution is claimed.",
+    "No dark-matter resolution is claimed.",
+    "No Euclid Q2 empirical claim is made.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "dark matter detection",
+    "gravity solution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark-energy resolution",
+    "dark-matter resolution",
+    "Euclid Q2 empirical claim",
+    "any Clay problem"
+  ]
+}
