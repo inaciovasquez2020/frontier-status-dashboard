@@ -1,0 +1,73 @@
+{
+  "object": "RESTRICTED_GATE_PREDICATE_SATISFACTION_CERTIFICATE",
+  "date": "2026-05-22",
+  "status": "PREDICATE_SATISFACTION_CERTIFICATE_ONLY_THEOREM_NOT_PROVED",
+  "supplies": [
+    "RESTRICTED_GATE_PREDICATE_SATISFACTION_CERTIFICATE"
+  ],
+  "depends_on": [
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_ASSUMPTION_SCHEMA",
+    "RESTRICTED_COLLAPSE_GATE_THEOREM_TARGET",
+    "RESTRICTED_COLLAPSE_GATE_SURFACE_TO_GATE",
+    "RESTRICTED_COLLAPSE_GATE_PREDICATE_INTERFACE"
+  ],
+  "certificate": {
+    "name": "RESTRICTED_GATE_PREDICATE_SATISFACTION_CERTIFICATE",
+    "scope": "restricted_dashboard_source_map_layer",
+    "satisfied_predicates": [
+      "restricted_gate_input_admissible",
+      "restricted_gate_boundary_preserved",
+      "restricted_gate_no_unrestricted_claim",
+      "restricted_gate_no_empirical_claim",
+      "restricted_gate_no_analytic_theorem_promotion"
+    ],
+    "certification_rule": "The declared restricted input surface and restricted predicate interface satisfy only dashboard-level gate predicates and do not supply analytic, empirical, or unrestricted theorem content.",
+    "status": "CERTIFICATE_SUPPLIED_THEOREM_NOT_PROVED"
+  },
+  "closed_theorem_obligations": [
+    "restricted_gate_predicate_satisfaction"
+  ],
+  "remaining_open_obligations": [
+    "restricted_energy_condition_interface",
+    "restricted_wellposedness_interface"
+  ],
+  "weakest_sufficient_next_object": "RESTRICTED_ENERGY_CONDITION_INTERFACE",
+  "boundary": [
+    "No gravity closure is claimed.",
+    "No collapse-gate theorem is claimed.",
+    "No restricted collapse-gate theorem is claimed.",
+    "No unrestricted collapse-gate theorem is claimed.",
+    "No analytic gravity theorem is claimed.",
+    "No four-dimensional collapse theorem is claimed.",
+    "No unrestricted non-symmetric collapse theorem is claimed.",
+    "No unrestricted cosmic censorship theorem is claimed.",
+    "No hoop conjecture result is claimed.",
+    "No unrestricted primordial black hole formation theorem is claimed.",
+    "No unrestricted primordial black hole evaporation theorem is claimed.",
+    "No dark matter detection is claimed.",
+    "No dark matter resolution is claimed.",
+    "No DFM-MKC validation is claimed.",
+    "No Lambda-CDM failure is claimed.",
+    "No empirical validation is claimed.",
+    "No Clay problem is claimed."
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "collapse-gate theorem",
+    "restricted collapse-gate theorem",
+    "unrestricted collapse-gate theorem",
+    "analytic gravity theorem",
+    "four-dimensional collapse theorem",
+    "unrestricted non-symmetric collapse theorem",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "unrestricted primordial black hole formation theorem",
+    "unrestricted primordial black hole evaporation theorem",
+    "dark matter detection",
+    "dark matter resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "any Clay problem"
+  ]
+}
