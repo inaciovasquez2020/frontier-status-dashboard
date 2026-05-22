@@ -1,0 +1,67 @@
+{
+  "id": "GRAVITY_HOOP_CENSORSHIP_DARK_SECTOR_SOURCE_PACKET",
+  "date": "2026-05-22",
+  "status": "GRAVITY_HOOP_CENSORSHIP_DARK_SECTOR_SOURCE_PACKET_ONLY_NO_THEOREM_PROMOTION",
+  "artifact_type": "source_packet_alignment",
+  "scope": "Classifies supplied hoop-conjecture, cosmic-censorship, analog-black-hole, and interacting-dark-sector sources without promoting any theorem, empirical validation, or gravity closure claim.",
+  "sources": [
+    {
+      "key": "epjc_2025_nonexistence_unified_hoop_conjecture",
+      "title": "Comments on the non-existence of unified hoop conjecture",
+      "url": "https://link.springer.com/article/10.1140/epjc/s10052-025-15116-7",
+      "source_class": "peer_reviewed_theory",
+      "internal_object": "no_overclaim_boundary",
+      "alignment": "Hoop-conjecture non-unification / restricted exception signal; supports boundary discipline against unrestricted hoop-conjecture promotion.",
+      "claim_status": "peer_reviewed_theory_boundary_signal_only"
+    },
+    {
+      "key": "prd_1998_hoop_conjecture_colliding_black_holes",
+      "title": "Hoop conjecture for colliding black holes",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.58.121501",
+      "source_class": "peer_reviewed_theory",
+      "internal_object": "gravity_stack",
+      "alignment": "Analytic black-hole collision source supporting hoop-conjecture relevance in a special collision geometry.",
+      "claim_status": "peer_reviewed_restricted_support_signal_only"
+    },
+    {
+      "key": "analog_charged_black_hole_percolation_cosmic_censorship_hoop",
+      "title": "Analog charged black hole formation via percolation: Exploring cosmic censorship and Hoop conjecture",
+      "url": "https://www.researchgate.net/publication/392260443_Analog_charged_black_hole_formation_via_percolation_Exploring_cosmic_censorship_and_Hoop_conjecture",
+      "source_class": "preprint_repository_record",
+      "internal_object": "gravity_stack",
+      "alignment": "Analog percolation model source for charged black-hole formation, cosmic censorship, and hoop-conjecture intuition; not a GR theorem.",
+      "claim_status": "analog_model_source_signal_only"
+    },
+    {
+      "key": "arxiv_2604_21671_saturation_interacting_dark_sector",
+      "title": "Saturation Mechanisms in the Interacting Dark Sector",
+      "url": "https://arxiv.org/html/2604.21671v1",
+      "source_class": "preprint",
+      "internal_object": "dark_sector_model",
+      "alignment": "Interacting dark-sector model with saturation/sparseness parameter and observational-constraint discussion.",
+      "claim_status": "preprint_dark_sector_model_signal_only"
+    },
+    {
+      "key": "epjc_2026_matter_creation_to_dark_sector_interactions",
+      "title": "New perspectives from matter creation cosmologies to dark sector interactions",
+      "url": "https://link.springer.com/article/10.1140/epjc/s10052-026-15535-0",
+      "source_class": "peer_reviewed_theory",
+      "internal_object": "dark_sector_model",
+      "alignment": "Matter-creation cosmology / interacting-dark-sector equivalence source signal.",
+      "claim_status": "peer_reviewed_dark_sector_model_signal_only"
+    }
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "unrestricted cosmic censorship",
+    "hoop conjecture",
+    "dark matter resolution",
+    "modified gravity failure",
+    "DFM-MKC validation",
+    "dark-sector empirical validation",
+    "P vs NP",
+    "any Clay problem"
+  ],
+  "verification_target": "GRAVITY_HOOP_CENSORSHIP_DARK_SECTOR_SOURCE_PACKET_ONLY_NO_THEOREM_PROMOTION",
+  "next_admissible_object": "GRAVITY_HOOP_CENSORSHIP_DARK_SECTOR_SOURCE_PACKET_VERIFIED"
+}
