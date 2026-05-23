@@ -1,0 +1,60 @@
+{
+  "id": "GRAVITY_DARK_SECTOR_THEORY_CLAIM_BOUNDARY_PACKET",
+  "date": "2026-05-22",
+  "status": "GRAVITY_DARK_SECTOR_THEORY_CLAIM_BOUNDARY_PACKET_ONLY_NO_THEOREM_PROMOTION",
+  "artifact_type": "source_packet_alignment",
+  "scope": "Classifies supplied modified-gravity, QICT, interacting-dark-sector, and speculative SSRN dark-sector sources without promoting any theorem, empirical validation, or physical-discovery claim.",
+  "sources": [
+    {
+      "key": "cqg_2026_pathology_unified_dark_sectors_modified_gr",
+      "title": "Pathology of the Unified Dark Sectors in Modified General Relativity",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6382/ae4200",
+      "source_class": "peer_reviewed_theory",
+      "internal_object": "no_overclaim_boundary",
+      "alignment": "Modified General Relativity / unified-dark-sector pathology signal; admissible only as a boundary against promoting unified dark-sector alternatives without stability control.",
+      "claim_status": "peer_reviewed_theory_boundary_signal_only"
+    },
+    {
+      "key": "preprints_202601_2247_qict_complex_phase_dark_sector",
+      "title": "QICT Cosmology with Complex-Phase Dark Sector: Late-Time Dynamics and Implications for H0 and S8 Tensions",
+      "url": "https://www.preprints.org/manuscript/202601.2247",
+      "source_class": "preprint",
+      "internal_object": "dark_sector_model",
+      "alignment": "QICT open-system / complex-phase dark-sector model source; not peer-reviewed and not treated as empirical validation.",
+      "claim_status": "preprint_model_source_only"
+    },
+    {
+      "key": "arxiv_2601_07361_strong_evidence_dark_sector_interactions",
+      "title": "Strong Evidence for Dark Sector Interactions",
+      "url": "https://arxiv.org/abs/2601.07361",
+      "source_class": "preprint",
+      "internal_object": "empirical_validation",
+      "alignment": "Interacting-dark-sector evidence-source signal using CMB, DESI BAO, and supernova data; not validation of any internal model.",
+      "claim_status": "preprint_empirical_signal_only"
+    },
+    {
+      "key": "ssrn_6209718_beyond_matter_ii_hcsa_dark_sector_claims",
+      "title": "Beyond Matter II: Deterministic Resolution of Dark Energy, Dark Matter, and Cosmic Microwave Background Anomalies via Hendeca-Tier Informational Pressure (10^66)",
+      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6209718",
+      "source_class": "ssrn_preprint",
+      "internal_object": "no_overclaim_boundary",
+      "alignment": "Speculative external dark-sector/cosmology claim source; admissible only as a boundary-source record, not as evidence or theorem support.",
+      "claim_status": "speculative_claim_boundary_only"
+    }
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "modified gravity failure",
+    "modified gravity success",
+    "dark matter resolution",
+    "dark energy resolution",
+    "dark-sector empirical validation",
+    "QICT validation",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "P vs NP",
+    "any Clay problem"
+  ],
+  "verification_target": "GRAVITY_DARK_SECTOR_THEORY_CLAIM_BOUNDARY_PACKET_ONLY_NO_THEOREM_PROMOTION",
+  "next_admissible_object": "GRAVITY_DARK_SECTOR_THEORY_CLAIM_BOUNDARY_PACKET_VERIFIED"
+}
