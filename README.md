@@ -148,3 +148,43 @@ Boundary preserved: metadata is not theorem-level source validity; importer is n
 Removed the `inaciovasquez2020` profile/start-here row from the dashboard data because it is navigation/profile-only and does not require theorem closure.
 
 Boundary preserved: no theorem status changed; no Chronos theorem closure changed; no UniversalFiberEntropyGap theorem; no Chronos-RR closure; no H4.1/FGL closure; no P vs NP closure; no Clay closure.
+
+<!-- DASHBOARD_STATUS_START -->
+## Current Dashboard Status
+
+Status: `DASHBOARD_SYNC_CURRENT_NO_THEOREM_PROMOTION`
+
+Current synced main-chain status:
+
+```text
+#137 Chronos PR459 README build closeout sync
+#136 top-ranked source theorem extraction packet
+#131 nuclear Chern topological matter source map
+#129 gravity dark-sector theory claim boundary packet
+#128 gravity hoop censorship dark-sector source packet
+#127 gravity cosmology 2026 source alignment map
+```
+
+Current verification state:
+
+```text
+Vitest: 86 files / 326 tests passed
+Build: passed
+Open PRs: none
+Latest known main HEAD: 910fcf2
+```
+
+Dashboard role:
+
+This repository synchronizes public-facing frontier status data, source maps, status documents, and no-promotion tests across the URF/Chronos research program.
+
+Boundary:
+
+- no analytic Einstein-matter bootstrap package proof
+- no concrete analytic Einstein-matter estimate package proof
+- no gravity closure
+- no Chronos-RR
+- no H4.1/FGL
+- no P vs NP
+- no Clay problem
+<!-- DASHBOARD_STATUS_END -->
