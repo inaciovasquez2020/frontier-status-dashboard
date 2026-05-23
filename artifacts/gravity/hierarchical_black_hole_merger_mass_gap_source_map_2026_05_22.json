@@ -1,0 +1,55 @@
+{
+  "id": "HIERARCHICAL_BLACK_HOLE_MERGER_MASS_GAP_SOURCE_MAP",
+  "date": "2026-05-22",
+  "status": "MODEL_SPECIFIC_GRAVITATIONAL_WAVE_SOURCE_ONLY_NO_GRAVITY_CLOSURE",
+  "source": {
+    "title": "The Universe’s biggest black holes may be forged in violent mergers",
+    "publisher": "ScienceDaily",
+    "source_institution": "Cardiff University",
+    "published": "2026-05-08",
+    "url": "https://www.sciencedaily.com/releases/2026/05/260508003115.htm",
+    "primary_journal_reference": {
+      "title": "Gravitational-wave constraints on the pair-instability mass gap and nuclear burning in massive stars",
+      "journal": "Nature Astronomy",
+      "year": "2026",
+      "doi": "10.1038/s41550-026-02847-0"
+    },
+    "summary": "Reports evidence from GWTC-4 that the heaviest detected black holes may form through repeated mergers in dense stellar clusters, with a transition near the pair-instability mass gap."
+  },
+  "urf_relevance": {
+    "admissible_use": "source-map record only",
+    "theme": "hierarchical mergers, gravitational-wave populations, and mass-gap structure",
+    "candidate_bridge_language": [
+      "black-hole population split",
+      "hierarchical merger",
+      "pair-instability mass gap",
+      "spin distribution",
+      "dense cluster dynamics"
+    ],
+    "frontier_role": "external astrophysical source for gravity/cosmology source-map coverage; no theoretical closure"
+  },
+  "required_before_promotion": [
+    "verify the Nature Astronomy primary paper",
+    "extract exact statistical model and assumptions",
+    "record GWTC-4 data dependency",
+    "extract mass-gap threshold and uncertainty",
+    "extract spin-population evidence statement",
+    "map only source-level implications into gravity-source vocabulary",
+    "add no-overclaim boundary audit"
+  ],
+  "does_not_prove": [
+    "gravity closure",
+    "black-hole formation theorem",
+    "cosmic censorship",
+    "hoop conjecture",
+    "dark matter resolution",
+    "dark energy resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "Chronos-RR",
+    "H4.1/FGL",
+    "P vs NP",
+    "any Clay problem"
+  ],
+  "next_admissible_object": "HIERARCHICAL_BLACK_HOLE_MERGER_PRIMARY_PAPER_EXTRACTION_TARGET"
+}
