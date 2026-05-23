@@ -1,0 +1,48 @@
+{
+  "id": "MATHOVERFLOW_GREAT_THEOREMS_2026_ONWARD_SOURCE_MAP",
+  "date": "2026-05-22",
+  "status": "REFERENCE_LIST_SOURCE_ONLY_NO_THEOREM_PROMOTION",
+  "source": {
+    "title": "Great theorems with elementary statements: 2026-onward",
+    "platform": "MathOverflow",
+    "url": "https://mathoverflow.net/questions/503460/great-theorems-with-elementary-statements-2026-onward",
+    "post_type": "reference-request / soft-question / big-list",
+    "page_status": "closed",
+    "accepting_answers": false
+  },
+  "urf_relevance": {
+    "admissible_use": "source-map record only",
+    "theme": "external watchlist for high-level mathematical theorems with elementary formulations",
+    "candidate_bridge_language": [
+      "elementary statement",
+      "deep theorem",
+      "frontier theorem watchlist",
+      "source discovery",
+      "candidate formalization intake"
+    ],
+    "frontier_role": "reference-list intake surface for future candidate theorem extraction, without importing or validating any listed theorem"
+  },
+  "required_before_promotion": [
+    "choose one specific theorem from the page",
+    "verify the primary source independently",
+    "extract exact theorem statement",
+    "extract assumptions and domain of validity",
+    "classify the theorem elementary statement complexity",
+    "map theorem structure into URF vocabulary",
+    "add no-overclaim boundary audit"
+  ],
+  "does_not_prove": [
+    "any theorem listed on the MathOverflow page",
+    "URF theorem promotion",
+    "Chronos-RR",
+    "H4.1/FGL",
+    "P vs NP",
+    "any Clay problem",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark matter resolution",
+    "dark energy resolution",
+    "gravity closure"
+  ],
+  "next_admissible_object": "SPECIFIC_THEOREM_EXTRACTION_TARGET_FROM_MATHOVERFLOW_GREAT_THEOREMS_2026_ONWARD"
+}
