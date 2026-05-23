@@ -1,0 +1,76 @@
+{
+  "id": "SOURCE_MAP_PRIORITY_MATRIX_2026_05_22",
+  "date": "2026-05-22",
+  "status": "SOURCE_MAP_PRIORITY_MATRIX_ONLY_NO_THEOREM_PROMOTION",
+  "purpose": "Rank recently added source maps by strategic usefulness for theorem extraction, vocabulary extraction, and frontier planning.",
+  "ranking_policy": {
+    "rank_1": "closest to restricted theorem extraction or usable technical bridge",
+    "rank_2": "useful for gravity/cosmology source coverage or empirical frontier mapping",
+    "rank_3": "useful for vocabulary, analogy, or watchlist intake only",
+    "non_promotion_rule": "Priority does not imply theorem import, theorem proof, empirical validation, or frontier closure."
+  },
+  "entries": [
+    {
+      "rank": 1,
+      "source_map_id": "LARGE_D_BLACK_HOLE_EFFECTIVE_THEORY_SOURCE_MAP",
+      "priority_class": "HIGH_THEOREM_EXTRACTION_VALUE",
+      "domain": "gravity",
+      "usefulness": "Most useful for restricted gravity dynamics, near-horizon effective equations, large-D assumptions, well-posedness language, and possible Chronos-gravity vocabulary extraction.",
+      "next_admissible_object": "LARGE_D_BLACK_HOLE_EFFECTIVE_THEORY_EXTRACTION_TARGET",
+      "promotion_blocker": "Requires exact large-D assumptions, effective equations, domain restrictions, and no-overclaim audit."
+    },
+    {
+      "rank": 2,
+      "source_map_id": "HIERARCHICAL_BLACK_HOLE_MERGER_MASS_GAP_SOURCE_MAP",
+      "priority_class": "MEDIUM_EMPIRICAL_SOURCE_VALUE",
+      "domain": "gravity/cosmology",
+      "usefulness": "Useful for gravitational-wave population mapping, mass-gap structure, hierarchical-merger evidence, and empirical gravity-source indexing.",
+      "next_admissible_object": "HIERARCHICAL_BLACK_HOLE_MERGER_PRIMARY_PAPER_EXTRACTION_TARGET",
+      "promotion_blocker": "Requires primary Nature Astronomy extraction, exact statistical model, GWTC-4 dependency record, and uncertainty audit."
+    },
+    {
+      "rank": 3,
+      "source_map_id": "SUPER_METRIC_FIXED_POINT_THEOREMS_SOURCE_MAP",
+      "priority_class": "MEDIUM_VOCABULARY_EXTRACTION_VALUE",
+      "domain": "math/fixed-point theory",
+      "usefulness": "Useful for contraction, convergence, fixed-point, and iterative-rigidity vocabulary if the definitions and theorems extract cleanly.",
+      "next_admissible_object": "SUPER_METRIC_FIXED_POINT_THEOREM_EXTRACTION_TARGET",
+      "promotion_blocker": "Requires exact definitions, exact theorem statements, proof verification, and assessment of nonstandard reusable content."
+    },
+    {
+      "rank": 4,
+      "source_map_id": "MATHOVERFLOW_GREAT_THEOREMS_2026_ONWARD_SOURCE_MAP",
+      "priority_class": "WATCHLIST_ONLY",
+      "domain": "mathematics watchlist",
+      "usefulness": "Useful as a theorem-discovery watchlist, not as evidence or theorem support.",
+      "next_admissible_object": "SPECIFIC_THEOREM_EXTRACTION_TARGET_FROM_MATHOVERFLOW_GREAT_THEOREMS_2026_ONWARD",
+      "promotion_blocker": "Requires selecting one theorem, verifying the primary source, and extracting the exact statement independently."
+    },
+    {
+      "rank": 5,
+      "source_map_id": "NUCLEAR_CHERN_TOPOLOGICAL_MATTER_SOURCE_MAP",
+      "priority_class": "LOW_TO_MEDIUM_UNIFICATION_MOTIF_VALUE",
+      "domain": "topological nuclear physics",
+      "usefulness": "Useful for the broad invariant-to-rigidity motif, but lower priority for direct Chronos/gravity closure unless a precise bridge theorem is extracted.",
+      "next_admissible_object": "NUCLEAR_CHERN_TOPOLOGICAL_MATTER_THEOREM_EXTRACTION_TARGET",
+      "promotion_blocker": "Requires exact theorem statement, assumptions, observable signatures, and bridge map into URF vocabulary."
+    }
+  ],
+  "does_not_prove": [
+    "URF theorem promotion",
+    "Chronos-RR",
+    "H4.1/FGL",
+    "P vs NP",
+    "any Clay problem",
+    "gravity closure",
+    "cosmic censorship",
+    "hoop conjecture",
+    "dark matter resolution",
+    "dark energy resolution",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "empirical validation",
+    "external source theorem import"
+  ],
+  "next_admissible_object": "TOP_RANKED_SOURCE_THEOREM_EXTRACTION_PACKET"
+}
