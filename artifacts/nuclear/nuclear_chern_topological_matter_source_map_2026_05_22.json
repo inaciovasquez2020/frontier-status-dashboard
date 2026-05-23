@@ -1,0 +1,53 @@
+{
+  "id": "NUCLEAR_CHERN_TOPOLOGICAL_MATTER_SOURCE_MAP",
+  "date": "2026-05-22",
+  "status": "MODEL_SPECIFIC_TOPOLOGICAL_NUCLEAR_SOURCE_ONLY_NO_FRONTIER_PROMOTION",
+  "source": {
+    "title": "Chern Theorem and Topological Matter in Fast-Rotating Atomic Nuclei",
+    "authors": [
+      "Mike Guidry",
+      "Yang Sun"
+    ],
+    "journal": "Physical Review Letters",
+    "volume": "136",
+    "issue": "6",
+    "article": "062502",
+    "publication_date": "2026-02-13",
+    "doi": "10.1103/lzdm-ng2k",
+    "aps_url": "https://journals.aps.org/prl/abstract/10.1103/lzdm-ng2k",
+    "doi_url": "https://link.aps.org/doi/10.1103/lzdm-ng2k",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41765816/"
+  },
+  "urf_relevance": {
+    "theme": "topological invariant to physical rigidity and quantization",
+    "admissible_use": "source-map record only",
+    "candidate_bridge_language": [
+      "Chern/topological invariant",
+      "rotation quantization",
+      "topologically organized nuclear matter",
+      "rigidity/structure emergence under extreme rotation"
+    ],
+    "frontier_role": "external model-specific physics source supporting the broader URF unification motif, without theorem promotion"
+  },
+  "required_before_promotion": [
+    "exact theorem statement extracted from the paper",
+    "explicit assumptions and domain of validity",
+    "observable nuclear signatures",
+    "map from Chern invariant to URF rigidity vocabulary",
+    "independent verification or derivation record",
+    "boundary audit preventing cross-domain overclaim"
+  ],
+  "does_not_prove": [
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark matter resolution",
+    "dark energy resolution",
+    "gravity closure",
+    "Chronos-RR",
+    "H4.1/FGL",
+    "P vs NP",
+    "any Clay problem",
+    "nuclear theorem promotion inside URF"
+  ],
+  "next_admissible_object": "NUCLEAR_CHERN_TOPOLOGICAL_MATTER_THEOREM_EXTRACTION_TARGET"
+}
