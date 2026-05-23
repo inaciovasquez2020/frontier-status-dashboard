@@ -1,0 +1,99 @@
+{
+  "id": "SOURCE_MAP_EVIDENCE_BOUNDARY_MATRIX_2026_05_22",
+  "date": "2026-05-22",
+  "status": "SOURCE_LEVEL_EVIDENCE_MATRIX_ONLY_NO_THEOREM_OR_EMPIRICAL_CLAIM_PROMOTION",
+  "purpose": "Classify the merged source maps as admissible source-level evidence for relevance, vocabulary, external grounding, and extraction planning, while blocking proof-level or empirical-validation promotion.",
+  "evidence_policy": {
+    "allowed_evidence_use": [
+      "evidence of external relevance",
+      "evidence of vocabulary alignment",
+      "evidence of source coverage",
+      "evidence of extraction priority",
+      "evidence of frontier-planning maturity"
+    ],
+    "forbidden_evidence_use": [
+      "proof of URF theorem",
+      "proof of Chronos-RR",
+      "proof of H4.1/FGL",
+      "proof of P vs NP",
+      "proof of any Clay problem",
+      "proof of gravity closure",
+      "proof of DFM-MKC validation",
+      "proof of Lambda-CDM failure",
+      "proof of dark matter resolution",
+      "proof of dark energy resolution",
+      "empirical validation without executed likelihood or primary-data analysis",
+      "external theorem import without exact theorem extraction"
+    ]
+  },
+  "evidence_entries": [
+    {
+      "source_map_id": "LARGE_D_BLACK_HOLE_EFFECTIVE_THEORY_SOURCE_MAP",
+      "evidence_class": "TECHNICAL_THEORY_RELEVANCE_EVIDENCE",
+      "strength": "high",
+      "admissible_claim": "Evidence that restricted black-hole effective dynamics, near-horizon equations, large-D assumptions, and well-posedness language are relevant to the Chronos gravity frontier.",
+      "not_admissible_as": "Evidence of unrestricted black-hole dynamics, gravity closure, cosmic censorship, hoop conjecture, or four-dimensional collapse theorem.",
+      "next_required_object": "LARGE_D_BLACK_HOLE_EFFECTIVE_THEORY_EXTRACTION_TARGET"
+    },
+    {
+      "source_map_id": "HIERARCHICAL_BLACK_HOLE_MERGER_MASS_GAP_SOURCE_MAP",
+      "evidence_class": "EMPIRICAL_ASTROPHYSICS_RELEVANCE_EVIDENCE",
+      "strength": "medium",
+      "admissible_claim": "Evidence that gravitational-wave population structure, hierarchical mergers, spin distributions, and pair-instability mass-gap modeling are relevant external empirical themes.",
+      "not_admissible_as": "Evidence of DFM-MKC validation, Lambda-CDM failure, dark matter resolution, or independent empirical validation.",
+      "next_required_object": "HIERARCHICAL_BLACK_HOLE_MERGER_PRIMARY_PAPER_EXTRACTION_TARGET"
+    },
+    {
+      "source_map_id": "SUPER_METRIC_FIXED_POINT_THEOREMS_SOURCE_MAP",
+      "evidence_class": "MATHEMATICAL_VOCABULARY_RELEVANCE_EVIDENCE",
+      "strength": "medium",
+      "admissible_claim": "Evidence that contraction, convergence, fixed-point, and generalized metric vocabulary may be reusable for URF-style structural convergence language.",
+      "not_admissible_as": "Evidence of a URF fixed-point theorem or any theorem-level import.",
+      "next_required_object": "SUPER_METRIC_FIXED_POINT_THEOREM_EXTRACTION_TARGET"
+    },
+    {
+      "source_map_id": "MATHOVERFLOW_GREAT_THEOREMS_2026_ONWARD_SOURCE_MAP",
+      "evidence_class": "WATCHLIST_AND_DISCOVERY_RELEVANCE_EVIDENCE",
+      "strength": "low",
+      "admissible_claim": "Evidence that the dashboard has a candidate discovery lane for future elementary-statement theorem extraction.",
+      "not_admissible_as": "Evidence that any listed theorem is proved, imported, verified, or relevant without independent primary-source extraction.",
+      "next_required_object": "SPECIFIC_THEOREM_EXTRACTION_TARGET_FROM_MATHOVERFLOW_GREAT_THEOREMS_2026_ONWARD"
+    },
+    {
+      "source_map_id": "NUCLEAR_CHERN_TOPOLOGICAL_MATTER_SOURCE_MAP",
+      "evidence_class": "UNIFICATION_MOTIF_RELEVANCE_EVIDENCE",
+      "strength": "low_to_medium",
+      "admissible_claim": "Evidence that invariant-to-rigidity and topological-structure themes appear in external physics domains beyond gravity and computation.",
+      "not_admissible_as": "Evidence of Chronos closure, DFM-MKC validation, gravity closure, or nuclear theorem promotion inside URF.",
+      "next_required_object": "NUCLEAR_CHERN_TOPOLOGICAL_MATTER_THEOREM_EXTRACTION_TARGET"
+    },
+    {
+      "source_map_id": "SOURCE_MAP_PRIORITY_MATRIX_2026_05_22",
+      "evidence_class": "RESEARCH_PIPELINE_MATURITY_EVIDENCE",
+      "strength": "high",
+      "admissible_claim": "Evidence that the source-map layer is ranked, audited, testable, and connected to explicit next extraction objects.",
+      "not_admissible_as": "Evidence that any ranked source has been promoted to theorem, empirical validation, or closure.",
+      "next_required_object": "TOP_RANKED_SOURCE_THEOREM_EXTRACTION_PACKET"
+    }
+  ],
+  "aggregate_admissible_claim": "The source-map layer provides source-level evidence of external relevance, vocabulary alignment, source coverage, and extraction-planning maturity for the URF/Chronos research program.",
+  "aggregate_forbidden_claim": "The source-map layer does not provide proof-level evidence for theorem closure, empirical validation, or any grand problem resolution.",
+  "does_not_prove": [
+    "URF theorem promotion",
+    "Chronos-RR",
+    "H4.1/FGL",
+    "P vs NP",
+    "any Clay problem",
+    "gravity closure",
+    "cosmic censorship",
+    "hoop conjecture",
+    "four-dimensional collapse theorem",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark matter resolution",
+    "dark energy resolution",
+    "empirical validation",
+    "external source theorem import"
+  ],
+  "next_admissible_object": "TOP_RANKED_SOURCE_THEOREM_EXTRACTION_PACKET"
+}
