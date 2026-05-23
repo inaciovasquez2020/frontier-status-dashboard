@@ -1,0 +1,46 @@
+{
+  "id": "SUPER_METRIC_FIXED_POINT_THEOREMS_SOURCE_MAP",
+  "date": "2026-05-22",
+  "status": "MODEL_SPECIFIC_FIXED_POINT_SOURCE_ONLY_NO_FRONTIER_PROMOTION",
+  "source": {
+    "title": "Fixed Point Theorems for Various Contractions in Super Metric Spaces",
+    "authors": ["Nikita Kadian", "Sanjay Kumar"],
+    "journal": "Boletim da Sociedade Paranaense de Matemática",
+    "volume_issue": "Vol 44 No 7 (2026): Nonlinear Analysis and Applied Mathematics",
+    "published": "2026-04-10",
+    "doi": "10.5269/bspm.80745",
+    "url": "https://periodicos.uem.br/ojs/index.php/BSocParanMat/article/view/80745",
+    "abstract_summary": "Proves fixed point theorems for various contractions in super metric spaces."
+  },
+  "urf_relevance": {
+    "admissible_use": "source-map record only",
+    "theme": "fixed point contraction principles in generalized metric structures",
+    "candidate_bridge_language": [
+      "contraction",
+      "fixed point",
+      "super metric space",
+      "iterative rigidity",
+      "structural convergence"
+    ],
+    "frontier_role": "possible source for contraction/fixed-point vocabulary only; no import into URF without theorem extraction"
+  },
+  "required_before_promotion": [
+    "extract exact definitions of super metric space and contraction classes",
+    "extract exact theorem statements",
+    "verify proofs against primary PDF",
+    "identify whether any contraction theorem is nonstandard and reusable",
+    "map contraction structure into URF fixed-point or convergence vocabulary",
+    "add no-overclaim boundary audit"
+  ],
+  "does_not_prove": [
+    "URF fixed-point theorem",
+    "Chronos-RR",
+    "H4.1/FGL",
+    "P vs NP",
+    "any Clay problem",
+    "gravity closure",
+    "DFM-MKC validation",
+    "Lambda-CDM failure"
+  ],
+  "next_admissible_object": "SUPER_METRIC_FIXED_POINT_THEOREM_EXTRACTION_TARGET"
+}

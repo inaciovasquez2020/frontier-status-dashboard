@@ -1,0 +1,54 @@
+{
+  "id": "LARGE_D_BLACK_HOLE_EFFECTIVE_THEORY_SOURCE_MAP",
+  "date": "2026-05-22",
+  "status": "MODEL_SPECIFIC_LARGE_D_BLACK_HOLE_EFT_SOURCE_ONLY_NO_GRAVITY_CLOSURE",
+  "source": {
+    "title": "General effective theories of black holes in the large D limit",
+    "authors": ["Roberto Emparan", "Jordi Rafecas-Ventosa", "Benson Way"],
+    "journal": "Journal of High Energy Physics",
+    "article_number": "34",
+    "published": "2026-04-02",
+    "doi": "10.1007/JHEP04(2026)034",
+    "url": "https://link.springer.com/article/10.1007/JHEP04(2026)034",
+    "arxiv": "2512.14186",
+    "summary": "Derives effective equations for black-hole dynamics in the large-D limit, including stationary embedding conditions and nonlinear near-horizon evolution equations."
+  },
+  "urf_relevance": {
+    "admissible_use": "source-map record only",
+    "theme": "large-D black-hole effective dynamics and well-posed near-horizon evolution",
+    "candidate_bridge_language": [
+      "large-D limit",
+      "near-horizon effective equations",
+      "parabolic system",
+      "well-posed initial value problem",
+      "membrane formalism",
+      "black-hole dynamics"
+    ],
+    "frontier_role": "external theoretical-gravity source map for restricted/effective black-hole dynamics; no unrestricted gravity theorem"
+  },
+  "required_before_promotion": [
+    "extract exact large-D assumptions",
+    "extract effective equations",
+    "extract stationary soap-bubble embedding condition",
+    "extract near-horizon fluctuation scale restrictions",
+    "extract well-posedness statement and domain",
+    "map only restricted effective-theory content into Chronos gravity vocabulary",
+    "add no-overclaim boundary audit"
+  ],
+  "does_not_prove": [
+    "unrestricted black-hole dynamics",
+    "gravity closure",
+    "cosmic censorship",
+    "hoop conjecture",
+    "four-dimensional collapse theorem",
+    "DFM-MKC validation",
+    "Lambda-CDM failure",
+    "dark matter resolution",
+    "dark energy resolution",
+    "Chronos-RR",
+    "H4.1/FGL",
+    "P vs NP",
+    "any Clay problem"
+  ],
+  "next_admissible_object": "LARGE_D_BLACK_HOLE_EFFECTIVE_THEORY_EXTRACTION_TARGET"
+}
