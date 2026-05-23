@@ -1,0 +1,104 @@
+{
+  "id": "GRAVITY_COSMOLOGY_2026_SOURCE_ALIGNMENT_MAP",
+  "date": "2026-05-22",
+  "status": "SOURCE_ALIGNMENT_ONLY_NO_THEOREM_PROMOTION",
+  "artifact_type": "source_alignment_map",
+  "scope": "Aligns supplied 2026 gravity/cosmology/dark-sector sources to internal frontier objects without promoting any theorem, empirical validation, or physical-discovery claim.",
+  "allowed_source_classes": [
+    "conference",
+    "peer_reviewed_theory",
+    "science_news_report",
+    "preprint"
+  ],
+  "allowed_internal_objects": [
+    "gravity_stack",
+    "DFM_MKC",
+    "dark_sector_model",
+    "empirical_validation",
+    "no_overclaim_boundary"
+  ],
+  "sources": [
+    {
+      "key": "gravity2026_new_frontiers_in_cosmology",
+      "title": "Gravity2026: New Frontiers in Cosmology, Daejeon, South Korea",
+      "url": "https://hyperspace.uni-frankfurt.de/2026/01/12/gravity2026-new-frontiers-in-cosmology-daejeon-south-korea/",
+      "source_class": "conference",
+      "internal_object": "gravity_stack",
+      "alignment": "Gravity-frontier workshop context: gravitational waves, early- and late-time cosmology, and modified gravity.",
+      "claim_status": "context_only"
+    },
+    {
+      "key": "open_system_approach_to_gravity_jhep_2026_241",
+      "title": "An open system approach to gravity",
+      "url": "https://link.springer.com/article/10.1007/JHEP02(2026)241",
+      "source_class": "peer_reviewed_theory",
+      "internal_object": "gravity_stack",
+      "alignment": "Open-system gravity framework relevant to controlled gravity-environment interface modeling.",
+      "claim_status": "peer_reviewed_theory_alignment_only"
+    },
+    {
+      "key": "gravity_newton_einstein_cosmic_scales_news",
+      "title": "Gravity follows Newton and Einstein’s rules, even at cosmic scales",
+      "url": "https://www.eureporter.co/science-magazine/2026/04/27/gravity-follows-newton-and-einsteins-rules-even-at-cosmic-scales/",
+      "source_class": "science_news_report",
+      "internal_object": "no_overclaim_boundary",
+      "alignment": "Supports boundary discipline against claiming modified-gravity failure or replacement from the internal project.",
+      "claim_status": "news_report_boundary_signal_only"
+    },
+    {
+      "key": "hot_dark_matter_origin_sciencedaily",
+      "title": "New research challenges the cold dark matter assumption",
+      "url": "https://www.sciencedaily.com/releases/2026/01/260114084113.htm",
+      "source_class": "science_news_report",
+      "internal_object": "dark_sector_model",
+      "alignment": "Dark-sector model-space expansion: dark matter may originate hot and cool before structure formation.",
+      "claim_status": "news_report_model_signal_only"
+    },
+    {
+      "key": "dark_matter_multiple_forms_astronomy_now",
+      "title": "Dark matter may come in multiple forms, new model suggests",
+      "url": "https://astronomynow.com/2026/04/11/dark-matter-may-come-in-multiple-forms-new-model-suggests/",
+      "source_class": "science_news_report",
+      "internal_object": "dark_sector_model",
+      "alignment": "Dark-sector plurality signal: supports model-space mapping, not dark-matter resolution.",
+      "claim_status": "news_report_model_signal_only"
+    },
+    {
+      "key": "minimal_dark_matter_cosmic_intensity_frontier_jhep_2026_177",
+      "title": "Discovery prospects for a minimal dark matter model at cosmic and intensity frontier experiments",
+      "url": "https://link.springer.com/article/10.1007/JHEP03(2026)177",
+      "source_class": "peer_reviewed_theory",
+      "internal_object": "empirical_validation",
+      "alignment": "Maps dark-sector candidates to possible direct-detection, beam-dump, and intensity-frontier tests.",
+      "claim_status": "peer_reviewed_detection_prospect_only"
+    },
+    {
+      "key": "dark_matter_early_smbh_arxiv_2508_11846v2",
+      "title": "Dark Matter and the Early Formation of Supermassive Black Holes",
+      "url": "https://arxiv.org/html/2508.11846v2",
+      "source_class": "preprint",
+      "internal_object": "gravity_stack",
+      "alignment": "Connects dark matter capture, black-hole growth, mergers, and early SMBH formation as a source-map input only.",
+      "claim_status": "preprint_alignment_only"
+    },
+    {
+      "key": "supercdms_snolab_detector_milestone_phys_org_2026_04_10",
+      "title": "Search for dark matter intensifies as leading detector reaches milestone",
+      "url": "https://phys.org/news/2026-04-dark-detector-milestone.html",
+      "source_class": "science_news_report",
+      "internal_object": "empirical_validation",
+      "alignment": "SuperCDMS at SNOLAB reached target temperature for cryogenic detector operation; admissible as an empirical-validation infrastructure milestone only, not as a dark-matter detection or model validation.",
+      "claim_status": "detector_milestone_only_no_detection_claim"
+    }
+  ],
+  "does_not_prove": [
+    "dark matter resolution",
+    "modified gravity failure",
+    "DFM-MKC validation",
+    "gravity closure",
+    "Clay problem",
+    "dark matter detection"
+  ],
+  "required_next_object": "GRAVITY_COSMOLOGY_2026_SOURCE_ALIGNMENT_MAP_VERIFIED",
+  "verification_target": "SOURCE_ALIGNMENT_ONLY_NO_THEOREM_PROMOTION"
+}
