@@ -89,6 +89,12 @@ Repository
 https://github.com/inaciovasquez2020/frontier-status-dashboard
 
 
+
+## Recent Status Updates — 2026-06-02
+
+- URF-core: finite-state Markov-kernel stack closed inside the bounded formal domain via PR #374 / commit 8f990a8. Boundary: no unrestricted URF law closure, no empirical gravity validation, no P vs NP, and no Clay-problem closure.
+- Finite graph distance layer: GlobalSLASHAxiomsDischarge, GlobalDistanceTriangleTheoremUnconditionalOnSLASH, and DistanceSymmetryForUndirectedGraphClass recorded closed. Boundary: directed symmetry remains not closed.
+
 ## Recent Status Updates
 
 - Biological Friction Framework: quotient-linear substrate SOLVED/PUSHED in biological-friction-framework commit 3022c38; graph-theoretic quotient-independence remains FRONTIER_OPEN.
