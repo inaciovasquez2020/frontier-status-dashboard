@@ -696,5 +696,68 @@
         "no Clay problem"
       ]
     }
+  },
+  {
+    "id": "urf-core-finite-markov-kernel-stack-2026-06-02",
+    "name": "URF finite Markov-kernel stack",
+    "domain": "Foundations / Finite Markov Kernels",
+    "status": "FINITE_MARKOV_KERNEL_STACK_CLOSED",
+    "integrity": 100,
+    "theoremClosure": 86,
+    "ci": "green",
+    "boundary": "PR #374 records bundled finite Markov kernel composition: composedFinKernel is bundled as a finite stochastic kernel with nonnegative transition weights and total outgoing mass one. Closed objects: FiniteMarkovEvolutionPreservesDistributionsTheorem, FiniteMarkovKernelCompositionPreservesStochasticityTheorem, BundledFiniteMarkovKernelCompositionTheorem. Boundary: bounded finite-state Markov-kernel theorem stack only; no whole-URF theorem closure, no unrestricted URF law closure, existing axioms and admits are not globally discharged, no empirical gravity validation, no Hodge theory closure, no P vs NP closure, and no Clay-problem closure.",
+    "url": "https://github.com/inaciovasquez2020/urf-core",
+    "repository": "urf-core",
+    "repo": "urf-core",
+    "lastUpdate": "2026-06-02",
+    "summary": "Finite-state Markov-kernel stack closed unconditionally inside the bounded formal domain.",
+    "latestArtifact": "BundledFiniteMarkovKernelCompositionTheorem",
+    "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/374",
+    "latestPR": 374,
+    "latestCommit": "8f990a8",
+    "theoremClosureLabel": "86% — bounded finite-state Markov-kernel stack closed; unrestricted URF closure false",
+    "theoremMetricApplicable": false,
+    "closureScaleMetricApplicable": false,
+    "theoremPromotion": false,
+    "closedObjects": [
+      "FiniteMarkovEvolutionPreservesDistributionsTheorem",
+      "FiniteMarkovKernelCompositionPreservesStochasticityTheorem",
+      "BundledFiniteMarkovKernelCompositionTheorem"
+    ],
+    "nextAdmissibleObject": "StopOrSelectNextClosestUnconditionalScienceField"
+  },
+  {
+    "id": "finite-graph-distance-layer-2026-06-02",
+    "name": "Finite graph distance layer",
+    "domain": "Finite Graph Theory / Formal Verification",
+    "status": "GLOBAL_TRIANGLE_CLOSED",
+    "integrity": 100,
+    "theoremClosure": 100,
+    "ci": "green",
+    "boundary": "Distance layer final closure status: GlobalSLASHAxiomsDischarge, GlobalDistanceTriangleTheoremUnconditionalOnSLASH, and DistanceSymmetryForUndirectedGraphClass are closed. Boundary: directed symmetry is not closed; arbitrary directed graph distance symmetry is not claimed; every graph is not assumed undirected; removal of SymmAdj for directed graphs is not claimed.",
+    "url": "https://github.com/inaciovasquez2020/cslib-fmt",
+    "repository": "cslib-fmt",
+    "repo": "cslib-fmt",
+    "lastUpdate": "2026-06-02",
+    "summary": "Finite graph distance triangle theorem and undirected symmetry API closed; directed symmetry remains outside the theorem boundary.",
+    "latestArtifact": "DISTANCE_LAYER_FINAL_CLOSURE_STATUS_2026_06_02",
+    "latestPr": "https://github.com/inaciovasquez2020/cslib-fmt/pull/157",
+    "latestPR": 157,
+    "latestCommit": "7b6b328",
+    "theoremClosureLabel": "100% — bounded distance-layer target closed; directed symmetry not closed",
+    "theoremMetricApplicable": true,
+    "closureScaleMetricApplicable": false,
+    "theoremPromotion": true,
+    "closedObjects": [
+      "GlobalSLASHAxiomsDischarge",
+      "GlobalDistanceTriangleTheoremUnconditionalOnSLASH",
+      "DistanceSymmetryForUndirectedGraphClass"
+    ],
+    "remainingOpenObjects": [
+      "DirectedGraphDistanceSymmetry",
+      "EveryGraphIsUndirected",
+      "RemovalOfSymmAdjForDirectedGraphs"
+    ],
+    "nextAdmissibleObject": "STOP"
   }
 ]
