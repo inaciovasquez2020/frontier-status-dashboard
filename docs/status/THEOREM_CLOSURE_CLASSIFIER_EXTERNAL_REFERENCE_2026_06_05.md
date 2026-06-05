@@ -19,3 +19,8 @@ Dashboard boundary:
 - Not Zenodo archived yet.
 
 Next admissible object: `ZenodoArchiveOrExternalReview`.
+## Zenodo Archive
+
+Release: `v0.1.3`
+DOI: `10.5281/zenodo.20561778`
+Record: https://zenodo.org/records/20561778
