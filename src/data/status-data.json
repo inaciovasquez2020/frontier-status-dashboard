@@ -759,5 +759,6 @@
       "RemovalOfSymmAdjForDirectedGraphs"
     ],
     "nextAdmissibleObject": "STOP"
-  }
+  },
+ { "name": "urf-spine-public", "domain": "Program Spine", "status": "CLOSED_FINITE_MANIFEST_VERIFICATION_WITH_EXPLICIT_NON_CLAIM_BOUNDARY", "integrity": 100, "theoremClosure": 0, "ci": "not_applicable", "boundary": "Public spine boundary certificate exists at docs/status/SPINE_BOUNDARY_CERTIFICATE.md in urf-spine-public commit acf4a0c; documentation-level finite manifest closure only; no theorem-level closure, universal spine completeness, external validation, peer-reviewed acceptance, private repository equivalence, or mathematical completion claimed.", "url": "https://github.com/inaciovasquez2020/urf-spine-public", "repository": "urf-spine-public", "lastUpdate": "2026-06-14", "summary": "Missing public spine boundary certificate artifact was added and published on main at commit acf4a0c.", "latestArtifact": "docs/status/SPINE_BOUNDARY_CERTIFICATE.md", "latestCommit": "acf4a0c", "theoremClosureLabel": "0% — documentation boundary certificate; theorem closure false", "theoremMetricApplicable": false, "closureScaleMetricApplicable": false, "repo": "urf-spine-public", "closedSurface": "spine_boundary_certificate", "theoremPromotion": false, "theoremSurfaceClosed": false, "assumptionBoundary": false, "textualNoncompiledBoundary": true }
 ]
