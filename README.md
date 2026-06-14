@@ -91,8 +91,9 @@ https://github.com/inaciovasquez2020/frontier-status-dashboard
 
 
 ## Recent Status Updates — 2026-06-13
+- urf-textbook: bounded-closure proof pattern section pushed in commit `8def1fc`; validation: `python3 scripts/check_placeholders.py`, `python3 -m py_compile scripts/check_placeholders.py`, and `git diff --check`.
 - urf-textbook: placeholder checker formatting pass pushed in commit `7741abb`; validation: `python3 scripts/check_placeholders.py`, `python3 -m py_compile scripts/check_placeholders.py`, and `git diff --check`.
-- Boundary: tooling hygiene only; no theorem-level closure, mathematical closure, or dashboard theorem-promotion claim is introduced.
+- Boundary: documentation/status-surface update only; no theorem-level closure, mathematical closure, or dashboard theorem-promotion claim is introduced.
 
 ## Recent Status Updates — 2026-06-02
 
