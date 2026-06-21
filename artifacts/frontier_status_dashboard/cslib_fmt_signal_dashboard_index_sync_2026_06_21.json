@@ -1,0 +1,31 @@
+{
+  "status": "FRONTIER_STATUS_DASHBOARD_CSLIB_FMT_SIGNAL_INDEX_SYNC_2026_06_21",
+  "date": "2026-06-21",
+  "dashboard_effect": "cross_repository_status_dashboard_sync_only",
+  "source_updates": [
+    {
+      "repo": "urf-core",
+      "commit": "857e954",
+      "pr": 474,
+      "statuses": [
+        "CSLIB_FMT_FULL_FORMULA_RADIUS_EXTERNAL_STATUS_SIGNAL_OK",
+        "URF_CORE_FULL_PYTEST_BASELINE_BLOCKERS_OK"
+      ],
+      "boundary": "status signal and baseline-blocker inventory only"
+    },
+    {
+      "repo": "urf-textbook",
+      "commit": "d026cfe",
+      "status": "URF_CORE_CSLIB_FMT_SIGNAL_TEXTBOOK_SYNC_OK",
+      "boundary": "textbook status sync only"
+    },
+    {
+      "repo": "vasquez-index",
+      "commit": "61f4975",
+      "status": "VASQUEZ_INDEX_URF_CORE_TEXTBOOK_CSLIB_FMT_SIGNAL_UPDATE_OK",
+      "boundary": "cross-repository status index only"
+    }
+  ],
+  "summary": "Synchronizes the dashboard with the cross-repository CSLIB-FMT full formula-radius external status signal chain: urf-core PR #474, urf-textbook sync, and vasquez-index status index.",
+  "boundary": "dashboard synchronization only; no new theorem, no proof import, no URF-core repair, no CSLIB-FMT repair, no textbook proof change, and no claim that unrelated URF-core full pytest baseline failures were fixed"
+}
