@@ -738,12 +738,12 @@
     "url": "https://github.com/inaciovasquez2020/cslib-fmt",
     "repository": "cslib-fmt",
     "repo": "cslib-fmt",
-    "lastUpdate": "2026-06-02",
-    "summary": "Finite graph distance triangle theorem and undirected symmetry API closed; directed symmetry remains outside the theorem boundary.",
+    "lastUpdate": "2026-06-25",
+    "summary": "Latest bounded CSLib-FMT surface: negation locality input surface exposed after PR #176; finite graph distance layer remains closed, while directed symmetry and universal graph claims remain outside the boundary.",
     "latestArtifact": "DISTANCE_LAYER_FINAL_CLOSURE_STATUS_2026_06_02",
-    "latestPr": "https://github.com/inaciovasquez2020/cslib-fmt/pull/157",
-    "latestPR": 157,
-    "latestCommit": "7b6b328",
+    "latestPr": "https://github.com/inaciovasquez2020/cslib-fmt/pull/176",
+    "latestPR": 176,
+    "latestCommit": "50f4c56",
     "theoremClosureLabel": "100% — bounded distance-layer target closed; directed symmetry not closed",
     "theoremMetricApplicable": true,
     "closureScaleMetricApplicable": false,
@@ -758,7 +758,7 @@
       "EveryGraphIsUndirected",
       "RemovalOfSymmAdjForDirectedGraphs"
     ],
-    "nextAdmissibleObject": "STOP"
+    "nextAdmissibleObject": "Review next bounded locality-input theorem surface"
   },
  { "name": "urf-spine-public", "domain": "Program Spine", "status": "CLOSED_FINITE_MANIFEST_VERIFICATION_WITH_EXPLICIT_NON_CLAIM_BOUNDARY", "integrity": 100, "theoremClosure": 0, "ci": "not_applicable", "boundary": "Public spine boundary certificate exists at docs/status/SPINE_BOUNDARY_CERTIFICATE.md in urf-spine-public commit acf4a0c; documentation-level finite manifest closure only; no theorem-level closure, universal spine completeness, external validation, peer-reviewed acceptance, private repository equivalence, or mathematical completion claimed.", "url": "https://github.com/inaciovasquez2020/urf-spine-public", "repository": "urf-spine-public", "lastUpdate": "2026-06-14", "summary": "Missing public spine boundary certificate artifact was added and published on main at commit acf4a0c.", "latestArtifact": "docs/status/SPINE_BOUNDARY_CERTIFICATE.md", "latestCommit": "acf4a0c", "theoremClosureLabel": "0% — documentation boundary certificate; theorem closure false", "theoremMetricApplicable": false, "closureScaleMetricApplicable": false, "repo": "urf-spine-public", "closedSurface": "spine_boundary_certificate", "theoremPromotion": false, "theoremSurfaceClosed": false, "assumptionBoundary": false, "textualNoncompiledBoundary": true }
 ]
