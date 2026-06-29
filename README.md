@@ -199,3 +199,12 @@ Boundary:
 - no P vs NP
 - no Clay problem
 <!-- DASHBOARD_STATUS_END -->
+
+<!-- REPOSITORY_BOUNDARY_ROWS_BEGIN -->
+# Repository boundary rows
+
+| Repository | Status | Explicit non-closure boundary |
+|---|---|---|
+| [`dfm-mkc-cosmology`](https://github.com/inaciovasquez2020/dfm-mkc-cosmology) | public executable cosmology consistency surface | `BOUNDARY := ¬ dfm_mkc_executable_consistency_checks_imply_cosmology_or_gravity_closure` |
+| [`cslib-fmt`](https://github.com/inaciovasquez2020/cslib-fmt) | public Lean finite-model-theory support layer | `BOUNDARY := ¬ cslib_fmt_library_interfaces_imply_finite_model_theory_problem_closure` |
+<!-- REPOSITORY_BOUNDARY_ROWS_END -->

@@ -1,0 +1,16 @@
+{
+  "generated_at_utc": "2026-06-29T13:29:33+00:00",
+  "rows": [
+    {
+      "boundary": "BOUNDARY := \u00ac dfm_mkc_executable_consistency_checks_imply_cosmology_or_gravity_closure",
+      "repository": "dfm-mkc-cosmology",
+      "status": "public executable cosmology consistency surface"
+    },
+    {
+      "boundary": "BOUNDARY := \u00ac cslib_fmt_library_interfaces_imply_finite_model_theory_problem_closure",
+      "repository": "cslib-fmt",
+      "status": "public Lean finite-model-theory support layer"
+    }
+  ],
+  "schema": "frontier_status_dashboard.repository_boundary_rows.v1"
+}
