@@ -202,21 +202,6 @@ function Metric({ label, value }: { label: string; value: React.ReactNode }) {
   );
 }
 
-function Bar({ value }: { value: number }) {
-  const safeValue = Math.max(0, Math.min(100, value));
-
-  return (
-    <div
-      className="h-2 w-full rounded-full bg-slate-100"
-      role="meter"
-      aria-valuemin={0}
-      aria-valuemax={100}
-      aria-valuenow={safeValue}
-    >
-      <div className="h-2 rounded-full bg-slate-900" style={{ width: `${safeValue}%` }} />
-    </div>
-  );
-}
 
 export default function FrontierStatusDashboard() {
   if (window.location.pathname.startsWith("/verification")) return <VerificationExplorer />;
@@ -243,6 +228,22 @@ export default function FrontierStatusDashboard() {
   const chronosLinkRows = linkOnlyRows.filter(
     (repo) => repo.name.toLowerCase().includes("chronos") || repo.url.includes("/chronos-urf-rr"),
   );
+
+  const chronosRepoRoot = "https://github.com/inaciovasquez2020/chronos-urf-rr";
+
+  const chronosLinkUrl = (artifact: Repo) => {
+    if (artifact.name === "Chronos PR459 README build-closeout sync") {
+      return `${chronosRepoRoot}/pull/459`;
+    }
+
+    if (artifact.url === chronosRepoRoot) {
+      return null;
+    }
+
+    return artifact.url;
+  };
+
+  const visibleChronosLinkRows = chronosLinkRows.filter((artifact) => chronosLinkUrl(artifact) !== null);
 
   const urfCoreLinkRows = linkOnlyRows.filter((repo) =>
     ["URF finite Markov-kernel stack", "Finite graph distance layer"].includes(repo.name),
@@ -340,23 +341,6 @@ export default function FrontierStatusDashboard() {
                     </span>
                   </div>
 
-                  <div className="grid gap-4 sm:grid-cols-2">
-                    <div className="space-y-2 rounded-2xl border bg-slate-50 p-4">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-slate-500">Repository integrity</span>
-                        <span className="font-medium">{repo.integrity}%</span>
-                      </div>
-                      <Bar value={repo.integrity} />
-                    </div>
-                    <div className="space-y-2 rounded-2xl border bg-slate-50 p-4">
-                      <div className="flex items-center justify-between text-sm">
-                        <span className="text-slate-500">Theorem closure</span>
-                        <span className="font-medium">{repo.theoremMetricApplicable === false ? "N/A" : `${repo.theoremClosure}%`}</span>
-                      </div>
-                      <Bar value={repo.theoremClosure} />
-                    </div>
-                  </div>
-
                   <div className="rounded-2xl border bg-slate-50 p-4">
                     <div className="mb-2 flex items-center gap-2 text-sm font-medium text-slate-700">
                       <Icon name={repo.ci === "green" ? "check" : "warning"} />
@@ -364,14 +348,14 @@ export default function FrontierStatusDashboard() {
                     </div>
                     <p className="text-sm leading-6 text-slate-600">{repo.boundary}</p>
 
-                    {repo.name === "chronos-urf-rr" && chronosLinkRows.length > 0 ? (
+                    {repo.name === "chronos-urf-rr" && visibleChronosLinkRows.length > 0 ? (
                       <div className="rounded-2xl border bg-slate-50 p-4">
                         <div className="text-sm font-medium text-slate-800">Repository links</div>
                         <div className="mt-3 grid gap-2 text-sm">
-                          {chronosLinkRows.map((artifact) => (
+                          {visibleChronosLinkRows.map((artifact) => (
                             <a
                               key={`${artifact.name}-${artifact.status}`}
-                              href={artifact.url}
+                              href={chronosLinkUrl(artifact) ?? artifact.url}
                               target="_blank"
                               rel="noreferrer"
                               className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
