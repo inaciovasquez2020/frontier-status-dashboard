@@ -239,3 +239,27 @@ TODAY_STOP :=
 No more structural work planned for today.
 <!-- CHRONOS_TOTAL_UPDATE_2026_06_30_END -->
 
+<!-- CROSS_REPO_HISTORICAL_TOTAL_2026_06_30_START -->
+## Cross-Repo Historical Total — 2026-06-30
+
+STATUS := tracked historical dashboard total
+
+SUMMARY :=
+A full tracked cross-repo historical total has been added in `CROSS_REPO_HISTORICAL_TOTAL_2026_06_30.md`.
+
+COVERED_REPOS :=
+- `chronos-urf-rr`
+- `phase-transition-pnp`
+- `dfm-mkc-cosmology`
+- `cslib-fmt`
+- `urf-templates`
+- `urf-verifier`
+- `urf-textbook`
+- `iris-lean`
+- `frontier-status-dashboard`
+- `vasquez-index`
+
+BOUNDARY :=
+This is a status ledger only. It does not prove P vs NP, Chronos-RR, gravity, cosmology, foundations-of-physics closure, general proof efficiency, open-problem acceleration, or exhaustive cross-repo audit completeness.
+<!-- CROSS_REPO_HISTORICAL_TOTAL_2026_06_30_END -->
+
