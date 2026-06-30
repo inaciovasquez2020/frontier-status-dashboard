@@ -224,19 +224,33 @@ export default function FrontierStatusDashboard() {
   const [filter, setFilter] = useState("All");
 
   const domains = useMemo(() => uniqueDomains(publicRepos), []);
-  const chronosArtifactRows = publicRepos.filter(
-    (repo) =>
-      (repo.name.startsWith("Chronos PR #") && repo.url.includes("/chronos-urf-rr/pull/")) ||
-      repo.name === "Chronos predicate-surface closure",
+
+  const topLevelRepositoryNames = new Set(["urf-core", "chronos-urf-rr", "vasquez-index", "urf-spine-public"]);
+  const repositoryRows: Repo[] = [];
+  const linkOnlyRows: Repo[] = [];
+  const seenRepositoryNames = new Set<string>();
+
+  for (const repo of publicRepos) {
+    if (topLevelRepositoryNames.has(repo.name) && !seenRepositoryNames.has(repo.name)) {
+      seenRepositoryNames.add(repo.name);
+      repositoryRows.push(repo);
+      continue;
+    }
+
+    linkOnlyRows.push(repo);
+  }
+
+  const chronosLinkRows = linkOnlyRows.filter(
+    (repo) => repo.name.toLowerCase().includes("chronos") || repo.url.includes("/chronos-urf-rr"),
   );
 
-  const indexArtifactRows = publicRepos.filter(
-    (repo) => repo.name === "FO4 Constraint Isolation" || repo.name === "URF-11 Translation Subproblem Registry",
+  const urfCoreLinkRows = linkOnlyRows.filter((repo) =>
+    ["URF finite Markov-kernel stack", "Finite graph distance layer"].includes(repo.name),
   );
 
-  const linkOnlyRows = new Set([...chronosArtifactRows, ...indexArtifactRows].map((repo) => repo.name));
-
-  const repositoryRows = publicRepos.filter((repo) => !linkOnlyRows.has(repo.name));
+  const indexLinkRows = linkOnlyRows.filter(
+    (repo) => !chronosLinkRows.includes(repo) && !urfCoreLinkRows.includes(repo),
+  );
 
   const filtered = useMemo(() => filterRepos(repositoryRows, query, filter), [repositoryRows, query, filter]);
 
@@ -350,43 +364,62 @@ export default function FrontierStatusDashboard() {
                     </div>
                     <p className="text-sm leading-6 text-slate-600">{repo.boundary}</p>
 
-              {repo.name === "chronos-urf-rr" && chronosArtifactRows.length > 0 ? (
-                <div className="rounded-2xl border bg-slate-50 p-4">
-                  <div className="text-sm font-medium text-slate-800">Repository links</div>
-                  <div className="mt-3 grid gap-2 text-sm">
-                    {chronosArtifactRows.map((artifact) => (
-                      <a
-                        key={artifact.name}
-                        href={artifact.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
-                      >
-                        {artifact.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ) : null}
+                    {repo.name === "chronos-urf-rr" && chronosLinkRows.length > 0 ? (
+                      <div className="rounded-2xl border bg-slate-50 p-4">
+                        <div className="text-sm font-medium text-slate-800">Repository links</div>
+                        <div className="mt-3 grid gap-2 text-sm">
+                          {chronosLinkRows.map((artifact) => (
+                            <a
+                              key={`${artifact.name}-${artifact.status}`}
+                              href={artifact.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                            >
+                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
 
-              {repo.name === "vasquez-index" && indexArtifactRows.length > 0 ? (
-                <div className="rounded-2xl border bg-slate-50 p-4">
-                  <div className="text-sm font-medium text-slate-800">Repository links</div>
-                  <div className="mt-3 grid gap-2 text-sm">
-                    {indexArtifactRows.map((artifact) => (
-                      <a
-                        key={artifact.name}
-                        href={artifact.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
-                      >
-                        {artifact.name}
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              ) : null}
+                    {repo.name === "urf-core" && urfCoreLinkRows.length > 0 ? (
+                      <div className="rounded-2xl border bg-slate-50 p-4">
+                        <div className="text-sm font-medium text-slate-800">Repository links</div>
+                        <div className="mt-3 grid gap-2 text-sm">
+                          {urfCoreLinkRows.map((artifact) => (
+                            <a
+                              key={`${artifact.name}-${artifact.status}`}
+                              href={artifact.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                            >
+                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    {repo.name === "vasquez-index" && indexLinkRows.length > 0 ? (
+                      <div className="rounded-2xl border bg-slate-50 p-4">
+                        <div className="text-sm font-medium text-slate-800">Repository links</div>
+                        <div className="mt-3 grid gap-2 text-sm">
+                          {indexLinkRows.map((artifact) => (
+                            <a
+                              key={`${artifact.name}-${artifact.status}`}
+                              href={artifact.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                            >
+                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
                   </div>
 
                   <div className="flex flex-wrap items-center justify-between gap-3">
