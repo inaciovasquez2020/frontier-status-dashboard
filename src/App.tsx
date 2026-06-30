@@ -227,9 +227,6 @@ export default function FrontierStatusDashboard() {
   const filtered = useMemo(() => filterRepos(publicRepos, query, filter), [query, filter]);
 
   const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
-  const closureScaleRows = metricRepos.filter((row) => row.closureScaleMetricApplicable !== false);
-  const avgIntegrity = average(metricRepos.map((repo) => repo.integrity));
-  const avgClosure = average(closureScaleRows.map((repo) => repo.theoremClosure));
   const greenCount = metricRepos.filter((repo) => repo.ci === "green").length;
 
   return (
@@ -261,11 +258,10 @@ export default function FrontierStatusDashboard() {
           </div>
         </motion.section>
 
-        <section className="grid gap-4 md:grid-cols-4">
+        <section className="grid gap-4 md:grid-cols-3">
           <Metric label="Tracked repositories" value={metricRepos.length} />
           <Metric label="Green CI surfaces" value={`${greenCount}/${metricRepos.length}`} />
-          <Metric label="Avg. integrity" value={`${avgIntegrity}%`} />
-          <Metric label="Avg. closure scale" value={`${avgClosure}%`} />
+          <Metric label="Claim-boundary policy" value="No theorem promotion" />
         </section>
 
         <section className="grid gap-4 lg:grid-cols-[1fr_280px]">
