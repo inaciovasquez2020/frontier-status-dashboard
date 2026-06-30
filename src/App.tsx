@@ -224,7 +224,15 @@ export default function FrontierStatusDashboard() {
   const [filter, setFilter] = useState("All");
 
   const domains = useMemo(() => uniqueDomains(publicRepos), []);
-  const filtered = useMemo(() => filterRepos(publicRepos, query, filter), [query, filter]);
+  const chronosArtifactRows = publicRepos.filter(
+    (repo) => repo.name.startsWith("Chronos PR #") && repo.url.includes("/chronos-urf-rr/pull/"),
+  );
+
+  const repositoryRows = publicRepos.filter(
+    (repo) => !(repo.name.startsWith("Chronos PR #") && repo.url.includes("/chronos-urf-rr/pull/")),
+  );
+
+  const filtered = useMemo(() => filterRepos(repositoryRows, query, filter), [repositoryRows, query, filter]);
 
   const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
   const greenCount = metricRepos.filter((repo) => repo.ci === "green").length;
@@ -335,6 +343,25 @@ export default function FrontierStatusDashboard() {
                       Claim boundary
                     </div>
                     <p className="text-sm leading-6 text-slate-600">{repo.boundary}</p>
+
+              {repo.name === "chronos-urf-rr" && chronosArtifactRows.length > 0 ? (
+                <div className="rounded-2xl border bg-slate-50 p-4">
+                  <div className="text-sm font-medium text-slate-800">Repository links</div>
+                  <div className="mt-3 grid gap-2 text-sm">
+                    {chronosArtifactRows.map((artifact) => (
+                      <a
+                        key={artifact.name}
+                        href={artifact.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                      >
+                        {artifact.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
                   </div>
 
                   <div className="flex flex-wrap items-center justify-between gap-3">
