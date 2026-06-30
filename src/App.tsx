@@ -225,16 +225,22 @@ export default function FrontierStatusDashboard() {
 
   const domains = useMemo(() => uniqueDomains(publicRepos), []);
   const chronosArtifactRows = publicRepos.filter(
-    (repo) => repo.name.startsWith("Chronos PR #") && repo.url.includes("/chronos-urf-rr/pull/"),
+    (repo) =>
+      (repo.name.startsWith("Chronos PR #") && repo.url.includes("/chronos-urf-rr/pull/")) ||
+      repo.name === "Chronos predicate-surface closure",
   );
 
-  const repositoryRows = publicRepos.filter(
-    (repo) => !(repo.name.startsWith("Chronos PR #") && repo.url.includes("/chronos-urf-rr/pull/")),
+  const indexArtifactRows = publicRepos.filter(
+    (repo) => repo.name === "FO4 Constraint Isolation" || repo.name === "URF-11 Translation Subproblem Registry",
   );
+
+  const linkOnlyRows = new Set([...chronosArtifactRows, ...indexArtifactRows].map((repo) => repo.name));
+
+  const repositoryRows = publicRepos.filter((repo) => !linkOnlyRows.has(repo.name));
 
   const filtered = useMemo(() => filterRepos(repositoryRows, query, filter), [repositoryRows, query, filter]);
 
-  const metricRepos = repos.filter((repo) => !repo.metadataOnly && !repo.excludeFromMetrics);
+  const metricRepos = repositoryRows;
   const greenCount = metricRepos.filter((repo) => repo.ci === "green").length;
 
   return (
@@ -349,6 +355,25 @@ export default function FrontierStatusDashboard() {
                   <div className="text-sm font-medium text-slate-800">Repository links</div>
                   <div className="mt-3 grid gap-2 text-sm">
                     {chronosArtifactRows.map((artifact) => (
+                      <a
+                        key={artifact.name}
+                        href={artifact.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                      >
+                        {artifact.name}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+
+              {repo.name === "vasquez-index" && indexArtifactRows.length > 0 ? (
+                <div className="rounded-2xl border bg-slate-50 p-4">
+                  <div className="text-sm font-medium text-slate-800">Repository links</div>
+                  <div className="mt-3 grid gap-2 text-sm">
+                    {indexArtifactRows.map((artifact) => (
                       <a
                         key={artifact.name}
                         href={artifact.url}
