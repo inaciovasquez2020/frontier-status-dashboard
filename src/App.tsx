@@ -340,7 +340,9 @@ export default function FrontierStatusDashboard() {
                         <Icon name="branch" />
                         {repo.domain}
                       </div>
-                      <h2 className="mt-2 text-2xl font-semibold tracking-tight">{repo.name}</h2>
+                      <h2 className="mt-2 text-2xl font-semibold tracking-tight">
+                        {repo.name === "Finite graph distance layer" ? "cslib-fmt" : repo.name}
+                      </h2>
                     </div>
                     <span className={cn("rounded-full border px-3 py-1 text-sm font-medium", statusTone[repo.status])}>
                       {repo.status}
