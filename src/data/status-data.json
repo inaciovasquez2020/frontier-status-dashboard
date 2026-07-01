@@ -706,7 +706,7 @@
     "theoremClosure": 86,
     "ci": "green",
     "boundary": "PR #374 records bundled finite Markov kernel composition: composedFinKernel is bundled as a finite stochastic kernel with nonnegative transition weights and total outgoing mass one. Closed objects: FiniteMarkovEvolutionPreservesDistributionsTheorem, FiniteMarkovKernelCompositionPreservesStochasticityTheorem, BundledFiniteMarkovKernelCompositionTheorem. Boundary: bounded finite-state Markov-kernel theorem stack only; no whole-URF theorem closure, no unrestricted URF law closure, existing axioms and admits are not globally discharged, no empirical gravity validation, no Hodge theory closure, no P vs NP closure, and no Clay-problem closure.",
-    "url": "https://github.com/inaciovasquez2020/urf-core",
+    "url": "https://github.com/inaciovasquez2020/urf-core/blob/main/lean/URF/Foundation/FiniteMarkovKernelCompositionPreservesStochasticityTheorem.lean",
     "repository": "urf-core",
     "repo": "urf-core",
     "lastUpdate": "2026-06-02",
