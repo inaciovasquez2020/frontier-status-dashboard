@@ -143,6 +143,28 @@
     ]
   },
   {
+    "id": "chronos-h4-1-fgl-85-metric-ceiling-2026-07-01",
+    "name": "Chronos H4.1/FGL 85% metric ceiling",
+    "domain": "Complexity / Graph Rigidity",
+    "status": "Status-Locked Frontier",
+    "integrity": 100,
+    "theoremClosure": 85,
+    "ci": "green",
+    "boundary": "85% is a dashboard metric ceiling for the selected-domain formal-verification surface only. The unrestricted H4.1/FGL layer remains refuted/open beyond the selected theorem domain. No unrestricted H4.1/FGL closure, no Chronos-RR closure, no P vs NP closure, no gravity closure, no cosmology closure, and no Clay-problem closure is claimed.",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/937",
+    "repository": "chronos-urf-rr",
+    "repo": "chronos-urf-rr",
+    "lastUpdate": "2026-07-01",
+    "latestArtifact": "restricted_package_theorem_surface_boundary_2026_06_30.json",
+    "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/937",
+    "theoremClosureLabel": "85% \u2014 selected-domain metric ceiling; unrestricted theorem closure false",
+    "theoremMetricApplicable": false,
+    "closureScaleMetricApplicable": true,
+    "selectedDomainStatus": "CLOSED_AND_BOUNDED",
+    "unrestrictedDomainStatus": "REFUTED_OPEN_GAP",
+    "openGap": "unrestricted H4.1/FGL beyond the selected theorem domain"
+  },
+  {
     "name": "urf-textbook",
     "domain": "URF / Exposition",
     "status": "ACTIVE_EXPOSITION_TEXTBOOK_SURFACE",
