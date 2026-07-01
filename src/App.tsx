@@ -210,7 +210,7 @@ export default function FrontierStatusDashboard() {
 
   const domains = useMemo(() => uniqueDomains(publicRepos), []);
 
-  const topLevelRepositoryNames = new Set(["urf-core", "chronos-urf-rr", "vasquez-index", "urf-spine-public"]);
+  const topLevelRepositoryNames = new Set(["urf-core", "chronos-urf-rr", "vasquez-index", "urf-spine-public", "Finite graph distance layer"]);
   const repositoryRows: Repo[] = [];
   const linkOnlyRows: Repo[] = [];
   const seenRepositoryNames = new Set<string>();
@@ -246,11 +246,17 @@ export default function FrontierStatusDashboard() {
   const visibleChronosLinkRows = chronosLinkRows.filter((artifact) => chronosLinkUrl(artifact) !== null);
 
   const urfCoreLinkRows = linkOnlyRows.filter((repo) =>
-    ["URF finite Markov-kernel stack", "Finite graph distance layer"].includes(repo.name),
+    repo.name === "URF finite Markov-kernel stack",
+  );
+  const cslibFmtLinkRows = linkOnlyRows.filter((repo) =>
+    repo.name === "Finite graph distance layer",
   );
 
   const indexLinkRows = linkOnlyRows.filter(
-    (repo) => !chronosLinkRows.includes(repo) && !urfCoreLinkRows.includes(repo),
+    (repo) =>
+      !chronosLinkRows.includes(repo) &&
+      !urfCoreLinkRows.includes(repo) &&
+      !cslibFmtLinkRows.includes(repo),
   );
 
   const filtered = useMemo(() => filterRepos(repositoryRows, query, filter), [repositoryRows, query, filter]);
@@ -372,6 +378,25 @@ export default function FrontierStatusDashboard() {
                         <div className="text-sm font-medium text-slate-800">Repository links</div>
                         <div className="mt-3 grid gap-2 text-sm">
                           {urfCoreLinkRows.map((artifact) => (
+                            <a
+                              key={`${artifact.name}-${artifact.status}`}
+                              href={artifact.url}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                            >
+                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    {repo.name === "Finite graph distance layer" && cslibFmtLinkRows.length > 0 ? (
+                      <div className="rounded-2xl border bg-slate-50 p-4">
+                        <div className="text-sm font-medium text-slate-800">Repository links</div>
+                        <div className="mt-3 grid gap-2 text-sm">
+                          {cslibFmtLinkRows.map((artifact) => (
                             <a
                               key={`${artifact.name}-${artifact.status}`}
                               href={artifact.url}
