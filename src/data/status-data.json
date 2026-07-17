@@ -824,5 +824,53 @@
     "latestArtifact": "CROSS_REPO_HISTORICAL_TOTAL_2026_06_30.md",
     "latestPr": "https://github.com/inaciovasquez2020/frontier-status-dashboard/pull/145",
     "lastChecked": "2026-06-30"
-  }
+  },
+{
+  "id": "chronos-finite-soft-memory-backreaction-2026-07-17",
+  "name": "Chronos finite soft-memory backreaction",
+  "title": "Chronos finite soft-memory backreaction",
+  "domain": "Black-hole information / finite quantum channel",
+  "status": "FINITE_SOFT_MEMORY_BACKREACTION_ENDPOINT_CLOSED",
+  "integrity": 100,
+  "theoremClosure": 0,
+  "ci": "green",
+  "boundary": "PR #1178 proves only the bounded finite-dimensional endpoint: temporally ordered certified emission steps preserve norm, admit a two-sided inverse, and conserve one common certified charge. No Hamiltonian exponential, compensating-charge construction, reduced hard-state calculation, hard-radiation purification, coherent-information increase, Page-curve turnover, unrestricted Chronos-RR, gravity closure, H4.1/FGL closure, P vs NP result, or Clay-problem result is claimed.",
+  "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1178",
+  "repository": "chronos-urf-rr",
+  "repo": "chronos-urf-rr",
+  "lastUpdate": "2026-07-17",
+  "summary": "Merged the corrected finite soft-memory backreaction endpoint: a four-component Pauli-profile soft-memory carrier, closed-sphere Laplacian pairing, and ordered hard-emission evolution with certified norm preservation, invertibility, and common-charge conservation.",
+  "latestArtifact": "Chronos.Frontier.FiniteSoftMemoryBackreaction",
+  "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1178",
+  "latestPR": 1178,
+  "latestCommit": "136343fd1a836531ed5fcfb6dc1accb52461196c",
+  "latestPrTitle": "lean: add finite soft-memory backreaction endpoint",
+  "latestCommitStatus": "merged-to-main",
+  "theoremClosureLabel": "bounded finite-dimensional endpoint only; information-recovery theorem false",
+  "theoremMetricApplicable": false,
+  "closureScaleMetricApplicable": false,
+  "theoremPromotion": false,
+  "excludeFromMetrics": true,
+  "showInPublicDashboard": true,
+  "visibility": "public",
+  "public": true,
+  "closedObjects": [
+    "four-component Pauli-profile angular soft-memory carrier",
+    "closed-sphere Laplacian self-adjoint pairing",
+    "ordered composite norm preservation",
+    "ordered composite two-sided inverse",
+    "common certified charge conservation"
+  ],
+  "remainingOpenObjects": [
+    "explicit Hamiltonian exponential",
+    "compensating-charge construction",
+    "reduced hard-state calculation",
+    "hard-radiation purification",
+    "coherent-information increase",
+    "Page-curve turnover theorem"
+  ],
+  "evidence": [
+    "Chronos PR #1178 merged on 2026-07-17 at commit 136343fd1a836531ed5fcfb6dc1accb52461196c with four checks passing."
+  ]
+}
 ]
