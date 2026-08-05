@@ -756,16 +756,16 @@
     "integrity": 100,
     "theoremClosure": 100,
     "ci": "green",
-    "boundary": "Distance layer final closure status: GlobalSLASHAxiomsDischarge, GlobalDistanceTriangleTheoremUnconditionalOnSLASH, and DistanceSymmetryForUndirectedGraphClass are closed. Boundary: directed symmetry is not closed; arbitrary directed graph distance symmetry is not claimed; every graph is not assumed undirected; removal of SymmAdj for directed graphs is not claimed.",
+    "boundary": "Distance layer final closure status remains unchanged: GlobalSLASHAxiomsDischarge, GlobalDistanceTriangleTheoremUnconditionalOnSLASH, and DistanceSymmetryForUndirectedGraphClass are closed. PR #192 adds the exact localPointedBackAndForthRefl witness, using equality of assignments and the identity pointed-neighborhood equivalence. Boundary: reflexive base case only; no nontrivial witness between distinct assignments; no Gaifman locality theorem; directed symmetry is not closed; arbitrary directed graph distance symmetry is not claimed; every graph is not assumed undirected; removal of SymmAdj for directed graphs is not claimed.",
     "url": "https://github.com/inaciovasquez2020/cslib-fmt",
     "repository": "cslib-fmt",
     "repo": "cslib-fmt",
-    "lastUpdate": "2026-06-25",
-    "summary": "Latest bounded CSLib-FMT surface: negation locality input surface exposed after PR #176; finite graph distance layer remains closed, while directed symmetry and universal graph claims remain outside the boundary.",
-    "latestArtifact": "DISTANCE_LAYER_FINAL_CLOSURE_STATUS_2026_06_02",
-    "latestPr": "https://github.com/inaciovasquez2020/cslib-fmt/pull/176",
-    "latestPR": 176,
-    "latestCommit": "50f4c56",
+    "lastUpdate": "2026-08-05",
+    "summary": "Latest bounded CSLib-FMT surface: PR #192 merged the reflexive local pointed back-and-forth witness localPointedBackAndForthRefl. The finite graph distance layer remains closed, while nontrivial witnesses between distinct assignments, Gaifman locality, directed symmetry, and universal graph claims remain outside the boundary.",
+    "latestArtifact": "localPointedBackAndForthRefl",
+    "latestPr": "https://github.com/inaciovasquez2020/cslib-fmt/pull/192",
+    "latestPR": 192,
+    "latestCommit": "cb1236729be818e08823258c86309824d4ac8f5b",
     "theoremClosureLabel": "100% \u2014 bounded distance-layer target closed; directed symmetry not closed",
     "theoremMetricApplicable": true,
     "closureScaleMetricApplicable": false,
@@ -780,7 +780,7 @@
       "EveryGraphIsUndirected",
       "RemovalOfSymmAdjForDirectedGraphs"
     ],
-    "nextAdmissibleObject": "Review next bounded locality-input theorem surface"
+    "nextAdmissibleObject": "Construct one nontrivial local pointed back-and-forth witness between distinct assignments"
   },
   {
     "name": "urf-spine-public",
