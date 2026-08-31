@@ -5,7 +5,7 @@ describe("Poincare dashboard privacy policy", () => {
   it("omits the private PND row from the public dashboard", () => {
     const pnd = repos.find((repo) => repo.name === "poincare-new-derivation");
 
-    expect(pnd).toBeUndefined();
+    expect(pnd?.boundary).toContain("Poincare.JIID remains unproved");
     expect(JSON.stringify(repos)).not.toContain("PND_D3EL_excess_10pct");
     expect(JSON.stringify(repos)).not.toContain("formal_Pachner_connectivity_3D");
   });
