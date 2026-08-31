@@ -149,6 +149,35 @@ const biologicalStatusRow = {
   ]
 };
 
+const cslibStatusRow = {
+  name: "cslib-fmt",
+  domain: "Finite Model Theory / Formal Verification",
+  status: "Status-Locked Frontier",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "verified bounded locality infrastructure; nontrivial distinct-assignment/Gaifman locality open",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "PR #192 merged the concrete localPointedBackAndForthRefl witness at cb1236729be818e08823258c86309824d4ac8f5b. The construction uses equality of assignments, the identity pointed-neighborhood equivalence, and same-witness quantified extensions. This is the reflexive base case only. No nontrivial local pointed back-and-forth system between distinct assignments and no Gaifman locality theorem is proved. The separately tracked finite graph distance layer remains a bounded closed theorem surface and does not promote general finite-model-theory locality or directed distance symmetry.",
+  url: "https://github.com/inaciovasquez2020/cslib-fmt",
+  repository: "cslib-fmt",
+  repo: "cslib-fmt",
+  lastUpdate: "2026-08-05",
+  summary: "PR #192 closes the reflexive local pointed back-and-forth base case; the next live frontier is a genuinely nontrivial witness between distinct assignments, before any Gaifman-locality theorem claim.",
+  latestArtifact: "localPointedBackAndForthRefl",
+  latestPr: "https://github.com/inaciovasquez2020/cslib-fmt/pull/192",
+  latestPR: 192,
+  latestCommit: "cb1236729be818e08823258c86309824d4ac8f5b",
+  currentOpenGap: "Construct and verify a nontrivial LocalPointedBackAndForth witness between distinct assignments sufficient to advance the locality route beyond the reflexive base case.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "PR #192 merged on 2026-08-05 from proof head 9c8d4f39f27db2369ebc44ecf1301c01f32db0a6 and explicitly limits the result to the reflexive base case.",
+    "PR #192 records successful targeted Lean compilation, lake build, proof-portfolio classification, and external-status-lock verification."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
@@ -158,9 +187,12 @@ const withDfm = withPoincare.some((entry) => entry.name === dfmStatusRow.name)
 const withZeroDay = withDfm.some((entry) => entry.name === zeroDayStatusRow.name)
   ? withDfm
   : [...withDfm, zeroDayStatusRow];
-const statusRows = withZeroDay.some((entry) => entry.name === biologicalStatusRow.name)
+const withBiological = withZeroDay.some((entry) => entry.name === biologicalStatusRow.name)
   ? withZeroDay.map((entry) => entry.name === biologicalStatusRow.name ? biologicalStatusRow : entry)
   : [...withZeroDay, biologicalStatusRow];
+const statusRows = withBiological.some((entry) => entry.name === cslibStatusRow.name)
+  ? withBiological.map((entry) => entry.name === cslibStatusRow.name ? cslibStatusRow : entry)
+  : [...withBiological, cslibStatusRow];
 
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_31:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs; those inputs are not derived from the current Cauchy carrier. PR #1300 adds a fail-closed gravity axiom audit and compiler-verified Newtonian-gauge proof-surface repairs; the audited endpoint theorems report only propext, Classical.choice, and Quot.sound, with no custom axiom introduced. PR #1300 does not supply the separate physical/analytic source-control estimate. The remaining gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
