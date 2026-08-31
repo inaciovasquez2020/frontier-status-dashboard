@@ -106,7 +106,7 @@ Boundary: no clinical guidance, no diagnosis, no universal empirical validation,
 ## Synchronization gaps found
 
 1. `frontier-status-dashboard/scripts/update-status-data.mjs` hard-coded six repositories and rewrote the ledger to that subset. This audit branch replaces that behavior with paginated discovery of every public repository while preserving historical rows.
-2. `frontier-status-dashboard/src/App.tsx` hard-coded five top-level repository names. This audit branch classifies canonical repository-root rows dynamically instead.
+2. Public repository inventory and theorem/status rows must remain separate surfaces. `src/data/public-repositories.json` tracks all public repositories; `src/data/status-data.json` retains only status/theorem-facing rows already admitted by repository policy.
 3. The profile repository currently states **16** public repositories; the authoritative public API snapshot is **19**.
 4. `vasquez-index` currently states **17** public repositories; the authoritative public API snapshot is **19**. Its inventory table omits `poincare-new-derivation` and `biological-friction-framework`.
 5. The Poincaré README still describes the project as a deprecated conditional sketch and does not reflect the newer August 30 verified intermediate proof-drive checkpoints.
@@ -124,8 +124,7 @@ Changes through this audit:
 
 - dynamic paginated public-repository discovery;
 - preservation of existing historical status rows;
-- conservative fallback status for newly discovered public repositories;
-- dynamic repository-root card classification;
+- separate 19-repository inventory without automatic theorem/status promotion;
 - committed 19-repository public inventory snapshot;
 - automated repository-native public inventory synchronization;
 - this deep-audit note.
