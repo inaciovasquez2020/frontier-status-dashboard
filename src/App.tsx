@@ -2,6 +2,7 @@ import { VerificationExplorer } from "./components/VerificationExplorer";
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import rawRepos from "./data/status-data.json";
+import publicRepositoryInventory from "./data/public-repository-inventory.json";
 
 export type RepoStatus =
   | "Certified Frontier"
@@ -25,15 +26,43 @@ export type Repo = {
   url: string;
 };
 
+type PublicRepositoryInventoryEntry = {
+  name: string;
+  url: string;
+};
+
 export const repos: Repo[] = rawRepos as Repo[];
 
-export const publicRepos: Repo[] = repos.filter(
+const detailPublicRepos: Repo[] = repos.filter(
   (repo) =>
     !repo.metadataOnly &&
     !repo.excludeFromMetrics &&
     repo.name !== "Internal" &&
     String(repo.status) !== "INTERNAL_AGGREGATE_ONLY",
 );
+
+const detailPublicRepositoryUrls = new Set(
+  detailPublicRepos.map((repo) => repo.url.replace(/\/$/, "").toLowerCase()),
+);
+
+const inventoryFallbackRows: Repo[] = (publicRepositoryInventory as PublicRepositoryInventoryEntry[])
+  .filter((entry) => !detailPublicRepositoryUrls.has(entry.url.toLowerCase()))
+  .map((entry) => ({
+    name: entry.name,
+    domain: "Repository index",
+    status: "Status-Locked Frontier",
+    integrity: 0,
+    theoremClosure: 0,
+    theoremClosureLabel: "0% — inventory row; no theorem promotion",
+    theoremMetricApplicable: false,
+    closureScaleMetricApplicable: false,
+    ci: "yellow",
+    boundary:
+      "Public repository indexed from the current owned-public inventory. This fallback row makes no repository-specific theorem promotion; stronger bounded claims must come from that repository's own public verification or status artifacts.",
+    url: entry.url,
+  }));
+
+export const publicRepos: Repo[] = [...detailPublicRepos, ...inventoryFallbackRows];
 
 const statusTone: Record<RepoStatus, string> = {
   "Certified Frontier": "bg-emerald-50 text-emerald-700 border-emerald-200",
