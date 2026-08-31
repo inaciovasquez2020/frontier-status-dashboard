@@ -63,9 +63,42 @@ const poincareStatusRow = {
   ]
 };
 
-const statusRows = existing.some((entry) => entry.name === poincareStatusRow.name)
+const dfmStatusRow = {
+  name: "dfm-mkc-cosmology",
+  domain: "Cosmology / DFM-MKC",
+  status: "Status-Locked Frontier",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "bounded executable cosmology surface; unrestricted cosmology/gravity closure false",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "PR #282 merged the bounded H0-normalized physical/code wavenumber conversion needed before any sigma8 or DESI projection; it changes no perturbation equations or observational claims. Open PR #281 remains a verifier-backed coercivity probe and explicitly stops at the first leading minor whose strict positivity is not established. No metric-potential coercivity, E_grav/boundary-flux comparison, absorption theorem, nonspherical gravity result, unrestricted cosmology closure, unrestricted gravity closure, or Clay-problem closure is claimed.",
+  url: "https://github.com/inaciovasquez2020/dfm-mkc-cosmology",
+  repository: "dfm-mkc-cosmology",
+  repo: "dfm-mkc-cosmology",
+  lastUpdate: "2026-08-30",
+  summary: "The physical/code wavenumber unit map is verified on main; the prepared scalar coercivity route remains blocked by an unresolved strict-positivity obligation in the open probe.",
+  latestArtifact: "H0-normalized physical/code wavenumber conversion",
+  latestPr: "https://github.com/inaciovasquez2020/dfm-mkc-cosmology/pull/282",
+  latestPR: 282,
+  latestCommit: "2eafc76d3b8e7a7b57cb24e738c2d1dafcd605eb",
+  currentOpenProbe: "https://github.com/inaciovasquez2020/dfm-mkc-cosmology/pull/281",
+  currentOpenGap: "Strict positivity of the first unresolved leading minor in the prepared scalar canonical-energy coercivity probe.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "PR #282 merged on 2026-08-30 from head 90a2c17a6040c238580c02b52486ebbb21a09bcd; CI, cosmology-check, external-status-lock, and Lean CI (disabled) all reported success.",
+    "PR #281 remains open and its body explicitly says the coercivity probe fails at the first leading minor whose strict positivity is not established."
+  ]
+};
+
+const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
+const statusRows = withPoincare.some((entry) => entry.name === dfmStatusRow.name)
+  ? withPoincare
+  : [...withPoincare, dfmStatusRow];
 
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_30:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs. Those inputs are not derived from the current Cauchy carrier. The remaining physical/analytic gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
