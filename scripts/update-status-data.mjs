@@ -287,6 +287,32 @@ const urfTemplatesStatusRow = {
   ]
 };
 
+const frontierDashboardStatusRow = {
+  name: "frontier-status-dashboard",
+  domain: "Program Dashboard / Verification status infrastructure",
+  status: "DASHBOARD_SYNC_CURRENT_NO_THEOREM_PROMOTION",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "public status/CI/boundary synchronization only; dashboard success does not prove mathematics",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "The dashboard synchronizes public-facing repository status, CI health, proof-hole visibility, claim boundaries, and external-review readiness across the research program. The current README status block records 89 Vitest files / 332 tests passed, production build passed, and a 19-repository public inventory, with the profile/start-here repository intentionally inventory-only. Dashboard/index/CI success certifies visibility and repository-health signals only; it does not establish theorem-level closure, analytic Einstein-matter bootstrap or estimate packages, gravity closure, Chronos-RR, H4.1/FGL, P vs NP, or any Clay problem.",
+  url: "https://github.com/inaciovasquez2020/frontier-status-dashboard",
+  repository: "frontier-status-dashboard",
+  repo: "frontier-status-dashboard",
+  lastUpdate: "2026-08-31",
+  summary: "Public dashboard infrastructure is green and synchronized across the 19-repository inventory while preserving explicit no-theorem-promotion boundaries.",
+  latestArtifact: "README Current Dashboard Status + generated public repository/status ledgers",
+  verifiedSnapshotSourceCommit: "b99a200ef43d3de9067ca209f4b1e925fbd9a0c1",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "README Current Dashboard Status records 89 files / 332 tests passed, production build passed, public inventory 19, and the profile/start-here repository as inventory-only by explicit guard.",
+    "CI run 33450091412 completed successfully on exact main head 0c3afa8951fb3c17be2b6448f80cd286a84f9a68 after PR #210."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
@@ -311,9 +337,12 @@ const withClassifier = withDarkness.some((entry) => entry.name === theoremClosur
 const withVerifier = withClassifier.some((entry) => entry.name === urfVerifierStatusRow.name)
   ? withClassifier.map((entry) => entry.name === urfVerifierStatusRow.name ? urfVerifierStatusRow : entry)
   : [...withClassifier, urfVerifierStatusRow];
-const statusRows = withVerifier.some((entry) => entry.name === urfTemplatesStatusRow.name)
+const withTemplates = withVerifier.some((entry) => entry.name === urfTemplatesStatusRow.name)
   ? withVerifier.map((entry) => entry.name === urfTemplatesStatusRow.name ? urfTemplatesStatusRow : entry)
   : [...withVerifier, urfTemplatesStatusRow];
+const statusRows = withTemplates.some((entry) => entry.name === frontierDashboardStatusRow.name && entry.domain === frontierDashboardStatusRow.domain)
+  ? withTemplates.map((entry) => entry.name === frontierDashboardStatusRow.name && entry.domain === frontierDashboardStatusRow.domain ? frontierDashboardStatusRow : entry)
+  : [...withTemplates, frontierDashboardStatusRow];
 
 const fo4CurrentBoundary = "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIRED. Constraint isolation is recorded as a status boundary, not theorem closure. Commit b1a3129b24fd17f5c821552a8feb233968a51cda adds FINITE_WITNESS_SEARCH_TARGET_ONLY for FO4FiniteCycleOverlapWitnessSearch below FO4CycleOverlapRankRigidityDichotomy; it does not solve the rigidity branch or the counterexample-family branch. The bounded search remains blocked until this repository contains formal definitions of the FO4 radius-R rooted local type and R-local cycle-overlap rank, a verified finite graph enumerator or externally supplied finite witness corpus, and a proof that the finite proxy agrees with the intended FO4/rank definitions on the searched class. No unrestricted graph rigidity closure. No Cayley-graph rigidity closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure.";
 

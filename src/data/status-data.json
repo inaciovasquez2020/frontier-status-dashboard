@@ -1045,7 +1045,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-31T22:49:57Z"
+    "updatedAt": "2026-08-31T23:16:16Z"
   },
   {
     "name": "cslib-fmt",
@@ -1228,6 +1228,41 @@
     "evidence": [
       "README Formal Status says Documentation / Website Surface and explicitly states that the repository does not independently prove mathematical claims.",
       "The verify workflow completed successfully on exact main head 15a0b7a277a7935e291af75e6fe475bfe19ec45c."
-    ]
+    ],
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-06-22T02:19:37Z"
+  },
+  {
+    "name": "frontier-status-dashboard",
+    "domain": "Program Dashboard / Verification status infrastructure",
+    "status": "DASHBOARD_SYNC_CURRENT_NO_THEOREM_PROMOTION",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "theoremClosureLabel": "public status/CI/boundary synchronization only; dashboard success does not prove mathematics",
+    "theoremMetricApplicable": false,
+    "closureScaleMetricApplicable": false,
+    "ci": "green",
+    "boundary": "The dashboard synchronizes public-facing repository status, CI health, proof-hole visibility, claim boundaries, and external-review readiness across the research program. The current README status block records 89 Vitest files / 332 tests passed, production build passed, and a 19-repository public inventory, with the profile/start-here repository intentionally inventory-only. Dashboard/index/CI success certifies visibility and repository-health signals only; it does not establish theorem-level closure, analytic Einstein-matter bootstrap or estimate packages, gravity closure, Chronos-RR, H4.1/FGL, P vs NP, or any Clay problem.",
+    "url": "https://github.com/inaciovasquez2020/frontier-status-dashboard",
+    "repository": "frontier-status-dashboard",
+    "repo": "frontier-status-dashboard",
+    "lastUpdate": "2026-08-31",
+    "summary": "Public dashboard infrastructure is green and synchronized across the 19-repository inventory while preserving explicit no-theorem-promotion boundaries.",
+    "latestArtifact": "README Current Dashboard Status + generated public repository/status ledgers",
+    "verifiedSnapshotSourceCommit": "b99a200ef43d3de9067ca209f4b1e925fbd9a0c1",
+    "theoremPromotion": false,
+    "publicInventory": true,
+    "evidence": [
+      "README Current Dashboard Status records 89 files / 332 tests passed, production build passed, public inventory 19, and the profile/start-here repository as inventory-only by explicit guard.",
+      "CI run 33450091412 completed successfully on exact main head 0c3afa8951fb3c17be2b6448f80cd286a84f9a68 after PR #210."
+    ],
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-08-31T23:18:01Z"
   }
 ]
