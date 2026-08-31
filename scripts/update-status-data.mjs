@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 
 const owner = "inaciovasquez2020";
 const existingPath = "src/data/status-data.json";
+const inventoryPath = "src/data/public-repositories.json";
 const existing = JSON.parse(await fs.readFile(existingPath, "utf8"));
 
 async function github(path) {
@@ -74,5 +75,12 @@ for (const repo of publicRepos) {
   });
 }
 
+const inventory = publicRepos.map((repo) => ({
+  name: repo.name,
+  url: repo.html_url,
+  defaultBranch: repo.default_branch,
+}));
+
+await fs.writeFile(inventoryPath, JSON.stringify(inventory, null, 2) + "\n");
 await fs.writeFile(existingPath, JSON.stringify(enriched, null, 2) + "\n");
-console.log(`Updated ${existingPath} from ${publicRepos.length} public repositories`);
+console.log(`Updated ${existingPath} and ${inventoryPath} from ${publicRepos.length} public repositories`);
