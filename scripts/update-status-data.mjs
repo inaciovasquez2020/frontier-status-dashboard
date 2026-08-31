@@ -93,12 +93,42 @@ const dfmStatusRow = {
   ]
 };
 
+const zeroDayStatusRow = {
+  name: "zero_day_restricted_closures",
+  domain: "Restricted closure / Hyper-Kahler",
+  status: "CONDITIONAL_REDUCTION_ONLY",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "conditional K3^[n] degree-four reduction only; unconditional ZeroDayClosure false",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "Commit 42850917647dbd76421f382b7158a99b8b094df4 records the current n >= 4 K3^[n]-type ZeroDayClosure route as a conditional reduction. Under a finite monodromy-stable required-class inventory, SH-membership for every non-degree-four required class, and vanishing of the explicit degree-four c2/2 scalar obstruction, the repository reduces RequiredClassesSubsetSH to ZeroDayClosure. The repository does not independently establish finiteness of the required-class inventory, the required equivariant monodromy action, SH-membership for all non-degree-four required classes, or c2/2-obstruction vanishing for the actual required degree-four classes. Unconditional ZeroDayClosure for n >= 4 is not proved, and the stopped K3^[3] required-class inventory branch remains stopped.",
+  url: "https://github.com/inaciovasquez2020/zero_day_restricted_closures",
+  repository: "zero_day_restricted_closures",
+  repo: "zero_day_restricted_closures",
+  lastUpdate: "2026-08-31",
+  summary: "The degree-four finite-orbit obstruction is reduced to one explicit c2/2 scalar inside a conditional K3^[n] closure route; four independent input obligations still block unconditional closure.",
+  latestArtifact: "specializations/k3n_hodge/receipts/degree_four_closure_reduction_status.md",
+  latestCommit: "42850917647dbd76421f382b7158a99b8b094df4",
+  currentOpenGap: "Independently construct the required-class inventory/equivariant monodromy data and discharge SH-membership plus the actual degree-four c2/2 scalar-vanishing obligations.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "Commit 42850917647dbd76421f382b7158a99b8b094df4 explicitly states that unconditional ZeroDayClosure for n >= 4 is not proved and lists the four missing inputs.",
+    "GitHub reports four successful workflow runs and zero failed workflow runs on exact head 42850917647dbd76421f382b7158a99b8b094df4 as checked on 2026-08-31."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
-const statusRows = withPoincare.some((entry) => entry.name === dfmStatusRow.name)
+const withDfm = withPoincare.some((entry) => entry.name === dfmStatusRow.name)
   ? withPoincare
   : [...withPoincare, dfmStatusRow];
+const statusRows = withDfm.some((entry) => entry.name === zeroDayStatusRow.name)
+  ? withDfm
+  : [...withDfm, zeroDayStatusRow];
 
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_30:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs. Those inputs are not derived from the current Cauchy carrier. The remaining physical/analytic gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
