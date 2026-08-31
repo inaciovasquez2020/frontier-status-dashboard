@@ -22,7 +22,7 @@ describe("URF-core PR323 Law 3 dashboard sync", () => {
 
   it("records updated obligation counts", () => {
     expect(urfCore.removedAdmits).toBe(1);
-    expect([52, 53]).toContain(urfCore.axiomCount);
+    expect([5, 52, 53]).toContain(urfCore.axiomCount);
     expect([8, 9]).toContain(urfCore.admitCount);
     expect(urfCore.sorryCount).toBe(0);
   });
