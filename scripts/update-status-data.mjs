@@ -205,6 +205,32 @@ const darknessStatusRow = {
   ]
 };
 
+const theoremClosureClassifierStatusRow = {
+  name: "theorem-closure-classifier",
+  domain: "Verification / Closure-audit infrastructure",
+  status: "BOUNDED_CLOSURE_AUDIT_PIPELINE_ONLY",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "bounded classifier/control infrastructure only; classifier labels do not prove theorem truth",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "Main commit a573c06eacf3e10f2e628faaae7a92be27859beb retains TheoremClosureClassifier_V1, the seven-control suite, and the bounded end-to-end theorem-closure pipeline certificate/public-status surface. These artifacts verify the repository's audit/classification machinery only: a classifier label is not an independent mathematical proof and does not establish theorem truth beyond the supplied proof/dependency ledger. No unrestricted theorem closure claim, no new benchmark theorem proof claim, no global finite-model-theory closure, no Fagin theorem claim, no 0-1 Law claim, no P vs NP claim, no universal proof closure claim, and no Clay-level closure claim follows.",
+  url: "https://github.com/inaciovasquez2020/theorem-closure-classifier",
+  repository: "theorem-closure-classifier",
+  repo: "theorem-closure-classifier",
+  lastUpdate: "2026-06-23",
+  summary: "The repository provides a bounded theorem-closure audit method, seven-control suite, and verifier-backed pipeline certificate; its classifications audit supplied ledgers and do not themselves prove theorem truth.",
+  latestArtifact: "BOUNDED_THEOREM_CLOSURE_PIPELINE_CERTIFICATE",
+  latestCommit: "a573c06eacf3e10f2e628faaae7a92be27859beb",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "The repository public-status artifact records TheoremClosureClassifier_V1, the seven-control suite, an end-to-end certificate/verifier/pytest surface, and explicit non-claims against unrestricted theorem closure and P vs NP/Clay closure.",
+    "GitHub reports a successful workflow run on exact main head a573c06eacf3e10f2e628faaae7a92be27859beb."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
@@ -220,9 +246,12 @@ const withBiological = withZeroDay.some((entry) => entry.name === biologicalStat
 const withCslib = withBiological.some((entry) => entry.name === cslibStatusRow.name)
   ? withBiological.map((entry) => entry.name === cslibStatusRow.name ? cslibStatusRow : entry)
   : [...withBiological, cslibStatusRow];
-const statusRows = withCslib.some((entry) => entry.name === darknessStatusRow.name)
+const withDarkness = withCslib.some((entry) => entry.name === darknessStatusRow.name)
   ? withCslib.map((entry) => entry.name === darknessStatusRow.name ? darknessStatusRow : entry)
   : [...withCslib, darknessStatusRow];
+const statusRows = withDarkness.some((entry) => entry.name === theoremClosureClassifierStatusRow.name)
+  ? withDarkness.map((entry) => entry.name === theoremClosureClassifierStatusRow.name ? theoremClosureClassifierStatusRow : entry)
+  : [...withDarkness, theoremClosureClassifierStatusRow];
 
 const fo4CurrentBoundary = "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIRED. Constraint isolation is recorded as a status boundary, not theorem closure. Commit b1a3129b24fd17f5c821552a8feb233968a51cda adds FINITE_WITNESS_SEARCH_TARGET_ONLY for FO4FiniteCycleOverlapWitnessSearch below FO4CycleOverlapRankRigidityDichotomy; it does not solve the rigidity branch or the counterexample-family branch. The bounded search remains blocked until this repository contains formal definitions of the FO4 radius-R rooted local type and R-local cycle-overlap rank, a verified finite graph enumerator or externally supplied finite witness corpus, and a proof that the finite proxy agrees with the intended FO4/rank definitions on the searched class. No unrestricted graph rigidity closure. No Cayley-graph rigidity closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure.";
 
