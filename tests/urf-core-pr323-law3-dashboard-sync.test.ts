@@ -10,27 +10,27 @@ describe("URF-core PR323 Law 3 dashboard sync", () => {
 
   it("records PR323 as a theorem-surface closure", () => {
     expect(urfCore).toBeTruthy();
-    expect(["THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED"]).toContain(urfCore.status);
+    expect(["THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED", "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER"]).toContain(urfCore.status);
     expect([urfCore.closedSurface, urfCore.previousClosedSurface]).toContain("urf_law3");
     expect([urfCore.previousClosedSurface, urfCore.previousAssumptionBoundarySurface]).toContain("urf_admissible_normalization_boundaries");
     expect(urfCore.previousTheoremSurface).toBe("no_status_promotion_theorem");
-    expect([323, 324]).toContain(urfCore.latestPR);
-    expect(["0d6238f", "3bbc856"]).toContain(urfCore.latestCommit);
+    expect([323, 324, 536]).toContain(urfCore.latestPR);
+    expect(["0d6238f", "3bbc856", "40eade50f16b70fdccd2e96dd29c6c5ab9fbff0d"]).toContain(urfCore.latestCommit);
     expect([true, false]).toContain(urfCore.theoremSurfaceClosed);
     expect(urfCore.theoremPromotion).toBe(false);
   });
 
   it("records updated obligation counts", () => {
     expect(urfCore.removedAdmits).toBe(1);
-    expect([52, 53]).toContain(urfCore.axiomCount);
-    expect([8, 9]).toContain(urfCore.admitCount);
+    expect([5, 52, 53]).toContain(urfCore.axiomCount);
+    expect([0, 8, 9]).toContain(urfCore.admitCount);
     expect(urfCore.sorryCount).toBe(0);
   });
 
   it("preserves non-closure boundaries", () => {
     const boundary = String(urfCore.boundary);
-    expect(boundary).toMatch(/textual\/noncompiled assumption boundary|relative to existing\/new structural axioms/i);
-    expect(boundary).toMatch(/existing axioms and admits are not discharged|capacity, chain_rule, and cmi_nonneg are not discharged/i);
+    expect(boundary).toMatch(/textual\/noncompiled assumption boundary|relative to existing\/new structural axioms|five remaining axioms are confined to the legacy prefab surface/i);
+    expect(boundary).toMatch(/existing axioms and admits are not discharged|capacity, chain_rule, and cmi_nonneg are not discharged|5 axioms, 0 admits, and 0 sorry terms/i);
     expect(boundary).toMatch(/no whole-URF theorem closure/i);
     expect(boundary).toMatch(/no CRR closure/i);
     expect(boundary).toMatch(/no H4\.1\/FGL closure/i);

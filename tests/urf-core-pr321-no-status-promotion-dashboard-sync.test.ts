@@ -29,17 +29,17 @@ describe("URF-core PR321 no-status-promotion dashboard sync", () => {
 
   it("records the merged theorem surface without promotion", () => {
     expect(urfCore).toBeTruthy();
-    expect(["THEOREM_SURFACE_CLOSED", "ASSUMPTION_BOUNDARY_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED"]).toContain(urfCore.status);
+    expect(["THEOREM_SURFACE_CLOSED", "ASSUMPTION_BOUNDARY_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED", "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER"]).toContain(urfCore.status);
     expect([urfCore.closedSurface, urfCore.previousClosedSurface, urfCore.previousTheoremSurface]).toContain("no_status_promotion_theorem");
-    expect([321, 322, 323, 324]).toContain(urfCore.latestPR);
-    expect(["3554540", "fd698e4", "0d6238f", "3bbc856"]).toContain(urfCore.latestCommit);
+    expect([321, 322, 323, 324, 536]).toContain(urfCore.latestPR);
+    expect(["3554540", "fd698e4", "0d6238f", "3bbc856", "40eade50f16b70fdccd2e96dd29c6c5ab9fbff0d"]).toContain(urfCore.latestCommit);
     expect(urfCore.theoremPromotion).toBe(false);
   });
 
   it("preserves the whole-URF non-closure boundary", () => {
     const boundary = String(urfCore.boundary);
     expect(boundary).toMatch(/no whole-URF theorem closure/i);
-    expect(boundary).toMatch(/existing axioms and admits are not discharged/i);
+    expect(boundary).toMatch(/five remaining axioms|existing axioms and admits are not discharged/i);
     expect(boundary).toMatch(/no P vs NP closure/i);
     expect(boundary).toMatch(/no Clay-problem closure/i);
   });

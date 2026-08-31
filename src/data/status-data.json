@@ -2,29 +2,29 @@
   {
     "name": "urf-core",
     "domain": "Foundations",
-    "status": "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED",
+    "status": "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER",
     "integrity": 100,
     "theoremClosure": 72,
     "ci": "green",
-    "boundary": "PR #324 converts one legacy DescentSystem admit into a textual/noncompiled assumption boundary; target file is not standalone Lean-compiled; axiom_count 53; admit_count 8; sorry_count 0; does not discharge the descent assumption; existing axioms and admits are not discharged; no whole-URF theorem closure; no CRR closure; no H4.1/FGL closure; no P vs NP closure; no Clay-problem closure.",
+    "boundary": "CURRENT_URF_CORE_STATUS_2026_08_07: PR #534 synchronizes the current Lean-source obligation inventory to 5 axioms, 0 admits, and 0 sorry terms; the five remaining axioms are confined to the legacy prefab surface. PR #535 proves the repository-defined three-element arithmetic family has sharp uniform coercivity constant 1/2, including an exact equality witness, but does not establish an arithmetic-to-spectral bridge for a broader family or any unrestricted URF theorem. PR #536 makes URF-SG schema validation fail closed and strengthens certificate admission/container trust semantics without strengthening the mathematical spectral-gap theorem represented by a valid certificate. No whole-URF theorem closure, no CRR closure, no H4.1/FGL closure, unrestricted graph-rigidity closure, no P vs NP closure, and no Clay-problem closure follows.",
     "url": "https://github.com/inaciovasquez2020/urf-core",
     "repository": "urf-core",
-    "lastUpdate": "2026-05-04",
-    "summary": "Transfer Operator status lock added as certificate-transport-only infrastructure; status promotion blocked; no theorem-level closure claimed.",
-    "latestArtifact": "TransferOperator status lock",
-    "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/315",
-    "theoremClosureLabel": "72% — certificate/readiness surface; theorem closure false",
+    "lastUpdate": "2026-08-07",
+    "summary": "Current source inventory is 5 axioms / 0 admits / 0 sorries; the sharp 1/2 coercivity constant is proved for the repository-defined three-element arithmetic family, and SG certificate admission now fails closed.",
+    "latestArtifact": "sharp arithmetic coercivity constant + fail-closed URF-SG verifier",
+    "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/536",
+    "theoremClosureLabel": "72% — dashboard readiness scale; unrestricted theorem closure false",
     "theoremMetricApplicable": false,
     "closureScaleMetricApplicable": true,
     "repo": "urf-core",
     "closedSurface": "descent_first_remaining_admit_boundary",
-    "latestPR": 324,
-    "latestCommit": "3bbc856",
+    "latestPR": 536,
+    "latestCommit": "40eade50f16b70fdccd2e96dd29c6c5ab9fbff0d",
     "theoremPromotion": false,
     "previousClosedSurface": "urf_law3",
     "removedAdmits": 1,
-    "axiomCount": 53,
-    "admitCount": 8,
+    "axiomCount": 5,
+    "admitCount": 0,
     "sorryCount": 0,
     "assumptionBoundary": true,
     "previousTheoremSurface": "no_status_promotion_theorem",
@@ -36,7 +36,11 @@
     "openIssues": 0,
     "defaultBranch": "main",
     "updatedAt": "2026-08-07T18:28:37Z",
-    "publicInventory": true
+    "publicInventory": true,
+    "currentOpenGap": "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
+    "evidence": [
+      "PR #535 proof head 8f0467d693c22232ec5b637830dc495f2f57b9a2 passed CI, build, Lean Action CI, verify-surface, external-status-lock, lean-proof-portfolio-classification, zero-overclaim, and duplicate-namespace checks; PR #536 head f9498e9bb272d66ce5dc5d23ca88bdc3f17aa9ac passed the same verifier/build surface."
+    ]
   },
   {
     "name": "chronos-urf-rr",
@@ -290,7 +294,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-06T10:13:54Z",
+    "updatedAt": "2026-08-31T09:34:13Z",
     "publicInventory": true
   },
   {
@@ -1041,6 +1045,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-31T09:19:21Z"
+    "updatedAt": "2026-08-31T11:56:50Z"
   }
 ]

@@ -10,19 +10,19 @@ describe("URF-core PR322 admissible normalization dashboard sync", () => {
 
   it("records PR322 as an assumption-boundary closure", () => {
     expect(urfCore).toBeTruthy();
-    expect(["ASSUMPTION_BOUNDARY_CLOSED", "THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED"]).toContain(urfCore.status);
+    expect(["ASSUMPTION_BOUNDARY_CLOSED", "THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED", "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER"]).toContain(urfCore.status);
     expect([urfCore.closedSurface, urfCore.previousClosedSurface, urfCore.previousAssumptionBoundarySurface]).toContain("urf_admissible_normalization_boundaries");
     expect([urfCore.previousClosedSurface, urfCore.previousTheoremSurface]).toContain("no_status_promotion_theorem");
-    expect([322, 323, 324]).toContain(urfCore.latestPR);
-    expect(["fd698e4", "0d6238f", "3bbc856"]).toContain(urfCore.latestCommit);
+    expect([322, 323, 324, 536]).toContain(urfCore.latestPR);
+    expect(["fd698e4", "0d6238f", "3bbc856", "40eade50f16b70fdccd2e96dd29c6c5ab9fbff0d"]).toContain(urfCore.latestCommit);
     expect(urfCore.assumptionBoundary).toBe(true);
     expect(urfCore.theoremPromotion).toBe(false);
   });
 
   it("records updated obligation counts", () => {
     expect([1, 2]).toContain(urfCore.removedAdmits);
-    expect([46, 52, 53]).toContain(urfCore.axiomCount);
-    expect([8, 9, 10]).toContain(urfCore.admitCount);
+    expect([5, 46, 52, 53]).toContain(urfCore.axiomCount);
+    expect([0, 8, 9, 10]).toContain(urfCore.admitCount);
     expect(urfCore.sorryCount).toBe(0);
   });
 
