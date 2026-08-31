@@ -178,6 +178,33 @@ const cslibStatusRow = {
   ]
 };
 
+const darknessStatusRow = {
+  name: "darkness-region-dynamics-null-test",
+  domain: "Falsification / Null-test schema",
+  status: "CONDITIONAL_TEST_SCHEMA_ONLY_NO_NEW_PHYSICS_CLAIM",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "conditional null-test schema only; no real measurement or new-physics claim",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "The repository defines a bounded conditional null-test schema for dark-region matter traversal. Its current main checkpoint ddf3c9267c38d2a217b2f67c83e75dadc53d2792 adds RealMeasurementAcquisitionPacketTarget and explicitly stops because the required real-measurement packet is absent. The expected checker state remains STATUS=RAW_REAL_MEASUREMENT_INPUTS_MISSING with MINIMAL_MISSING_OBJECT=RawRealMeasurementRecording. No real measured trajectory dataset, real null result, real anomaly, DarknessFieldD, darkness medium, or new-physics detection is established.",
+  url: "https://github.com/inaciovasquez2020/darkness-region-dynamics-null-test",
+  repository: "darkness-region-dynamics-null-test",
+  repo: "darkness-region-dynamics-null-test",
+  lastUpdate: "2026-06-23",
+  summary: "The null-test apparatus/schema is defined, but the repository remains stopped at acquisition of a concrete real-measurement packet before any empirical null-result or anomaly check can run.",
+  latestArtifact: "RealMeasurementAcquisitionPacketTarget",
+  latestCommit: "ddf3c9267c38d2a217b2f67c83e75dadc53d2792",
+  currentOpenGap: "Acquire the concrete real measurement packet with raw recording, calibrated metadata, extracted boundary observations, and explicit uncertainty information required by the fail-closed checker.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "README status remains CONDITIONAL_TEST_SCHEMA_ONLY_NO_NEW_PHYSICS_CLAIM and explicitly says no real null result, real anomaly, DarknessFieldD, darkness medium, or new physics is claimed.",
+    "Commit ddf3c9267c38d2a217b2f67c83e75dadc53d2792 records REAL_MEASUREMENT_ACQUISITION_PACKET_TARGET_ONLY and expects tools/check_real_measurement_inputs.py to stop with RAW_REAL_MEASUREMENT_INPUTS_MISSING."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
@@ -190,9 +217,12 @@ const withZeroDay = withDfm.some((entry) => entry.name === zeroDayStatusRow.name
 const withBiological = withZeroDay.some((entry) => entry.name === biologicalStatusRow.name)
   ? withZeroDay.map((entry) => entry.name === biologicalStatusRow.name ? biologicalStatusRow : entry)
   : [...withZeroDay, biologicalStatusRow];
-const statusRows = withBiological.some((entry) => entry.name === cslibStatusRow.name)
+const withCslib = withBiological.some((entry) => entry.name === cslibStatusRow.name)
   ? withBiological.map((entry) => entry.name === cslibStatusRow.name ? cslibStatusRow : entry)
   : [...withBiological, cslibStatusRow];
+const statusRows = withCslib.some((entry) => entry.name === darknessStatusRow.name)
+  ? withCslib.map((entry) => entry.name === darknessStatusRow.name ? darknessStatusRow : entry)
+  : [...withCslib, darknessStatusRow];
 
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_31:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs; those inputs are not derived from the current Cauchy carrier. PR #1300 adds a fail-closed gravity axiom audit and compiler-verified Newtonian-gauge proof-surface repairs; the audited endpoint theorems report only propext, Classical.choice, and Quot.sound, with no custom axiom introduced. PR #1300 does not supply the separate physical/analytic source-control estimate. The remaining gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
