@@ -1,0 +1,92 @@
+[
+  {
+    "name": "chronos-urf-rr",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "cslib-fmt",
+    "url": "https://github.com/inaciovasquez2020/cslib-fmt",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "darkness-region-dynamics-null-test",
+    "url": "https://github.com/inaciovasquez2020/darkness-region-dynamics-null-test",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "dfm-mkc-cosmology",
+    "url": "https://github.com/inaciovasquez2020/dfm-mkc-cosmology",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "fo4-constraint-isolation",
+    "url": "https://github.com/inaciovasquez2020/fo4-constraint-isolation",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "frontier-status-dashboard",
+    "url": "https://github.com/inaciovasquez2020/frontier-status-dashboard",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "inaciovasquez2020",
+    "url": "https://github.com/inaciovasquez2020/inaciovasquez2020",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "inaciovasquez2020.github.io",
+    "url": "https://github.com/inaciovasquez2020/inaciovasquez2020.github.io",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "poincare-new-derivation",
+    "url": "https://github.com/inaciovasquez2020/poincare-new-derivation",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "theorem-closure-classifier",
+    "url": "https://github.com/inaciovasquez2020/theorem-closure-classifier",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "urf-11-translation-subproblem-registry",
+    "url": "https://github.com/inaciovasquez2020/urf-11-translation-subproblem-registry",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "urf-core",
+    "url": "https://github.com/inaciovasquez2020/urf-core",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "urf-spine-public",
+    "url": "https://github.com/inaciovasquez2020/urf-spine-public",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "urf-templates",
+    "url": "https://github.com/inaciovasquez2020/urf-templates",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "urf-textbook",
+    "url": "https://github.com/inaciovasquez2020/urf-textbook",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "urf-verifier",
+    "url": "https://github.com/inaciovasquez2020/urf-verifier",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "vasquez-index",
+    "url": "https://github.com/inaciovasquez2020/vasquez-index",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "zero_day_restricted_closures",
+    "url": "https://github.com/inaciovasquez2020/zero_day_restricted_closures",
+    "defaultBranch": "main"
+  }
+]
