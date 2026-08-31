@@ -8,7 +8,6 @@ on:
     paths:
       - ".github/workflows/sync-public-repositories.yml"
       - "scripts/update-status-data.mjs"
-      - "scripts/migrate-github-pages-root-status.mjs"
       - "src/data/public-repositories.json"
 
 permissions:
@@ -26,9 +25,7 @@ jobs:
       - name: Refresh public repository inventory
         env:
           GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          node scripts/update-status-data.mjs
-          node scripts/migrate-github-pages-root-status.mjs
+        run: node scripts/update-status-data.mjs
       - name: Validate generated diff
         run: git diff --check
       - name: Commit generated inventory
