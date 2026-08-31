@@ -36,7 +36,38 @@ async function listPublicRepos() {
 const publicRepos = await listPublicRepos();
 const publicByName = new Map(publicRepos.map((repo) => [repo.name, repo]));
 
-const enriched = existing
+const poincareStatusRow = {
+  name: "poincare-new-derivation",
+  domain: "Topology / Poincare proof program",
+  status: "Status-Locked Frontier",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "verified intermediate checkpoint only; Poincare.JIID unproved",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "PR #87 merged the fully green finite high-fan recurrence checkpoint at fecb4043dc137777fa5e253399b3c8894083fc55 from verified proof head afd61a176478e357d2e95ba8fcc1dbc3f6317367. This is an intermediate proof-drive checkpoint only. Poincare.JIID remains unproved; no Poincare theorem closure or Clay-problem closure is claimed.",
+  url: "https://github.com/inaciovasquez2020/poincare-new-derivation",
+  repository: "poincare-new-derivation",
+  repo: "poincare-new-derivation",
+  lastUpdate: "2026-08-30",
+  summary: "Verified finite high-fan recurrence checkpoint banked on main while the final Poincare.JIID theorem remains open.",
+  latestPr: "https://github.com/inaciovasquez2020/poincare-new-derivation/pull/87",
+  latestPR: 87,
+  latestCommit: "fecb4043dc137777fa5e253399b3c8894083fc55",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "PR #87 merged on 2026-08-30; its body explicitly states Poincare.JIID remains unproved.",
+    "Verified proof head afd61a176478e357d2e95ba8fcc1dbc3f6317367 has successful Lean Action CI, external-status-lock, and lean-proof-portfolio-classification workflow runs."
+  ]
+};
+
+const statusRows = existing.some((entry) => entry.name === poincareStatusRow.name)
+  ? existing
+  : [...existing, poincareStatusRow];
+
+const enriched = statusRows
   .filter((entry) => !entry.publicInventory || entry.domain !== "Public Repository")
   .map((entry) => {
     const repo = publicByName.get(entry.name);
