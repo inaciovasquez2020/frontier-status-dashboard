@@ -271,6 +271,18 @@ const currentStatusRows = statusRows.map((entry) => {
     };
   }
 
+  const isUrfTextbookRoot =
+    entry.name === "urf-textbook" &&
+    entry.domain === "URF / Exposition" &&
+    entry.url === "https://github.com/inaciovasquez2020/urf-textbook";
+
+  if (isUrfTextbookRoot) {
+    return {
+      ...entry,
+      ci: "green",
+    };
+  }
+
   const isUrfCoreRoot =
     entry.name === "urf-core" &&
     entry.domain === "Foundations" &&
