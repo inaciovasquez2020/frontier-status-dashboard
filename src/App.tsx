@@ -2,6 +2,7 @@ import { VerificationExplorer } from "./components/VerificationExplorer";
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import rawRepos from "./data/status-data.json";
+import rawPublicRepositoryInventory from "./data/public-repositories.json";
 
 export type RepoStatus =
   | "Certified Frontier"
@@ -25,7 +26,14 @@ export type Repo = {
   url: string;
 };
 
+type PublicRepositoryInventoryRow = {
+  name: string;
+  url: string;
+  defaultBranch: string;
+};
+
 export const repos: Repo[] = rawRepos as Repo[];
+export const publicRepositoryInventory = rawPublicRepositoryInventory as PublicRepositoryInventoryRow[];
 
 export const publicRepos: Repo[] = repos.filter(
   (repo) =>
@@ -210,13 +218,14 @@ export default function FrontierStatusDashboard() {
 
   const domains = useMemo(() => uniqueDomains(publicRepos), []);
 
-  const topLevelRepositoryNames = new Set(["urf-core", "chronos-urf-rr", "vasquez-index", "urf-spine-public", "Finite graph distance layer"]);
   const repositoryRows: Repo[] = [];
   const linkOnlyRows: Repo[] = [];
   const seenRepositoryNames = new Set<string>();
 
   for (const repo of publicRepos) {
-    if (topLevelRepositoryNames.has(repo.name) && !seenRepositoryNames.has(repo.name)) {
+    const repositoryRoot = `https://github.com/inaciovasquez2020/${repo.name}`;
+
+    if (repo.url === repositoryRoot && !seenRepositoryNames.has(repo.name)) {
       seenRepositoryNames.add(repo.name);
       repositoryRows.push(repo);
       continue;
@@ -299,6 +308,37 @@ export default function FrontierStatusDashboard() {
           <Metric label="Claim-boundary policy" value="No theorem promotion" />
         </section>
 
+        <section className="rounded-3xl border bg-white p-6 shadow-sm">
+          <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+            <div>
+              <div className="flex items-center gap-2 text-lg font-semibold text-slate-900">
+                <Icon name="branch" />
+                Public repository inventory
+              </div>
+              <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
+                {publicRepositoryInventory.length} GitHub-visible public repositories. Inventory listing only; inclusion does not imply theorem status, CI success, or scientific validation.
+              </p>
+            </div>
+          </div>
+          <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            {publicRepositoryInventory.map((repo) => (
+              <a
+                key={repo.name}
+                href={repo.url}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between gap-3 rounded-2xl border bg-slate-50 px-4 py-3 text-sm text-slate-700 hover:bg-slate-100"
+              >
+                <span>
+                  <span className="block font-medium text-slate-900">{repo.name}</span>
+                  <span className="mt-1 block text-xs text-slate-500">default: {repo.defaultBranch}</span>
+                </span>
+                <Icon name="external" className="h-4 w-4 shrink-0" />
+              </a>
+            ))}
+          </div>
+        </section>
+
         <section className="grid gap-4 lg:grid-cols-[1fr_280px]">
           <div className="relative">
             <Icon name="search" className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" />
@@ -358,17 +398,21 @@ export default function FrontierStatusDashboard() {
 
                     {repo.name === "chronos-urf-rr" && visibleChronosLinkRows.length > 0 ? (
                       <div className="rounded-2xl border bg-slate-50 p-4">
-                        <div className="text-sm font-medium text-slate-800">Repository links</div>
-                        <div className="mt-3 grid gap-2 text-sm">
+                        <div className="mb-2 flex items-center gap-2 text-sm font-medium text-slate-700">
+                          <Icon name="activity" />
+                          Chronos evidence links
+                        </div>
+                        <div className="space-y-2">
                           {visibleChronosLinkRows.map((artifact) => (
                             <a
-                              key={`${artifact.name}-${artifact.status}`}
+                              key={`${artifact.name}-${artifact.url}`}
                               href={chronosLinkUrl(artifact) ?? artifact.url}
                               target="_blank"
                               rel="noreferrer"
-                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                              className="flex items-center justify-between gap-3 rounded-xl border bg-white px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
                             >
-                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
+                              <span>{artifact.name}</span>
+                              <Icon name="external" className="h-4 w-4 shrink-0" />
                             </a>
                           ))}
                         </div>
@@ -377,55 +421,44 @@ export default function FrontierStatusDashboard() {
 
                     {repo.name === "urf-core" && urfCoreLinkRows.length > 0 ? (
                       <div className="rounded-2xl border bg-slate-50 p-4">
-                        <div className="text-sm font-medium text-slate-800">Repository links</div>
-                        <div className="mt-3 grid gap-2 text-sm">
+                        <div className="mb-2 flex items-center gap-2 text-sm font-medium text-slate-700">
+                          <Icon name="activity" />
+                          URF Core evidence links
+                        </div>
+                        <div className="space-y-2">
                           {urfCoreLinkRows.map((artifact) => (
                             <a
-                              key={`${artifact.name}-${artifact.status}`}
+                              key={`${artifact.name}-${artifact.url}`}
                               href={artifact.url}
                               target="_blank"
                               rel="noreferrer"
-                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                              className="flex items-center justify-between gap-3 rounded-xl border bg-white px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
                             >
-                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
+                              <span>{artifact.name}</span>
+                              <Icon name="external" className="h-4 w-4 shrink-0" />
                             </a>
                           ))}
                         </div>
                       </div>
                     ) : null}
 
-                    {repo.name === "Finite graph distance layer" && cslibFmtLinkRows.length > 0 ? (
+                    {repo.name === "cslib-fmt" && cslibFmtLinkRows.length > 0 ? (
                       <div className="rounded-2xl border bg-slate-50 p-4">
-                        <div className="text-sm font-medium text-slate-800">Repository links</div>
-                        <div className="mt-3 grid gap-2 text-sm">
+                        <div className="mb-2 flex items-center gap-2 text-sm font-medium text-slate-700">
+                          <Icon name="activity" />
+                          cslib-fmt evidence links
+                        </div>
+                        <div className="space-y-2">
                           {cslibFmtLinkRows.map((artifact) => (
                             <a
-                              key={`${artifact.name}-${artifact.status}`}
+                              key={`${artifact.name}-${artifact.url}`}
                               href={artifact.url}
                               target="_blank"
                               rel="noreferrer"
-                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
+                              className="flex items-center justify-between gap-3 rounded-xl border bg-white px-3 py-2 text-sm text-slate-700 hover:bg-slate-50"
                             >
-                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    ) : null}
-
-                    {repo.name === "vasquez-index" && indexLinkRows.length > 0 ? (
-                      <div className="rounded-2xl border bg-slate-50 p-4">
-                        <div className="text-sm font-medium text-slate-800">Repository links</div>
-                        <div className="mt-3 grid gap-2 text-sm">
-                          {indexLinkRows.map((artifact) => (
-                            <a
-                              key={`${artifact.name}-${artifact.status}`}
-                              href={artifact.url}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
-                            >
-                              {artifact.name === repo.name ? `${artifact.name} — ${artifact.status}` : artifact.name}
+                              <span>{artifact.name}</span>
+                              <Icon name="external" className="h-4 w-4 shrink-0" />
                             </a>
                           ))}
                         </div>
@@ -433,37 +466,55 @@ export default function FrontierStatusDashboard() {
                     ) : null}
                   </div>
 
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <div className="inline-flex items-center gap-2 rounded-full border bg-white px-3 py-1 text-sm text-slate-600">
-                      <Icon name="activity" />
-                      CI: {repo.ci}
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div className="rounded-xl border bg-slate-50 p-3">
+                      <div className="text-slate-500">Integrity</div>
+                      <div className="mt-1 font-semibold text-slate-900">{repo.integrity}%</div>
                     </div>
-                    <a
-                      href={repo.url}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 hover:underline"
-                    >
-                      Open repository <Icon name="external" />
-                    </a>
+                    <div className="rounded-xl border bg-slate-50 p-3">
+                      <div className="text-slate-500">Theorem closure</div>
+                      <div className="mt-1 font-semibold text-slate-900">
+                        {repo.theoremClosureLabel ?? `${repo.theoremClosure}%`}
+                      </div>
+                    </div>
                   </div>
+
+                  <a
+                    href={repo.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex items-center gap-2 text-sm font-medium text-slate-900 underline decoration-slate-300 underline-offset-4 hover:decoration-slate-900"
+                  >
+                    Open repository <Icon name="external" />
+                  </a>
                 </CardContent>
               </Card>
             </motion.div>
           ))}
         </section>
 
-        <section className="rounded-3xl border bg-white p-6 shadow-sm">
-          <div className="flex items-start gap-3">
-            <Icon name="shield" className="mt-1 h-5 w-5 text-slate-700" />
-            <div>
-              <h3 className="text-lg font-semibold">Deployment boundary</h3>
-              <p className="mt-2 max-w-4xl text-sm leading-6 text-slate-600">
-                This product publishes repository status, CI health, proof-hole visibility, and claim-boundary discipline. It does not represent unresolved mathematical frontiers as solved theorems.
-              </p>
+        {indexLinkRows.length > 0 ? (
+          <section className="rounded-3xl border bg-white p-6 shadow-sm">
+            <div className="mb-4 flex items-center gap-2 text-lg font-semibold text-slate-900">
+              <Icon name="activity" />
+              Additional public evidence
             </div>
-          </div>
-        </section>
+            <div className="grid gap-3 md:grid-cols-2">
+              {indexLinkRows.map((artifact) => (
+                <a
+                  key={`${artifact.name}-${artifact.url}`}
+                  href={artifact.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="flex items-center justify-between gap-3 rounded-2xl border bg-slate-50 px-4 py-3 text-sm text-slate-700 hover:bg-slate-100"
+                >
+                  <span>{artifact.name}</span>
+                  <Icon name="external" className="h-4 w-4 shrink-0" />
+                </a>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </div>
     </main>
   );

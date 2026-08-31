@@ -1,18 +1,9 @@
 import fs from "node:fs/promises";
 
-const repos = [
-  "urf-core",
-  "chronos-urf-rr",
-  "ym-os-quantization",
-  "clay-problem-lab",
-  "poincare-new-derivation",
-  "biological-friction-framework"
-];
-
 const owner = "inaciovasquez2020";
 const existingPath = "src/data/status-data.json";
+const inventoryPath = "src/data/public-repositories.json";
 const existing = JSON.parse(await fs.readFile(existingPath, "utf8"));
-const byName = new Map(existing.map((repo) => [repo.name, repo]));
 
 async function github(path) {
   const headers = {
@@ -27,21 +18,48 @@ async function github(path) {
   return res.json();
 }
 
-const enriched = [];
+async function listPublicRepos() {
+  const repos = [];
 
-for (const name of repos) {
-  const base = byName.get(name);
-  const repo = await github(`/repos/${owner}/${name}`);
-  enriched.push({
-    ...base,
-    url: repo.html_url,
-    stars: repo.stargazers_count,
-    forks: repo.forks_count,
-    openIssues: repo.open_issues_count,
-    defaultBranch: repo.default_branch,
-    updatedAt: repo.updated_at
-  });
+  for (let page = 1; ; page += 1) {
+    const batch = await github(
+      `/users/${owner}/repos?type=public&sort=full_name&direction=asc&per_page=100&page=${page}`,
+    );
+
+    repos.push(...batch.filter((repo) => repo.private === false));
+    if (batch.length < 100) break;
+  }
+
+  return repos;
 }
 
+const publicRepos = await listPublicRepos();
+const publicByName = new Map(publicRepos.map((repo) => [repo.name, repo]));
+
+const enriched = existing
+  .filter((entry) => !entry.publicInventory || entry.domain !== "Public Repository")
+  .map((entry) => {
+    const repo = publicByName.get(entry.name);
+    if (!repo) return entry;
+
+    return {
+      ...entry,
+      url: repo.html_url,
+      stars: repo.stargazers_count,
+      forks: repo.forks_count,
+      openIssues: repo.open_issues_count,
+      defaultBranch: repo.default_branch,
+      updatedAt: repo.updated_at,
+      publicInventory: true,
+    };
+  });
+
+const inventory = publicRepos.map((repo) => ({
+  name: repo.name,
+  url: repo.html_url,
+  defaultBranch: repo.default_branch,
+}));
+
+await fs.writeFile(inventoryPath, JSON.stringify(inventory, null, 2) + "\n");
 await fs.writeFile(existingPath, JSON.stringify(enriched, null, 2) + "\n");
-console.log(`Updated ${existingPath}`);
+console.log(`Updated ${existingPath} and ${inventoryPath} from ${publicRepos.length} public repositories`);

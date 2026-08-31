@@ -13,7 +13,7 @@
     "summary": "Transfer Operator status lock added as certificate-transport-only infrastructure; status promotion blocked; no theorem-level closure claimed.",
     "latestArtifact": "TransferOperator status lock",
     "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/315",
-    "theoremClosureLabel": "72% \u2014 certificate/readiness surface; theorem closure false",
+    "theoremClosureLabel": "72% — certificate/readiness surface; theorem closure false",
     "theoremMetricApplicable": false,
     "closureScaleMetricApplicable": true,
     "repo": "urf-core",
@@ -30,7 +30,13 @@
     "previousTheoremSurface": "no_status_promotion_theorem",
     "theoremSurfaceClosed": false,
     "previousAssumptionBoundarySurface": "urf_admissible_normalization_boundaries",
-    "textualNoncompiledBoundary": true
+    "textualNoncompiledBoundary": true,
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-08-07T18:28:37Z",
+    "publicInventory": true
   },
   {
     "name": "chronos-urf-rr",
@@ -39,7 +45,7 @@
     "integrity": 100,
     "theoremClosure": 82,
     "ci": "green",
-    "boundary": "Chronos PR #308 records FPz1 restricted lambda-domain solved surface only; restrictedRateSpectrumIsolation, lowerEnvelope_to_quantitativeLambda, and fpz1_restricted_lambda_route are formalized under lambda > 0, EntropyFaithfulLowerEnvelope, and DepthBridgeLambda; no unrestricted RateSpectrumIsolation; no unrestricted UniformRateGap; no unrestricted UniversalFiberEntropyGap; no unrestricted Chronos-RR; no unrestricted H4.1/FGL; no P vs NP; no Clay-problem closure. PR #263. 22acce6. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No UniversalFiberEntropyGap from Reg-SNF. Unrestricted H4.1/FGL remains FRONTIER_OPEN. No unrestricted H4.1/FGL closure. unrestricted Chronos-RR remains locked open. No unrestricted Chronos-RR closure. Repository-native Chronos-RR conditional closure does not promote unrestricted H4.1/FGL status. unrestricted DepthBridge. SemanticRankRateToFiberEntropySoundness. No theorem-level Chronos-RR closure. No UniversalFiberEntropyGap theorem. No P vs NP or Clay-problem closure. Chronos PR #309 records FPz1 unrestricted rate-spectrum obstruction only. inverseNatRateSequence_refutes_rateSpectrumIsolation. InverseNatRateSequence. UNRESTRICTED_RATE_SPECTRUM_OBSTRUCTION_ONLY. does not construct concrete Chronos admissible objects. Chronos PR #310 records FPz1 conditional unrestricted route only. rateSpectrumIsolation_and_lowerEnvelope_to_quantitativeUnrestricted. fpz1_conditional_unrestricted_route. CONDITIONAL_UNRESTRICTED_ROUTE_ONLY. DepthBridgeUnrestricted. conditional composition only. does not prove RateSpectrumIsolation. does not prove EntropyFaithfulLowerEnvelope. does not prove DepthBridgeUnrestricted. Chronos PR #312 records the gravity boundary-compactness collapse-gate route as CONDITIONAL_BOUNDARY_COMPACTNESS_ROUTE_ONLY; no unconditional Universal Boundary Compactness, no unconditional QL_CollapseGate, no Cosmic Censorship, no Hoop Conjecture, no unrestricted Chronos-RR, no H4.1/FGL, no P vs NP, and no Clay-problem closure. Chronos PR #314 merged: Gravity OpenProblemLock added. A3 remains an assumption. A4 remains a restricted trapped-surface replacement. QL_CollapseGate remains conditional on A1--A6. UniversalBoundaryCompactness remains replaced by BoundaryCompactness(F_\u039b). No Cosmic Censorship proof. No Hoop Conjecture proof. No unrestricted QL_CollapseGate. No unrestricted UniversalBoundaryCompactness. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. PR #323 merged: BoundaryNuclearityFromFiniteDetectorAlgebra frontier formalized as conditional bridge to BulkToBoundaryNuclearitySoundness. Conditional frontier interface only; no unrestricted UniversalBoundaryCompactness, no unrestricted QL_CollapseGate, no Cosmic Censorship, no Hoop Conjecture, no unrestricted Chronos-RR, no H4.1/FGL, no P vs NP, no Clay closure. Chronos direct-main commit 6d3c3754: RateThickConditionalReductionOnly synchronized as CONDITIONAL_REDUCTION_ONLY; DimensionRegularFiberGrowth, RankRateToLyapunovExpansion, FiberEntropyMassLowerBoundsUnstableEntropy, and positive entropy lower bound on the rate-thick domain remain missing; no full-category fiber-entropy gap promotion; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure. PR #344 merged selected-domain H4.1/FGL from selected-domain Chronos-RR. Selected-domain interface only; no unrestricted UniversalFiberEntropyGap, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no P vs NP, no Clay closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure. PR #414 isolates UniformTemporalRelaxationWaveExistenceTarget as FRONTIER_OPEN / target isolation only; no UniformTemporalRelaxationWave existence proof, no unrestricted UniversalFiberEntropyGap, no Chronos-RR, no H4.1/FGL, no P vs NP, and no Clay closure. Chronos PR #936 names H4_1_FGL_IntermediateAdmissibleSeparatingObservableInput as the intermediate admissible observable input surface; PR #937 records intermediate_weakest_missing_object while preserving the restricted weakest_missing_object and keeping unrestricted H4.1/FGL refuted/open. Intermediate admissible carrier domain remains OPEN_GAP; no unrestricted H4.1/FGL closure.",
+    "boundary": "Chronos PR #308 records FPz1 restricted lambda-domain solved surface only; restrictedRateSpectrumIsolation, lowerEnvelope_to_quantitativeLambda, and fpz1_restricted_lambda_route are formalized under lambda > 0, EntropyFaithfulLowerEnvelope, and DepthBridgeLambda; no unrestricted RateSpectrumIsolation; no unrestricted UniformRateGap; no unrestricted UniversalFiberEntropyGap; no unrestricted Chronos-RR; no unrestricted H4.1/FGL; no P vs NP; no Clay-problem closure. PR #263. 22acce6. FRONTIER_OPEN is preserved. No theorem-level H4.1/FGL closure. No UniversalFiberEntropyGap from Reg-SNF. Unrestricted H4.1/FGL remains FRONTIER_OPEN. No unrestricted H4.1/FGL closure. unrestricted Chronos-RR remains locked open. No unrestricted Chronos-RR closure. Repository-native Chronos-RR conditional closure does not promote unrestricted H4.1/FGL status. unrestricted DepthBridge. SemanticRankRateToFiberEntropySoundness. No theorem-level Chronos-RR closure. No UniversalFiberEntropyGap theorem. No P vs NP or Clay-problem closure. Chronos PR #309 records FPz1 unrestricted rate-spectrum obstruction only. inverseNatRateSequence_refutes_rateSpectrumIsolation. InverseNatRateSequence. UNRESTRICTED_RATE_SPECTRUM_OBSTRUCTION_ONLY. does not construct concrete Chronos admissible objects. Chronos PR #310 records FPz1 conditional unrestricted route only. rateSpectrumIsolation_and_lowerEnvelope_to_quantitativeUnrestricted. fpz1_conditional_unrestricted_route. CONDITIONAL_UNRESTRICTED_ROUTE_ONLY. DepthBridgeUnrestricted. conditional composition only. does not prove RateSpectrumIsolation. does not prove EntropyFaithfulLowerEnvelope. does not prove DepthBridgeUnrestricted. Chronos PR #312 records the gravity boundary-compactness collapse-gate route as CONDITIONAL_BOUNDARY_COMPACTNESS_ROUTE_ONLY; no unconditional Universal Boundary Compactness, no unconditional QL_CollapseGate, no Cosmic Censorship, no Hoop Conjecture, no unrestricted Chronos-RR, no H4.1/FGL, no P vs NP, and no Clay-problem closure. Chronos PR #314 merged: Gravity OpenProblemLock added. A3 remains an assumption. A4 remains a restricted trapped-surface replacement. QL_CollapseGate remains conditional on A1--A6. UniversalBoundaryCompactness remains replaced by BoundaryCompactness(F_Λ). No Cosmic Censorship proof. No Hoop Conjecture proof. No unrestricted QL_CollapseGate. No unrestricted UniversalBoundaryCompactness. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. PR #323 merged: BoundaryNuclearityFromFiniteDetectorAlgebra frontier formalized as conditional bridge to BulkToBoundaryNuclearitySoundness. Conditional frontier interface only; no unrestricted UniversalBoundaryCompactness, no unrestricted QL_CollapseGate, no Cosmic Censorship, no Hoop Conjecture, no unrestricted Chronos-RR, no H4.1/FGL, no P vs NP, no Clay closure. Chronos direct-main commit 6d3c3754: RateThickConditionalReductionOnly synchronized as CONDITIONAL_REDUCTION_ONLY; DimensionRegularFiberGrowth, RankRateToLyapunovExpansion, FiberEntropyMassLowerBoundsUnstableEntropy, and positive entropy lower bound on the rate-thick domain remain missing; no full-category fiber-entropy gap promotion; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure. PR #344 merged selected-domain H4.1/FGL from selected-domain Chronos-RR. Selected-domain interface only; no unrestricted UniversalFiberEntropyGap, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no P vs NP, no Clay closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure. PR #414 isolates UniformTemporalRelaxationWaveExistenceTarget as FRONTIER_OPEN / target isolation only; no UniformTemporalRelaxationWave existence proof, no unrestricted UniversalFiberEntropyGap, no Chronos-RR, no H4.1/FGL, no P vs NP, and no Clay closure. Chronos PR #936 names H4_1_FGL_IntermediateAdmissibleSeparatingObservableInput as the intermediate admissible observable input surface; PR #937 records intermediate_weakest_missing_object while preserving the restricted weakest_missing_object and keeping unrestricted H4.1/FGL refuted/open. Intermediate admissible carrier domain remains OPEN_GAP; no unrestricted H4.1/FGL closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-13",
     "latestUpdate": "Chronos PR #937: intermediate admissible observable missing object recorded; unrestricted H4.1/FGL remains refuted/open.",
@@ -119,7 +125,7 @@
     "latestDepthBridgePr": 222,
     "latestDepthBridgePrTitle": "formalize depth bridge beyond selected final-carrier domain",
     "currentRegSNFStatus": "CURRENT_REAL_CHRONOS_ADMISSIBLE_REG_SNF_CLOSED",
-    "theoremClosureLabel": "82% \u2014 unrestricted theorem closure false",
+    "theoremClosureLabel": "82% — unrestricted theorem closure false",
     "theoremMetricApplicable": false,
     "latestDataSurfaceStatus": "CONDITIONAL_EXTERNAL_DATA_ASSUMPTION_ONLY",
     "closureScaleMetricApplicable": true,
@@ -140,7 +146,13 @@
     ],
     "evidence": [
       "PR #353 merged at 85298a59; targeted boundary-ledger pytest passed; forbidden-overclaim scan passed; lake build passed; full pytest passed with 835 tests."
-    ]
+    ],
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-08-30T01:27:50Z",
+    "publicInventory": true
   },
   {
     "id": "chronos-h4-1-fgl-85-metric-ceiling-2026-07-01",
@@ -157,7 +169,7 @@
     "lastUpdate": "2026-07-01",
     "latestArtifact": "restricted_package_theorem_surface_boundary_2026_06_30.json",
     "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/937",
-    "theoremClosureLabel": "85% \u2014 selected-domain metric ceiling; unrestricted theorem closure false",
+    "theoremClosureLabel": "85% — selected-domain metric ceiling; unrestricted theorem closure false",
     "theoremMetricApplicable": false,
     "closureScaleMetricApplicable": true,
     "selectedDomainStatus": "CLOSED_AND_BOUNDED",
@@ -174,7 +186,7 @@
     "boundary": "Documentation/textbook/exposition surface only. TEXTBOOK_MANUSCRIPT_INCOMPLETE: chapter files now pass a minimum completeness audit, but this is manuscript hygiene only; not a complete textbook, not external review, not theorem-level closure, and changes do not constitute theorem-level proof. No independent theorem-level closure is claimed. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No P vs NP result. no P vs NP closure. No Clay-problem closure. no Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/urf-textbook",
     "excludeFromMetrics": true,
-    "theoremClosureLabel": "0% \u2014 exposition surface / manuscript incomplete",
+    "theoremClosureLabel": "0% — exposition surface / manuscript incomplete",
     "theoremMetricApplicable": false,
     "repository": "urf-textbook",
     "lastUpdate": "2026-05-17",
@@ -199,7 +211,13 @@
     "showInPublicDashboard": true,
     "publicTier": "minimal",
     "visibility": "public",
-    "public": true
+    "public": true,
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-08-07T18:05:52Z",
+    "publicInventory": true
   },
   {
     "name": "Private/Internal Verification Surfaces",
@@ -215,7 +233,7 @@
     "excludeFromMetrics": true,
     "lastUpdate": "2026-05-09",
     "summary": "Aggregate placeholder replacing private/non-public repository rows on the public dashboard.",
-    "theoremClosureLabel": "0% \u2014 internal aggregate only",
+    "theoremClosureLabel": "0% — internal aggregate only",
     "theoremMetricApplicable": false
   },
   {
@@ -228,10 +246,10 @@
     "theoremClosure": 0,
     "detailsUrl": "https://github.com/inaciovasquez2020/fo4-constraint-isolation",
     "summary": "Canonical public package isolating the FO^4 variable-budget constraint surface.",
-    "boundary": "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIRED. Constraint isolation is recorded as a status boundary, not theorem closure. No unrestricted graph rigidity closure. No Cayley-graph rigidity closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure.",
+    "boundary": "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIRED. Constraint isolation is recorded as a status boundary, not theorem closure. No unrestricted graph rigidity closure. No Cayley-graph rigidity closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure.",
     "domain": "Proof Hygiene",
     "url": "https://github.com/inaciovasquez2020/fo4-constraint-isolation",
-    "theoremClosureLabel": "0% \u2014 proof-hygiene isolation only",
+    "theoremClosureLabel": "0% — proof-hygiene isolation only",
     "theoremMetricApplicable": false,
     "closureScaleMetricApplicable": false
   },
@@ -243,11 +261,11 @@
     "url": "https://github.com/inaciovasquez2020/urf-11-translation-subproblem-registry",
     "integrity": 100,
     "theoremClosure": 0,
-    "boundary": "URF-11 translation/subproblem registry remains dependency-surface tracking only. Registry closure means non-claim tracking and boundary-preserving reduction bookkeeping only. No theorem-level translation closure. No upstream mathematical closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure. No P vs NP. No Clay-problem closure. No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem. No unrestricted Chronos-RR closure. No UniversalFiberEntropyGap theorem. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure.",
+    "boundary": "URF-11 translation/subproblem registry remains dependency-surface tracking only. Registry closure means non-claim tracking and boundary-preserving reduction bookkeeping only. No theorem-level translation closure. No upstream mathematical closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure. No P vs NP. No Clay-problem closure. No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem. No unrestricted Chronos-RR closure. No UniversalFiberEntropyGap theorem. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure.",
     "summary": "Public registry/status reference for URF-11 translation and subproblem tracking.",
     "initialCommit": "22a8e88",
     "sourceOfTruthGuardMerge": "ed3e5b9",
-    "theoremClosureLabel": "0% \u2014 registry only",
+    "theoremClosureLabel": "0% — registry only",
     "theoremMetricApplicable": false,
     "closureScaleMetricApplicable": false
   },
@@ -257,12 +275,18 @@
     "status": "Certified Frontier",
     "integrity": 95,
     "theoremClosure": 0,
-    "theoremClosureLabel": "0% \u2014 canonical navigation/index only",
+    "theoremClosureLabel": "0% — canonical navigation/index only",
     "theoremMetricApplicable": false,
     "ci": "green",
-    "boundary": "Canonical index and navigation hub for URF repositories and executable artifacts. Index surface only; no theorem claim is promoted; no Chronos-RR closure; no H4.1/FGL closure; no UniversalFiberEntropyGap theorem; no P vs NP result; no Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure.",
+    "boundary": "Canonical index and navigation hub for URF repositories and executable artifacts. Index surface only; no theorem claim is promoted; no Chronos-RR closure; no H4.1/FGL closure; no UniversalFiberEntropyGap theorem; no P vs NP result; no Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/vasquez-index",
-    "closureScaleMetricApplicable": false
+    "closureScaleMetricApplicable": false,
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-08-06T10:13:54Z",
+    "publicInventory": true
   },
   {
     "id": "chronos-pr288-nontrivial-fiber-entropy-gap-predicate",
@@ -272,7 +296,7 @@
     "integrity": 100,
     "theoremClosure": 0,
     "ci": "green",
-    "boundary": "Predicate surface only; does not construct a genuinely nontrivial UniversalFiberEntropyGap, prove unrestricted UniversalFiberEntropyGap, unrestricted SemanticRankRateToFiberEntropySoundness, unrestricted Chronos-RR, H4.1/FGL, P vs NP, or any Clay problem. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
+    "boundary": "Predicate surface only; does not construct a genuinely nontrivial UniversalFiberEntropyGap, prove unrestricted UniversalFiberEntropyGap, unrestricted SemanticRankRateToFiberEntropySoundness, unrestricted Chronos-RR, H4.1/FGL, P vs NP, or any Clay problem. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
     "name": "Chronos PR #288 NontrivialFiberEntropyGapPredicate",
     "domain": "Chronos / semantic rank-rate frontier",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/288",
@@ -294,7 +318,7 @@
     "ci": "green",
     "closureScaleMetricApplicable": false,
     "theoremMetricApplicable": false,
-    "boundary": "Predicate-surface theorem only; proves strengthening only for the repository-defined predicate surface. Does not construct a genuinely nontrivial UniversalFiberEntropyGap, prove unrestricted UniversalFiberEntropyGap, unrestricted SemanticRankRateToFiberEntropySoundness, unrestricted Chronos-RR, H4.1/FGL, P vs NP, or any Clay problem. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
+    "boundary": "Predicate-surface theorem only; proves strengthening only for the repository-defined predicate surface. Does not construct a genuinely nontrivial UniversalFiberEntropyGap, prove unrestricted UniversalFiberEntropyGap, unrestricted SemanticRankRateToFiberEntropySoundness, unrestricted Chronos-RR, H4.1/FGL, P vs NP, or any Clay problem. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
     "evidence": [
       "PR #353 merged at 85298a59; targeted boundary-ledger pytest passed; forbidden-overclaim scan passed; lake build passed; full pytest passed with 835 tests."
     ]
@@ -306,7 +330,7 @@
     "integrity": 100,
     "theoremClosure": 100,
     "ci": "green",
-    "boundary": "Predicate-surface closure contributes to dashboard theorem-closure scale only; no unrestricted theorem promotion; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
+    "boundary": "Predicate-surface closure contributes to dashboard theorem-closure scale only; no unrestricted theorem promotion; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "lastUpdated": "2026-05-13",
     "latestUpdate": "Chronos PR #254 merged: repository-native rank/ambient datum surface; verifier passed; targeted pytest 3/3 passed; lake build passed; full pytest 646/646 passed; working tree clean after audit artifact restore.",
@@ -367,7 +391,7 @@
     "latestDepthBridgePr": 222,
     "latestDepthBridgePrTitle": "formalize depth bridge beyond selected final-carrier domain",
     "currentRegSNFStatus": "CURRENT_REAL_CHRONOS_ADMISSIBLE_REG_SNF_CLOSED / SELECTED_DEPTHBRIDGE_ONLY",
-    "theoremClosureLabel": "82% \u2014 selected-domain/formal-surface progress; unrestricted theorem closure false",
+    "theoremClosureLabel": "82% — selected-domain/formal-surface progress; unrestricted theorem closure false",
     "theoremMetricApplicable": false,
     "latestDataSurfaceStatus": "CONDITIONAL_EXTERNAL_DATA_ASSUMPTION_ONLY",
     "closureScaleMetricApplicable": true,
@@ -400,7 +424,7 @@
     "theoremMetricApplicable": false,
     "theoremPromotion": false,
     "latestPR": 296,
-    "boundary": "PR #296 quasi-local collapse gate conditional bridge verified; conditional bridge only; does not prove an unconditional quasi-local collapse theorem; does not prove unrestricted nonspherical collapse exclusion; does not prove Cosmic Censorship; does not prove the Hoop Conjecture; does not prove unrestricted Chronos-RR; does not prove H4.1/FGL; does not prove P vs NP; does not prove any Clay problem. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
+    "boundary": "PR #296 quasi-local collapse gate conditional bridge verified; conditional bridge only; does not prove an unconditional quasi-local collapse theorem; does not prove unrestricted nonspherical collapse exclusion; does not prove Cosmic Censorship; does not prove the Hoop Conjecture; does not prove unrestricted Chronos-RR; does not prove H4.1/FGL; does not prove P vs NP; does not prove any Clay problem. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
     "evidence": [
       "PR #353 merged at 85298a59; targeted boundary-ledger pytest passed; forbidden-overclaim scan passed; lake build passed; full pytest passed with 835 tests."
     ]
@@ -420,7 +444,7 @@
     "theoremMetricApplicable": false,
     "theoremPromotion": false,
     "latestPR": 306,
-    "boundary": "PR #306 meaningful external H41FGL toy closure only; no nontrivial external H4.1/FGL theorem; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
+    "boundary": "PR #306 meaningful external H41FGL toy closure only; no nontrivial external H4.1/FGL theorem; no unrestricted Chronos-RR closure; no unrestricted H4.1/FGL closure; no P vs NP closure; no Clay-problem closure. Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
     "evidence": [
       "PR #353 merged at 85298a59; targeted boundary-ledger pytest passed; forbidden-overclaim scan passed; lake build passed; full pytest passed with 835 tests."
     ]
@@ -440,7 +464,7 @@
     "theoremMetricApplicable": false,
     "theoremPromotion": false,
     "latestPR": 279,
-    "boundary": "PR #279 merged at 84545b3; OPEN_PROBLEM_REQUIRED; { Delta := 0, R := 0, colapRank := 0, cycleOverlapRank := 1 }; FO4 cycle-overlap open problem boundary only; no theorem promotion. Restricted domination closes only by explicit cycleOverlap_le_colap No unconditional graph-theoretic cycle-overlap rank bound No P vs NP closure No Clay-problem closure Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate F\u039b \u039b. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
+    "boundary": "PR #279 merged at 84545b3; OPEN_PROBLEM_REQUIRED; { Delta := 0, R := 0, colapRank := 0, cycleOverlapRank := 1 }; FO4 cycle-overlap open problem boundary only; no theorem promotion. Restricted domination closes only by explicit cycleOverlap_le_colap No unconditional graph-theoretic cycle-overlap rank bound No P vs NP closure No Clay-problem closure Chronos PR #315 merged status: Restricted A3 compactness bridge is closed as a conditional repository-certified bridge via PhysicalToTopologicalCompactnessInput; no unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #317 merged status: finite-state boundary compactness certificate reduction proved; FiniteStateBoundaryCompactnessCertificate reduces to FiniteSpectralCompactnessCertificate, recovering PhysicalToTopologicalCompactnessInput and the restricted A3 bridge. Remaining missing object: construction of FiniteStateBoundaryCompactnessCertificate FΛ Λ. No unrestricted UniversalBoundaryCompactness, unrestricted QL_CollapseGate, Cosmic Censorship, Hoop Conjecture, Chronos-RR, H4.1/FGL, P vs NP, or Clay-problem closure. Chronos PR #353 boundary-ledger assumption tracker merged: boundaries.toml, reconcile_ledger.py, check_forbidden_overclaims.py, frontier-status.json fixture, and boundary-ledger pytest. Boundary-ledger telemetry only; no theorem promotion, no unrestricted Chronos-RR, no unrestricted H4.1/FGL, no UniversalFiberEntropyGap, no P vs NP, and no Clay-problem closure.",
     "evidence": [
       "PR #353 merged at 85298a59; targeted boundary-ledger pytest passed; forbidden-overclaim scan passed; lake build passed; full pytest passed with 835 tests."
     ]
@@ -596,7 +620,7 @@
     "latestDepthBridgePr": 222,
     "latestDepthBridgePrTitle": "formalize depth bridge beyond selected final-carrier domain",
     "currentRegSNFStatus": "CURRENT_REAL_CHRONOS_ADMISSIBLE_REG_SNF_CLOSED",
-    "theoremClosureLabel": "82% \u2014 unrestricted theorem closure false",
+    "theoremClosureLabel": "82% — unrestricted theorem closure false",
     "theoremMetricApplicable": false,
     "latestDataSurfaceStatus": "CONDITIONAL_EXTERNAL_DATA_ASSUMPTION_ONLY",
     "closureScaleMetricApplicable": false,
@@ -622,7 +646,13 @@
     "title": "GRF theorem-level certificate closed",
     "proofHygieneMetricApplicable": false,
     "registryMetricApplicable": false,
-    "indexMetricApplicable": false
+    "indexMetricApplicable": false,
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-08-30T01:27:50Z",
+    "publicInventory": true
   },
   {
     "name": "Chronos gravity stack restricted-package theorem",
@@ -737,7 +767,7 @@
     "latestPr": "https://github.com/inaciovasquez2020/urf-core/pull/374",
     "latestPR": 374,
     "latestCommit": "8f990a8",
-    "theoremClosureLabel": "86% \u2014 bounded finite-state Markov-kernel stack closed; unrestricted URF closure false",
+    "theoremClosureLabel": "86% — bounded finite-state Markov-kernel stack closed; unrestricted URF closure false",
     "theoremMetricApplicable": false,
     "closureScaleMetricApplicable": false,
     "theoremPromotion": false,
@@ -766,7 +796,7 @@
     "latestPr": "https://github.com/inaciovasquez2020/cslib-fmt/pull/192",
     "latestPR": 192,
     "latestCommit": "cb1236729be818e08823258c86309824d4ac8f5b",
-    "theoremClosureLabel": "100% \u2014 bounded distance-layer target closed; directed symmetry not closed",
+    "theoremClosureLabel": "100% — bounded distance-layer target closed; directed symmetry not closed",
     "theoremMetricApplicable": true,
     "closureScaleMetricApplicable": false,
     "theoremPromotion": true,
@@ -796,7 +826,7 @@
     "summary": "Missing public spine boundary certificate artifact was added and published on main at commit acf4a0c.",
     "latestArtifact": "docs/status/SPINE_BOUNDARY_CERTIFICATE.md",
     "latestCommit": "acf4a0c",
-    "theoremClosureLabel": "0% \u2014 documentation boundary certificate; theorem closure false",
+    "theoremClosureLabel": "0% — documentation boundary certificate; theorem closure false",
     "theoremMetricApplicable": false,
     "closureScaleMetricApplicable": false,
     "repo": "urf-spine-public",
@@ -804,7 +834,13 @@
     "theoremPromotion": false,
     "theoremSurfaceClosed": false,
     "assumptionBoundary": false,
-    "textualNoncompiledBoundary": true
+    "textualNoncompiledBoundary": true,
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-06-23T09:59:31Z",
+    "publicInventory": true
   },
   {
     "id": "cross-repo-historical-total-2026-06-30",
@@ -825,52 +861,52 @@
     "latestPr": "https://github.com/inaciovasquez2020/frontier-status-dashboard/pull/145",
     "lastChecked": "2026-06-30"
   },
-{
-  "id": "chronos-finite-soft-memory-backreaction-2026-07-17",
-  "name": "Chronos finite soft-memory backreaction",
-  "title": "Chronos finite soft-memory backreaction",
-  "domain": "Black-hole information / finite quantum channel",
-  "status": "FINITE_SOFT_MEMORY_BACKREACTION_ENDPOINT_CLOSED",
-  "integrity": 100,
-  "theoremClosure": 0,
-  "ci": "green",
-  "boundary": "PR #1178 proves only the bounded finite-dimensional endpoint: temporally ordered certified emission steps preserve norm, admit a two-sided inverse, and conserve one common certified charge. No Hamiltonian exponential, compensating-charge construction, reduced hard-state calculation, hard-radiation purification, coherent-information increase, Page-curve turnover, unrestricted Chronos-RR, gravity closure, H4.1/FGL closure, P vs NP result, or Clay-problem result is claimed.",
-  "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1178",
-  "repository": "chronos-urf-rr",
-  "repo": "chronos-urf-rr",
-  "lastUpdate": "2026-07-17",
-  "summary": "Merged the corrected finite soft-memory backreaction endpoint: a four-component Pauli-profile soft-memory carrier, closed-sphere Laplacian pairing, and ordered hard-emission evolution with certified norm preservation, invertibility, and common-charge conservation.",
-  "latestArtifact": "Chronos.Frontier.FiniteSoftMemoryBackreaction",
-  "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1178",
-  "latestPR": 1178,
-  "latestCommit": "136343fd1a836531ed5fcfb6dc1accb52461196c",
-  "latestPrTitle": "lean: add finite soft-memory backreaction endpoint",
-  "latestCommitStatus": "merged-to-main",
-  "theoremClosureLabel": "bounded finite-dimensional endpoint only; information-recovery theorem false",
-  "theoremMetricApplicable": false,
-  "closureScaleMetricApplicable": false,
-  "theoremPromotion": false,
-  "excludeFromMetrics": true,
-  "showInPublicDashboard": true,
-  "visibility": "public",
-  "public": true,
-  "closedObjects": [
-    "four-component Pauli-profile angular soft-memory carrier",
-    "closed-sphere Laplacian self-adjoint pairing",
-    "ordered composite norm preservation",
-    "ordered composite two-sided inverse",
-    "common certified charge conservation"
-  ],
-  "remainingOpenObjects": [
-    "explicit Hamiltonian exponential",
-    "compensating-charge construction",
-    "reduced hard-state calculation",
-    "hard-radiation purification",
-    "coherent-information increase",
-    "Page-curve turnover theorem"
-  ],
-  "evidence": [
-    "Chronos PR #1178 merged on 2026-07-17 at commit 136343fd1a836531ed5fcfb6dc1accb52461196c with four checks passing."
-  ]
-}
+  {
+    "id": "chronos-finite-soft-memory-backreaction-2026-07-17",
+    "name": "Chronos finite soft-memory backreaction",
+    "title": "Chronos finite soft-memory backreaction",
+    "domain": "Black-hole information / finite quantum channel",
+    "status": "FINITE_SOFT_MEMORY_BACKREACTION_ENDPOINT_CLOSED",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "ci": "green",
+    "boundary": "PR #1178 proves only the bounded finite-dimensional endpoint: temporally ordered certified emission steps preserve norm, admit a two-sided inverse, and conserve one common certified charge. No Hamiltonian exponential, compensating-charge construction, reduced hard-state calculation, hard-radiation purification, coherent-information increase, Page-curve turnover, unrestricted Chronos-RR, gravity closure, H4.1/FGL closure, P vs NP result, or Clay-problem result is claimed.",
+    "url": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1178",
+    "repository": "chronos-urf-rr",
+    "repo": "chronos-urf-rr",
+    "lastUpdate": "2026-07-17",
+    "summary": "Merged the corrected finite soft-memory backreaction endpoint: a four-component Pauli-profile soft-memory carrier, closed-sphere Laplacian pairing, and ordered hard-emission evolution with certified norm preservation, invertibility, and common-charge conservation.",
+    "latestArtifact": "Chronos.Frontier.FiniteSoftMemoryBackreaction",
+    "latestPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1178",
+    "latestPR": 1178,
+    "latestCommit": "136343fd1a836531ed5fcfb6dc1accb52461196c",
+    "latestPrTitle": "lean: add finite soft-memory backreaction endpoint",
+    "latestCommitStatus": "merged-to-main",
+    "theoremClosureLabel": "bounded finite-dimensional endpoint only; information-recovery theorem false",
+    "theoremMetricApplicable": false,
+    "closureScaleMetricApplicable": false,
+    "theoremPromotion": false,
+    "excludeFromMetrics": true,
+    "showInPublicDashboard": true,
+    "visibility": "public",
+    "public": true,
+    "closedObjects": [
+      "four-component Pauli-profile angular soft-memory carrier",
+      "closed-sphere Laplacian self-adjoint pairing",
+      "ordered composite norm preservation",
+      "ordered composite two-sided inverse",
+      "common certified charge conservation"
+    ],
+    "remainingOpenObjects": [
+      "explicit Hamiltonian exponential",
+      "compensating-charge construction",
+      "reduced hard-state calculation",
+      "hard-radiation purification",
+      "coherent-information increase",
+      "Page-curve turnover theorem"
+    ],
+    "evidence": [
+      "Chronos PR #1178 merged on 2026-07-17 at commit 136343fd1a836531ed5fcfb6dc1accb52461196c with four checks passing."
+    ]
+  }
 ]
