@@ -228,6 +228,8 @@ const fo4CurrentBoundary = "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIR
 
 const urf11CurrentBoundary = "URF-11 translation/subproblem registry remains dependency-surface tracking only. Registry closure means non-claim tracking and boundary-preserving reduction bookkeeping only. The canonical artifact at commit ed3e5b9e413f6b8d791a7531994b0527e5d1cd08 registers the FO4 constraint-isolation and Chronos selected-carrier dependency surfaces while theorem_closure remains false. No theorem-level translation closure. No upstream mathematical closure. No unrestricted graph-rigidity theorem. No unrestricted Cayley-graph rigidity theorem. No Chronos-RR closure. No unrestricted Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No UniversalFiberEntropyGap closure. No P vs NP. No P vs NP or Clay-problem closure.";
 
+const vasquezIndexCurrentBoundary = "Vasquez Index is the public front door and canonical navigation/status surface for the verified-frontier repository map. Main commit 42091906431fb6994370042e17800c352cadfaa3 reconciles the GitHub-visible public repository inventory to 19. The index routes readers to authoritative source repositories and does not independently prove mathematical claims; build, CI, dashboard, registry, or index status does not promote theorem-level closure. No Chronos-RR closure. No unrestricted Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No UniversalFiberEntropyGap closure. No P vs NP. No P vs NP or Clay-problem closure.";
+
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_31:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs; those inputs are not derived from the current Cauchy carrier. PR #1300 adds a fail-closed gravity axiom audit and compiler-verified Newtonian-gauge proof-surface repairs; the audited endpoint theorems report only propext, Classical.choice, and Quot.sound, with no custom axiom introduced. PR #1300 does not supply the separate physical/analytic source-control estimate. The remaining gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
 
@@ -254,6 +256,18 @@ const currentStatusRows = statusRows.map((entry) => {
     return {
       ...entry,
       boundary: urf11CurrentBoundary,
+    };
+  }
+
+  const isVasquezIndexRoot =
+    entry.name === "vasquez-index" &&
+    entry.domain === "Index / Navigation" &&
+    entry.url === "https://github.com/inaciovasquez2020/vasquez-index";
+
+  if (isVasquezIndexRoot) {
+    return {
+      ...entry,
+      boundary: vasquezIndexCurrentBoundary,
     };
   }
 
