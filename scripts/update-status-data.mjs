@@ -165,7 +165,37 @@ const statusRows = withZeroDay.some((entry) => entry.name === biologicalStatusRo
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_30:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs. Those inputs are not derived from the current Cauchy carrier. The remaining physical/analytic gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
 
+const urfCoreBoundary = "CURRENT_URF_CORE_STATUS_2026_08_07: PR #534 synchronizes the current Lean-source obligation inventory to 5 axioms, 0 admits, and 0 sorry terms; the five remaining axioms are confined to the legacy prefab surface. PR #535 proves the repository-defined three-element arithmetic family has sharp uniform coercivity constant 1/2, including an exact equality witness, but does not establish an arithmetic-to-spectral bridge for a broader family or any unrestricted URF theorem. PR #536 makes URF-SG schema validation fail closed and strengthens certificate admission/container trust semantics without strengthening the mathematical spectral-gap theorem represented by a valid certificate. No whole-URF theorem closure, unrestricted graph-rigidity closure, P vs NP closure, or Clay-problem closure follows.";
+const urfCoreLatestEvidence = "PR #535 proof head 8f0467d693c22232ec5b637830dc495f2f57b9a2 passed CI, build, Lean Action CI, verify-surface, external-status-lock, lean-proof-portfolio-classification, zero-overclaim, and duplicate-namespace checks; PR #536 head f9498e9bb272d66ce5dc5d23ca88bdc3f17aa9ac passed the same verifier/build surface.";
+
 const currentStatusRows = statusRows.map((entry) => {
+  const isUrfCoreRoot =
+    entry.name === "urf-core" &&
+    entry.domain === "Foundations" &&
+    entry.url === "https://github.com/inaciovasquez2020/urf-core";
+
+  if (isUrfCoreRoot) {
+    const evidence = Array.isArray(entry.evidence) ? entry.evidence : [];
+    return {
+      ...entry,
+      status: "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER",
+      boundary: urfCoreBoundary,
+      lastUpdate: "2026-08-07",
+      summary: "Current source inventory is 5 axioms / 0 admits / 0 sorries; the sharp 1/2 coercivity constant is proved for the repository-defined three-element arithmetic family, and SG certificate admission now fails closed.",
+      latestArtifact: "sharp arithmetic coercivity constant + fail-closed URF-SG verifier",
+      latestPr: "https://github.com/inaciovasquez2020/urf-core/pull/536",
+      latestPR: 536,
+      latestCommit: "40eade50f16b70fdccd2e96dd29c6c5ab9fbff0d",
+      axiomCount: 5,
+      admitCount: 0,
+      sorryCount: 0,
+      theoremClosureLabel: "72% — dashboard readiness scale; unrestricted theorem closure false",
+      currentOpenGap: "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
+      theoremPromotion: false,
+      evidence: evidence.includes(urfCoreLatestEvidence) ? evidence : [urfCoreLatestEvidence, ...evidence],
+    };
+  }
+
   const isChronosRoot =
     entry.name === "chronos-urf-rr" &&
     entry.domain === "Complexity / Graph Rigidity" &&
