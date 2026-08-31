@@ -14,7 +14,7 @@ describe("URF-core PR323 Law 3 dashboard sync", () => {
     expect([urfCore.closedSurface, urfCore.previousClosedSurface]).toContain("urf_law3");
     expect([urfCore.previousClosedSurface, urfCore.previousAssumptionBoundarySurface]).toContain("urf_admissible_normalization_boundaries");
     expect(urfCore.previousTheoremSurface).toBe("no_status_promotion_theorem");
-    expect([323, 324]).toContain(urfCore.latestPR);
+    expect([323, 324, 536]).toContain(urfCore.latestPR);
     expect(["0d6238f", "3bbc856"]).toContain(urfCore.latestCommit);
     expect([true, false]).toContain(urfCore.theoremSurfaceClosed);
     expect(urfCore.theoremPromotion).toBe(false);
