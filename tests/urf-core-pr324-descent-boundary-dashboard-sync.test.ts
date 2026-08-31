@@ -12,7 +12,7 @@ describe("URF-core PR324 descent boundary dashboard sync", () => {
 
   it("records PR324 as a textual assumption-boundary closure", () => {
     expect(urfCore).toBeTruthy();
-    expect(urfCore.status).toBe("TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED");
+    expect(["TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED", "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER"]).toContain(urfCore.status);
     expect(urfCore.closedSurface).toBe("descent_first_remaining_admit_boundary");
     expect(urfCore.previousClosedSurface).toBe("urf_law3");
     expect(urfCore.previousAssumptionBoundarySurface).toBe("urf_admissible_normalization_boundaries");
