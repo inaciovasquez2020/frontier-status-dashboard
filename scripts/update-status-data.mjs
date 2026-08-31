@@ -120,15 +120,47 @@ const zeroDayStatusRow = {
   ]
 };
 
+const biologicalStatusRow = {
+  name: "biological-friction-framework",
+  domain: "Biology / preclinical resistance-state framework",
+  status: "LITERATURE_BOUNDED_PRECLINICAL_RESIDUAL_MAP",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "literature-bounded preclinical state map only; no treatment or cure claim",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "PRs #18-#29 build a literature-bounded melanoma residual-state/control map spanning parallel PI3K/AKT survival, FAK-linked routes, SOX10-low vulnerabilities, adenosine escape, ferroptosis-state switching, CD36+ starved-like melanoma cells, NCSC, pigmented/MITF-high OXPHOS adaptation, and a BRAF-V600E therapy-induced CSE/H2S-persulfide residual. PR #29 is the latest merged checkpoint and explicitly preserves the BRAF-V600E genotype boundary and the absence of a matched MRD-state map. These documents organize preclinical evidence and residual boundaries only. They do not establish universal state coverage, clinical efficacy, patient-specific guidance, treatment sufficiency, safety, a cancer cure, or a repository-level biological theorem.",
+  url: "https://github.com/inaciovasquez2020/biological-friction-framework",
+  repository: "biological-friction-framework",
+  repo: "biological-friction-framework",
+  lastUpdate: "2026-08-31",
+  summary: "A broader melanoma persistence/resistance map is now represented at the abstraction level, but matched longitudinal state/dependency coverage and clinical translation remain open.",
+  latestArtifact: "CSE persulfide cross-state residual",
+  latestPr: "https://github.com/inaciovasquez2020/biological-friction-framework/pull/29",
+  latestPR: 29,
+  latestCommit: "9b71f6c94ee45129707f1b55e1a43b04661a7cc1",
+  currentOpenGap: "Matched longitudinal MRD-state and dependency-transition evidence showing how the represented residual states coexist, hand off, or escape across one disease course, without assuming clinical efficacy or safety.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "PR #29 merged on 2026-08-31 from proof/document head 2a4c2a336bdf9c3f26dce2277383d49deb9da24d and explicitly makes no treatment or cure claim.",
+    "Exact PR #29 head 2a4c2a336bdf9c3f26dce2277383d49deb9da24d passed canonical-surface and external-status-lock workflows."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
 const withDfm = withPoincare.some((entry) => entry.name === dfmStatusRow.name)
   ? withPoincare
   : [...withPoincare, dfmStatusRow];
-const statusRows = withDfm.some((entry) => entry.name === zeroDayStatusRow.name)
+const withZeroDay = withDfm.some((entry) => entry.name === zeroDayStatusRow.name)
   ? withDfm
   : [...withDfm, zeroDayStatusRow];
+const statusRows = withZeroDay.some((entry) => entry.name === biologicalStatusRow.name)
+  ? withZeroDay
+  : [...withZeroDay, biologicalStatusRow];
 
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_30:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs. Those inputs are not derived from the current Cauchy carrier. The remaining physical/analytic gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
