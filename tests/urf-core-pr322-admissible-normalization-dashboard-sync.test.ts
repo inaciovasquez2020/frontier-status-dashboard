@@ -14,7 +14,7 @@ describe("URF-core PR322 admissible normalization dashboard sync", () => {
     expect([urfCore.closedSurface, urfCore.previousClosedSurface, urfCore.previousAssumptionBoundarySurface]).toContain("urf_admissible_normalization_boundaries");
     expect([urfCore.previousClosedSurface, urfCore.previousTheoremSurface]).toContain("no_status_promotion_theorem");
     expect([322, 323, 324, 536]).toContain(urfCore.latestPR);
-    expect(["fd698e4", "0d6238f", "3bbc856"]).toContain(urfCore.latestCommit);
+    expect(["fd698e4", "0d6238f", "3bbc856", "40eade50f16b70fdccd2e96dd29c6c5ab9fbff0d"]).toContain(urfCore.latestCommit);
     expect(urfCore.assumptionBoundary).toBe(true);
     expect(urfCore.theoremPromotion).toBe(false);
   });
