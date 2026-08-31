@@ -13,7 +13,7 @@ expect(row?.theoremMetricApplicable).toBe(false);
 expect(row?.closureScaleMetricApplicable).toBe(false);
 expect(row?.theoremPromotion).toBe(false);
 const canonicalChronos = statusData.find((entry) => entry.name === "chronos-urf-rr");
-expect(canonicalChronos?.status).toBe("LEAN_LIBRARY_TARGET_EXPOSED");
+expect(canonicalChronos?.status).toBe("Status-Locked Frontier");
 });
 it("preserves the PR296 no-overclaim boundary", () => {
 const boundary = String(row?.boundary ?? "");

@@ -6,7 +6,7 @@ describe("Chronos PR254 rank/ambient datum dashboard status", () => {
 
   it("records PR254 without theorem promotion", () => {
     expect(chronos).toBeTruthy();
-    expect(chronos?.status).toBe("LEAN_LIBRARY_TARGET_EXPOSED");
+    expect(chronos?.status).toBe("Status-Locked Frontier");
     expect(chronos?.latestDataSurfaceStatus).toBe("CONDITIONAL_EXTERNAL_DATA_ASSUMPTION_ONLY");
     expect(chronos?.integrity).toBe(100);
     expect(chronos?.theoremClosure).toBe(82);

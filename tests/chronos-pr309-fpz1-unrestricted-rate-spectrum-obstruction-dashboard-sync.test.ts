@@ -6,7 +6,7 @@ describe("Chronos PR #309 FPz1 unrestricted rate-spectrum obstruction dashboard 
     const chronos = statusData.find((entry) => entry.name === "chronos-urf-rr");
 
     expect(chronos).toBeTruthy();
-    expect(chronos?.status).toBe("LEAN_LIBRARY_TARGET_EXPOSED");
+    expect(chronos?.status).toBe("Status-Locked Frontier");
     expect(chronos?.frontierStatus).toBe("FRONTIER_OPEN");
 
     const text = JSON.stringify(chronos);

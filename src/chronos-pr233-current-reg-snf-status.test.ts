@@ -31,7 +31,7 @@ describe("Chronos PR233 current unrestricted Reg-SNF status", () => {
     const text = rowText(chronos ?? {});
 
     expect(text).toContain("CURRENT_REAL_CHRONOS_ADMISSIBLE_REG_SNF_CLOSED");
-    expect((chronos ?? {}).status).toBe("LEAN_LIBRARY_TARGET_EXPOSED");
+    expect((chronos ?? {}).status).toBe("Status-Locked Frontier");
     expect((chronos ?? {}).frontierStatus).toBe("FRONTIER_OPEN");
     expect(text).toContain("SELECTED_DEPTHBRIDGE_ONLY");
     expect(text).toContain("no UniversalFiberEntropyGap closure");

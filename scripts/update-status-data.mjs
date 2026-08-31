@@ -213,6 +213,7 @@ const currentStatusRows = statusRows.map((entry) => {
 
   return {
     ...entry,
+    status: "Status-Locked Frontier",
     boundary,
     currentGravityUpdate: "2026-08-31",
     latestGravityPr: "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",

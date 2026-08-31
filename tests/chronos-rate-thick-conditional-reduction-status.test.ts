@@ -11,7 +11,7 @@ function textOf(entry: Record<string, unknown> | undefined): string {
 describe("Chronos rate-thick conditional reduction dashboard sync", () => {
   it("keeps the canonical Chronos row status unchanged", () => {
     expect(row).toBeTruthy();
-    expect(row?.status).toBe("LEAN_LIBRARY_TARGET_EXPOSED");
+    expect(row?.status).toBe("Status-Locked Frontier");
     expect(row?.frontierStatus).toBe("FRONTIER_OPEN");
   });
 
