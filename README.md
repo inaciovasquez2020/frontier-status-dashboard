@@ -183,7 +183,7 @@ Vitest: 89 files / 332 tests passed
 Build: passed
 Public repository inventory: 19
 Profile/start-here repository: inventory-only by explicit dashboard guard
-Latest known main HEAD: b99a200ef43d3de9067ca209f4b1e925fbd9a0c1
+Verified snapshot source HEAD: b99a200ef43d3de9067ca209f4b1e925fbd9a0c1
 ```
 
 Dashboard role:
