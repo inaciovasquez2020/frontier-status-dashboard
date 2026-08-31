@@ -168,21 +168,22 @@ Status: `DASHBOARD_SYNC_CURRENT_NO_THEOREM_PROMOTION`
 Current synced main-chain status:
 
 ```text
-#137 Chronos PR459 README build closeout sync
-#136 top-ranked source theorem extraction packet
-#131 nuclear Chern topological matter source map
-#129 gravity dark-sector theory claim boundary packet
-#128 gravity hoop censorship dark-sector source packet
-#127 gravity cosmology 2026 source alignment map
+#206 GitHub Pages documentation root status
+#204 urf-templates root status
+#202 urf-verifier root status
+#200 theorem-closure-classifier root status
+#198 URF Textbook CI-state refresh
+#196 Vasquez Index boundary refresh
 ```
 
 Current verification state:
 
 ```text
-Vitest: 86 files / 326 tests passed
+Vitest: 89 files / 332 tests passed
 Build: passed
-Open PRs: none
-Latest known main HEAD: 910fcf2
+Public repository inventory: 19
+Profile/start-here repository: inventory-only by explicit dashboard guard
+Latest known main HEAD: b99a200ef43d3de9067ca209f4b1e925fbd9a0c1
 ```
 
 Dashboard role:
@@ -191,6 +192,7 @@ This repository synchronizes public-facing frontier status data, source maps, st
 
 Boundary:
 
+- dashboard/index/CI success does not establish theorem-level closure
 - no analytic Einstein-matter bootstrap package proof
 - no concrete analytic Einstein-matter estimate package proof
 - no gravity closure
