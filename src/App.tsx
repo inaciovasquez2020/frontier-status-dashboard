@@ -2,6 +2,7 @@ import { VerificationExplorer } from "./components/VerificationExplorer";
 import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import rawRepos from "./data/status-data.json";
+import rawPublicRepositoryInventory from "./data/public-repositories.json";
 
 export type RepoStatus =
   | "Certified Frontier"
@@ -25,7 +26,14 @@ export type Repo = {
   url: string;
 };
 
+type PublicRepositoryInventoryRow = {
+  name: string;
+  url: string;
+  defaultBranch: string;
+};
+
 export const repos: Repo[] = rawRepos as Repo[];
+export const publicRepositoryInventory = rawPublicRepositoryInventory as PublicRepositoryInventoryRow[];
 
 export const publicRepos: Repo[] = repos.filter(
   (repo) =>
@@ -298,6 +306,37 @@ export default function FrontierStatusDashboard() {
           <Metric label="Tracked repositories" value={metricRepos.length} />
           <Metric label="Green CI surfaces" value={`${greenCount}/${metricRepos.length}`} />
           <Metric label="Claim-boundary policy" value="No theorem promotion" />
+        </section>
+
+        <section className="rounded-3xl border bg-white p-6 shadow-sm">
+          <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+            <div>
+              <div className="flex items-center gap-2 text-lg font-semibold text-slate-900">
+                <Icon name="branch" />
+                Public repository inventory
+              </div>
+              <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
+                {publicRepositoryInventory.length} GitHub-visible public repositories. Inventory listing only; inclusion does not imply theorem status, CI success, or scientific validation.
+              </p>
+            </div>
+          </div>
+          <div className="mt-5 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+            {publicRepositoryInventory.map((repo) => (
+              <a
+                key={repo.name}
+                href={repo.url}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between gap-3 rounded-2xl border bg-slate-50 px-4 py-3 text-sm text-slate-700 hover:bg-slate-100"
+              >
+                <span>
+                  <span className="block font-medium text-slate-900">{repo.name}</span>
+                  <span className="mt-1 block text-xs text-slate-500">default: {repo.defaultBranch}</span>
+                </span>
+                <Icon name="external" className="h-4 w-4 shrink-0" />
+              </a>
+            ))}
+          </div>
         </section>
 
         <section className="grid gap-4 lg:grid-cols-[1fr_280px]">
