@@ -6,7 +6,9 @@ STATUS := PUBLIC_REPOSITORY_INVENTORY_AUDITED_NO_THEOREM_PROMOTION
 
 This audit inventories every GitHub-visible public repository owned by `inaciovasquez2020` at the audit time and separates research-frontier surfaces from infrastructure, exposition, registry, profile, and website surfaces.
 
-GitHub-visible public repository count at audit time: **18**.
+GitHub-visible public repository count at audit time: **19**.
+
+Source of truth for the count: the repository-native sync workflow's GitHub public-user API snapshot in `src/data/public-repositories.json`.
 
 Boundary: repository visibility, build success, CI success, verifier success, dashboards, status ledgers, conditional reductions, interface objects, or bounded certificates do not imply theorem-level closure unless the relevant theorem is explicitly proved with its assumptions discharged.
 
@@ -14,6 +16,7 @@ Boundary: repository visibility, build success, CI success, verifier success, da
 
 | Repository | Audit role | Current bounded reading |
 |---|---|---|
+| `biological-friction-framework` | conditional biological framework | documentation-first framework with axioms/admit/sorry boundaries; no clinical guidance, universal empirical validation, or repository-level theorem closure |
 | `chronos-urf-rr` | flagship executable research frontier | active conditional frontier; recent gravity work reaches anchored radial momentum recovery but does not prove the missing matter-source-to-gravitational-energy/boundary-flux estimate or unrestricted gravity closure |
 | `cslib-fmt` | Lean finite-model-theory library | reusable locality/EF-game infrastructure with bounded closed surfaces; general FMT/Gaifman-locality frontier remains open |
 | `darkness-region-dynamics-null-test` | falsification/null-test schema | conditional test schema only; no darkness medium/field or new-physics detection claim |
@@ -94,14 +97,20 @@ no proof that all required K3^[n] Hodge classes lie in SH(X,Q)
 no unconditional ZeroDayClosure
 ```
 
+### 6. Biological Friction Framework
+
+The repository is a conditional framework/frontier surface with explicit project axioms, admits, and sorries and no strongest repository-level theorem asserted.
+
+Boundary: no clinical guidance, no diagnosis, no universal empirical validation, and no theorem-level framework closure is inferred from repository or build status.
+
 ## Synchronization gaps found
 
 1. `frontier-status-dashboard/scripts/update-status-data.mjs` hard-coded six repositories and rewrote the ledger to that subset. This audit branch replaces that behavior with paginated discovery of every public repository while preserving historical rows.
 2. `frontier-status-dashboard/src/App.tsx` hard-coded five top-level repository names. This audit branch classifies canonical repository-root rows dynamically instead.
-3. The profile repository currently states **16** public repositories; the live owner inventory is **18**.
-4. `vasquez-index` currently states **17** public repositories; the live owner inventory is **18**, with `poincare-new-derivation` absent from that inventory table.
+3. The profile repository currently states **16** public repositories; the authoritative public API snapshot is **19**.
+4. `vasquez-index` currently states **17** public repositories; the authoritative public API snapshot is **19**. Its inventory table omits `poincare-new-derivation` and `biological-friction-framework`.
 5. The Poincaré README still describes the project as a deprecated conditional sketch and does not reflect the newer August 30 verified intermediate proof-drive checkpoints.
-6. The dashboard's historical status rows are materially older than the newest Poincaré, Chronos/gravity, DFM, and Zero Day public work, so status freshness must be treated separately from repository visibility.
+6. The dashboard's historical status rows are materially older than the newest Poincaré, Chronos/gravity, DFM, Zero Day, and Biological Friction public work, so status freshness must be treated separately from repository visibility.
 
 ## Dashboard repair on audit branch
 
@@ -117,7 +126,8 @@ Changes through this audit:
 - preservation of existing historical status rows;
 - conservative fallback status for newly discovered public repositories;
 - dynamic repository-root card classification;
-- committed 18-repository public inventory snapshot;
+- committed 19-repository public inventory snapshot;
+- automated repository-native public inventory synchronization;
 - this deep-audit note.
 
 No theorem status is promoted by these dashboard changes.
