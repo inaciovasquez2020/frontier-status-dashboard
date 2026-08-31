@@ -231,6 +231,33 @@ const theoremClosureClassifierStatusRow = {
   ]
 };
 
+const urfVerifierStatusRow = {
+  name: "urf-verifier",
+  domain: "Verification / Certificate infrastructure",
+  status: "DETERMINISTIC_VERIFIER_INFRASTRUCTURE_ONLY",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "deterministic certificate/provenance/replay infrastructure only; theorem truth not established",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "Current main commit ed7ae36e14f7a00bc42d17d2ce2c2190574d59d5 retains the canonical deterministic verifier infrastructure and adds lean-attest/LEAN_BUILD_ATTEST.sha256. The repository checks structural consistency, scope compliance, certificate validity, provenance integrity, deterministic replay, and pass/fail diagnostics for supplied URF artifacts. It does not generate proofs, establish mathematical truth, resolve open theoretical questions, or serve as the canonical location for theorem closure. It is not theorem-prover-complete. No unrestricted URF theorem closure, Chronos-RR closure, H4.1/FGL closure, P vs NP result, or Clay-problem closure follows from verifier or certificate success.",
+  url: "https://github.com/inaciovasquez2020/urf-verifier",
+  repository: "urf-verifier",
+  repo: "urf-verifier",
+  lastUpdate: "2026-06-25",
+  summary: "Canonical deterministic URF certificate/provenance/replay verifier infrastructure is green; its verification outputs audit supplied artifacts and do not independently prove mathematics.",
+  latestArtifact: "lean-attest/LEAN_BUILD_ATTEST.sha256",
+  latestCommit: "ed7ae36e14f7a00bc42d17d2ce2c2190574d59d5",
+  currentOpenGap: "Verifier-surface hardening and audit reproducibility depth; there is no live missing-math theorem lock inside this infrastructure repository.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "SCOPE_LIMITATIONS_STATUS.md classifies the repository as stable deterministic verifier infrastructure, not theorem-prover-complete and not a primary mathematics-closure repository.",
+    "The lean-and-certs workflow completed successfully on exact main head ed7ae36e14f7a00bc42d17d2ce2c2190574d59d5."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
@@ -249,9 +276,12 @@ const withCslib = withBiological.some((entry) => entry.name === cslibStatusRow.n
 const withDarkness = withCslib.some((entry) => entry.name === darknessStatusRow.name)
   ? withCslib.map((entry) => entry.name === darknessStatusRow.name ? darknessStatusRow : entry)
   : [...withCslib, darknessStatusRow];
-const statusRows = withDarkness.some((entry) => entry.name === theoremClosureClassifierStatusRow.name)
+const withClassifier = withDarkness.some((entry) => entry.name === theoremClosureClassifierStatusRow.name)
   ? withDarkness.map((entry) => entry.name === theoremClosureClassifierStatusRow.name ? theoremClosureClassifierStatusRow : entry)
   : [...withDarkness, theoremClosureClassifierStatusRow];
+const statusRows = withClassifier.some((entry) => entry.name === urfVerifierStatusRow.name)
+  ? withClassifier.map((entry) => entry.name === urfVerifierStatusRow.name ? urfVerifierStatusRow : entry)
+  : [...withClassifier, urfVerifierStatusRow];
 
 const fo4CurrentBoundary = "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIRED. Constraint isolation is recorded as a status boundary, not theorem closure. Commit b1a3129b24fd17f5c821552a8feb233968a51cda adds FINITE_WITNESS_SEARCH_TARGET_ONLY for FO4FiniteCycleOverlapWitnessSearch below FO4CycleOverlapRankRigidityDichotomy; it does not solve the rigidity branch or the counterexample-family branch. The bounded search remains blocked until this repository contains formal definitions of the FO4 radius-R rooted local type and R-local cycle-overlap rank, a verified finite graph enumerator or externally supplied finite witness corpus, and a proof that the finite proxy agrees with the intended FO4/rank definitions on the searched class. No unrestricted graph rigidity closure. No Cayley-graph rigidity closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure.";
 
