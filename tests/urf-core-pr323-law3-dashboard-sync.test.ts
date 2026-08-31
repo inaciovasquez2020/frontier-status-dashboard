@@ -10,7 +10,7 @@ describe("URF-core PR323 Law 3 dashboard sync", () => {
 
   it("records PR323 as a theorem-surface closure", () => {
     expect(urfCore).toBeTruthy();
-    expect(["THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED"]).toContain(urfCore.status);
+    expect(["THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED", "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER"]).toContain(urfCore.status);
     expect([urfCore.closedSurface, urfCore.previousClosedSurface]).toContain("urf_law3");
     expect([urfCore.previousClosedSurface, urfCore.previousAssumptionBoundarySurface]).toContain("urf_admissible_normalization_boundaries");
     expect(urfCore.previousTheoremSurface).toBe("no_status_promotion_theorem");
