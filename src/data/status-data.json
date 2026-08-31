@@ -1110,5 +1110,35 @@
     "openIssues": 0,
     "defaultBranch": "main",
     "updatedAt": "2026-06-23T10:50:30Z"
+  },
+  {
+    "name": "theorem-closure-classifier",
+    "domain": "Verification / Closure-audit infrastructure",
+    "status": "BOUNDED_CLOSURE_AUDIT_PIPELINE_ONLY",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "theoremClosureLabel": "bounded classifier/control infrastructure only; classifier labels do not prove theorem truth",
+    "theoremMetricApplicable": false,
+    "closureScaleMetricApplicable": false,
+    "ci": "green",
+    "boundary": "Main commit a573c06eacf3e10f2e628faaae7a92be27859beb retains TheoremClosureClassifier_V1, the seven-control suite, and the bounded end-to-end theorem-closure pipeline certificate/public-status surface. These artifacts verify the repository's audit/classification machinery only: a classifier label is not an independent mathematical proof and does not establish theorem truth beyond the supplied proof/dependency ledger. No unrestricted theorem closure claim, no new benchmark theorem proof claim, no global finite-model-theory closure, no Fagin theorem claim, no 0-1 Law claim, no P vs NP claim, no universal proof closure claim, and no Clay-level closure claim follows.",
+    "url": "https://github.com/inaciovasquez2020/theorem-closure-classifier",
+    "repository": "theorem-closure-classifier",
+    "repo": "theorem-closure-classifier",
+    "lastUpdate": "2026-06-23",
+    "summary": "The repository provides a bounded theorem-closure audit method, seven-control suite, and verifier-backed pipeline certificate; its classifications audit supplied ledgers and do not themselves prove theorem truth.",
+    "latestArtifact": "BOUNDED_THEOREM_CLOSURE_PIPELINE_CERTIFICATE",
+    "latestCommit": "a573c06eacf3e10f2e628faaae7a92be27859beb",
+    "theoremPromotion": false,
+    "publicInventory": true,
+    "evidence": [
+      "The repository public-status artifact records TheoremClosureClassifier_V1, the seven-control suite, an end-to-end certificate/verifier/pytest surface, and explicit non-claims against unrestricted theorem closure and P vs NP/Clay closure.",
+      "GitHub reports a successful workflow run on exact main head a573c06eacf3e10f2e628faaae7a92be27859beb."
+    ],
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-06-23T14:36:37Z"
   }
 ]
