@@ -207,7 +207,9 @@ const currentStatusRows = statusRows.map((entry) => {
     ? entry.boundary
     : `${chronosCurrentBoundary} Historical boundary: ${entry.boundary}`;
   const evidence = Array.isArray(entry.evidence) ? entry.evidence : [];
-  const latestEvidence = "PR #1299 merged on 2026-08-30 at cd4f0e91416ab897bf6c3c6c897f038d8d588df4; proof head 28a740054be95cdc1b278ff949171f535ee4b2e9 passed CI and external-status-lock.";
+  const previousLatestEvidence = "PR #1299 merged on 2026-08-30 at cd4f0e91416ab897bf6c3c6c897f038d8d588df4; proof head 28a740054be95cdc1b278ff949171f535ee4b2e9 passed CI and external-status-lock.";
+  const evidenceWithoutPreviousLatest = evidence.filter((item) => item !== previousLatestEvidence);
+  const latestEvidence = "PR #1300 merged on 2026-08-31 at ce83fd1965f131a6b37cf9583495e2498feb330d; proof head a0ac2e155762eeb6225699cd270b61cdae6fd593 passed CI and external-status-lock.";
 
   return {
     ...entry,
@@ -216,7 +218,7 @@ const currentStatusRows = statusRows.map((entry) => {
     latestGravityPr: "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
     latestGravityCommit: "ce83fd1965f131a6b37cf9583495e2498feb330d",
     currentGravityGap: "Repository-native matter-momentum-source control by gravitational energy and/or boundary flux sufficient to instantiate the existing source bound.",
-    evidence: evidence.includes(latestEvidence) ? evidence : [latestEvidence, ...evidence],
+    evidence: evidenceWithoutPreviousLatest.includes(latestEvidence) ? evidenceWithoutPreviousLatest : [latestEvidence, ...evidenceWithoutPreviousLatest],
   };
 });
 

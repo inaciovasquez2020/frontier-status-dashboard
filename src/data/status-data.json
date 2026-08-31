@@ -149,7 +149,7 @@
       "positive entropy lower bound on the rate-thick domain"
     ],
     "evidence": [
-      "PR #1299 merged on 2026-08-30 at cd4f0e91416ab897bf6c3c6c897f038d8d588df4; proof head 28a740054be95cdc1b278ff949171f535ee4b2e9 passed CI and external-status-lock.",
+      "PR #1300 merged on 2026-08-31 at ce83fd1965f131a6b37cf9583495e2498feb330d; proof head a0ac2e155762eeb6225699cd270b61cdae6fd593 passed CI and external-status-lock.",
       "PR #353 merged at 85298a59; targeted boundary-ledger pytest passed; forbidden-overclaim scan passed; lake build passed; full pytest passed with 835 tests."
     ],
     "stars": 0,
