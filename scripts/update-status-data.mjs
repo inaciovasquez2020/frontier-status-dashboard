@@ -224,6 +224,8 @@ const statusRows = withCslib.some((entry) => entry.name === darknessStatusRow.na
   ? withCslib.map((entry) => entry.name === darknessStatusRow.name ? darknessStatusRow : entry)
   : [...withCslib, darknessStatusRow];
 
+const fo4CurrentBoundary = "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIRED. Constraint isolation is recorded as a status boundary, not theorem closure. Commit b1a3129b24fd17f5c821552a8feb233968a51cda adds FINITE_WITNESS_SEARCH_TARGET_ONLY for FO4FiniteCycleOverlapWitnessSearch below FO4CycleOverlapRankRigidityDichotomy; it does not solve the rigidity branch or the counterexample-family branch. The bounded search remains blocked until this repository contains formal definitions of the FO4 radius-R rooted local type and R-local cycle-overlap rank, a verified finite graph enumerator or externally supplied finite witness corpus, and a proof that the finite proxy agrees with the intended FO4/rank definitions on the searched class. No unrestricted graph rigidity closure. No Cayley-graph rigidity closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure.";
+
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_31:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs; those inputs are not derived from the current Cauchy carrier. PR #1300 adds a fail-closed gravity axiom audit and compiler-verified Newtonian-gauge proof-surface repairs; the audited endpoint theorems report only propext, Classical.choice, and Quot.sound, with no custom axiom introduced. PR #1300 does not supply the separate physical/analytic source-control estimate. The remaining gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
 
@@ -231,6 +233,17 @@ const urfCoreBoundary = "CURRENT_URF_CORE_STATUS_2026_08_07: PR #534 synchronize
 const urfCoreLatestEvidence = "PR #535 proof head 8f0467d693c22232ec5b637830dc495f2f57b9a2 passed CI, build, Lean Action CI, verify-surface, external-status-lock, lean-proof-portfolio-classification, zero-overclaim, and duplicate-namespace checks; PR #536 head f9498e9bb272d66ce5dc5d23ca88bdc3f17aa9ac passed the same verifier/build surface.";
 
 const currentStatusRows = statusRows.map((entry) => {
+  const isFo4Root =
+    entry.id === "fo4-constraint-isolation" &&
+    entry.repository === "inaciovasquez2020/fo4-constraint-isolation";
+
+  if (isFo4Root) {
+    return {
+      ...entry,
+      boundary: fo4CurrentBoundary,
+    };
+  }
+
   const isUrfCoreRoot =
     entry.name === "urf-core" &&
     entry.domain === "Foundations" &&
