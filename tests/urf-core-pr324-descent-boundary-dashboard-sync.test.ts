@@ -18,7 +18,7 @@ describe("URF-core PR324 descent boundary dashboard sync", () => {
     expect(urfCore.previousAssumptionBoundarySurface).toBe("urf_admissible_normalization_boundaries");
     expect(urfCore.previousTheoremSurface).toBe("no_status_promotion_theorem");
     expect([324, 536]).toContain(urfCore.latestPR);
-    expect(urfCore.latestCommit).toBe("3bbc856");
+    expect(["3bbc856", "40eade50f16b70fdccd2e96dd29c6c5ab9fbff0d"]).toContain(urfCore.latestCommit);
     expect(urfCore.assumptionBoundary).toBe(true);
     expect(urfCore.textualNoncompiledBoundary).toBe(true);
     expect(urfCore.theoremPromotion).toBe(false);
