@@ -34,46 +34,25 @@ async function listPublicRepos() {
 }
 
 const publicRepos = await listPublicRepos();
-const enriched = [...existing];
+const publicByName = new Map(publicRepos.map((repo) => [repo.name, repo]));
 
-for (const repo of publicRepos) {
-  const metadata = {
-    url: repo.html_url,
-    stars: repo.stargazers_count,
-    forks: repo.forks_count,
-    openIssues: repo.open_issues_count,
-    defaultBranch: repo.default_branch,
-    updatedAt: repo.updated_at,
-    publicInventory: true,
-  };
+const enriched = existing
+  .filter((entry) => !entry.publicInventory || entry.domain !== "Public Repository")
+  .map((entry) => {
+    const repo = publicByName.get(entry.name);
+    if (!repo) return entry;
 
-  const index = enriched.findIndex((entry) => entry.name === repo.name);
-
-  if (index >= 0) {
-    enriched[index] = {
-      ...enriched[index],
-      ...metadata,
+    return {
+      ...entry,
+      url: repo.html_url,
+      stars: repo.stargazers_count,
+      forks: repo.forks_count,
+      openIssues: repo.open_issues_count,
+      defaultBranch: repo.default_branch,
+      updatedAt: repo.updated_at,
+      publicInventory: true,
     };
-    continue;
-  }
-
-  enriched.push({
-    name: repo.name,
-    domain: "Public Repository",
-    status: "Status-Locked Frontier",
-    integrity: 0,
-    theoremClosure: 0,
-    ci: "yellow",
-    boundary:
-      "Public repository indexed automatically. Repository visibility and metadata do not imply theorem-level closure, CI success, or scientific validation.",
-    repository: repo.name,
-    repo: repo.name,
-    theoremClosureLabel: "not assessed — repository inventory row",
-    theoremMetricApplicable: false,
-    closureScaleMetricApplicable: false,
-    ...metadata,
   });
-}
 
 const inventory = publicRepos.map((repo) => ({
   name: repo.name,
