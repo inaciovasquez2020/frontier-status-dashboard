@@ -1140,5 +1140,36 @@
     "openIssues": 0,
     "defaultBranch": "main",
     "updatedAt": "2026-06-23T14:36:37Z"
+  },
+  {
+    "name": "urf-verifier",
+    "domain": "Verification / Certificate infrastructure",
+    "status": "DETERMINISTIC_VERIFIER_INFRASTRUCTURE_ONLY",
+    "integrity": 100,
+    "theoremClosure": 0,
+    "theoremClosureLabel": "deterministic certificate/provenance/replay infrastructure only; theorem truth not established",
+    "theoremMetricApplicable": false,
+    "closureScaleMetricApplicable": false,
+    "ci": "green",
+    "boundary": "Current main commit ed7ae36e14f7a00bc42d17d2ce2c2190574d59d5 retains the canonical deterministic verifier infrastructure and adds lean-attest/LEAN_BUILD_ATTEST.sha256. The repository checks structural consistency, scope compliance, certificate validity, provenance integrity, deterministic replay, and pass/fail diagnostics for supplied URF artifacts. It does not generate proofs, establish mathematical truth, resolve open theoretical questions, or serve as the canonical location for theorem closure. It is not theorem-prover-complete. No unrestricted URF theorem closure, Chronos-RR closure, H4.1/FGL closure, P vs NP result, or Clay-problem closure follows from verifier or certificate success.",
+    "url": "https://github.com/inaciovasquez2020/urf-verifier",
+    "repository": "urf-verifier",
+    "repo": "urf-verifier",
+    "lastUpdate": "2026-06-25",
+    "summary": "Canonical deterministic URF certificate/provenance/replay verifier infrastructure is green; its verification outputs audit supplied artifacts and do not independently prove mathematics.",
+    "latestArtifact": "lean-attest/LEAN_BUILD_ATTEST.sha256",
+    "latestCommit": "ed7ae36e14f7a00bc42d17d2ce2c2190574d59d5",
+    "currentOpenGap": "Verifier-surface hardening and audit reproducibility depth; there is no live missing-math theorem lock inside this infrastructure repository.",
+    "theoremPromotion": false,
+    "publicInventory": true,
+    "evidence": [
+      "SCOPE_LIMITATIONS_STATUS.md classifies the repository as stable deterministic verifier infrastructure, not theorem-prover-complete and not a primary mathematics-closure repository.",
+      "The lean-and-certs workflow completed successfully on exact main head ed7ae36e14f7a00bc42d17d2ce2c2190574d59d5."
+    ],
+    "stars": 0,
+    "forks": 0,
+    "openIssues": 0,
+    "defaultBranch": "main",
+    "updatedAt": "2026-06-25T21:41:32Z"
   }
 ]
