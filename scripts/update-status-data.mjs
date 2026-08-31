@@ -213,7 +213,7 @@ const currentStatusRows = statusRows.map((entry) => {
     ...entry,
     boundary,
     currentGravityUpdate: "2026-08-31",
-    latestGravityPr: "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1299",
+    latestGravityPr: "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
     latestGravityCommit: "cd4f0e91416ab897bf6c3c6c897f038d8d588df4",
     currentGravityGap: "Repository-native matter-momentum-source control by gravitational energy and/or boundary flux sufficient to instantiate the existing source bound.",
     evidence: evidence.includes(latestEvidence) ? evidence : [latestEvidence, ...evidence],
