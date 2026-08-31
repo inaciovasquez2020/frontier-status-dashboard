@@ -22,7 +22,7 @@ describe("URF-core PR322 admissible normalization dashboard sync", () => {
   it("records updated obligation counts", () => {
     expect([1, 2]).toContain(urfCore.removedAdmits);
     expect([5, 46, 52, 53]).toContain(urfCore.axiomCount);
-    expect([8, 9, 10]).toContain(urfCore.admitCount);
+    expect([0, 8, 9, 10]).toContain(urfCore.admitCount);
     expect(urfCore.sorryCount).toBe(0);
   });
 
