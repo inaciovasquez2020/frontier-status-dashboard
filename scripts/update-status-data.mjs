@@ -258,6 +258,35 @@ const urfVerifierStatusRow = {
   ]
 };
 
+const urfTemplatesStatusRow = {
+  name: "urf-templates",
+  domain: "Verification / Adoption templates",
+  status: "BOUNDED_OUTSIDER_DEMO_AND_ADOPTION_SURFACE_ONLY",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "bounded reusable verification/adoption templates only; no external adoption or theorem closure",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "PR #9 merged the current documentation/demo checkpoint at 3c0e67ab2b32ef89b4b0a5d2e5c5d82b908505ee. The strongest current entry point is the non-URF scientific claim demo: a fixed-observation Ohm's Law boundary artifact, verifier command, passing test, and explicit non-claim boundary. This is a reusable stranger-runnable adoption surface only. It does not claim new physics, universal scientific validation, peer review, external adoption, theorem-level URF closure, Chronos-RR closure, H4.1/FGL closure, P vs NP, or any Clay-problem closure.",
+  url: "https://github.com/inaciovasquez2020/urf-templates",
+  repository: "urf-templates",
+  repo: "urf-templates",
+  lastUpdate: "2026-07-05",
+  summary: "Reusable URF adoption templates include a green fixed-observation non-URF Ohm's Law demo; external adoption remains explicitly unclaimed.",
+  latestArtifact: "examples/non_urf_scientific_claim_demo",
+  latestPr: "https://github.com/inaciovasquez2020/urf-templates/pull/9",
+  latestPR: 9,
+  latestCommit: "3c0e67ab2b32ef89b4b0a5d2e5c5d82b908505ee",
+  currentOpenGap: "Independent external adoption/usage evidence; external adoption is not claimed until an independent user or project runs and uses the workflow.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "PR #9 merged on 2026-07-05 at 3c0e67ab2b32ef89b4b0a5d2e5c5d82b908505ee; the exact-head non-urf-scientific-claim-demo workflow completed successfully.",
+    "README explicitly limits the demo to a fixed-observation verification surface and excludes new physics, universal scientific validation, peer review, and external adoption."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
@@ -279,9 +308,12 @@ const withDarkness = withCslib.some((entry) => entry.name === darknessStatusRow.
 const withClassifier = withDarkness.some((entry) => entry.name === theoremClosureClassifierStatusRow.name)
   ? withDarkness.map((entry) => entry.name === theoremClosureClassifierStatusRow.name ? theoremClosureClassifierStatusRow : entry)
   : [...withDarkness, theoremClosureClassifierStatusRow];
-const statusRows = withClassifier.some((entry) => entry.name === urfVerifierStatusRow.name)
+const withVerifier = withClassifier.some((entry) => entry.name === urfVerifierStatusRow.name)
   ? withClassifier.map((entry) => entry.name === urfVerifierStatusRow.name ? urfVerifierStatusRow : entry)
   : [...withClassifier, urfVerifierStatusRow];
+const statusRows = withVerifier.some((entry) => entry.name === urfTemplatesStatusRow.name)
+  ? withVerifier.map((entry) => entry.name === urfTemplatesStatusRow.name ? urfTemplatesStatusRow : entry)
+  : [...withVerifier, urfTemplatesStatusRow];
 
 const fo4CurrentBoundary = "FO4 constraint-isolation remains OPEN_PROBLEM_REQUIRED. Constraint isolation is recorded as a status boundary, not theorem closure. Commit b1a3129b24fd17f5c821552a8feb233968a51cda adds FINITE_WITNESS_SEARCH_TARGET_ONLY for FO4FiniteCycleOverlapWitnessSearch below FO4CycleOverlapRankRigidityDichotomy; it does not solve the rigidity branch or the counterexample-family branch. The bounded search remains blocked until this repository contains formal definitions of the FO4 radius-R rooted local type and R-local cycle-overlap rank, a verified finite graph enumerator or externally supplied finite witness corpus, and a proof that the finite proxy agrees with the intended FO4/rank definitions on the searched class. No unrestricted graph rigidity closure. No Cayley-graph rigidity closure. No Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap closure. No P vs NP or Clay-problem closure.";
 
