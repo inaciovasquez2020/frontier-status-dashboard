@@ -120,15 +120,47 @@ const zeroDayStatusRow = {
   ]
 };
 
+const biologicalStatusRow = {
+  name: "biological-friction-framework",
+  domain: "Biology / preclinical resistance-state framework",
+  status: "LITERATURE_BOUNDED_PRECLINICAL_RESIDUAL_MAP",
+  integrity: 100,
+  theoremClosure: 0,
+  theoremClosureLabel: "literature-bounded preclinical state map only; no treatment or cure claim",
+  theoremMetricApplicable: false,
+  closureScaleMetricApplicable: false,
+  ci: "green",
+  boundary: "PRs #18-#30 build a literature-bounded melanoma residual-state/control map spanning parallel PI3K/AKT survival, FAK-linked routes, SOX10-low vulnerabilities, adenosine escape, ferroptosis-state switching, CD36+ starved-like melanoma cells, NCSC, pigmented/MITF-high OXPHOS adaptation, BRAF-V600E therapy-induced CSE/H2S-persulfide survival, and an mTOR-supported ATF4-MTHFD2 DNA-repair/tolerance route under RAF/MEK pressure. PR #30 is the latest merged checkpoint and explicitly records that MAPK control alone does not absorb the mTOR-ATF4-MTHFD2 residual and that same-context epistasis with the existing PI3K/AKT abstraction is unproved. These documents organize preclinical evidence and residual boundaries only. They do not establish universal state coverage, clinical efficacy, patient-specific guidance, treatment sufficiency, safety, a cancer cure, or a repository-level biological theorem.",
+  url: "https://github.com/inaciovasquez2020/biological-friction-framework",
+  repository: "biological-friction-framework",
+  repo: "biological-friction-framework",
+  lastUpdate: "2026-08-31",
+  summary: "The melanoma persistence/resistance map now includes an mTOR-ATF4-MTHFD2 tolerance residual not absorbed by MAPK control; whether existing PI3K/AKT coverage absorbs it in the same context remains open.",
+  latestArtifact: "mTOR-ATF4-MTHFD2 unabsorbed residual",
+  latestPr: "https://github.com/inaciovasquez2020/biological-friction-framework/pull/30",
+  latestPR: 30,
+  latestCommit: "17fb1a96af639cdc62fc0c2e1e29eea9b52008c2",
+  currentOpenGap: "Same-context epistasis showing whether the mTOR-ATF4-MTHFD2 tolerance route is actually absorbed by the existing PI3K/AKT control abstraction; broader matched longitudinal MRD-state/dependency coverage also remains open.",
+  theoremPromotion: false,
+  publicInventory: true,
+  evidence: [
+    "PR #30 merged on 2026-08-31 from head 3c5f73f880c0f4908bc3af696bf06cd4d6efc466 and explicitly makes no treatment or cure claim.",
+    "Exact PR #30 head 3c5f73f880c0f4908bc3af696bf06cd4d6efc466 passed canonical-surface and external-status-lock workflows."
+  ]
+};
+
 const withPoincare = existing.some((entry) => entry.name === poincareStatusRow.name)
   ? existing
   : [...existing, poincareStatusRow];
 const withDfm = withPoincare.some((entry) => entry.name === dfmStatusRow.name)
   ? withPoincare
   : [...withPoincare, dfmStatusRow];
-const statusRows = withDfm.some((entry) => entry.name === zeroDayStatusRow.name)
+const withZeroDay = withDfm.some((entry) => entry.name === zeroDayStatusRow.name)
   ? withDfm
   : [...withDfm, zeroDayStatusRow];
+const statusRows = withZeroDay.some((entry) => entry.name === biologicalStatusRow.name)
+  ? withZeroDay.map((entry) => entry.name === biologicalStatusRow.name ? biologicalStatusRow : entry)
+  : [...withZeroDay, biologicalStatusRow];
 
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_30:";
 const chronosCurrentBoundary = `${chronosBoundaryPrefix} PR #1299 closes anchored radial momentum recovery in the bounded gravity route using explicit anchor value, radial source profile, and gravitational normalization inputs. Those inputs are not derived from the current Cauchy carrier. The remaining physical/analytic gap is a repository-native estimate controlling the selected matter momentum source by gravitational energy and/or boundary flux strongly enough to instantiate the existing source bound. No unrestricted gravity closure, Cosmic Censorship proof, Hoop Conjecture proof, unrestricted Chronos-RR closure, H4.1/FGL closure, P vs NP closure, or Clay-problem closure follows.`;
