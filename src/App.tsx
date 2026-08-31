@@ -210,15 +210,18 @@ export default function FrontierStatusDashboard() {
 
   const domains = useMemo(() => uniqueDomains(publicRepos), []);
 
-  const topLevelRepositoryNames = new Set(["urf-core", "chronos-urf-rr", "vasquez-index", "urf-spine-public", "Finite graph distance layer"]);
   const repositoryRows: Repo[] = [];
   const linkOnlyRows: Repo[] = [];
   const seenRepositoryNames = new Set<string>();
+  const publicRepositoryRoot = /^https:\/\/github\.com\/inaciovasquez2020\/([^/]+)\/?$/i;
 
   for (const repo of publicRepos) {
-    if (topLevelRepositoryNames.has(repo.name) && !seenRepositoryNames.has(repo.name)) {
-      seenRepositoryNames.add(repo.name);
-      repositoryRows.push(repo);
+    const rootMatch = repo.url.match(publicRepositoryRoot);
+    const repositoryName = rootMatch?.[1];
+
+    if (repositoryName && !seenRepositoryNames.has(repositoryName.toLowerCase())) {
+      seenRepositoryNames.add(repositoryName.toLowerCase());
+      repositoryRows.push({ ...repo, name: repositoryName });
       continue;
     }
 
