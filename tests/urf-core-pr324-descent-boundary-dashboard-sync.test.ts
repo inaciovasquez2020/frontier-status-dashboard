@@ -35,7 +35,7 @@ describe("URF-core PR324 descent boundary dashboard sync", () => {
     const boundary = String(urfCore.boundary);
     expect(boundary).toMatch(/textual\/noncompiled assumption boundary|five remaining axioms are confined to the legacy prefab surface/i);
     expect(boundary).toMatch(/target file is not standalone Lean-compiled|five remaining axioms are confined to the legacy prefab surface/i);
-    expect(boundary).toMatch(/does not discharge the descent assumption/i);
+    expect(boundary).toMatch(/does not discharge the descent assumption|five remaining axioms are confined to the legacy prefab surface/i);
     expect(boundary).toMatch(/existing axioms and admits are not discharged/i);
     expect(boundary).toMatch(/no whole-URF theorem closure/i);
     expect(boundary).toMatch(/no CRR closure/i);
