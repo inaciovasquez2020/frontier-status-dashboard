@@ -49,7 +49,6 @@ import { average, filterRepos, repos, uniqueDomains, publicRepos } from "./App";
     [
       "ym-os-quantization",
       "clay-problem-lab",
-      "biological-friction-framework",
       "CorrRank",
       "overlap-rigidity-lean-dev",
       "urf-axioms",
