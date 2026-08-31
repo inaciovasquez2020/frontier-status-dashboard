@@ -45,7 +45,7 @@
   {
     "name": "chronos-urf-rr",
     "domain": "Complexity / Graph Rigidity",
-    "status": "LEAN_LIBRARY_TARGET_EXPOSED",
+    "status": "Status-Locked Frontier",
     "integrity": 100,
     "theoremClosure": 82,
     "ci": "green",
@@ -1045,6 +1045,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-31T13:58:32Z"
+    "updatedAt": "2026-08-31T14:12:25Z"
   }
 ]
