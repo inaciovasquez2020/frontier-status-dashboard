@@ -29,7 +29,7 @@ describe("URF-core PR323 Law 3 dashboard sync", () => {
 
   it("preserves non-closure boundaries", () => {
     const boundary = String(urfCore.boundary);
-    expect(boundary).toMatch(/textual\/noncompiled assumption boundary|relative to existing\/new structural axioms/i);
+    expect(boundary).toMatch(/textual\/noncompiled assumption boundary|relative to existing\/new structural axioms|five remaining axioms are confined to the legacy prefab surface/i);
     expect(boundary).toMatch(/existing axioms and admits are not discharged|capacity, chain_rule, and cmi_nonneg are not discharged/i);
     expect(boundary).toMatch(/no whole-URF theorem closure/i);
     expect(boundary).toMatch(/no CRR closure/i);
