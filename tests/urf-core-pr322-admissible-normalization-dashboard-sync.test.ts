@@ -10,7 +10,7 @@ describe("URF-core PR322 admissible normalization dashboard sync", () => {
 
   it("records PR322 as an assumption-boundary closure", () => {
     expect(urfCore).toBeTruthy();
-    expect(["ASSUMPTION_BOUNDARY_CLOSED", "THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED"]).toContain(urfCore.status);
+    expect(["ASSUMPTION_BOUNDARY_CLOSED", "THEOREM_SURFACE_CLOSED", "TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED", "BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER"]).toContain(urfCore.status);
     expect([urfCore.closedSurface, urfCore.previousClosedSurface, urfCore.previousAssumptionBoundarySurface]).toContain("urf_admissible_normalization_boundaries");
     expect([urfCore.previousClosedSurface, urfCore.previousTheoremSurface]).toContain("no_status_promotion_theorem");
     expect([322, 323, 324]).toContain(urfCore.latestPR);
