@@ -7,7 +7,7 @@ describe("June 2026 frontier status update", () => {
     const finiteMarkov = repos.find((repo) => repo.name === "URF finite Markov-kernel stack");
 
     expect(urfCore).toBeDefined();
-    expect(urfCore?.status).toBe("TEXTUAL_ASSUMPTION_BOUNDARY_CLOSED");
+    expect(urfCore?.status).toBe("BOUNDED_SHARP_COERCIVITY_AND_FAIL_CLOSED_VERIFIER");
 
     expect(finiteMarkov).toBeDefined();
     expect(finiteMarkov?.status).toBe("FINITE_MARKOV_KERNEL_STACK_CLOSED");
