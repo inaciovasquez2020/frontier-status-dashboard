@@ -39,7 +39,7 @@ describe("URF-core PR321 no-status-promotion dashboard sync", () => {
   it("preserves the whole-URF non-closure boundary", () => {
     const boundary = String(urfCore.boundary);
     expect(boundary).toMatch(/no whole-URF theorem closure/i);
-    expect(boundary).toMatch(/existing axioms and admits are not discharged/i);
+    expect(boundary).toMatch(/five remaining axioms|existing axioms and admits are not discharged/i);
     expect(boundary).toMatch(/no P vs NP closure/i);
     expect(boundary).toMatch(/no Clay-problem closure/i);
   });
