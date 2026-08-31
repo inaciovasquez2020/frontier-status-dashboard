@@ -1,5 +1,10 @@
 [
   {
+    "name": "biological-friction-framework",
+    "url": "https://github.com/inaciovasquez2020/biological-friction-framework",
+    "defaultBranch": "main"
+  },
+  {
     "name": "chronos-urf-rr",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "defaultBranch": "main"
