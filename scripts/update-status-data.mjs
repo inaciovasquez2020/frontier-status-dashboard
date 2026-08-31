@@ -159,7 +159,7 @@ const withZeroDay = withDfm.some((entry) => entry.name === zeroDayStatusRow.name
   ? withDfm
   : [...withDfm, zeroDayStatusRow];
 const statusRows = withZeroDay.some((entry) => entry.name === biologicalStatusRow.name)
-  ? withZeroDay
+  ? withZeroDay.map((entry) => entry.name === biologicalStatusRow.name ? biologicalStatusRow : entry)
   : [...withZeroDay, biologicalStatusRow];
 
 const chronosBoundaryPrefix = "CURRENT_GRAVITY_STATUS_2026_08_30:";
