@@ -154,9 +154,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 3,
+    "openIssues": 7,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-31T09:09:56Z",
+    "updatedAt": "2026-09-06T06:15:39Z",
     "publicInventory": true,
     "currentGravityUpdate": "2026-08-31",
     "latestGravityPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
@@ -658,9 +658,9 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 3,
+    "openIssues": 7,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-31T09:09:56Z",
+    "updatedAt": "2026-09-06T06:15:39Z",
     "publicInventory": true
   },
   {
@@ -945,7 +945,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 3,
     "defaultBranch": "main",
     "updatedAt": "2026-09-01T02:44:31Z"
   },
@@ -1263,6 +1263,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-09-04T12:08:43Z"
+    "updatedAt": "2026-09-05T11:16:38Z"
   }
 ]
