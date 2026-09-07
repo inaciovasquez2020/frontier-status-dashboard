@@ -154,9 +154,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 7,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-09-06T06:15:39Z",
+    "updatedAt": "2026-09-06T23:16:20Z",
     "publicInventory": true,
     "currentGravityUpdate": "2026-08-31",
     "latestGravityPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
@@ -658,9 +658,9 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 7,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-09-06T06:15:39Z",
+    "updatedAt": "2026-09-06T23:16:20Z",
     "publicInventory": true
   },
   {
@@ -1045,7 +1045,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-09-01T00:22:12Z"
+    "updatedAt": "2026-09-07T00:56:26Z"
   },
   {
     "name": "cslib-fmt",
@@ -1263,6 +1263,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-09-05T11:16:38Z"
+    "updatedAt": "2026-09-06T11:39:31Z"
   }
 ]
