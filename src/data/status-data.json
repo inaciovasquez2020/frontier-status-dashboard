@@ -1038,12 +1038,7 @@
     "evidence": [
       "Commit db78f80523a1c8e35a03391b6be892a6d07e36de rejects duplicate edge IDs across baseline and induced certificate surfaces.",
       "Exact commit workflows verify, external-status-lock, and canonical-surface all completed successfully; the patch changes certificate integrity checking only and does not discharge the underlying biological frontier."
-    ],
-    "stars": 0,
-    "forks": 0,
-    "openIssues": 0,
-    "defaultBranch": "main",
-    "updatedAt": "2026-10-02T22:19:58Z"
+    ]
   },
   {
     "name": "cslib-fmt",
