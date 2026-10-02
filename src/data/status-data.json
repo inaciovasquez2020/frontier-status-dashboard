@@ -35,7 +35,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-07T18:28:37Z",
+    "updatedAt": "2026-10-02T02:24:40Z",
     "publicInventory": true,
     "currentOpenGap": "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
     "evidence": [
@@ -945,9 +945,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 7,
+    "openIssues": 5,
     "defaultBranch": "main",
-    "updatedAt": "2026-09-01T02:44:31Z"
+    "updatedAt": "2026-10-02T05:31:49Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -979,9 +979,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-30T02:43:38Z"
+    "updatedAt": "2026-10-01T23:57:42Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1263,6 +1263,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-09-30T13:46:49Z"
+    "updatedAt": "2026-10-01T14:28:35Z"
   }
 ]
