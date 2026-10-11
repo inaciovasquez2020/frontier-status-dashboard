@@ -945,9 +945,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-08T11:15:26Z"
+    "updatedAt": "2026-10-10T17:41:03Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -979,9 +979,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 3,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-10T12:54:29Z"
+    "updatedAt": "2026-10-10T19:32:20Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-09T14:22:51Z"
+    "updatedAt": "2026-10-10T13:43:50Z"
   }
 ]
