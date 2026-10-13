@@ -290,11 +290,11 @@
     "boundary": "Vasquez Index is the public front door and canonical navigation/status surface for the verified-frontier repository map. Main commit 42091906431fb6994370042e17800c352cadfaa3 reconciles the GitHub-visible public repository inventory to 19. The index routes readers to authoritative source repositories and does not independently prove mathematical claims; no theorem claim is promoted by build, CI, dashboard, registry, or index status. No Chronos-RR closure. No unrestricted Chronos-RR closure. No H4.1/FGL closure. No UniversalFiberEntropyGap theorem. No UniversalFiberEntropyGap closure. No P vs NP. No P vs NP or Clay-problem closure.",
     "url": "https://github.com/inaciovasquez2020/vasquez-index",
     "closureScaleMetricApplicable": false,
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-08-31T09:34:13Z",
+    "updatedAt": "2026-10-13T07:32:04Z",
     "publicInventory": true
   },
   {
@@ -977,11 +977,11 @@
       "PR #282 merged on 2026-08-30 from head 90a2c17a6040c238580c02b52486ebbb21a09bcd; CI, cosmology-check, external-status-lock, and Lean CI (disabled) all reported success.",
       "PR #281 remains open and its body explicitly says the coercivity probe fails at the first leading minor whose strict positivity is not established."
     ],
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-12T03:19:15Z"
+    "updatedAt": "2026-10-13T07:31:58Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1257,10 +1257,10 @@
       "README Current Dashboard Status records 89 files / 332 tests passed, production build passed, public inventory 19, and the profile/start-here repository as inventory-only by explicit guard.",
       "CI run 33450091412 completed successfully on exact main head 0c3afa8951fb3c17be2b6448f80cd286a84f9a68 after PR #210."
     ],
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-11T14:03:38Z"
+    "updatedAt": "2026-10-13T07:32:00Z"
   }
 ]
