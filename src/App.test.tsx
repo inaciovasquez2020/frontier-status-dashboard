@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { average, filterRepos, repos, uniqueDomains, publicRepos } from "./App";describe("frontier status dashboard public/private policy", () => {
+import { average, CLOSURE_SCALE_LABEL, filterRepos, repos, uniqueDomains, publicRepos } from "./App";describe("frontier status dashboard public/private policy", () => {
   it("keeps helper functions operational on the remaining public rows", () => {
     expect(uniqueDomains(repos)[0]).toBe("All");
     expect(filterRepos(repos, "Chronos", "All").some((repo) => repo.name === "chronos-urf-rr")).toBe(true);
@@ -88,4 +88,14 @@ it("preserves the aggregate closure-scale invariant", () => {
     "unrestricted theorem closure false",
   );
   expect(repos.find((repo) => repo.name === "chronos-urf-rr")?.theoremMetricApplicable).toBe(false);
+});
+
+
+describe("scoped closure-scale labeling", () => {
+  it("does not label dashboard scalars as theorem completion", () => {
+    expect(CLOSURE_SCALE_LABEL).toBe("Scoped closure-scale indicator");
+    const chronos = repos.find((repo) => repo.name === "chronos-urf-rr");
+    expect(chronos?.theoremMetricApplicable).toBe(false);
+    expect(chronos?.theoremClosureLabel).toContain("unrestricted theorem closure false");
+  });
 });
