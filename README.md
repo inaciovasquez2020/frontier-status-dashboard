@@ -136,10 +136,10 @@ Chronos `chronos-urf-rr` now records PR #231, PR #232, and PR #233 as merged sur
 - Current real Chronos-admissible unrestricted Reg-SNF status lock.
 - Selected DepthBridge reachability only.
 
-Dashboard percentages updated:
+Historical dashboard scalars recorded on 2026-05-12:
 
-- Repository integrity: 100%.
-- Theorem closure: 82%.
+- Repository integrity was reported as 100% by the dashboard at that time.
+- A value of 82 was displayed under the old “Theorem closure” label for Chronos. The underlying data marks `theoremMetricApplicable: false` and labels unrestricted theorem closure false. This scalar is not a percentage of a theorem proved or a research program completed; the UI now labels such values “Scoped closure-scale indicator.”
 
 Boundary preserved: no UniversalFiberEntropyGap closure, no DepthBridge beyond selected final carrier domain, no Chronos-RR theorem-level closure, no H4.1/FGL theorem-level closure, no P vs NP closure, and no Clay-problem closure.
 
@@ -147,8 +147,8 @@ Boundary preserved: no UniversalFiberEntropyGap closure, no DepthBridge beyond s
 
 Chronos `chronos-urf-rr` now records PR #254 as a merged repository-native rank/ambient datum surface.
 
-- Repository integrity: 100%.
-- Theorem closure: 82%.
+- Repository integrity was reported as 100% in the historical dashboard snapshot.
+- The historical value 82 was a scoped dashboard scalar, not a theorem-completion percentage.
 - Status: `CONDITIONAL_EXTERNAL_DATA_ASSUMPTION_ONLY`.
 - Verified: rank/ambient datum verifier, targeted pytest 3/3, `lake build`, full pytest 646/646.
 

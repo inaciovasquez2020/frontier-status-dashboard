@@ -32,6 +32,8 @@ type PublicRepositoryInventoryRow = {
   defaultBranch: string;
 };
 
+export const CLOSURE_SCALE_LABEL = "Scoped closure-scale indicator";
+
 export const repos: Repo[] = rawRepos as Repo[];
 export const publicRepositoryInventory = rawPublicRepositoryInventory as PublicRepositoryInventoryRow[];
 
@@ -472,7 +474,7 @@ export default function FrontierStatusDashboard() {
                       <div className="mt-1 font-semibold text-slate-900">{repo.integrity}%</div>
                     </div>
                     <div className="rounded-xl border bg-slate-50 p-3">
-                      <div className="text-slate-500">Theorem closure</div>
+                      <div className="text-slate-500">{CLOSURE_SCALE_LABEL}</div>
                       <div className="mt-1 font-semibold text-slate-900">
                         {repo.theoremClosureLabel ?? `${repo.theoremClosure}%`}
                       </div>
