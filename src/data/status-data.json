@@ -33,9 +33,9 @@
     "textualNoncompiledBoundary": true,
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-15T10:12:25Z",
+    "updatedAt": "2026-10-15T13:17:04Z",
     "publicInventory": true,
     "currentOpenGap": "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
     "evidence": [
@@ -154,9 +154,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-11T20:34:13Z",
+    "updatedAt": "2026-10-16T00:01:57Z",
     "publicInventory": true,
     "currentGravityUpdate": "2026-08-31",
     "latestGravityPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
@@ -658,9 +658,9 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-11T20:34:13Z",
+    "updatedAt": "2026-10-16T00:01:57Z",
     "publicInventory": true
   },
   {
@@ -979,9 +979,9 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-15T09:53:32Z"
+    "updatedAt": "2026-10-15T13:59:42Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-15T09:55:21Z"
+    "updatedAt": "2026-10-15T12:39:58Z"
   }
 ]
