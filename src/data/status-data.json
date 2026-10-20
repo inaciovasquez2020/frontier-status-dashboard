@@ -981,7 +981,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-15T13:59:42Z"
+    "updatedAt": "2026-10-20T02:06:46Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1010,7 +1010,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 1,
     "defaultBranch": "main",
     "updatedAt": "2026-10-02T22:17:33Z"
   },
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-18T12:04:05Z"
+    "updatedAt": "2026-10-19T14:41:20Z"
   }
 ]
