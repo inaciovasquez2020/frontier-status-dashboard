@@ -35,7 +35,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-15T13:17:04Z",
+    "updatedAt": "2026-10-21T01:58:13Z",
     "publicInventory": true,
     "currentOpenGap": "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
     "evidence": [
@@ -154,9 +154,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-18T20:51:08Z",
+    "updatedAt": "2026-10-21T02:29:15Z",
     "publicInventory": true,
     "currentGravityUpdate": "2026-08-31",
     "latestGravityPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
@@ -658,9 +658,9 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-18T20:51:08Z",
+    "updatedAt": "2026-10-21T02:29:15Z",
     "publicInventory": true
   },
   {
@@ -945,9 +945,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 3,
+    "openIssues": 4,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-19T01:21:29Z"
+    "updatedAt": "2026-10-20T19:38:38Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -981,7 +981,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-20T02:06:46Z"
+    "updatedAt": "2026-10-20T23:57:02Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1076,7 +1076,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-02T22:02:14Z"
+    "updatedAt": "2026-10-21T00:59:12Z"
   },
   {
     "name": "darkness-region-dynamics-null-test",
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-19T14:41:20Z"
+    "updatedAt": "2026-10-20T12:44:06Z"
   }
 ]
