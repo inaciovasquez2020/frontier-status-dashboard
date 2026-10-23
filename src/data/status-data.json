@@ -154,7 +154,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 3,
     "defaultBranch": "main",
     "updatedAt": "2026-10-22T07:30:34Z",
     "publicInventory": true,
@@ -658,7 +658,7 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 3,
     "defaultBranch": "main",
     "updatedAt": "2026-10-22T07:30:34Z",
     "publicInventory": true
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-21T12:56:34Z"
+    "updatedAt": "2026-10-22T12:58:56Z"
   }
 ]
