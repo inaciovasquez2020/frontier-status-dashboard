@@ -46,7 +46,34 @@ The reported bounds are conditional on the paper's interaction operators, datase
 
 The reviewed relativistic N-body and CLMM papers may inform numerical implementation or inference practice, but no specific DFM-MKC-compatible field equation, validated solver interface, or transferable result has yet been identified. They remain context until a named method is mapped to an existing code path and tested.
 
-## 3. Atomic-gravity paper: competing prediction, not observation
+## 3. Exact DFM-MKC artifact/provenance audit
+
+Repository: https://github.com/inaciovasquez2020/dfm-mkc-cosmology
+
+### BAO artifacts found
+
+1. `docs/status/DFM_MKC_FROZEN_PREDICTION_VECTOR_TARGET_2026_05_21.md` — Git blob SHA `80c3bee7a91f95c73aeef91a7ff5027ecd419721`. Its declared status is `FROZEN_PREDICTION_VECTOR_TARGET_ONLY_NOT_SUPPLIED`; it explicitly says no frozen values, parameter values, likelihood, or data comparison are supplied.
+2. `artifacts/repo_intake/dfm_mkc_act_planck_desi_prediction_vector_v1_2026_05_27.json` — Git blob SHA `f7738a003990110ca8a80b4468782172fd96f608`. This is a prediction-vector **interface**. It declares BAO slots such as (D_M/r_d), (D_H/r_d), (D_V/r_d), (F_{AP}), (H(z)), and (D_A(z)), but states that background and perturbation solver outputs are not numerically supplied and that no numerical prediction vector or likelihood is supplied.
+3. `artifacts/external_validation/frozen_dfm_mkc_prediction_vector_desi_order_2026_06_29.json` — Git blob SHA `bd5b39014b0a149e01535a6b837fc1ab9629a91a`. It contains a 36-entry all-zero vector labelled `zero_baseline_frozen_diagnostic_seed_only`; its covariance-order status says repository-internal order, not survey-likelihood order, and the covariance is bound only to adapter block dimension. This is a diagnostic seed, **not a physical DFM-MKC prediction**.
+
+The repo's `tools/verify_observed_desi_dr2_bao_numeric_order_boundary.py` — Git blob SHA `01a451c8a7f22531a0677d0d52478325dff5086b` — explicitly checks that the observed 36-value DESI DR2 BAO vector and 36×36 covariance files are absent, and prints the missing paths:
+- `public_data/desi_dr2/observed_bao_vector_36.csv`
+- `public_data/desi_dr2/observed_bao_covariance_36x36.csv`
+
+### Weak-lensing artifacts found
+
+The interface JSON above declares weak-lensing slots `C_ell_shear`, `C_ell_galaxy_shear`, and `C_ell_galaxy_galaxy`, but says they are slots only, with no numerical vector or validated implementation. The frozen-vector target JSON `artifacts/repo_intake/dfm_mkc_frozen_prediction_vector_target_2026_05_21.json` — Git blob SHA `eaf9f47e6359c1b0647f01559b6854f937b37c66` — explicitly marks `WEAK_LENSING_AND_CLUSTERING` as `blocked_no_frozen_prediction_vector`. A repository search did not identify an existing numerical weak-lensing prediction vector or a pinned external weak-lensing data vector/covariance pair.
+
+### External data candidates and comparison decision
+
+- DESI DR2 BAO official publication and supplementary data: https://data.desi.lbl.gov/doc/papers/dr2/ and https://zenodo.org/records/16644577. The DESI supplementary archive provides a 1.3 GB zip for reproducing published results. A source citation is not itself a pinned, order-verified 36-vector/covariance pair.
+- DES Y3 + KiDS-1000 weak-lensing data products: https://kids.strw.leidenuniv.nl/sciencedata.php. The release page identifies data vectors, covariance matrices, redshift distributions, and CosmoSIS configuration files.
+
+**Comparison result: BLOCKED BEFORE NUMERICAL COMPARISON.** There is no non-diagnostic, numerically evaluated DFM-MKC BAO or weak-lensing prediction to compare. For BAO, the exact 36-point observed vector/covariance pair is explicitly absent in the repository's own boundary check. For weak lensing, only interface slots and target schemas were found, not numerical model predictions and a pinned matching data/covariance pair. Running a residual or chi-squared calculation now would compare a diagnostic zero seed or undefined slots against observations and would be scientifically invalid. No chi-squared, fit score, likelihood preference, or validation result is claimed.
+
+This is a provenance finding from the named Git-tracked artifacts and verifier source; the listed blob SHAs identify those exact file contents. It is not a fresh end-to-end local execution of the repository or a SHA-256 digest of the files.
+
+## 4. Atomic-gravity paper: competing prediction, not observation
 
 Source: https://rxiverse.org/pdf/2603.0057v1.pdf
 
@@ -58,17 +85,18 @@ The paper proposes that gravitational strength tracks atom count and argues that
 
 **Effect on portfolio:** it gives a potentially discriminating alternative prediction for structural/atomic gravity hypotheses, but it neither experimentally contradicts nor empirically supports a diamond-versus-graphite gravity difference. Keep the carbon/structural-gravity status open and unchanged. A genuine test requires a completed, controlled differential measurement with stated uncertainty and systematic-error budget.
 
-## 4. Portfolio status policy
+## 5. Portfolio status policy
 
 This review does not alter the status of Poincare/JIID, Chronos-URF-RR/GfE, Biological Friction Framework, CorrRank, radiative rigidity, CSLIB-FMT, or other retained research tracks. The reviewed sources have not supplied a specific reproducible result that closes one of their open obligations.
 
-## 5. Next admissible work
+## 6. Next admissible work
 
-1. For DFM-MKC, identify the exact frozen BAO and weak-lensing prediction artifacts and verify their provenance before selecting an external comparison.
-2. Use the same data selection, covariance, nuisance treatment, and frozen parameter policy for DFM-MKC and Lambda-CDM; keep blind-holdout evaluation separate from model development.
-3. Do not promote a validation status until external execution, prediction-vector hashes, likelihood outputs, and an independently reproducible result are present.
-4. Retain the atomic-gravity paper as a competing proposal only; do not treat simulated carbon-state values as observed measurements.
+1. Obtain and pin the official DESI DR2 observed vector and covariance, verify dimensions, ordering, units, source revision, and SHA-256, then define the same ordered observables for the baseline model.
+2. Supply a real, numerically evaluated DFM-MKC BAO prediction from the frozen equations/parameters/solver. The all-zero diagnostic seed must not be substituted for it.
+3. For weak lensing, choose one public release (for example DES Y3 + KiDS-1000), pin its vector/covariance/redshift distributions and nuisance conventions, and implement/validate a numerical DFM-MKC shear prediction before comparing it with Lambda-CDM under the same data selection and likelihood.
+4. Freeze the likelihood, nuisance parameters, priors, and decision rule before evaluating the models; keep any holdout evaluation blind.
+5. Do not promote a validation status until the numerical prediction vectors, source/data hashes, covariance-bound likelihood outputs, and independent reproduction receipts exist.
 
 ## Evidence boundary
 
-This document is a source-traceable method comparison and literature classification. It does not demonstrate DFM-MKC empirical validation, Lambda-CDM failure, dark-matter replacement, gravity closure, or an observed structure-dependent gravitational effect.
+This document is a source-traceable method comparison and artifact audit. It does not demonstrate DFM-MKC empirical validation, Lambda-CDM failure, dark-matter replacement, gravity closure, or an observed structure-dependent gravitational effect.
