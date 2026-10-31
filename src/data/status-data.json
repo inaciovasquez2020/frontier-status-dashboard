@@ -947,7 +947,7 @@
     "forks": 0,
     "openIssues": 13,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-30T09:53:08Z"
+    "updatedAt": "2026-10-31T03:46:56Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -1166,7 +1166,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 1,
     "defaultBranch": "main",
     "updatedAt": "2026-06-25T21:41:32Z"
   },
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-29T14:21:40Z"
+    "updatedAt": "2026-10-30T14:10:18Z"
   }
 ]
