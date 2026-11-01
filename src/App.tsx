@@ -310,6 +310,55 @@ export default function FrontierStatusDashboard() {
           <Metric label="Claim-boundary policy" value="No theorem promotion" />
         </section>
 
+        <section aria-labelledby="curated-releases-heading" className="rounded-3xl border bg-white p-6 shadow-sm">
+          <h2 id="curated-releases-heading" className="text-lg font-semibold text-slate-900">
+            Curated public research releases — 2026-11-01
+          </h2>
+          <p className="mt-2 text-sm leading-6 text-slate-600">
+            Two checksum-pinned publication snapshots, distributed separately from their private source
+            repositories. Public release and integrity verification do not imply peer review or theorem closure.
+          </p>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            <article className="rounded-2xl border bg-slate-50 p-4">
+              <h3 className="font-medium text-slate-900">Chronos — conditional research</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Scoped entropy-depth manuscript and signed certificates. No unconditional universal theorem,
+                complexity separation, or validated physical bridge is claimed.
+              </p>
+              <a className="mt-3 inline-block text-sm underline underline-offset-4"
+                 href="https://github.com/inaciovasquez2020/chronos-curated-release/releases/tag/snapshot-2026-11-01"
+                 target="_blank" rel="noreferrer">
+                View published Chronos snapshot
+              </a>
+              <p className="mt-2 text-xs text-slate-500">
+                ZIP SHA-256: <code className="break-all">5469fa9f404dc5470035b96f209e98839829671035130f24ac347906b8800387</code>
+              </p>
+            </article>
+            <article className="rounded-2xl border bg-slate-50 p-4">
+              <h3 className="font-medium text-slate-900">Overlap-rigidity — conditional oracle bound</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                Information-acquisition bound for an idealized hidden-assignment oracle. The required explicit
+                high-girth family is not constructed; no SAT algorithm lower bound or P vs NP proof is claimed.
+              </p>
+              <a className="mt-3 inline-block text-sm underline underline-offset-4"
+                 href="https://github.com/inaciovasquez2020/overlap-rigidity-oracle-release/releases/tag/snapshot-2026-11-01"
+                 target="_blank" rel="noreferrer">
+                View published overlap-rigidity snapshot
+              </a>
+              <p className="mt-2 text-xs text-slate-500">
+                ZIP SHA-256: <code className="break-all">401382dbd0b290648cabc585c267f8ba7289653da71be5522414f76f8db58c97</code>
+              </p>
+            </article>
+          </div>
+          <p className="mt-4 text-xs leading-5 text-slate-500">
+            Provenance and scope are recorded in the{" "}
+            <a className="underline underline-offset-4"
+               href="https://github.com/inaciovasquez2020/vasquez-index/blob/main/REGISTRY.md"
+               target="_blank" rel="noreferrer">vasquez-index registry</a>.
+            These links are publication references only and do not affect dashboard metrics or claim status.
+          </p>
+        </section>
+
         <section className="rounded-3xl border bg-white p-6 shadow-sm">
           <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
             <div>
