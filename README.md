@@ -39,10 +39,11 @@ Boundary: dashboard success certifies status visibility and repository-health si
 
 ## Latest verified update
 
-- Date: 2026-05-02
-- Repository: `clay-problem-lab`
-- Update: RA1n symbolic transfer bridge merged and reflected in dashboard data.
-- Boundary: Conditional Frontier only; no unrestricted or unconditional RA1n closure is claimed.
+- Date: 2026-11-01 (UTC)
+- Repository: `frontier-status-dashboard`
+- Verified operation: the scheduled public-repository inventory synchronization succeeded in [workflow run 41315352268](https://github.com/inaciovasquez2020/frontier-status-dashboard/actions/runs/41315352268). The resulting inventory commit is [`72e58f6`](https://github.com/inaciovasquez2020/frontier-status-dashboard/commit/72e58f616ccacec873fa80f671c12bc50d43ee36).
+- Public proof frontier: [`poincare-new-derivation` main `62ac9107`](https://github.com/inaciovasquez2020/poincare-new-derivation/commit/62ac9107fe10c163a33902fb1bded9fff1d8cf4d) records the bounded six-candidate cross-polytope enumeration; the universal stabilized descent lemma and `Poincare.JIID` remain open. [PR #152](https://github.com/inaciovasquez2020/poincare-new-derivation/pull/152) and [PR #153](https://github.com/inaciovasquez2020/poincare-new-derivation/pull/153) remain draft and are not part of main.
+- Boundary: successful inventory synchronization does not verify private repositories, current proof-branch CI, global mathematical closure, or empirical validation. Historical research notes elsewhere in this README are not the current verification snapshot.
 
 
 [![CI](https://github.com/inaciovasquez2020/frontier-status-dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/inaciovasquez2020/frontier-status-dashboard/actions/workflows/ci.yml)
