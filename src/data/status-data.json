@@ -33,9 +33,9 @@
     "textualNoncompiledBoundary": true,
     "stars": 0,
     "forks": 0,
-    "openIssues": 3,
+    "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-28T01:13:16Z",
+    "updatedAt": "2026-11-02T16:46:06Z",
     "publicInventory": true,
     "currentOpenGap": "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
     "evidence": [
@@ -154,7 +154,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 4,
+    "openIssues": 5,
     "defaultBranch": "main",
     "updatedAt": "2026-10-29T20:35:40Z",
     "publicInventory": true,
@@ -294,7 +294,7 @@
     "forks": 0,
     "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-15T10:14:07Z",
+    "updatedAt": "2026-11-01T19:18:35Z",
     "publicInventory": true
   },
   {
@@ -658,7 +658,7 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 4,
+    "openIssues": 5,
     "defaultBranch": "main",
     "updatedAt": "2026-10-29T20:35:40Z",
     "publicInventory": true
@@ -945,9 +945,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 15,
+    "openIssues": 16,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-31T03:46:56Z"
+    "updatedAt": "2026-11-02T01:32:04Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -979,9 +979,9 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 2,
+    "openIssues": 4,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-21T16:53:36Z"
+    "updatedAt": "2026-11-02T14:22:39Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1010,9 +1010,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-29T20:39:25Z"
+    "updatedAt": "2026-11-02T13:32:06Z"
   },
   {
     "name": "biological-friction-framework",
@@ -1259,8 +1259,8 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-31T13:39:31Z"
+    "updatedAt": "2026-11-01T19:26:44Z"
   }
 ]

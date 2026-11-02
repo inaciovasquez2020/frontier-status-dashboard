@@ -5,6 +5,11 @@
     "defaultBranch": "main"
   },
   {
+    "name": "chronos-curated-release",
+    "url": "https://github.com/inaciovasquez2020/chronos-curated-release",
+    "defaultBranch": "main"
+  },
+  {
     "name": "chronos-urf-rr",
     "url": "https://github.com/inaciovasquez2020/chronos-urf-rr",
     "defaultBranch": "main"
@@ -42,6 +47,11 @@
   {
     "name": "inaciovasquez2020.github.io",
     "url": "https://github.com/inaciovasquez2020/inaciovasquez2020.github.io",
+    "defaultBranch": "main"
+  },
+  {
+    "name": "overlap-rigidity-oracle-release",
+    "url": "https://github.com/inaciovasquez2020/overlap-rigidity-oracle-release",
     "defaultBranch": "main"
   },
   {
