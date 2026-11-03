@@ -292,9 +292,9 @@
     "closureScaleMetricApplicable": false,
     "stars": 1,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-01T19:18:35Z",
+    "updatedAt": "2026-11-03T00:39:35Z",
     "publicInventory": true
   },
   {
@@ -945,9 +945,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 16,
+    "openIssues": 15,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-02T01:32:04Z"
+    "updatedAt": "2026-11-03T14:15:49Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -1043,7 +1043,7 @@
     "forks": 0,
     "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-18T20:59:11Z"
+    "updatedAt": "2026-11-03T00:36:22Z"
   },
   {
     "name": "cslib-fmt",
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-01T19:26:44Z"
+    "updatedAt": "2026-11-02T17:05:32Z"
   }
 ]
