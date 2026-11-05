@@ -33,7 +33,7 @@
     "textualNoncompiledBoundary": true,
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 2,
     "defaultBranch": "main",
     "updatedAt": "2026-11-02T16:46:06Z",
     "publicInventory": true,
@@ -294,7 +294,7 @@
     "forks": 0,
     "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-03T00:39:35Z",
+    "updatedAt": "2026-11-05T12:16:29Z",
     "publicInventory": true
   },
   {
@@ -945,9 +945,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 15,
+    "openIssues": 21,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-03T14:15:49Z"
+    "updatedAt": "2026-11-05T10:34:55Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -979,7 +979,7 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 4,
+    "openIssues": 5,
     "defaultBranch": "main",
     "updatedAt": "2026-11-02T14:22:39Z"
   },
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-03T15:09:41Z"
+    "updatedAt": "2026-11-04T15:27:02Z"
   }
 ]
