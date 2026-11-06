@@ -945,7 +945,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 21,
+    "openIssues": 23,
     "defaultBranch": "main",
     "updatedAt": "2026-11-05T10:34:55Z"
   },
@@ -979,7 +979,7 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 5,
+    "openIssues": 6,
     "defaultBranch": "main",
     "updatedAt": "2026-11-02T14:22:39Z"
   },
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-04T15:27:02Z"
+    "updatedAt": "2026-11-05T15:28:25Z"
   }
 ]
