@@ -1,8 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { readFileSync } from "node:fs";
-import { resolve } from "node:path";
-
-const source = readFileSync(resolve(process.cwd(), "src", "App.tsx"), "utf8");
+import source from "./App.tsx?raw";
 
 describe("public research navigation", () => {
   it("links the dashboard back to canonical research pages", () => {
