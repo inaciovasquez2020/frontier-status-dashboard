@@ -277,10 +277,14 @@ export default function FrontierStatusDashboard() {
 
   return (
     <main className="min-h-screen bg-slate-50 p-6 text-slate-900">
-  <div className="flex gap-4 text-sm">
-    <a className="underline underline-offset-4" href="/urf-front-door/">URF Front Door</a>
-    <a className="underline underline-offset-4" href="/verification">Verification Explorer</a>
-  </div>
+  <nav aria-label="Research network navigation" className="mx-auto mb-5 flex max-w-7xl flex-wrap items-center gap-x-5 gap-y-3 border-b border-slate-200 pb-4 text-sm">
+    <a className="font-semibold text-slate-900 underline underline-offset-4" href="https://inaciovasquez2020.github.io/">Vasquez Research</a>
+    <a className="text-slate-700 hover:underline" href="https://inaciovasquez2020.github.io/#projects">Research</a>
+    <a className="text-slate-700 hover:underline" href="https://github.com/inaciovasquez2020/vasquez-index">Repository Index</a>
+    <a className="text-slate-700 hover:underline" href="https://inaciovasquez2020.github.io/publications.html">Publications</a>
+    <a className="text-slate-700 hover:underline" href="/verification">Verification Explorer</a>
+    <a className="text-slate-700 hover:underline" href="https://inaciovasquez2020.github.io/contact.html">Contact</a>
+  </nav>
 
       <div className="mx-auto max-w-7xl space-y-6">
         <motion.section
