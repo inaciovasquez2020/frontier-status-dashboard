@@ -154,7 +154,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 5,
+    "openIssues": 6,
     "defaultBranch": "main",
     "updatedAt": "2026-11-04T12:57:00Z",
     "publicInventory": true,
@@ -223,7 +223,7 @@
     "public": true,
     "stars": 0,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 2,
     "defaultBranch": "main",
     "updatedAt": "2026-10-30T03:11:11Z",
     "publicInventory": true
@@ -658,7 +658,7 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 5,
+    "openIssues": 6,
     "defaultBranch": "main",
     "updatedAt": "2026-11-04T12:57:00Z",
     "publicInventory": true
@@ -943,11 +943,11 @@
       "PR #87 merged on 2026-08-30; its body explicitly states Poincare.JIID remains unproved.",
       "Verified proof head afd61a176478e357d2e95ba8fcc1dbc3f6317367 has successful Lean Action CI, external-status-lock, and lean-proof-portfolio-classification workflow runs."
     ],
-    "stars": 0,
+    "stars": 1,
     "forks": 0,
-    "openIssues": 24,
+    "openIssues": 26,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-07T09:47:22Z"
+    "updatedAt": "2026-11-07T23:18:22Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -979,7 +979,7 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 6,
+    "openIssues": 7,
     "defaultBranch": "main",
     "updatedAt": "2026-11-02T14:22:39Z"
   },
@@ -1229,9 +1229,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 0,
+    "openIssues": 3,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-07T04:06:16Z"
+    "updatedAt": "2026-11-08T13:52:46Z"
   },
   {
     "name": "frontier-status-dashboard",
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-07T03:56:47Z"
+    "updatedAt": "2026-11-07T14:03:24Z"
   }
 ]
