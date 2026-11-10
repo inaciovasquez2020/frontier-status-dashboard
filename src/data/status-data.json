@@ -33,9 +33,9 @@
     "textualNoncompiledBoundary": true,
     "stars": 0,
     "forks": 0,
-    "openIssues": 2,
+    "openIssues": 3,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-02T16:46:06Z",
+    "updatedAt": "2026-11-09T23:02:24Z",
     "publicInventory": true,
     "currentOpenGap": "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
     "evidence": [
@@ -154,9 +154,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 9,
+    "openIssues": 11,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-09T01:47:59Z",
+    "updatedAt": "2026-11-10T05:36:14Z",
     "publicInventory": true,
     "currentGravityUpdate": "2026-08-31",
     "latestGravityPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
@@ -223,9 +223,9 @@
     "public": true,
     "stars": 0,
     "forks": 0,
-    "openIssues": 2,
+    "openIssues": 0,
     "defaultBranch": "main",
-    "updatedAt": "2026-10-30T03:11:11Z",
+    "updatedAt": "2026-11-09T21:29:09Z",
     "publicInventory": true
   },
   {
@@ -658,9 +658,9 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 9,
+    "openIssues": 11,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-09T01:47:59Z",
+    "updatedAt": "2026-11-10T05:36:14Z",
     "publicInventory": true
   },
   {
@@ -945,9 +945,9 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 26,
+    "openIssues": 25,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-07T23:18:22Z"
+    "updatedAt": "2026-11-10T15:19:01Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -979,9 +979,9 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 7,
+    "openIssues": 6,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-02T14:22:39Z"
+    "updatedAt": "2026-11-09T20:54:01Z"
   },
   {
     "name": "zero_day_restricted_closures",
@@ -1043,7 +1043,7 @@
     "forks": 0,
     "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-03T00:36:22Z"
+    "updatedAt": "2026-11-10T00:51:11Z"
   },
   {
     "name": "cslib-fmt",
@@ -1229,9 +1229,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 7,
+    "openIssues": 5,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-09T13:18:43Z"
+    "updatedAt": "2026-11-10T04:20:34Z"
   },
   {
     "name": "frontier-status-dashboard",
@@ -1259,8 +1259,8 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 2,
+    "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-08T14:18:26Z"
+    "updatedAt": "2026-11-09T21:21:07Z"
   }
 ]
