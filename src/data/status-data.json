@@ -154,9 +154,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 11,
+    "openIssues": 14,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-10T05:36:14Z",
+    "updatedAt": "2026-11-11T04:21:48Z",
     "publicInventory": true,
     "currentGravityUpdate": "2026-08-31",
     "latestGravityPr": "https://github.com/inaciovasquez2020/chronos-urf-rr/pull/1300",
@@ -294,7 +294,7 @@
     "forks": 0,
     "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-07T03:56:27Z",
+    "updatedAt": "2026-11-11T04:33:05Z",
     "publicInventory": true
   },
   {
@@ -658,9 +658,9 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 11,
+    "openIssues": 14,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-10T05:36:14Z",
+    "updatedAt": "2026-11-11T04:21:48Z",
     "publicInventory": true
   },
   {
@@ -945,9 +945,9 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 25,
+    "openIssues": 24,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-10T15:19:01Z"
+    "updatedAt": "2026-11-11T11:41:09Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -1231,7 +1231,7 @@
     "forks": 0,
     "openIssues": 5,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-10T04:20:34Z"
+    "updatedAt": "2026-11-11T04:33:06Z"
   },
   {
     "name": "frontier-status-dashboard",
@@ -1261,6 +1261,6 @@
     "forks": 0,
     "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-09T21:21:07Z"
+    "updatedAt": "2026-11-10T15:36:30Z"
   }
 ]
