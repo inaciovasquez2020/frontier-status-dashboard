@@ -33,9 +33,9 @@
     "textualNoncompiledBoundary": true,
     "stars": 0,
     "forks": 0,
-    "openIssues": 3,
+    "openIssues": 2,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-09T23:02:24Z",
+    "updatedAt": "2026-11-12T16:12:47Z",
     "publicInventory": true,
     "currentOpenGap": "Establish a non-circular arithmetic-to-spectral bridge beyond the repository-defined three-element family and discharge or quarantine the five remaining legacy prefab axioms before any broader URF theorem claim.",
     "evidence": [
@@ -154,7 +154,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 17,
+    "openIssues": 12,
     "defaultBranch": "main",
     "updatedAt": "2026-11-12T13:21:00Z",
     "publicInventory": true,
@@ -294,7 +294,7 @@
     "forks": 0,
     "openIssues": 1,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-11T04:33:05Z",
+    "updatedAt": "2026-11-12T16:16:59Z",
     "publicInventory": true
   },
   {
@@ -658,7 +658,7 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 17,
+    "openIssues": 12,
     "defaultBranch": "main",
     "updatedAt": "2026-11-12T13:21:00Z",
     "publicInventory": true
@@ -945,9 +945,9 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 25,
+    "openIssues": 23,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-11T23:24:43Z"
+    "updatedAt": "2026-11-13T13:57:32Z"
   },
   {
     "name": "dfm-mkc-cosmology",
@@ -979,7 +979,7 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 6,
+    "openIssues": 11,
     "defaultBranch": "main",
     "updatedAt": "2026-11-09T20:54:01Z"
   },
@@ -1229,9 +1229,9 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 6,
+    "openIssues": 5,
     "defaultBranch": "main",
-    "updatedAt": "2026-11-11T04:33:06Z"
+    "updatedAt": "2026-11-12T16:16:55Z"
   },
   {
     "name": "frontier-status-dashboard",
@@ -1259,7 +1259,7 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 1,
+    "openIssues": 0,
     "defaultBranch": "main",
     "updatedAt": "2026-11-11T16:13:43Z"
   }
