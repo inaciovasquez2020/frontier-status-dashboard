@@ -21,23 +21,10 @@ Boundary: dashboard success certifies status visibility and repository-health si
 
 
 <!-- VERIFIED_FRONTIER_TRACKING_DOOR:BEGIN -->
-## Verified Frontier Tracking Transparency Proof
-
-This dashboard is the first public proof of transparency for **Verified Frontier Tracking**.
-
-It exists to show, in one place:
-
-| Signal | Meaning |
-|---|---|
-| CI health | Whether the public verification surface currently builds or tests |
-| Repository integrity | Whether the repo’s declared status artifacts remain internally consistent |
-| Theorem-boundary status | Whether a result is proved, conditional, interface-only, or still open |
-| External-review readiness | Whether an outside reader can inspect the current claim boundary |
-
-Boundary: dashboard success certifies status visibility and repository-health signals only. It does not convert open frontiers, conditional bridges, or interface objects into theorem-level closure.
+See [dashboard signals](#verified-frontier-tracking-transparency-proof) and the [live dashboard](https://frontier-status-dashboard.vercel.app).
 <!-- VERIFIED_FRONTIER_TRACKING_DOOR:END -->
 
-## Latest verified update
+## Verified update of November 9, 2026
 
 - Date: 2026-11-09 (UTC)
 - Scope: public GitHub pull-request merge receipts, checked against their exact merge commit IDs; **not** a fresh dashboard-wide inventory synchronization.
