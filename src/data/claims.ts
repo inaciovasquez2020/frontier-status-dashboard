@@ -45,6 +45,21 @@ export const STATUS_META: Record<
 
 export const CLAIMS: Claim[] = [
   {
+    id: "melanoma-cd36-matched-baseline-exploratory-20261115",
+    title: "Melanoma CD36 — matched-baseline exploratory negative result",
+    statement:
+      "In 12 matched baseline melanoma patients, the original malignant and candidate myeloid CD36 exact response-permutation tests were reproduced (214/495 and 346/495). Excluding 17 known malignant-cell overlaps from provisional myeloid clusters gave a corrected primary exact p-value of 288/495, with no statistically significant CD36–response association established.",
+    status: "verified-surface",
+    artifactUrl:
+      "https://github.com/inaciovasquez2020/biological-friction-framework/tree/510bc502d67e6ac5289f56d2b73a44f2ba6bd313/research/melanoma/cd36-paired-baseline-2026-11-15",
+    artifactLabel: "Pinned CD36 aggregate research checkpoint",
+    lastChecked: "2026-11-15",
+    scope:
+      "Bounded reproducibility of exact 12-patient permutation statistics, known malignant-cell ID exclusion and aggregate negative exploratory evidence; 495 response-label allocations.",
+    limitations:
+      "Not a validated clinical predictor, a causal mechanism or proof of no biological effect. Definitive macrophage identity, independent cohort replication and source-supplement authentication remain open. No patient-level or raw specimen data are distributed through this claim.",
+  },
+  {
     id: "frontier-status-dashboard-private-metadata-policy",
     title: "Private metadata omission policy",
     statement:
