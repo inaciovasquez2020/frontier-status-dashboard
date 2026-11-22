@@ -1,5 +1,11 @@
 # Frontier Status Dashboard
 
+## TKSV conditional Poincaré status (2026-11-22)
+
+[Scoped certificate ledger](docs/status/TKSV_PACHNER_CONDITIONAL_EQUIVALENCE_2026_11_22.md) · [Public research status page](https://inaciovasquez2020.github.io/research/tksv-pachner-status-20261122.html)
+
+The universal strict net vertex-descent hypothesis G is **equivalent** to Poincaré under classical three-manifold PL results; it is not an independent solution. Explicit positive-g2 Pachner normalization families and move-count lower bounds have finite certificates. **INDEPENDENT_GLOBAL_POINCARE := OPEN; LEAN_NEW_BUILD := NOT_RUN.**
+
 <!-- VERIFIED_FRONTIER_TRACKING_TRANSPARENCY:BEGIN -->
 ## Verified Frontier Tracking Transparency Proof
 
