@@ -156,7 +156,7 @@
     ],
     "stars": 0,
     "forks": 0,
-    "openIssues": 15,
+    "openIssues": 16,
     "defaultBranch": "main",
     "updatedAt": "2026-11-12T13:21:00Z",
     "publicInventory": true,
@@ -660,7 +660,7 @@
     "indexMetricApplicable": false,
     "stars": 0,
     "forks": 0,
-    "openIssues": 15,
+    "openIssues": 16,
     "defaultBranch": "main",
     "updatedAt": "2026-11-12T13:21:00Z",
     "publicInventory": true
@@ -948,7 +948,7 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 22,
+    "openIssues": 21,
     "defaultBranch": "main",
     "updatedAt": "2026-11-16T11:24:31Z"
   },
@@ -983,7 +983,7 @@
     ],
     "stars": 1,
     "forks": 0,
-    "openIssues": 11,
+    "openIssues": 10,
     "defaultBranch": "main",
     "updatedAt": "2026-11-09T20:54:01Z"
   },
@@ -1041,8 +1041,7 @@
     "publicInventory": true,
     "evidence": [
       "Commit db78f80523a1c8e35a03391b6be892a6d07e36de rejects duplicate edge IDs across baseline and induced certificate surfaces.",
-      "Exact commit workflows verify, external-status-lock, and canonical-surface all completed successfully; the patch changes certificate integrity checking only and does not discharge the underlying biological frontier.",
-      "Public main checkpoint 2026-11-24 (historical status and readiness metrics unchanged): Melanoma CD36 negative evidence (PR #115). Merged exploratory matched-baseline evidence and method reconciliation; no clinical prediction or causal mechanism established. https://github.com/inaciovasquez2020/biological-friction-framework/commit/fda4049b2c829332307f7be88d6a888937f99903"
+      "Exact commit workflows verify, external-status-lock, and canonical-surface all completed successfully; the patch changes certificate integrity checking only and does not discharge the underlying biological frontier."
     ],
     "stars": 0,
     "forks": 0,
