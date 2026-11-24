@@ -1,5 +1,11 @@
 # Frontier Status Dashboard
 
+## Public verification checkpoint update (2026-11-24)
+
+[Scoped source and merge ledger](docs/status/PUBLIC_MERGED_VERIFICATION_CHECKPOINTS_2026_11_24.md) · [Verification Explorer](https://frontier-status-dashboard.vercel.app/verification)
+
+Four public PR merges are now indexed as separate verification claims: URF Core #599 (**LEAN_VERIFIED_ISOLATED**, Mac-reported axiom audit 6/6), URF Core #602 (FO-k/H1 scope correction), DFM-MKC #327 (observational evidence-boundary correction), and Poincaré #197 (**COMPUTATION_PASS**, 104 finite U(16) witnesses). Two further private-source changes are intentionally omitted from the public listing. Status/progress percentages and historical snapshots were not altered; independent Poincaré and graph-level H1 remain **OPEN**.
+
 ## TKSV conditional Poincaré status (2026-11-22)
 
 [Scoped certificate ledger](docs/status/TKSV_PACHNER_CONDITIONAL_EQUIVALENCE_2026_11_22.md) · [Public research status page](https://inaciovasquez2020.github.io/research/tksv-pachner-status-20261122.html)
