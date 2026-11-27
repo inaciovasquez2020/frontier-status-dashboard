@@ -45,6 +45,42 @@ export const STATUS_META: Record<
 
 export const CLAIMS: Claim[] = [
   {
+    "id": "bff-hidden-dissipation-20261127",
+    "title": "Chronos–Biology — hidden dissipation",
+    "statement": "For the specified finite cyclic Markov generators, fixed stationary probabilities, edge traffic, exit rates and independently gauged injective path observations can conceal distinct entropy production. The sharp absolute-error minimax value equals half maximal dissipation in the bounded current family.",
+    "status": "machine-checked",
+    "artifactUrl": "https://github.com/inaciovasquez2020/biological-friction-framework/blob/799b41b4692c71589587cba037f26f0ad4bff7fb/proofs/hidden-dissipation/receipt/HiddenDissipation.lean",
+    "artifactLabel": "BFF #116 merged source; 33 audited declarations",
+    "lastChecked": "2026-11-27",
+    "scope": "LEAN_VERIFIED: Mac and fresh Linux PASS, 33/33 permitted-axiom audit. BFF.HiddenDissipation.ring_observation_minimax.",
+    "limitations": "Specified observation model and positive ring hypotheses only. Empirical biological validation and independent novelty OPEN; not physical equivalence."
+  },
+  {
+    "id": "bff-cosmology-recovery-20261127",
+    "title": "Biology–Cosmology — second-order recovery",
+    "statement": "One diagonal generator-square observable together with the original stationary observations identifies squared circulating current and entropy production. A restricted cosmological Fourier-mode coefficient identifies its coupling for known positive radius and nonzero mode.",
+    "status": "machine-checked",
+    "artifactUrl": "https://github.com/inaciovasquez2020/biological-friction-framework/blob/c5c8b2f24a0d4de57c764c161ab29c3689bec62f/proofs/hidden-dissipation/receipt/HiddenDissipation.lean",
+    "artifactLabel": "BFF #117 merged source; 8 additional declarations",
+    "lastChecked": "2026-11-27",
+    "dependencies": [
+      "bff-hidden-dissipation-20261127"
+    ],
+    "scope": "LEAN_VERIFIED: eight additional declarations, cumulative 41/41 Mac and Linux permitted-axiom audits. BFF.HiddenDissipation.entropy_identified_by_curvature and mode_identifiable.",
+    "limitations": "Full matrix-exponential derivative, covariant action and Fourier derivations, empirical validation and independent novelty OPEN. No general cosmological parameter identification."
+  },
+  {
+    "id": "chronos-cosmology-projection-20261127",
+    "title": "Cosmology–Chronos — causal projection obstruction",
+    "statement": "In the specified five-coordinate causal diamond, identical visible coordinates can conceal different causal comparability. Strip-area algebra and optimal pointwise binary decision loss are verified.",
+    "status": "machine-checked",
+    "artifactUrl": "https://github.com/inaciovasquez2020/chronos-urf-rr/blob/2ed7df1497824343fce34924501d42a220c3006f/research/certificates/cosmology_causal_projection/receipt/CausalProjection.lean",
+    "artifactLabel": "Chronos #1392 exact PR revision, not a merge claim",
+    "lastChecked": "2026-11-27",
+    "scope": "LEAN_VERIFIED at pinned PR revision: 11/11 Mac audit, dedicated Linux Lean CI PASS; wider integration CI pending at this checkpoint. Chronos.CosmologyBridge.no_perfect_visible_decoder and strip_optimal_decoder.",
+    "limitations": "Continuum measure formalization, physical fifth-dimension detection, independent novelty and full integration remain OPEN or pending. No empirical or universal spacetime claim."
+  },
+  {
     id: "urf-core-sharp-rank-20261124",
     title: "URF Core #599 — sharp finite-tag rank theorem",
     statement: "Six exact finite-obstruction rank/exhaustion declarations compiled in isolation on the researcher's Mac. The permitted-axiom audit reports 6/6 PASS. Exhaustion at the initial rank is equivalent to the initial finite tag count not exceeding that rank.",
