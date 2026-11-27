@@ -45,6 +45,32 @@ export const STATUS_META: Record<
 
 export const CLAIMS: Claim[] = [
   {
+    "id": "urf-universal-recovery-20261127",
+    "title": "URF — universal scalar recovery and affine transfer",
+    "statement": "For an arbitrary system-observation compatibility relation, scalar worst-case error E is achievable exactly when all compatible target pairs differ by at most 2E. Affine transfer requires specified equivalences and target transformation.",
+    "status": "machine-checked",
+    "artifactUrl": "https://github.com/inaciovasquez2020/biological-friction-framework/blob/76317e758f932638945934bcac2ce9ffa7fa3d31/proofs/hidden-dissipation/recovery/UniversalRecovery.lean",
+    "artifactLabel": "BFF #119 pinned Mac-verified PR revision",
+    "lastChecked": "2026-11-27",
+    "scope": "LEAN_VERIFIED: URF.Transfer.recoverable_iff_pairwise, exact_minimax, affine_transfer. Part of the 16 additional audited declarations; Linux reproduction pending at this checkpoint.",
+    "limitations": "Arbitrary scalar estimators; no computational or measurability restrictions. Classical optimal-recovery foundations. Independent novelty and fundamental physical law OPEN."
+  },
+  {
+    "id": "bff-noisy-recovery-20261127",
+    "title": "Biological Friction — sharp noisy entropy recovery",
+    "statement": "For the fixed stationary probabilities and traffic of the bounded cyclic Markov family, a single noisy diagonal generator-square observable has an exact minimax absolute entropy-production error. The final theorem proves entropy convexity rather than assuming it.",
+    "status": "machine-checked",
+    "artifactUrl": "https://github.com/inaciovasquez2020/biological-friction-framework/blob/76317e758f932638945934bcac2ce9ffa7fa3d31/proofs/hidden-dissipation/recovery/EntropyConvexity.lean",
+    "artifactLabel": "BFF #119 pinned analytic source; 57 cumulative audited declarations",
+    "lastChecked": "2026-11-27",
+    "dependencies": [
+      "urf-universal-recovery-20261127",
+      "bff-cosmology-recovery-20261127"
+    ],
+    "scope": "LEAN_VERIFIED: noisy_ring_curvature_minimax_unconditional; 57/57 cumulative Mac audit, including 16 additional declarations. Linux reproduction pending at this checkpoint.",
+    "limitations": "Fixed positive stationary probabilities and traffic; bounded circulating current, known baseline and curvature weight, deterministic bounded measurement error. Empirical feasibility, semigroup derivative, physical validation and independent novelty OPEN."
+  },
+  {
     "id": "bff-hidden-dissipation-20261127",
     "title": "Chronos–Biology — hidden dissipation",
     "statement": "For the specified finite cyclic Markov generators, fixed stationary probabilities, edge traffic, exit rates and independently gauged injective path observations can conceal distinct entropy production. The sharp absolute-error minimax value equals half maximal dissipation in the bounded current family.",
