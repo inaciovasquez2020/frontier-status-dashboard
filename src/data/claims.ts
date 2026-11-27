@@ -45,6 +45,17 @@ export const STATUS_META: Record<
 
 export const CLAIMS: Claim[] = [
   {
+    "id": "chronos-p42-physical-reduction-20261127",
+    "title": "Chronos — four-event Minkowski physical integral reduction",
+    "statement": "For four IID uniform events in a unit 3+1-dimensional Minkowski Alexandrov interval, the physical spacelike common-future moment reduces to an explicit relative-rapidity integral. Exact arithmetic and the finite-poset identity support the candidate p42 = 32*pi^2/7 - 13239637/294000.",
+    "status": "machine-checked",
+    "artifactUrl": "https://github.com/inaciovasquez2020/chronos-urf-rr/blob/e6945b6946f500f917c8b427df411a0e796851b7/research/certificates/p42_physical_checkpoint_20261127/verified/tmp.vmCoPZ4Zsi/ExplicitSpacelikeIntegral.lean",
+    "artifactLabel": "Chronos #1398 pinned draft PR source; Mac verification",
+    "lastChecked": "2026-11-27",
+    "scope": "LEAN_VERIFIED: Chronos.FourEvent.spacelikeMoment_explicit_integral; final 8/8 permitted-axiom audit. COMPUTATION_PASS: exact arithmetic and exhaustive 729 candidate relations, 219 labeled posets, 16 classes.",
+    "limitations": "Only physical integral reduction is machine-checked as a theorem; analytic evaluation and full probability theorem OPEN. Fresh rebuild NOT_RUN; independent novelty and review OPEN. No empirical validation or spacetime reconstruction claim."
+  },
+  {
     "id": "urf-universal-recovery-20261127",
     "title": "URF — universal scalar recovery and affine transfer",
     "statement": "For an arbitrary system-observation compatibility relation, scalar worst-case error E is achievable exactly when all compatible target pairs differ by at most 2E. Affine transfer requires specified equivalences and target transformation.",
